@@ -49,9 +49,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Charts\ITJACheckable.cs" />
     <Compile Include="Projects\Course.cs" />
     <Compile Include="Projects\Header.cs" />
     <Compile Include="Projects\Projects.cs" />
+    <Compile Include="Simulators\Simulator.cs" />
     <Compile Include="Studio.cs">
       <SubType>Form</SubType>
     </Compile>
