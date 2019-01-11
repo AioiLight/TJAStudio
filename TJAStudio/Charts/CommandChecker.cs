@@ -8,39 +8,42 @@ using System.Text.RegularExpressions;
 namespace TJAStudio.Charts
 {
     /// <summary>
-    /// ヘッダーをチェックするクラス。
+    /// 命令をチェックするクラス。
     /// </summary>
-    public class HeaderCheker : ITJACheckable
+    public class CommandCheker : ITJACheckable
     {
         /// <summary>
         /// 初期化。
         /// </summary>
-        /// <param name="name">ヘッダー名。</param>
+        /// <param name="name">命令名。</param>
         /// <param name="format">フォーマット(正規表現)。</param>
         /// <param name="availableSimulator">利用可能なシミュレーター。</param>
-        public HeaderCheker(string name, string[] format, Simulator availableSimulator)
+        public CommandCheker(string name, string[] format, Simulator availableSimulator)
         {
             Name = name;
             Format = format;
             Simulator = availableSimulator;
         }
         /// <summary>
-        /// ヘッダーのフォーマットをチェックし、有効であるかどうか調べます。
+        /// 命令のフォーマットをチェックし、有効であるかどうか調べます。
         /// </summary>
         /// <param name="text">テキスト。</param>
         public void CheckFormat(string text)
         {
             var isValid = false;
             text.Trim();
+            var parameterText = text.Substring(("#" + Name).Length);
             foreach (var item in Format)
             {
-                if(Regex.IsMatch(text, item, RegexOptions.IgnoreCase)) isValid = true;
+                if(Regex.IsMatch(parameterText, item)) isValid = true;
             }
             if (!isValid) throw new InvalidTJAFormatException();
+            // 命令名の後に空白がなかったら例外を出す。
+            if (Regex.IsMatch("#" + Name + " ", text, RegexOptions.IgnoreCase)) throw new CommandWithoutSpaceException();
         }
 
         /// <summary>
-        /// そのシミュレーターでこのヘッダーが利用可能かどうかチェックします。
+        /// そのシミュレーターでこの命令が利用可能かどうかチェックします。
         /// </summary>
         /// <param name="simulator">Simulator列挙型。</param>
         /// <returns>利用可能かどうか。</returns>

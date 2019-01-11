@@ -49,6 +49,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Charts\CommandChecker.cs" />
     <Compile Include="Charts\HeaderCheker.cs" />
     <Compile Include="Charts\ITJACheckable.cs" />
     <Compile Include="Charts\TJAFormatException.cs" />
