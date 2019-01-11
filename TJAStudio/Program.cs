@@ -32,7 +32,7 @@ namespace TJAStudio
             #endregion
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new Studio());
             #region 終了処理
             SettingsManager.SetSettings(SettingFileName, Setting);
             #endregion

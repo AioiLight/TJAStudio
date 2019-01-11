@@ -1,6 +1,6 @@
 ﻿namespace TJAStudio
 {
-    partial class Form1
+    partial class Studio
     {
         /// <summary>
         /// 必要なデザイナー変数です。
