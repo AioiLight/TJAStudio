@@ -51,6 +51,7 @@
   <ItemGroup>
     <Compile Include="Charts\CommandChecker.cs" />
     <Compile Include="Charts\HeaderCheker.cs" />
+    <Compile Include="Charts\Headers.cs" />
     <Compile Include="Charts\ITJACheckable.cs" />
     <Compile Include="Charts\TJAFormatException.cs" />
     <Compile Include="Projects\Course.cs" />
