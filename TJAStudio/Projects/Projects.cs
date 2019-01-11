@@ -18,6 +18,10 @@ namespace TJAStudio
         /// </summary>
         public string ProjectName { get; set; }
         /// <summary>
+        /// 共通ヘッダー。
+        /// </summary>
+        public List<Header> CommonHeader { get; set; } = new List<Header>();
+        /// <summary>
         /// 各コースのリスト。
         /// </summary>
         public List<Course> Courses { get; set; } = new List<Course>();
