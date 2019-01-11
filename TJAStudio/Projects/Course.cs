@@ -12,10 +12,22 @@ namespace TJAStudio
     /// </summary>
     public class Course
     {
+        /// <summary>
+        /// コース名。ここで言うコース名はCOUREヘッダとは別。
+        /// </summary>
         public string Name { get; set; }
+        /// <summary>
+        /// コース別ヘッダのリスト。
+        /// </summary>
         public List<Header> Header { get; set; }
+        /// <summary>
+        /// ドキュメント。
+        /// </summary>
         [XmlIgnore]
         public Sgry.Azuki.Document Document { get; set; }
+        /// <summary>
+        /// ドキュメントの中のテキスト。
+        /// </summary>
         public string Text { get; set; }
     }
 }
