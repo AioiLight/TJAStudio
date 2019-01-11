@@ -32,9 +32,10 @@ namespace TJAStudio.Charts
         {
             var isValid = false;
             text.Trim();
+            var parameterText = text.Substring((Name + ":").Length);
             foreach (var item in Format)
             {
-                if(Regex.IsMatch(text, item, RegexOptions.IgnoreCase)) isValid = true;
+                if(Regex.IsMatch(parameterText, item, RegexOptions.IgnoreCase)) isValid = true;
             }
             if (!isValid) throw new InvalidTJAFormatException();
         }
