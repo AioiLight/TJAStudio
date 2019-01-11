@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace TJAStudio
 {
     [Flags]
-    enum Simulator
+    public enum Simulator
     {
         // PC
         Taikojiro = 1,
