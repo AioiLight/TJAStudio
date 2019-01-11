@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace TJAStudio
 {
+    /// <summary>
+    /// ヘッダー情報を扱うクラス。
+    /// </summary>
     public class Header
     {
         /// <summary>

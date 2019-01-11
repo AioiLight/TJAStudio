@@ -7,12 +7,15 @@ using System.Xml.Serialization;
 
 namespace TJAStudio
 {
+    /// <summary>
+    /// コース情報を扱うクラス。
+    /// </summary>
     public class Course
     {
-        public string Name;
-        public List<Header> Header;
+        public string Name { get; set; }
+        public List<Header> Header { get; set; }
         [XmlIgnore]
-        public Sgry.Azuki.Document Document;
-        public string Text;
+        public Sgry.Azuki.Document Document { get; set; }
+        public string Text { get; set; }
     }
 }

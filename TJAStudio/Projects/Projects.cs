@@ -25,20 +25,5 @@ namespace TJAStudio
         /// 取り込むファイルのリスト。
         /// </summary>
         public List<string> ProjectFile { get; set; } = new List<string>();
-
-        public class Course
-        {
-            public string CourseName;
-            public List<Params> Params;
-            [XmlIgnore]
-            public Sgry.Azuki.Document Document;
-            public string DocumentText;
-        }
-
-        public class Params
-        {
-            public string Parameter;
-            public string Value;
-        }
     }
 }
