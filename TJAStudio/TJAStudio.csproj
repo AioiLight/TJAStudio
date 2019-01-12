@@ -55,6 +55,8 @@
     <Compile Include="Charts\Headers.cs" />
     <Compile Include="Charts\ITJACheckable.cs" />
     <Compile Include="Charts\TJAFormatException.cs" />
+    <Compile Include="Editors\ColorScheme.cs" />
+    <Compile Include="Editors\Highlighter.cs" />
     <Compile Include="Projects\Course.cs" />
     <Compile Include="Projects\Header.cs" />
     <Compile Include="Projects\Projects.cs" />

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TJAStudio.Charts
 {
-    static class Commands
+    public static class Commands
         {
         public static List<CommandCheker> GetCommands()
         {

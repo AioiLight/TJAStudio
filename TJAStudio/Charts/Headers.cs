@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TJAStudio.Charts
 {
-    static class Headers
+    public static class Headers
     {
         public static List<HeaderCheker> GetHeaders()
         {
