@@ -12,13 +12,21 @@ namespace TJAStudio
     {
         public static void SetColorScheme(Sgry.Azuki.ColorScheme azuki)
         {
-            azuki.SetColor(CharClass.Keyword2, Color.Brown, Color.Transparent); // キーワード
-            azuki.SetColor(CharClass.Heading1, Color.Red, Color.Transparent); // ドン
-            azuki.SetColor(CharClass.Heading2, Color.Blue, Color.Transparent); // カツ
-            azuki.SetColor(CharClass.Heading3, Color.DimGray, Color.Transparent); // なし
-            azuki.SetColor(CharClass.Heading4, Color.White, Color.Orange); // 連打
-            azuki.SetColor(CharClass.Heading5, Color.White, Color.Tomato); // ふうせん
-            azuki.SetColor(CharClass.Heading6, Color.DimGray, Color.Transparent); // ほか
+            SetColor(CharClass.Keyword, Program.Setting.ColorScheme.Keyword, azuki); // キーワード
+            SetColor(CharClass.Keyword2, Program.Setting.ColorScheme.Command, azuki); // コマンド
+            SetColor(CharClass.Keyword3, Program.Setting.ColorScheme.Parameter, azuki); // パラメータ
+            SetColor(CharClass.Comment, Program.Setting.ColorScheme.Comment, azuki) // コメント
+            SetColor(CharClass.Heading1, Program.Setting.ColorScheme.Don, azuki);
+            SetColor(CharClass.Heading2, Program.Setting.ColorScheme.Ka, azuki);
+            SetColor(CharClass.Heading3, Program.Setting.ColorScheme.Space, azuki);
+            SetColor(CharClass.Heading4, Program.Setting.ColorScheme.Roll, azuki);
+            SetColor(CharClass.Heading5, Program.Setting.ColorScheme.Balloon, azuki);
+            SetColor(CharClass.Heading6, Program.Setting.ColorScheme.Other, azuki);
+        }
+
+        private static void SetColor(CharClass charClass, ColorFormat scheme, Sgry.Azuki.ColorScheme azuki)
+        {
+            azuki.SetColor(charClass, scheme.ForeColor, scheme.BackColor);
         }
     }
 }
