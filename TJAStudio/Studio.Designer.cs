@@ -61,6 +61,7 @@
             this.Menu_Edit_NotesOperation_Abekobe = new System.Windows.Forms.ToolStripMenuItem();
             this.Menu_Edit_NotesOperation_Detarame = new System.Windows.Forms.ToolStripMenuItem();
             this.Menu_Window = new System.Windows.Forms.ToolStripMenuItem();
+            this.Menu_Window_Courses = new System.Windows.Forms.ToolStripMenuItem();
             this.Menu_Window_CommonHeader = new System.Windows.Forms.ToolStripMenuItem();
             this.Menu_Window_CourseHeader = new System.Windows.Forms.ToolStripMenuItem();
             this.Menu_Window_Projects = new System.Windows.Forms.ToolStripMenuItem();
@@ -295,6 +296,7 @@
             this.Menu_Edit_Repert.Name = "Menu_Edit_Repert";
             this.Menu_Edit_Repert.Size = new System.Drawing.Size(182, 24);
             this.Menu_Edit_Repert.Text = "Repeat";
+            this.Menu_Edit_Repert.Click += new System.EventHandler(this.Menu_Edit_Repert_Click);
             // 
             // Menu_Edit_NotesOperation
             // 
@@ -310,34 +312,35 @@
             // Menu_Edit_NotesOperation_ToDon
             // 
             this.Menu_Edit_NotesOperation_ToDon.Name = "Menu_Edit_NotesOperation_ToDon";
-            this.Menu_Edit_NotesOperation_ToDon.Size = new System.Drawing.Size(180, 24);
+            this.Menu_Edit_NotesOperation_ToDon.Size = new System.Drawing.Size(142, 24);
             this.Menu_Edit_NotesOperation_ToDon.Text = "To Don";
             this.Menu_Edit_NotesOperation_ToDon.Click += new System.EventHandler(this.Menu_Edit_NotesOperation_ToDon_Click);
             // 
             // Menu_Edit_NotesOperation_ToKa
             // 
             this.Menu_Edit_NotesOperation_ToKa.Name = "Menu_Edit_NotesOperation_ToKa";
-            this.Menu_Edit_NotesOperation_ToKa.Size = new System.Drawing.Size(180, 24);
+            this.Menu_Edit_NotesOperation_ToKa.Size = new System.Drawing.Size(142, 24);
             this.Menu_Edit_NotesOperation_ToKa.Text = "To Ka";
             this.Menu_Edit_NotesOperation_ToKa.Click += new System.EventHandler(this.Menu_Edit_NotesOperation_ToKa_Click);
             // 
             // Menu_Edit_NotesOperation_Abekobe
             // 
             this.Menu_Edit_NotesOperation_Abekobe.Name = "Menu_Edit_NotesOperation_Abekobe";
-            this.Menu_Edit_NotesOperation_Abekobe.Size = new System.Drawing.Size(180, 24);
+            this.Menu_Edit_NotesOperation_Abekobe.Size = new System.Drawing.Size(142, 24);
             this.Menu_Edit_NotesOperation_Abekobe.Text = "Abekobe";
             this.Menu_Edit_NotesOperation_Abekobe.Click += new System.EventHandler(this.Menu_Edit_NotesOperation_Abekobe_Click);
             // 
             // Menu_Edit_NotesOperation_Detarame
             // 
             this.Menu_Edit_NotesOperation_Detarame.Name = "Menu_Edit_NotesOperation_Detarame";
-            this.Menu_Edit_NotesOperation_Detarame.Size = new System.Drawing.Size(180, 24);
+            this.Menu_Edit_NotesOperation_Detarame.Size = new System.Drawing.Size(142, 24);
             this.Menu_Edit_NotesOperation_Detarame.Text = "Detarame";
             this.Menu_Edit_NotesOperation_Detarame.Click += new System.EventHandler(this.Menu_Edit_NotesOperation_Detarame_Click);
             // 
             // Menu_Window
             // 
             this.Menu_Window.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.Menu_Window_Courses,
             this.Menu_Window_CommonHeader,
             this.Menu_Window_CourseHeader,
             this.Menu_Window_Projects});
@@ -346,23 +349,33 @@
             this.Menu_Window.Size = new System.Drawing.Size(88, 24);
             this.Menu_Window.Text = "&Window";
             // 
+            // Menu_Window_Courses
+            // 
+            this.Menu_Window_Courses.Name = "Menu_Window_Courses";
+            this.Menu_Window_Courses.Size = new System.Drawing.Size(192, 24);
+            this.Menu_Window_Courses.Text = "Courses";
+            this.Menu_Window_Courses.Click += new System.EventHandler(this.Menu_Window_Courses_Click);
+            // 
             // Menu_Window_CommonHeader
             // 
             this.Menu_Window_CommonHeader.Name = "Menu_Window_CommonHeader";
             this.Menu_Window_CommonHeader.Size = new System.Drawing.Size(192, 24);
             this.Menu_Window_CommonHeader.Text = "Common Headers";
+            this.Menu_Window_CommonHeader.Click += new System.EventHandler(this.Menu_Window_CommonHeader_Click);
             // 
             // Menu_Window_CourseHeader
             // 
             this.Menu_Window_CourseHeader.Name = "Menu_Window_CourseHeader";
             this.Menu_Window_CourseHeader.Size = new System.Drawing.Size(192, 24);
             this.Menu_Window_CourseHeader.Text = "Course Headers";
+            this.Menu_Window_CourseHeader.Click += new System.EventHandler(this.Menu_Window_CourseHeader_Click);
             // 
             // Menu_Window_Projects
             // 
             this.Menu_Window_Projects.Name = "Menu_Window_Projects";
             this.Menu_Window_Projects.Size = new System.Drawing.Size(192, 24);
             this.Menu_Window_Projects.Text = "Projects";
+            this.Menu_Window_Projects.Click += new System.EventHandler(this.Menu_Window_Projects_Click);
             // 
             // Menu_Version
             // 
@@ -473,6 +486,7 @@
         private System.Windows.Forms.ToolStripMenuItem Menu_Tool;
         private System.Windows.Forms.ToolStripMenuItem Menu_Version;
         private System.Windows.Forms.ToolStripMenuItem Menu_Tool_About;
+        private System.Windows.Forms.ToolStripMenuItem Menu_Window_Courses;
     }
 }
 

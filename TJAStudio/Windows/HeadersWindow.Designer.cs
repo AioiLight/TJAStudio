@@ -139,6 +139,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Text = "Header";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.HeadersWindow_FormClosing);
             this.Tool.ResumeLayout(false);
             this.Tool.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.List)).EndInit();

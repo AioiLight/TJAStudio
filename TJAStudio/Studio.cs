@@ -171,14 +171,6 @@ namespace TJAStudio
         {
             Open(Program.EXEPath + @"\Template\", true);
         }
-        private Courses Courses = new Courses();
-        private Project Project = new Project();
-        public  HeadersWindow HeaderWindow = new HeadersWindow(false);
-        private HeadersWindow CommonHeaderWindow = new HeadersWindow(true, "Common Header");
-        public static Studio TJAStudio { get; set; }
-        public static int CurrentCourseID { get; set; }
-        public bool IsEdited { get; set; }
-        public string FileName { get; set; }
 
         private void Menu_File_Exit_Click(object sender, EventArgs e)
         {
@@ -217,7 +209,12 @@ namespace TJAStudio
 
         private void Menu_Edit_GoTo_Click(object sender, EventArgs e)
         {
-
+            var dialog = new GoTo(Program.WindowManager.Editors[CurrentCourseID].TextEditor.Document.LineCount);
+            if (dialog.ShowDialog(this) == DialogResult.OK)
+            {
+                Program.WindowManager.Editors[CurrentCourseID].TextEditor.Document.SetCaretIndex((int)dialog.Num.Value - 1, 0);
+                Program.WindowManager.Editors[CurrentCourseID].TextEditor.ScrollToCaret();
+            }
         }
 
         private void Menu_Edit_SelectAll_Click(object sender, EventArgs e)
@@ -356,5 +353,40 @@ namespace TJAStudio
             TextInsert(resultText);
 
         }
+
+        private void Menu_Edit_Repert_Click(object sender, EventArgs e)
+        {
+            if (!Program.WindowManager.Editors[CurrentCourseID].TextEditor.Focused) return;
+            string selectedText = Program.WindowManager.Editors[CurrentCourseID].TextEditor.GetSelectedText();
+            TextInsert(selectedText + "\n" + selectedText);
+        }
+
+        private void Menu_Window_CommonHeader_Click(object sender, EventArgs e)
+        {
+            CommonHeaderWindow.Show();
+        }
+
+        private void Menu_Window_Courses_Click(object sender, EventArgs e)
+        {
+            Courses.Show();
+        }
+
+        private void Menu_Window_CourseHeader_Click(object sender, EventArgs e)
+        {
+            HeaderWindow.Show();
+        }
+
+        private void Menu_Window_Projects_Click(object sender, EventArgs e)
+        {
+            Project.Show();
+        }
+        private Courses Courses = new Courses();
+        private Project Project = new Project();
+        public  HeadersWindow HeaderWindow = new HeadersWindow(false);
+        private HeadersWindow CommonHeaderWindow = new HeadersWindow(true, "Common Header");
+        public static Studio TJAStudio { get; set; }
+        public static int CurrentCourseID { get; set; }
+        public bool IsEdited { get; set; }
+        public string FileName { get; set; }
     }
 }

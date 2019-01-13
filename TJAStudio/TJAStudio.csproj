@@ -129,6 +129,12 @@
     <Compile Include="Windows\Editor.Designer.cs">
       <DependentUpon>Editor.cs</DependentUpon>
     </Compile>
+    <Compile Include="Windows\GoTo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\GoTo.designer.cs">
+      <DependentUpon>GoTo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Windows\HeadersWindow.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -175,6 +181,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Windows\Editor.resx">
       <DependentUpon>Editor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\GoTo.resx">
+      <DependentUpon>GoTo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Windows\HeadersWindow.resx">
       <DependentUpon>HeadersWindow.cs</DependentUpon>

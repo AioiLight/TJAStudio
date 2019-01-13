@@ -74,5 +74,10 @@ namespace TJAStudio
             Studio.TJAStudio.EditorChanged();
         }
 
+        private void Courses_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Hide();
+            e.Cancel = true;
+        }
     }
 }

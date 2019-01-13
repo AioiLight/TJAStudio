@@ -144,5 +144,11 @@ namespace TJAStudio
         {
 
         }
+
+        private void HeadersWindow_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Hide();
+            e.Cancel = true;
+        }
     }
 }

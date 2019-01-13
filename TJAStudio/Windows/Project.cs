@@ -17,5 +17,10 @@ namespace TJAStudio
             InitializeComponent();
         }
 
+        private void Project_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Hide();
+            e.Cancel = true;
+        }
     }
 }
