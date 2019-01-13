@@ -8,9 +8,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace TJAStudio.Windows
+namespace TJAStudio
 {
-    public partial class Courses : Form
+    public partial class Courses : WeifenLuo.WinFormsUI.Docking.DockContent
     {
         public Courses()
         {

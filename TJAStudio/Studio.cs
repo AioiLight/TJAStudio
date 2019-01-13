@@ -17,11 +17,20 @@ namespace TJAStudio
         {
             InitializeComponent();
             Dock.Theme = new VS2015LightTheme();
-            Editor = new Editor();
-            Editor.Show(Dock);
+
+            Courses.Show(Dock, DockState.DockRight);
+            Project.Show(Dock, DockState.DockRight);
+            ListEditor.Add(new Editor());
+            ListCourse.Add(new Course());
+            ListEditor[ListEditor.Count - 1].Show(Dock);
+            
+
         }
 
 
-        private Editor Editor;
+        private List<Editor> ListEditor = new List<Editor>();
+        private List<Course> ListCourse = new List<Course>();
+        private Courses Courses = new Courses();
+        private Project Project = new Project();
     }
 }

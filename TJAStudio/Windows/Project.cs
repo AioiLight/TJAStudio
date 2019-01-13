@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace TJAStudio.Windows
+namespace TJAStudio
 {
     public partial class Project : WeifenLuo.WinFormsUI.Docking.DockContent
     {
