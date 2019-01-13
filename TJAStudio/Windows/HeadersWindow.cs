@@ -45,6 +45,7 @@ namespace TJAStudio
             //Program.WindowManager.(List.SelectedItems[0].Index);]
             to.RemoveAt(List.SelectedCells[0].RowIndex);
             SetHeaderFromList(to);
+            Studio.TJAStudio.EditorChanged();
         }
 
         public void SetHeaderFromList(List<Header> list)
@@ -66,6 +67,7 @@ namespace TJAStudio
             var dialogResult = dialog.ShowDialog(this);
             if (dialogResult == DialogResult.OK)
             {
+                Studio.TJAStudio.EditorChanged();
                 var header = new Header();
                 header.Name = dialog.TextBox_Name.Text;
                 header.Value = dialog.TextBox_Parameter.Text;
@@ -107,6 +109,7 @@ namespace TJAStudio
             {
                 Program.Project.Courses[Studio.CurrentCourseID].Header = list;
             }
+            Studio.TJAStudio.EditorChanged();
         }
 
         private void Tool_MoveUp_Click(object sender, EventArgs e)
@@ -120,6 +123,7 @@ namespace TJAStudio
             SetHeaderFromList(to);
             List.Rows[index - 1].Selected = true;
             List.CurrentCell = List.Rows[index - 1].Cells[0];
+            Studio.TJAStudio.EditorChanged();
         }
 
         private void Tool_MoveDown_Click(object sender, EventArgs e)
@@ -133,6 +137,7 @@ namespace TJAStudio
             SetHeaderFromList(to);
             List.Rows[index + 1].Selected = true;
             List.CurrentCell = List.Rows[index + 1].Cells[0];
+            Studio.TJAStudio.EditorChanged();
         }
 
         private void List_CellContentClick(object sender, DataGridViewCellEventArgs e)

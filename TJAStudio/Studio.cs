@@ -32,6 +32,8 @@ namespace TJAStudio
             Dock.DockRightPortion = 0.36;
             Text = Properties.Common.Name;
             Menu_Version.Text = Properties.Common.Name + " Ver." + Program.Version;
+            Program.Project.ProjectName = Properties.Common.UntitledProjectName;
+            TitleChange();
         }
 
         private void Dock_ActiveDocumentChanged(object sender, EventArgs e)
@@ -40,18 +42,31 @@ namespace TJAStudio
             HeaderWindow.SetHeaderFromList(Program.Project.Courses[CurrentCourseID].Header);
         }
 
-        private Courses Courses = new Courses();
-        private Project Project = new Project();
-        public  HeadersWindow HeaderWindow = new HeadersWindow(false);
-        private HeadersWindow CommonHeaderWindow = new HeadersWindow(true, "Common Header");
-        public static Studio TJAStudio { get; set; }
-        public static int CurrentCourseID { get; set; }
 
         private void Menu_Tool_About_Click(object sender, EventArgs e)
         {
             MessageBox.Show(String.Format(Properties.SystemMessage.VersionDialog, Properties.Common.Name, Program.Version, Properties.Common.Developer, Properties.Common.Website), Properties.Common.Name, MessageBoxButtons.OK, MessageBoxIcon.Asterisk, MessageBoxDefaultButton.Button1);
         }
 
-        public bool IsEdited { get; set; }
+        public void EditorChanged()
+        {
+            IsEdited = true;
+            TitleChange();
+        }
+
+        private void TitleChange()
+        {
+            Text = Properties.Common.Name;
+            Text += " - " + Program.Project.ProjectName;
+            if (IsEdited) Text += " *";
+        }
+
+        private Courses Courses = new Courses();
+        private Project Project = new Project();
+        public  HeadersWindow HeaderWindow = new HeadersWindow(false);
+        private HeadersWindow CommonHeaderWindow = new HeadersWindow(true, "Common Header");
+        public static Studio TJAStudio { get; set; }
+        public static int CurrentCourseID { get; set; }
+        public bool IsEdited { get; set ; }
     }
 }
