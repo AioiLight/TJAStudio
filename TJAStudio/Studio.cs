@@ -30,6 +30,8 @@ namespace TJAStudio
             Program.WindowManager.Editors[index + 1].Show(Dock);
             Dock.DockLeftPortion = 0.36;
             Dock.DockRightPortion = 0.36;
+            Text = Properties.Common.Name;
+            Menu_Version.Text = Properties.Common.Name + " Ver." + Program.Version;
         }
 
         private void Dock_ActiveDocumentChanged(object sender, EventArgs e)
@@ -45,5 +47,11 @@ namespace TJAStudio
         public static Studio TJAStudio { get; set; }
         public static int CurrentCourseID { get; set; }
 
+        private void Menu_Tool_About_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(String.Format(Properties.SystemMessage.VersionDialog, Properties.Common.Name, Program.Version, Properties.Common.Developer, Properties.Common.Website), Properties.Common.Name, MessageBoxButtons.OK, MessageBoxIcon.Asterisk, MessageBoxDefaultButton.Button1);
+        }
+
+        public bool IsEdited { get; set; }
     }
 }

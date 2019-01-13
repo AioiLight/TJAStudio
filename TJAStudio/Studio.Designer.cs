@@ -61,14 +61,15 @@
             this.toKaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.abekobeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.detarameToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.windowToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.commonHeadersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.courseHeadersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.projectsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.Menu_Window = new System.Windows.Forms.ToolStripMenuItem();
+            this.Menu_Window_CommonHeader = new System.Windows.Forms.ToolStripMenuItem();
+            this.Menu_Window_CourseHeader = new System.Windows.Forms.ToolStripMenuItem();
+            this.Menu_Window_Projects = new System.Windows.Forms.ToolStripMenuItem();
+            this.Menu_Version = new System.Windows.Forms.ToolStripMenuItem();
             this.Menu_Tool = new System.Windows.Forms.ToolStripMenuItem();
             this.Status = new System.Windows.Forms.StatusStrip();
             this.Tool = new System.Windows.Forms.ToolStrip();
-            this.tJAStudioVer10ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.Menu_Tool_About = new System.Windows.Forms.ToolStripMenuItem();
             this.Menu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -91,8 +92,8 @@
             this.Menu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.Menu_File,
             this.Menu_Edit,
-            this.windowToolStripMenuItem,
-            this.tJAStudioVer10ToolStripMenuItem,
+            this.Menu_Window,
+            this.Menu_Version,
             this.Menu_Tool});
             this.Menu.Location = new System.Drawing.Point(0, 0);
             this.Menu.Name = "Menu";
@@ -324,38 +325,47 @@
             this.detarameToolStripMenuItem.Size = new System.Drawing.Size(142, 24);
             this.detarameToolStripMenuItem.Text = "Detarame";
             // 
-            // windowToolStripMenuItem
+            // Menu_Window
             // 
-            this.windowToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.commonHeadersToolStripMenuItem,
-            this.courseHeadersToolStripMenuItem,
-            this.projectsToolStripMenuItem});
-            this.windowToolStripMenuItem.Image = global::TJAStudio.Properties.Resources.WindowsForm_16x;
-            this.windowToolStripMenuItem.Name = "windowToolStripMenuItem";
-            this.windowToolStripMenuItem.Size = new System.Drawing.Size(88, 24);
-            this.windowToolStripMenuItem.Text = "&Window";
+            this.Menu_Window.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.Menu_Window_CommonHeader,
+            this.Menu_Window_CourseHeader,
+            this.Menu_Window_Projects});
+            this.Menu_Window.Image = global::TJAStudio.Properties.Resources.WindowsForm_16x;
+            this.Menu_Window.Name = "Menu_Window";
+            this.Menu_Window.Size = new System.Drawing.Size(88, 24);
+            this.Menu_Window.Text = "&Window";
             // 
-            // commonHeadersToolStripMenuItem
+            // Menu_Window_CommonHeader
             // 
-            this.commonHeadersToolStripMenuItem.Name = "commonHeadersToolStripMenuItem";
-            this.commonHeadersToolStripMenuItem.Size = new System.Drawing.Size(192, 24);
-            this.commonHeadersToolStripMenuItem.Text = "Common Headers";
+            this.Menu_Window_CommonHeader.Name = "Menu_Window_CommonHeader";
+            this.Menu_Window_CommonHeader.Size = new System.Drawing.Size(192, 24);
+            this.Menu_Window_CommonHeader.Text = "Common Headers";
             // 
-            // courseHeadersToolStripMenuItem
+            // Menu_Window_CourseHeader
             // 
-            this.courseHeadersToolStripMenuItem.Name = "courseHeadersToolStripMenuItem";
-            this.courseHeadersToolStripMenuItem.Size = new System.Drawing.Size(192, 24);
-            this.courseHeadersToolStripMenuItem.Text = "Course Headers";
+            this.Menu_Window_CourseHeader.Name = "Menu_Window_CourseHeader";
+            this.Menu_Window_CourseHeader.Size = new System.Drawing.Size(192, 24);
+            this.Menu_Window_CourseHeader.Text = "Course Headers";
             // 
-            // projectsToolStripMenuItem
+            // Menu_Window_Projects
             // 
-            this.projectsToolStripMenuItem.Name = "projectsToolStripMenuItem";
-            this.projectsToolStripMenuItem.Size = new System.Drawing.Size(192, 24);
-            this.projectsToolStripMenuItem.Text = "Projects";
+            this.Menu_Window_Projects.Name = "Menu_Window_Projects";
+            this.Menu_Window_Projects.Size = new System.Drawing.Size(192, 24);
+            this.Menu_Window_Projects.Text = "Projects";
+            // 
+            // Menu_Version
+            // 
+            this.Menu_Version.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.Menu_Version.Name = "Menu_Version";
+            this.Menu_Version.Size = new System.Drawing.Size(133, 24);
+            this.Menu_Version.Text = "TJAStudio Ver.1.0";
             // 
             // Menu_Tool
             // 
             this.Menu_Tool.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.Menu_Tool.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.Menu_Tool_About});
             this.Menu_Tool.Image = global::TJAStudio.Properties.Resources.Toolbox_16x;
             this.Menu_Tool.Name = "Menu_Tool";
             this.Menu_Tool.Size = new System.Drawing.Size(63, 24);
@@ -377,12 +387,12 @@
             this.Tool.TabIndex = 4;
             this.Tool.Text = "toolStrip1";
             // 
-            // tJAStudioVer10ToolStripMenuItem
+            // Menu_Tool_About
             // 
-            this.tJAStudioVer10ToolStripMenuItem.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.tJAStudioVer10ToolStripMenuItem.Name = "tJAStudioVer10ToolStripMenuItem";
-            this.tJAStudioVer10ToolStripMenuItem.Size = new System.Drawing.Size(133, 24);
-            this.tJAStudioVer10ToolStripMenuItem.Text = "TJAStudio Ver.1.0";
+            this.Menu_Tool_About.Name = "Menu_Tool_About";
+            this.Menu_Tool_About.Size = new System.Drawing.Size(198, 24);
+            this.Menu_Tool_About.Text = "About TJAStudio...";
+            this.Menu_Tool_About.Click += new System.EventHandler(this.Menu_Tool_About_Click);
             // 
             // Studio
             // 
@@ -446,12 +456,13 @@
         private System.Windows.Forms.ToolStripMenuItem toKaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem abekobeToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem detarameToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem windowToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem commonHeadersToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem courseHeadersToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem projectsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem Menu_Window;
+        private System.Windows.Forms.ToolStripMenuItem Menu_Window_CommonHeader;
+        private System.Windows.Forms.ToolStripMenuItem Menu_Window_CourseHeader;
+        private System.Windows.Forms.ToolStripMenuItem Menu_Window_Projects;
         private System.Windows.Forms.ToolStripMenuItem Menu_Tool;
-        private System.Windows.Forms.ToolStripMenuItem tJAStudioVer10ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem Menu_Version;
+        private System.Windows.Forms.ToolStripMenuItem Menu_Tool_About;
     }
 }
 

@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ApplicationExit" xml:space="preserve">
+    <value>Do you want to save changes to {0}?</value>
+  </data>
+  <data name="CheckingDirectory" xml:space="preserve">
+    <value>Cheking Directroy... {0}</value>
+  </data>
+  <data name="CheckingFile" xml:space="preserve">
+    <value>Cheking File... {0}</value>
+  </data>
+  <data name="Copied" xml:space="preserve">
+    <value>Copied to clipboard. "{0}"</value>
+  </data>
+  <data name="CourseInfomation" xml:space="preserve">
+    <value>All Measures: {0}
+Don (Small/Big/All/Raito): {1} / {2} / {3} / {4:0.00}%
+Ka  (Small/Big/All/Raito): {5} / {6} / {7} / {8:0.00}%
+Small / Big Notes Raito: {9:0.00}% / {10:0.00}%
+Max. Combo: {11}
+Play Time: {12}s</value>
+  </data>
+  <data name="CourseInfomationTitle" xml:space="preserve">
+    <value>Course: {0}</value>
+  </data>
+  <data name="CourseInfomation_Selection" xml:space="preserve">
+    <value>
+
+
+Selection:
+Don (Small/Big/All/Raito): {0} / {1} / {2} / {3:0.00}%
+Ka  (Small/Big/All/Raito): {4} / {5} / {6} / {7:0.00}%
+Small / Big Notes Raito: {8:0.00}% / {9:0.00}%
+Time Span: {10}s</value>
+  </data>
+  <data name="CourseInfomation_ThisMeasure" xml:space="preserve">
+    <value>
+
+
+This Measure: {0} / {1}
+Don (Small/Big/All/Raito): {2} / {3} / {4} / {5:0.00}%
+Ka  (Small/Big/All/Raito): {6} / {7} / {8} / {9:0.00}%
+Small / Big Notes Raito: {10:0.00}% / {11:0.00}%
+Resolution: {12}
+Time Span: {13}s</value>
+  </data>
+  <data name="Cutted" xml:space="preserve">
+    <value>Cutted to clipboard. "{0}"</value>
+  </data>
+  <data name="DirectoryNotFound" xml:space="preserve">
+    <value>The directory "{0}" could not be found.
+There is not enough directory to run the program.
+Please download the program again.</value>
+  </data>
+  <data name="DrawNotesPreview" xml:space="preserve">
+    <value>This measure
+:{0}
+Without command:{1}
+Notes: {2}</value>
+  </data>
+  <data name="DuplicateHeader" xml:space="preserve">
+    <value>Duplicate header name.
+Delete previous header?</value>
+  </data>
+  <data name="EditedWarning" xml:space="preserve">
+    <value>This project {0} is not saved.</value>
+  </data>
+  <data name="FileNotFound" xml:space="preserve">
+    <value>The file "{0}" could not be found.
+There is not enough file to run the program.
+Please download the program again.</value>
+  </data>
+  <data name="Measured_BPM" xml:space="preserve">
+    <value>Do you use the value of the last 8 beats?</value>
+  </data>
+  <data name="MissedCourseName" xml:space="preserve">
+    <value>Please enter the course name.</value>
+  </data>
+  <data name="MissedHeaderName" xml:space="preserve">
+    <value>Please enter the header name.</value>
+  </data>
+  <data name="NowCaret" xml:space="preserve">
+    <value>Line: {0}, Column: {1}</value>
+  </data>
+  <data name="OpenProject" xml:space="preserve">
+    <value>Open Project</value>
+  </data>
+  <data name="OpenProjectFile" xml:space="preserve">
+    <value>Open Project File</value>
+  </data>
+  <data name="OpenTemplate" xml:space="preserve">
+    <value>Open Template</value>
+  </data>
+  <data name="Pasted" xml:space="preserve">
+    <value>Pasted from clipboard. "{0}"</value>
+  </data>
+  <data name="SaveProject" xml:space="preserve">
+    <value>Save Project</value>
+  </data>
+  <data name="SaveTJA" xml:space="preserve">
+    <value>Save .tja</value>
+  </data>
+  <data name="Status_Measure" xml:space="preserve">
+    <value>Measure: {0} / {1}</value>
+  </data>
+  <data name="VersionDialog" xml:space="preserve">
+    <value>{0} Ver.{1}
+{0} was developed by {2}.
+{3}</value>
+  </data>
+</root>
