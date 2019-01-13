@@ -58,6 +58,7 @@
             this.TextEditor.TabIndex = 0;
             this.TextEditor.Text = "azukiControl1";
             this.TextEditor.ViewWidth = 4142;
+            this.TextEditor.CaretMoved += new System.EventHandler(this.TextEditor_CaretMoved);
             this.TextEditor.TextChanged += new System.EventHandler(this.TextEditor_TextChanged);
             this.TextEditor.Click += new System.EventHandler(this.TextEditor_Click);
             // 

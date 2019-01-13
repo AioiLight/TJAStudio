@@ -43,5 +43,12 @@ namespace TJAStudio
             Studio.TJAStudio.EditorChanged();
             Studio.TJAStudio.MakePreview(Program.Project.Courses[Studio.CurrentCourseID], true);
         }
+
+        private void TextEditor_CaretMoved(object sender, EventArgs e)
+        {
+            TextEditor.Document.GetCaretIndex(out var line, out var col);
+            Studio.UpdateCaret(line, col);
+            Studio.UpdateMeasures();
+        }
     }
 }

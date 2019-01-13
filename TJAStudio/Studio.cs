@@ -40,6 +40,9 @@ namespace TJAStudio
             CurrentCourseID = Courses.List.FindItemWithText(Dock.ActiveDocument.DockHandler.TabText.Substring(Properties.Common.Editor.Length)).Index;
             HeaderWindow.SetHeaderFromList(Program.Project.Courses[CurrentCourseID].Header);
             CommonHeaderWindow.SetHeaderFromList(Program.Project.CommonHeader);
+            Program.Project.Courses[CurrentCourseID].Document.GetCaretIndex(out var line, out var col);
+            Studio.UpdateCaret(line, col);
+            Studio.UpdateMeasures();
         }
 
 
@@ -101,7 +104,7 @@ namespace TJAStudio
 
         private void Menu_File_SaveAs_Click(object sender, EventArgs e)
         {
-            SaveAs();            
+            SaveAs();
         }
 
 
@@ -110,7 +113,7 @@ namespace TJAStudio
             var index = Program.WindowManager.AddCourse(name);
             Courses.SetCoursesFromList();
             Program.WindowManager.Editors[index].Show(Dock);
-           
+
         }
 
         private void Menu_File_New_Click(object sender, EventArgs e)
@@ -450,7 +453,7 @@ namespace TJAStudio
             }
             catch (Exception)
             {
-                
+
             }
         }
 
@@ -487,14 +490,6 @@ namespace TJAStudio
                 }
             }
         }
-        private Courses Courses = new Courses();
-        private Project Project = new Project();
-        public  HeadersWindow HeaderWindow = new HeadersWindow(false);
-        private HeadersWindow CommonHeaderWindow = new HeadersWindow(true, Properties.Common.CommonHeader);
-        public static Studio TJAStudio { get; set; }
-        public static int CurrentCourseID { get; set; }
-        public bool IsEdited { get; set; }
-        public string FileName { get; set; }
 
         private void Menu_Execution_LiveUpdate_Click(object sender, EventArgs e)
         {
@@ -512,5 +507,24 @@ namespace TJAStudio
                 TJAManager.Build(dialog.FileName, Program.Project, Program.Setting.UTF8Mode ? Encoding.UTF8 : Encoding.GetEncoding("Shift_JIS"));
             }
         }
+
+        public static void UpdateCaret(int line, int col)
+        {
+            TJAStudio.Status_Caret.Text = String.Format(Properties.SystemMessage.NowCaret, ++line, ++col);
+        }
+
+        public static void UpdateMeasures()
+        {
+            var measure = Measure.GetMeasure(Program.Project.Courses[Studio.CurrentCourseID].Document);
+            TJAStudio.Status_Measures.Text = String.Format(Properties.SystemMessage.Status_Measure, measure[1] + 1, measure[0] + 1);
+        }
+        private Courses Courses = new Courses();
+        private Project Project = new Project();
+        public  HeadersWindow HeaderWindow = new HeadersWindow(false);
+        private HeadersWindow CommonHeaderWindow = new HeadersWindow(true, Properties.Common.CommonHeader);
+        public static Studio TJAStudio { get; set; }
+        public static int CurrentCourseID { get; set; }
+        public bool IsEdited { get; set; }
+        public string FileName { get; set; }
     }
 }

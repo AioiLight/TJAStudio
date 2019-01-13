@@ -153,6 +153,36 @@
   <data name="Menu.Font" type="System.Drawing.Font, System.Drawing">
     <value>メイリオ, 9.75pt</value>
   </data>
+  <data name="Menu.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="Menu.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>10, 4, 0, 4</value>
+  </data>
+  <data name="Menu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1264, 32</value>
+  </data>
+  <data name="Menu.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;Menu.Name" xml:space="preserve">
+    <value>Menu</value>
+  </data>
+  <data name="&gt;&gt;Menu.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Menu.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Menu.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="Menu_File.Size" type="System.Drawing.Size, System.Drawing">
+    <value>58, 24</value>
+  </data>
+  <data name="Menu_File.Text" xml:space="preserve">
+    <value>&amp;File</value>
+  </data>
   <data name="Menu_File_New.Size" type="System.Drawing.Size, System.Drawing">
     <value>190, 24</value>
   </data>
@@ -204,65 +234,11 @@
   <data name="Menu_File_Exit.Text" xml:space="preserve">
     <value>Exit</value>
   </data>
-  <data name="Menu_File.Size" type="System.Drawing.Size, System.Drawing">
-    <value>58, 24</value>
-  </data>
-  <data name="Menu_File.Text" xml:space="preserve">
-    <value>&amp;File</value>
-  </data>
   <data name="Menu_Edit.Size" type="System.Drawing.Size, System.Drawing">
     <value>61, 24</value>
   </data>
   <data name="Menu_Edit.Text" xml:space="preserve">
     <value>&amp;Edit</value>
-  </data>
-  <data name="Menu_Window.Size" type="System.Drawing.Size, System.Drawing">
-    <value>88, 24</value>
-  </data>
-  <data name="Menu_Window.Text" xml:space="preserve">
-    <value>&amp;Window</value>
-  </data>
-  <data name="Menu_Version.Size" type="System.Drawing.Size, System.Drawing">
-    <value>133, 24</value>
-  </data>
-  <data name="Menu_Version.Text" xml:space="preserve">
-    <value>TJAStudio Ver.1.0</value>
-  </data>
-  <data name="Menu_Tool.Size" type="System.Drawing.Size, System.Drawing">
-    <value>63, 24</value>
-  </data>
-  <data name="Menu_Tool.Text" xml:space="preserve">
-    <value>&amp;Tool</value>
-  </data>
-  <data name="Menu_Execution.Size" type="System.Drawing.Size, System.Drawing">
-    <value>99, 24</value>
-  </data>
-  <data name="Menu_Execution.Text" xml:space="preserve">
-    <value>&amp;Execution</value>
-  </data>
-  <data name="Menu.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="Menu.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>10, 4, 0, 4</value>
-  </data>
-  <data name="Menu.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1264, 32</value>
-  </data>
-  <data name="Menu.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;Menu.Name" xml:space="preserve">
-    <value>Menu</value>
-  </data>
-  <data name="&gt;&gt;Menu.Type" xml:space="preserve">
-    <value>System.Windows.Forms.MenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Menu.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;Menu.ZOrder" xml:space="preserve">
-    <value>3</value>
   </data>
   <data name="Menu_Edit_Undo.Size" type="System.Drawing.Size, System.Drawing">
     <value>182, 24</value>
@@ -360,6 +336,12 @@
   <data name="Menu_Edit_NotesOperation_Detarame.Text" xml:space="preserve">
     <value>Detarame</value>
   </data>
+  <data name="Menu_Window.Size" type="System.Drawing.Size, System.Drawing">
+    <value>88, 24</value>
+  </data>
+  <data name="Menu_Window.Text" xml:space="preserve">
+    <value>&amp;Window</value>
+  </data>
   <data name="Menu_Window_Courses.Size" type="System.Drawing.Size, System.Drawing">
     <value>192, 24</value>
   </data>
@@ -384,11 +366,29 @@
   <data name="Menu_Window_Projects.Text" xml:space="preserve">
     <value>Projects</value>
   </data>
+  <data name="Menu_Version.Size" type="System.Drawing.Size, System.Drawing">
+    <value>133, 24</value>
+  </data>
+  <data name="Menu_Version.Text" xml:space="preserve">
+    <value>TJAStudio Ver.1.0</value>
+  </data>
+  <data name="Menu_Tool.Size" type="System.Drawing.Size, System.Drawing">
+    <value>63, 24</value>
+  </data>
+  <data name="Menu_Tool.Text" xml:space="preserve">
+    <value>&amp;Tool</value>
+  </data>
   <data name="Menu_Tool_About.Size" type="System.Drawing.Size, System.Drawing">
     <value>198, 24</value>
   </data>
   <data name="Menu_Tool_About.Text" xml:space="preserve">
     <value>About TJAStudio...</value>
+  </data>
+  <data name="Menu_Execution.Size" type="System.Drawing.Size, System.Drawing">
+    <value>99, 24</value>
+  </data>
+  <data name="Menu_Execution.Text" xml:space="preserve">
+    <value>&amp;Execution</value>
   </data>
   <data name="Menu_Execution_Start.Size" type="System.Drawing.Size, System.Drawing">
     <value>194, 24</value>
@@ -408,11 +408,29 @@
   <data name="Status.Font" type="System.Drawing.Font, System.Drawing">
     <value>メイリオ, 9.75pt</value>
   </data>
+  <data name="Status_Measures.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1145, 20</value>
+  </data>
+  <data name="Status_Measures.Text" xml:space="preserve">
+    <value>Measure: </value>
+  </data>
+  <data name="Status_Measures.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>BottomRight</value>
+  </data>
+  <data name="Status_Caret.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 20</value>
+  </data>
+  <data name="Status_Caret.Text" xml:space="preserve">
+    <value>Row: Col:</value>
+  </data>
+  <data name="Status_Caret.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
   <data name="Status.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 659</value>
+    <value>0, 656</value>
   </data>
   <data name="Status.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1264, 22</value>
+    <value>1264, 25</value>
   </data>
   <data name="Status.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -7002,6 +7020,18 @@
   </data>
   <data name="&gt;&gt;Tool_Execute.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Status_Caret.Name" xml:space="preserve">
+    <value>Status_Caret</value>
+  </data>
+  <data name="&gt;&gt;Status_Caret.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripStatusLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Status_Measures.Name" xml:space="preserve">
+    <value>Status_Measures</value>
+  </data>
+  <data name="&gt;&gt;Status_Measures.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripStatusLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>Studio</value>

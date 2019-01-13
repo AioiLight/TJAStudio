@@ -82,7 +82,10 @@
             this.Tool_Paste = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.Tool_Execute = new System.Windows.Forms.ToolStripButton();
+            this.Status_Caret = new System.Windows.Forms.ToolStripStatusLabel();
+            this.Status_Measures = new System.Windows.Forms.ToolStripStatusLabel();
             this.Menu.SuspendLayout();
+            this.Status.SuspendLayout();
             this.Tool.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -403,6 +406,9 @@
             // Status
             // 
             resources.ApplyResources(this.Status, "Status");
+            this.Status.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.Status_Measures,
+            this.Status_Caret});
             this.Status.Name = "Status";
             // 
             // Tool
@@ -471,6 +477,17 @@
             this.Tool_Execute.Name = "Tool_Execute";
             this.Tool_Execute.Click += new System.EventHandler(this.Tool_Execute_Click);
             // 
+            // Status_Caret
+            // 
+            this.Status_Caret.Name = "Status_Caret";
+            resources.ApplyResources(this.Status_Caret, "Status_Caret");
+            // 
+            // Status_Measures
+            // 
+            this.Status_Measures.Name = "Status_Measures";
+            resources.ApplyResources(this.Status_Measures, "Status_Measures");
+            this.Status_Measures.Spring = true;
+            // 
             // Studio
             // 
             resources.ApplyResources(this, "$this");
@@ -484,6 +501,8 @@
             this.Load += new System.EventHandler(this.Studio_Load);
             this.Menu.ResumeLayout(false);
             this.Menu.PerformLayout();
+            this.Status.ResumeLayout(false);
+            this.Status.PerformLayout();
             this.Tool.ResumeLayout(false);
             this.Tool.PerformLayout();
             this.ResumeLayout(false);
@@ -550,6 +569,8 @@
         private System.Windows.Forms.ToolStripButton Tool_Paste;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
         private System.Windows.Forms.ToolStripButton Tool_Execute;
+        private System.Windows.Forms.ToolStripStatusLabel Status_Caret;
+        private System.Windows.Forms.ToolStripStatusLabel Status_Measures;
     }
 }
 
