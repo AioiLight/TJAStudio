@@ -83,6 +83,7 @@
             this.Dock.Location = new System.Drawing.Point(13, 62);
             this.Dock.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Dock.Name = "Dock";
+            this.Dock.ShowDocumentIcon = true;
             this.Dock.Size = new System.Drawing.Size(1238, 592);
             this.Dock.TabIndex = 0;
             this.Dock.ActiveDocumentChanged += new System.EventHandler(this.Dock_ActiveDocumentChanged);
@@ -381,9 +382,8 @@
             // Menu_Version
             // 
             this.Menu_Version.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.Menu_Version.Image = global::TJAStudio.Properties.Resources._64;
             this.Menu_Version.Name = "Menu_Version";
-            this.Menu_Version.Size = new System.Drawing.Size(149, 24);
+            this.Menu_Version.Size = new System.Drawing.Size(133, 24);
             this.Menu_Version.Text = "TJAStudio Ver.1.0";
             // 
             // Menu_Tool
