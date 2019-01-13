@@ -14,7 +14,6 @@ namespace TJAStudio
             Program.Project.Courses.Add(new Course());
             Program.Project.Courses[Program.Project.Courses.Count - 1].Name = name;
             Editors.Add(new Editor(Program.Project.Courses[Program.Project.Courses.Count -1].Document, Program.Project.Courses[Program.Project.Courses.Count - 1]));
-            Editors[Program.Project.Courses.Count - 1].TextEditor.Highlighter = Highlighter.InitHighlighter();
             return Program.Project.Courses.Count - 1;
         }
         public int DeleteCourse(int index)
