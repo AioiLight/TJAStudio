@@ -179,11 +179,21 @@ namespace TJAStudio
 
         private void Menu_Edit_Undo_Click(object sender, EventArgs e)
         {
-            if(Program.WindowManager.Editors[CurrentCourseID].TextEditor.Focused)
+            Undo();
+        }
+
+        private static void Undo()
+        {
+            if (Program.WindowManager.Editors[CurrentCourseID].TextEditor.Focused)
                 Program.WindowManager.Editors[CurrentCourseID].TextEditor.Undo();
         }
 
         private void Menu_Edit_Redo_Click(object sender, EventArgs e)
+        {
+            Redo();
+        }
+
+        private static void Redo()
         {
             if (Program.WindowManager.Editors[CurrentCourseID].TextEditor.Focused)
                 Program.WindowManager.Editors[CurrentCourseID].TextEditor.Redo();
@@ -191,17 +201,32 @@ namespace TJAStudio
 
         private void Menu_Edit_Cut_Click(object sender, EventArgs e)
         {
+            Cut();
+        }
+
+        private static void Cut()
+        {
             if (Program.WindowManager.Editors[CurrentCourseID].TextEditor.Focused)
                 Program.WindowManager.Editors[CurrentCourseID].TextEditor.Cut();
         }
 
         private void Menu_Edit_Copy_Click(object sender, EventArgs e)
         {
+            Copy();
+        }
+
+        private static void Copy()
+        {
             if (Program.WindowManager.Editors[CurrentCourseID].TextEditor.Focused)
                 Program.WindowManager.Editors[CurrentCourseID].TextEditor.Copy();
         }
 
         private void Menu_Edit_Paste_Click(object sender, EventArgs e)
+        {
+            Paste();
+        }
+
+        private static void Paste()
         {
             if (Program.WindowManager.Editors[CurrentCourseID].TextEditor.Focused)
                 Program.WindowManager.Editors[CurrentCourseID].TextEditor.Paste();
@@ -379,6 +404,36 @@ namespace TJAStudio
         private void Menu_Window_Projects_Click(object sender, EventArgs e)
         {
             Project.Show();
+        }
+
+        private void Tool_Undo_Click(object sender, EventArgs e)
+        {
+            Undo();
+        }
+
+        private void Tool_Redo_Click(object sender, EventArgs e)
+        {
+            Redo();
+        }
+
+        private void Tool_Cut_Click(object sender, EventArgs e)
+        {
+            Cut();
+        }
+
+        private void Tool_Copy_Click(object sender, EventArgs e)
+        {
+            Copy();
+        }
+
+        private void Tool_Paste_Click(object sender, EventArgs e)
+        {
+            Paste();
+        }
+
+        private void Tool_Execute_Click(object sender, EventArgs e)
+        {
+
         }
         private Courses Courses = new Courses();
         private Project Project = new Project();

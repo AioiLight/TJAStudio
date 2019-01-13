@@ -69,9 +69,21 @@
             this.Menu_Version = new System.Windows.Forms.ToolStripMenuItem();
             this.Menu_Tool = new System.Windows.Forms.ToolStripMenuItem();
             this.Menu_Tool_About = new System.Windows.Forms.ToolStripMenuItem();
+            this.Menu_Execution = new System.Windows.Forms.ToolStripMenuItem();
+            this.startSimulatorsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.liveUpdateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.Status = new System.Windows.Forms.StatusStrip();
             this.Tool = new System.Windows.Forms.ToolStrip();
+            this.Tool_Undo = new System.Windows.Forms.ToolStripButton();
+            this.Tool_Redo = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.Tool_Cut = new System.Windows.Forms.ToolStripButton();
+            this.Tool_Copy = new System.Windows.Forms.ToolStripButton();
+            this.Tool_Paste = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.Tool_Execute = new System.Windows.Forms.ToolStripButton();
             this.Menu.SuspendLayout();
+            this.Tool.SuspendLayout();
             this.SuspendLayout();
             // 
             // Dock
@@ -83,7 +95,6 @@
             this.Dock.Location = new System.Drawing.Point(13, 62);
             this.Dock.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Dock.Name = "Dock";
-            this.Dock.ShowDocumentIcon = true;
             this.Dock.Size = new System.Drawing.Size(1238, 592);
             this.Dock.TabIndex = 0;
             this.Dock.ActiveDocumentChanged += new System.EventHandler(this.Dock_ActiveDocumentChanged);
@@ -96,7 +107,8 @@
             this.Menu_Edit,
             this.Menu_Window,
             this.Menu_Version,
-            this.Menu_Tool});
+            this.Menu_Tool,
+            this.Menu_Execution});
             this.Menu.Location = new System.Drawing.Point(0, 0);
             this.Menu.Name = "Menu";
             this.Menu.Padding = new System.Windows.Forms.Padding(10, 4, 0, 4);
@@ -404,6 +416,31 @@
             this.Menu_Tool_About.Text = "About TJAStudio...";
             this.Menu_Tool_About.Click += new System.EventHandler(this.Menu_Tool_About_Click);
             // 
+            // Menu_Execution
+            // 
+            this.Menu_Execution.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.startSimulatorsToolStripMenuItem,
+            this.liveUpdateToolStripMenuItem});
+            this.Menu_Execution.Image = global::TJAStudio.Properties.Resources.Run_16x;
+            this.Menu_Execution.Name = "Menu_Execution";
+            this.Menu_Execution.Size = new System.Drawing.Size(99, 24);
+            this.Menu_Execution.Text = "&Execution";
+            // 
+            // startSimulatorsToolStripMenuItem
+            // 
+            this.startSimulatorsToolStripMenuItem.Image = global::TJAStudio.Properties.Resources.Run_16x;
+            this.startSimulatorsToolStripMenuItem.Name = "startSimulatorsToolStripMenuItem";
+            this.startSimulatorsToolStripMenuItem.Size = new System.Drawing.Size(194, 24);
+            this.startSimulatorsToolStripMenuItem.Text = "Start Simulators...";
+            // 
+            // liveUpdateToolStripMenuItem
+            // 
+            this.liveUpdateToolStripMenuItem.Checked = true;
+            this.liveUpdateToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.liveUpdateToolStripMenuItem.Name = "liveUpdateToolStripMenuItem";
+            this.liveUpdateToolStripMenuItem.Size = new System.Drawing.Size(194, 24);
+            this.liveUpdateToolStripMenuItem.Text = "Live Update";
+            // 
             // Status
             // 
             this.Status.Font = new System.Drawing.Font("メイリオ", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
@@ -414,11 +451,85 @@
             // 
             // Tool
             // 
+            this.Tool.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.Tool_Undo,
+            this.Tool_Redo,
+            this.toolStripSeparator1,
+            this.Tool_Cut,
+            this.Tool_Copy,
+            this.Tool_Paste,
+            this.toolStripSeparator2,
+            this.Tool_Execute});
             this.Tool.Location = new System.Drawing.Point(0, 32);
             this.Tool.Name = "Tool";
-            this.Tool.Size = new System.Drawing.Size(1264, 25);
+            this.Tool.Size = new System.Drawing.Size(1264, 27);
             this.Tool.TabIndex = 4;
             this.Tool.Text = "toolStrip1";
+            // 
+            // Tool_Undo
+            // 
+            this.Tool_Undo.Image = global::TJAStudio.Properties.Resources.Undo_16x;
+            this.Tool_Undo.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.Tool_Undo.Name = "Tool_Undo";
+            this.Tool_Undo.Size = new System.Drawing.Size(58, 24);
+            this.Tool_Undo.Text = "Undo";
+            this.Tool_Undo.Click += new System.EventHandler(this.Tool_Undo_Click);
+            // 
+            // Tool_Redo
+            // 
+            this.Tool_Redo.Image = global::TJAStudio.Properties.Resources.Redo_16x;
+            this.Tool_Redo.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.Tool_Redo.Name = "Tool_Redo";
+            this.Tool_Redo.Size = new System.Drawing.Size(57, 24);
+            this.Tool_Redo.Text = "Redo";
+            this.Tool_Redo.Click += new System.EventHandler(this.Tool_Redo_Click);
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 27);
+            // 
+            // Tool_Cut
+            // 
+            this.Tool_Cut.Image = global::TJAStudio.Properties.Resources.Cut_16x;
+            this.Tool_Cut.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.Tool_Cut.Name = "Tool_Cut";
+            this.Tool_Cut.Size = new System.Drawing.Size(48, 24);
+            this.Tool_Cut.Text = "Cut";
+            this.Tool_Cut.Click += new System.EventHandler(this.Tool_Cut_Click);
+            // 
+            // Tool_Copy
+            // 
+            this.Tool_Copy.Font = new System.Drawing.Font("メイリオ", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.Tool_Copy.Image = global::TJAStudio.Properties.Resources.Copy_16x;
+            this.Tool_Copy.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.Tool_Copy.Name = "Tool_Copy";
+            this.Tool_Copy.Size = new System.Drawing.Size(61, 24);
+            this.Tool_Copy.Text = "Copy";
+            this.Tool_Copy.Click += new System.EventHandler(this.Tool_Copy_Click);
+            // 
+            // Tool_Paste
+            // 
+            this.Tool_Paste.Image = global::TJAStudio.Properties.Resources.Paste_16x;
+            this.Tool_Paste.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.Tool_Paste.Name = "Tool_Paste";
+            this.Tool_Paste.Size = new System.Drawing.Size(60, 24);
+            this.Tool_Paste.Text = "Paste";
+            this.Tool_Paste.Click += new System.EventHandler(this.Tool_Paste_Click);
+            // 
+            // toolStripSeparator2
+            // 
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 27);
+            // 
+            // Tool_Execute
+            // 
+            this.Tool_Execute.Image = global::TJAStudio.Properties.Resources.Run_16x;
+            this.Tool_Execute.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.Tool_Execute.Name = "Tool_Execute";
+            this.Tool_Execute.Size = new System.Drawing.Size(86, 24);
+            this.Tool_Execute.Text = "Execute...";
+            this.Tool_Execute.Click += new System.EventHandler(this.Tool_Execute_Click);
             // 
             // Studio
             // 
@@ -438,6 +549,8 @@
             this.Load += new System.EventHandler(this.Studio_Load);
             this.Menu.ResumeLayout(false);
             this.Menu.PerformLayout();
+            this.Tool.ResumeLayout(false);
+            this.Tool.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -491,6 +604,17 @@
         private System.Windows.Forms.ToolStripMenuItem Menu_Version;
         private System.Windows.Forms.ToolStripMenuItem Menu_Tool_About;
         private System.Windows.Forms.ToolStripMenuItem Menu_Window_Courses;
+        private System.Windows.Forms.ToolStripMenuItem Menu_Execution;
+        private System.Windows.Forms.ToolStripMenuItem startSimulatorsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem liveUpdateToolStripMenuItem;
+        private System.Windows.Forms.ToolStripButton Tool_Undo;
+        private System.Windows.Forms.ToolStripButton Tool_Redo;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
+        private System.Windows.Forms.ToolStripButton Tool_Cut;
+        private System.Windows.Forms.ToolStripButton Tool_Copy;
+        private System.Windows.Forms.ToolStripButton Tool_Paste;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
+        private System.Windows.Forms.ToolStripButton Tool_Execute;
     }
 }
 
