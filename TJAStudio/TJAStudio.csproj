@@ -77,11 +77,23 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Settings\SettingManager.cs" />
     <Compile Include="Settings\Settings.cs" />
+    <Compile Include="Windows\Courses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\Courses.Designer.cs">
+      <DependentUpon>Courses.cs</DependentUpon>
+    </Compile>
     <Compile Include="Windows\Editor.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Windows\Editor.Designer.cs">
       <DependentUpon>Editor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Project.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\Project.Designer.cs">
+      <DependentUpon>Project.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -95,8 +107,14 @@
     <EmbeddedResource Include="Studio.resx">
       <DependentUpon>Studio.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Windows\Courses.resx">
+      <DependentUpon>Courses.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Windows\Editor.resx">
       <DependentUpon>Editor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\Project.resx">
+      <DependentUpon>Project.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
