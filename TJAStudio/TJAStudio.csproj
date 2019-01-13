@@ -32,6 +32,12 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>TJAStudio.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>tjas.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="Azuki">
       <HintPath>..\Azuki.dll</HintPath>
@@ -376,6 +382,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="tjas.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
