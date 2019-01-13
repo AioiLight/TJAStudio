@@ -22,6 +22,7 @@ namespace TJAStudio
             Project.Show(Dock, DockState.DockRight);
             Courses.Show(Dock, DockState.DockRight);
             HeaderWindow.Show(Dock, DockState.DockLeft);
+            CommonHeaderWindow.Show(Dock, DockState.DockLeft);
             var index = Program.WindowManager.AddCourse("Oni");
             Program.WindowManager.AddCourse("Edit");
             Courses.SetCoursesFromList();
@@ -37,6 +38,7 @@ namespace TJAStudio
         private Courses Courses = new Courses();
         private Project Project = new Project();
         private HeaderWindow HeaderWindow = new HeaderWindow();
+        private HeaderWindow CommonHeaderWindow = new HeaderWindow("Common Header");
         public static Studio TJAStudio { get; set; }
 
     }

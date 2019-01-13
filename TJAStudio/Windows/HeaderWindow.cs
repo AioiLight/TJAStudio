@@ -18,6 +18,13 @@ namespace TJAStudio
             Resized();
         }
 
+        public HeaderWindow(string name)
+        {
+            InitializeComponent();
+            Resized();
+            Text = name;
+        }
+
         private void List_Resize(object sender, EventArgs e)
         {
             Resized();

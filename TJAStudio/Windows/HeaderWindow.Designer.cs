@@ -74,6 +74,7 @@
             this.Name,
             this.Parameter});
             this.List.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
+            this.List.LabelEdit = true;
             this.List.Location = new System.Drawing.Point(0, 30);
             this.List.Name = "List";
             this.List.Size = new System.Drawing.Size(539, 672);
@@ -100,6 +101,7 @@
             this.Font = new System.Drawing.Font("メイリオ", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Name = "HeaderWindow";
             this.Text = "Header";
             this.Tool.ResumeLayout(false);
             this.Tool.PerformLayout();
