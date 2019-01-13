@@ -103,6 +103,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="Studio.resx">
       <DependentUpon>Studio.cs</DependentUpon>
@@ -129,6 +130,153 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\splash.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tag_16x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tjas.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Toolbox_16x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Undo_16x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VersionInformation_16x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WindowsForm_16x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add_16x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AddColumn_16x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AddFile_16x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AddTextFile_16x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Attach_16x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CloseSolution_16x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Copy_16x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cut_16x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DatePicker_16x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DeleteAttachment_16x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DeleteCell_16x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DeleteColumn_16x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Edit_16x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Export_16x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FileGroup_16x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FindNext_16x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FindPrevious_16x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FindResults_16x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FolderOpen_16x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GlyphDown_16x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GlyphUp_16x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GoGoTime.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InsertSnippet_16x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Measure_16x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NewFile_16x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NewItem_16x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NewParameter_16x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Parameter_16x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Paste_16x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Redo_16x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Restart_16x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Run_16x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Save_16x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SaveAs_16x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Scroll.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SelectAll_16x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Settings_16x.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
