@@ -16,7 +16,7 @@ namespace TJAStudio
         {
             InitializeComponent();
             TextEditor.Document = doc;
-            Text = "Editor - " + course.Name;
+            Text = Properties.Common.Editor + course.Name;
             TextEditor.Highlighter = null;
             TextEditor.Highlighter = Highlighter.InitHighlighter();
             ColorScheme.SetColorScheme(TextEditor.ColorScheme);

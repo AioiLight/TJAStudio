@@ -112,22 +112,31 @@
     <value>2.0</value>
   </resheader>
   <resheader name="reader">
-    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <resheader name="writer">
-    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AllFiles" xml:space="preserve">
     <value>All Files</value>
   </data>
+  <data name="CommonHeader" xml:space="preserve">
+    <value>Common Header</value>
+  </data>
   <data name="Developer" xml:space="preserve">
     <value>AioiLight</value>
+  </data>
+  <data name="Editor" xml:space="preserve">
+    <value>Editor - </value>
   </data>
   <data name="ExtensionDescription" xml:space="preserve">
     <value>TJAStudio Project File</value>
   </data>
   <data name="ExtensionName" xml:space="preserve">
     <value>.tsproj</value>
+  </data>
+  <data name="Header" xml:space="preserve">
+    <value>Header - </value>
   </data>
   <data name="Name" xml:space="preserve">
     <value>TJAStudio</value>

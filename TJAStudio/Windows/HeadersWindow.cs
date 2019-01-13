@@ -57,7 +57,7 @@ namespace TJAStudio
             }
             if(!IsCommon)
             {
-                this.Text = "Header - " + Program.Project.Courses[Studio.CurrentCourseID].Name;
+                this.Text = Properties.Common.Header + Program.Project.Courses[Studio.CurrentCourseID].Name;
             }
         }
 

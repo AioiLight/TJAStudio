@@ -70,11 +70,29 @@ namespace TJAStudio.Properties {
         }
         
         /// <summary>
+        ///   Common Header に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string CommonHeader {
+            get {
+                return ResourceManager.GetString("CommonHeader", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   AioiLight に類似しているローカライズされた文字列を検索します。
         /// </summary>
         internal static string Developer {
             get {
                 return ResourceManager.GetString("Developer", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Editor -  に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string Editor {
+            get {
+                return ResourceManager.GetString("Editor", resourceCulture);
             }
         }
         
@@ -93,6 +111,15 @@ namespace TJAStudio.Properties {
         internal static string ExtensionName {
             get {
                 return ResourceManager.GetString("ExtensionName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Header -  に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string Header {
+            get {
+                return ResourceManager.GetString("Header", resourceCulture);
             }
         }
         

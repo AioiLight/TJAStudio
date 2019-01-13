@@ -37,8 +37,9 @@ namespace TJAStudio
         private void Dock_ActiveDocumentChanged(object sender, EventArgs e)
         {
             if (Dock.DocumentsCount < 1) return;
-            CurrentCourseID = Courses.List.FindItemWithText(Dock.ActiveDocument.DockHandler.TabText.Substring(9)).Index;
+            CurrentCourseID = Courses.List.FindItemWithText(Dock.ActiveDocument.DockHandler.TabText.Substring(Properties.Common.Editor.Length)).Index;
             HeaderWindow.SetHeaderFromList(Program.Project.Courses[CurrentCourseID].Header);
+            CommonHeaderWindow.SetHeaderFromList(Program.Project.CommonHeader);
         }
 
 
@@ -489,7 +490,7 @@ namespace TJAStudio
         private Courses Courses = new Courses();
         private Project Project = new Project();
         public  HeadersWindow HeaderWindow = new HeadersWindow(false);
-        private HeadersWindow CommonHeaderWindow = new HeadersWindow(true, "Common Header");
+        private HeadersWindow CommonHeaderWindow = new HeadersWindow(true, Properties.Common.CommonHeader);
         public static Studio TJAStudio { get; set; }
         public static int CurrentCourseID { get; set; }
         public bool IsEdited { get; set; }
@@ -498,6 +499,18 @@ namespace TJAStudio
         private void Menu_Execution_LiveUpdate_Click(object sender, EventArgs e)
         {
             Menu_Execution_LiveUpdate.Checked = !Menu_Execution_LiveUpdate.Checked;
+        }
+
+        private void Menu_File_Export_Click(object sender, EventArgs e)
+        {
+            var dialog = new SaveFileDialog();
+            dialog.Title = Properties.SystemMessage.SaveTJA;
+            dialog.FileName = Program.Project.ProjectName + Properties.Common.TJAExtensionName;
+            dialog.Filter = String.Format("{0}|*{1}", Properties.Common.TJAExtensionDescription, Properties.Common.TJAExtensionName);
+            if (dialog.ShowDialog(this) == DialogResult.OK)
+            {
+                TJAManager.Build(dialog.FileName, Program.Project, Program.Setting.UTF8Mode ? Encoding.UTF8 : Encoding.GetEncoding("Shift_JIS"));
+            }
         }
     }
 }

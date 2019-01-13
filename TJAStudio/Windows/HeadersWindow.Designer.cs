@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HeadersWindow));
             this.Tool = new System.Windows.Forms.ToolStrip();
             this.Tool_Add = new System.Windows.Forms.ToolStripButton();
             this.Tool_Delete = new System.Windows.Forms.ToolStripButton();
@@ -42,107 +43,84 @@
             // 
             // Tool
             // 
-            this.Tool.Font = new System.Drawing.Font("メイリオ", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            resources.ApplyResources(this.Tool, "Tool");
             this.Tool.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.Tool_Add,
             this.Tool_Delete,
             this.Tool_MoveUp,
             this.Tool_MoveDown});
-            this.Tool.Location = new System.Drawing.Point(0, 0);
             this.Tool.Name = "Tool";
-            this.Tool.Size = new System.Drawing.Size(539, 27);
-            this.Tool.TabIndex = 5;
-            this.Tool.Text = "toolStrip1";
             // 
             // Tool_Add
             // 
+            resources.ApplyResources(this.Tool_Add, "Tool_Add");
             this.Tool_Add.Image = global::TJAStudio.Properties.Resources.AddColumn_16x;
-            this.Tool_Add.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.Tool_Add.Name = "Tool_Add";
-            this.Tool_Add.Size = new System.Drawing.Size(105, 24);
-            this.Tool_Add.Text = "Add Header";
             this.Tool_Add.Click += new System.EventHandler(this.Tool_Add_Click);
             // 
             // Tool_Delete
             // 
+            resources.ApplyResources(this.Tool_Delete, "Tool_Delete");
             this.Tool_Delete.Image = global::TJAStudio.Properties.Resources.DeleteColumn_16x;
-            this.Tool_Delete.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.Tool_Delete.Name = "Tool_Delete";
-            this.Tool_Delete.Size = new System.Drawing.Size(122, 24);
-            this.Tool_Delete.Text = "Delete Header";
             this.Tool_Delete.Click += new System.EventHandler(this.Tool_Delete_Click);
             // 
             // Tool_MoveUp
             // 
+            resources.ApplyResources(this.Tool_MoveUp, "Tool_MoveUp");
             this.Tool_MoveUp.Image = global::TJAStudio.Properties.Resources.GlyphUp_16x;
-            this.Tool_MoveUp.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.Tool_MoveUp.Name = "Tool_MoveUp";
-            this.Tool_MoveUp.Size = new System.Drawing.Size(84, 24);
-            this.Tool_MoveUp.Text = "Move Up";
             this.Tool_MoveUp.Click += new System.EventHandler(this.Tool_MoveUp_Click);
             // 
             // Tool_MoveDown
             // 
+            resources.ApplyResources(this.Tool_MoveDown, "Tool_MoveDown");
             this.Tool_MoveDown.Image = global::TJAStudio.Properties.Resources.GlyphDown_16x;
-            this.Tool_MoveDown.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.Tool_MoveDown.Name = "Tool_MoveDown";
-            this.Tool_MoveDown.Size = new System.Drawing.Size(104, 24);
-            this.Tool_MoveDown.Text = "Move Down";
             this.Tool_MoveDown.Click += new System.EventHandler(this.Tool_MoveDown_Click);
             // 
             // List
             // 
+            resources.ApplyResources(this.List, "List");
             this.List.AllowUserToAddRows = false;
             this.List.AllowUserToDeleteRows = false;
             this.List.AllowUserToResizeColumns = false;
             this.List.AllowUserToResizeRows = false;
-            this.List.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.List.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.List.BackgroundColor = System.Drawing.SystemColors.Window;
             this.List.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.List.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Name,
             this.Parameter});
-            this.List.Location = new System.Drawing.Point(0, 30);
             this.List.MultiSelect = false;
             this.List.Name = "List";
             this.List.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.List.RowTemplate.Height = 21;
             this.List.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.List.Size = new System.Drawing.Size(539, 671);
-            this.List.TabIndex = 6;
             this.List.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.List_CellContentClick);
             this.List.CellEndEdit += new System.Windows.Forms.DataGridViewCellEventHandler(this.List_CellEndEdit);
             // 
             // Name
             // 
-            this.Name.HeaderText = "Name";
+            resources.ApplyResources(this.Name, "Name");
             this.Name.Name = "Name";
-            this.Name.Width = 72;
             // 
             // Parameter
             // 
-            this.Parameter.HeaderText = "Parameter";
+            resources.ApplyResources(this.Parameter, "Parameter");
             this.Parameter.Name = "Parameter";
-            this.Parameter.Width = 101;
             // 
             // HeadersWindow
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(539, 702);
             this.Controls.Add(this.List);
             this.Controls.Add(this.Tool);
             this.DockAreas = ((WeifenLuo.WinFormsUI.Docking.DockAreas)(((((WeifenLuo.WinFormsUI.Docking.DockAreas.Float | WeifenLuo.WinFormsUI.Docking.DockAreas.DockLeft) 
             | WeifenLuo.WinFormsUI.Docking.DockAreas.DockRight) 
             | WeifenLuo.WinFormsUI.Docking.DockAreas.DockTop) 
             | WeifenLuo.WinFormsUI.Docking.DockAreas.DockBottom)));
-            this.Font = new System.Drawing.Font("メイリオ", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.Text = "Header";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.HeadersWindow_FormClosing);
             this.Tool.ResumeLayout(false);
             this.Tool.PerformLayout();
@@ -159,10 +137,10 @@
         private System.Windows.Forms.ToolStripButton Tool_Delete;
         public System.Windows.Forms.DataGridView List;
 #pragma warning disable CS0108 // 'HeadersWindow.Name' は継承されたメンバー 'Control.Name' を非表示にします。非表示にする場合は、キーワード new を使用してください。
-        private System.Windows.Forms.DataGridViewTextBoxColumn Name;
 #pragma warning restore CS0108 // 'HeadersWindow.Name' は継承されたメンバー 'Control.Name' を非表示にします。非表示にする場合は、キーワード new を使用してください。
-        private System.Windows.Forms.DataGridViewTextBoxColumn Parameter;
         private System.Windows.Forms.ToolStripButton Tool_MoveUp;
         private System.Windows.Forms.ToolStripButton Tool_MoveDown;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Name;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Parameter;
     }
 }
