@@ -64,6 +64,7 @@
     <Compile Include="Editors\ColorScheme.cs" />
     <Compile Include="Editors\Highlighter.cs" />
     <Compile Include="Editors\WindowManager.cs" />
+    <Compile Include="GlobalSuppressions.cs" />
     <Compile Include="Projects\Course.cs" />
     <Compile Include="Projects\Header.cs" />
     <Compile Include="Projects\Projects.cs" />

@@ -28,7 +28,7 @@ namespace TJAStudio
 
         private void Tool_Delete_Click(object sender, EventArgs e)
         {
-            if (Program.Project.Courses.Count <= 1) return;
+            if (Program.Project.Courses.Count <= 1 || List.SelectedItems.Count < 1) return;
             Program.WindowManager.DeleteCourse(List.SelectedItems[0].Index);
             SetCoursesFromList();
         }
@@ -38,6 +38,26 @@ namespace TJAStudio
             if (List.SelectedItems.Count < 1) return;
             Program.WindowManager.Editors[List.SelectedItems[0].Index].Show();
 
+        }
+
+        private void Tool_MoveDown_Click(object sender, EventArgs e)
+        {
+            if (Program.Project.Courses.Count <= 1 || List.SelectedItems.Count < 1 || List.SelectedItems[0].Index + 1 > List.Items.Count - 1) return;
+            var index = List.SelectedItems[0].Index;
+            var work = Program.Project.Courses[index];
+            Program.Project.Courses.RemoveAt(index);
+            Program.Project.Courses.Insert(index + 1, work);
+            SetCoursesFromList();
+        }
+
+        private void Tool_MoveUp_Click(object sender, EventArgs e)
+        {
+            if (Program.Project.Courses.Count <= 1 || List.SelectedItems.Count < 1 || List.SelectedItems[0].Index <= 0) return;
+            var index = List.SelectedItems[0].Index;
+            var work = Program.Project.Courses[index];
+            Program.Project.Courses.RemoveAt(index);
+            Program.Project.Courses.Insert(index - 1, work);
+            SetCoursesFromList();
         }
     }
 }

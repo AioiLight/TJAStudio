@@ -40,10 +40,11 @@ namespace TJAStudio
 
         private void Tool_Delete_Click(object sender, EventArgs e)
         {
-            if (Program.Project.Courses[Studio.CurrentCourseID].Header.Count <= 1) return;
+            var to = IsCommon ? Program.Project.CommonHeader : Program.Project.Courses[Studio.CurrentCourseID].Header;
+            if (to.Count <= 1 || List.SelectedCells.Count < 1) return;
             //Program.WindowManager.(List.SelectedItems[0].Index);]
-            Program.Project.Courses[Studio.CurrentCourseID].Header.RemoveAt(List.SelectedCells[0].RowIndex);
-            SetHeaderFromList(Program.Project.Courses[Studio.CurrentCourseID].Header);
+            to.RemoveAt(List.SelectedCells[0].RowIndex);
+            SetHeaderFromList(to);
         }
 
         public void SetHeaderFromList(List<Header> list)
@@ -100,12 +101,43 @@ namespace TJAStudio
             }
             if (IsCommon)
             {
-                SetHeaderFromList(Program.Project.CommonHeader);
+                Program.Project.CommonHeader = list;
             }
             else
             {
-                SetHeaderFromList(Program.Project.Courses[Studio.CurrentCourseID].Header);
+                Program.Project.Courses[Studio.CurrentCourseID].Header = list;
             }
+        }
+
+        private void Tool_MoveUp_Click(object sender, EventArgs e)
+        {
+            var to = IsCommon ? Program.Project.CommonHeader : Program.Project.Courses[Studio.CurrentCourseID].Header;
+            if (to.Count <= 1 || List.SelectedCells.Count < 1 || List.SelectedRows[0].Index <= 0) return;
+            var index = List.SelectedRows[0].Index;
+            var work = to[index];
+            to.RemoveAt(index);
+            to.Insert(index - 1, work);
+            SetHeaderFromList(to);
+            List.Rows[index - 1].Selected = true;
+            List.CurrentCell = List.Rows[index - 1].Cells[0];
+        }
+
+        private void Tool_MoveDown_Click(object sender, EventArgs e)
+        {
+            var to = IsCommon ? Program.Project.CommonHeader : Program.Project.Courses[Studio.CurrentCourseID].Header;
+            if (to.Count <= 1 || List.SelectedCells.Count < 1 || List.SelectedRows[0].Index + 1 > List.Rows.Count - 1) return;
+            var index = List.SelectedRows[0].Index;
+            var work = to[index];
+            to.RemoveAt(index);
+            to.Insert(index + 1, work);
+            SetHeaderFromList(to);
+            List.Rows[index + 1].Selected = true;
+            List.CurrentCell = List.Rows[index + 1].Cells[0];
+        }
+
+        private void List_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

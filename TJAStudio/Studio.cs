@@ -28,6 +28,8 @@ namespace TJAStudio
             Courses.SetCoursesFromList();
             Program.WindowManager.Editors[index].Show(Dock);
             Program.WindowManager.Editors[index + 1].Show(Dock);
+            Dock.DockLeftPortion = 0.36;
+            Dock.DockRightPortion = 0.36;
         }
 
         private void Dock_ActiveDocumentChanged(object sender, EventArgs e)

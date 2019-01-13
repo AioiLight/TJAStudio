@@ -32,6 +32,8 @@
             this.Tool_Add = new System.Windows.Forms.ToolStripButton();
             this.Tool_Delete = new System.Windows.Forms.ToolStripButton();
             this.List = new System.Windows.Forms.ListView();
+            this.Tool_MoveDown = new System.Windows.Forms.ToolStripButton();
+            this.Tool_MoveUp = new System.Windows.Forms.ToolStripButton();
             this.Tool.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -40,7 +42,9 @@
             this.Tool.Font = new System.Drawing.Font("メイリオ", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.Tool.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.Tool_Add,
-            this.Tool_Delete});
+            this.Tool_Delete,
+            this.Tool_MoveUp,
+            this.Tool_MoveDown});
             this.Tool.Location = new System.Drawing.Point(0, 0);
             this.Tool.Name = "Tool";
             this.Tool.Size = new System.Drawing.Size(420, 27);
@@ -77,6 +81,24 @@
             this.List.View = System.Windows.Forms.View.List;
             this.List.SelectedIndexChanged += new System.EventHandler(this.List_SelectedIndexChanged);
             // 
+            // Tool_MoveDown
+            // 
+            this.Tool_MoveDown.Image = global::TJAStudio.Properties.Resources.GlyphDown_16x;
+            this.Tool_MoveDown.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.Tool_MoveDown.Name = "Tool_MoveDown";
+            this.Tool_MoveDown.Size = new System.Drawing.Size(104, 24);
+            this.Tool_MoveDown.Text = "Move Down";
+            this.Tool_MoveDown.Click += new System.EventHandler(this.Tool_MoveDown_Click);
+            // 
+            // Tool_MoveUp
+            // 
+            this.Tool_MoveUp.Image = global::TJAStudio.Properties.Resources.GlyphUp_16x;
+            this.Tool_MoveUp.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.Tool_MoveUp.Name = "Tool_MoveUp";
+            this.Tool_MoveUp.Size = new System.Drawing.Size(84, 24);
+            this.Tool_MoveUp.Text = "Move Up";
+            this.Tool_MoveUp.Click += new System.EventHandler(this.Tool_MoveUp_Click);
+            // 
             // Courses
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -102,5 +124,7 @@
         private System.Windows.Forms.ToolStripButton Tool_Add;
         private System.Windows.Forms.ToolStripButton Tool_Delete;
         public System.Windows.Forms.ListView List;
+        private System.Windows.Forms.ToolStripButton Tool_MoveDown;
+        private System.Windows.Forms.ToolStripButton Tool_MoveUp;
     }
 }

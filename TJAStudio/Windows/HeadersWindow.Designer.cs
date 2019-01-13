@@ -31,6 +31,8 @@
             this.Tool = new System.Windows.Forms.ToolStrip();
             this.Tool_Add = new System.Windows.Forms.ToolStripButton();
             this.Tool_Delete = new System.Windows.Forms.ToolStripButton();
+            this.Tool_MoveUp = new System.Windows.Forms.ToolStripButton();
+            this.Tool_MoveDown = new System.Windows.Forms.ToolStripButton();
             this.List = new System.Windows.Forms.DataGridView();
             this.Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Parameter = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -43,7 +45,9 @@
             this.Tool.Font = new System.Drawing.Font("メイリオ", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.Tool.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.Tool_Add,
-            this.Tool_Delete});
+            this.Tool_Delete,
+            this.Tool_MoveUp,
+            this.Tool_MoveDown});
             this.Tool.Location = new System.Drawing.Point(0, 0);
             this.Tool.Name = "Tool";
             this.Tool.Size = new System.Drawing.Size(539, 27);
@@ -68,6 +72,24 @@
             this.Tool_Delete.Text = "Delete Header";
             this.Tool_Delete.Click += new System.EventHandler(this.Tool_Delete_Click);
             // 
+            // Tool_MoveUp
+            // 
+            this.Tool_MoveUp.Image = global::TJAStudio.Properties.Resources.GlyphUp_16x;
+            this.Tool_MoveUp.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.Tool_MoveUp.Name = "Tool_MoveUp";
+            this.Tool_MoveUp.Size = new System.Drawing.Size(84, 24);
+            this.Tool_MoveUp.Text = "Move Up";
+            this.Tool_MoveUp.Click += new System.EventHandler(this.Tool_MoveUp_Click);
+            // 
+            // Tool_MoveDown
+            // 
+            this.Tool_MoveDown.Image = global::TJAStudio.Properties.Resources.GlyphDown_16x;
+            this.Tool_MoveDown.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.Tool_MoveDown.Name = "Tool_MoveDown";
+            this.Tool_MoveDown.Size = new System.Drawing.Size(104, 24);
+            this.Tool_MoveDown.Text = "Move Down";
+            this.Tool_MoveDown.Click += new System.EventHandler(this.Tool_MoveDown_Click);
+            // 
             // List
             // 
             this.List.AllowUserToAddRows = false;
@@ -84,12 +106,14 @@
             this.Name,
             this.Parameter});
             this.List.Location = new System.Drawing.Point(0, 30);
+            this.List.MultiSelect = false;
             this.List.Name = "List";
             this.List.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.List.RowTemplate.Height = 21;
             this.List.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.List.Size = new System.Drawing.Size(539, 671);
             this.List.TabIndex = 6;
+            this.List.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.List_CellContentClick);
             this.List.CellEndEdit += new System.Windows.Forms.DataGridViewCellEventHandler(this.List_CellEndEdit);
             // 
             // Name
@@ -129,7 +153,11 @@
         private System.Windows.Forms.ToolStripButton Tool_Add;
         private System.Windows.Forms.ToolStripButton Tool_Delete;
         public System.Windows.Forms.DataGridView List;
+#pragma warning disable CS0108 // 'HeadersWindow.Name' は継承されたメンバー 'Control.Name' を非表示にします。非表示にする場合は、キーワード new を使用してください。
         private System.Windows.Forms.DataGridViewTextBoxColumn Name;
+#pragma warning restore CS0108 // 'HeadersWindow.Name' は継承されたメンバー 'Control.Name' を非表示にします。非表示にする場合は、キーワード new を使用してください。
         private System.Windows.Forms.DataGridViewTextBoxColumn Parameter;
+        private System.Windows.Forms.ToolStripButton Tool_MoveUp;
+        private System.Windows.Forms.ToolStripButton Tool_MoveDown;
     }
 }

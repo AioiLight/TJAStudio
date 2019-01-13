@@ -31,10 +31,44 @@
             this.Dock = new WeifenLuo.WinFormsUI.Docking.DockPanel();
             this.Menu = new System.Windows.Forms.MenuStrip();
             this.Menu_File = new System.Windows.Forms.ToolStripMenuItem();
+            this.newProjectToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripSeparator();
+            this.openToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.openTemplateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripSeparator();
+            this.saveToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exporttjaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripSeparator();
+            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.Menu_Edit = new System.Windows.Forms.ToolStripMenuItem();
+            this.undoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.redoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem4 = new System.Windows.Forms.ToolStripSeparator();
+            this.cutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.copyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pasteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.deleteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem5 = new System.Windows.Forms.ToolStripSeparator();
+            this.goToToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem6 = new System.Windows.Forms.ToolStripSeparator();
+            this.selectAllToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.timeDateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem7 = new System.Windows.Forms.ToolStripSeparator();
+            this.repeatToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.notesOperationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toDonToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toKaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.abekobeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.detarameToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.windowToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.commonHeadersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.courseHeadersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.projectsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.Menu_Tool = new System.Windows.Forms.ToolStripMenuItem();
             this.Status = new System.Windows.Forms.StatusStrip();
             this.Tool = new System.Windows.Forms.ToolStrip();
+            this.tJAStudioVer10ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.Menu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -57,6 +91,8 @@
             this.Menu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.Menu_File,
             this.Menu_Edit,
+            this.windowToolStripMenuItem,
+            this.tJAStudioVer10ToolStripMenuItem,
             this.Menu_Tool});
             this.Menu.Location = new System.Drawing.Point(0, 0);
             this.Menu.Name = "Menu";
@@ -66,20 +102,263 @@
             // 
             // Menu_File
             // 
+            this.Menu_File.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.newProjectToolStripMenuItem,
+            this.toolStripMenuItem3,
+            this.openToolStripMenuItem,
+            this.openTemplateToolStripMenuItem,
+            this.toolStripMenuItem2,
+            this.saveToolStripMenuItem1,
+            this.saveToolStripMenuItem,
+            this.exporttjaToolStripMenuItem,
+            this.toolStripMenuItem1,
+            this.exitToolStripMenuItem});
+            this.Menu_File.Image = global::TJAStudio.Properties.Resources.FileGroup_16x;
             this.Menu_File.Name = "Menu_File";
-            this.Menu_File.Size = new System.Drawing.Size(42, 24);
+            this.Menu_File.Size = new System.Drawing.Size(58, 24);
             this.Menu_File.Text = "&File";
+            // 
+            // newProjectToolStripMenuItem
+            // 
+            this.newProjectToolStripMenuItem.Image = global::TJAStudio.Properties.Resources.NewFile_16x;
+            this.newProjectToolStripMenuItem.Name = "newProjectToolStripMenuItem";
+            this.newProjectToolStripMenuItem.Size = new System.Drawing.Size(190, 24);
+            this.newProjectToolStripMenuItem.Text = "New Project...";
+            // 
+            // toolStripMenuItem3
+            // 
+            this.toolStripMenuItem3.Name = "toolStripMenuItem3";
+            this.toolStripMenuItem3.Size = new System.Drawing.Size(187, 6);
+            // 
+            // openToolStripMenuItem
+            // 
+            this.openToolStripMenuItem.Image = global::TJAStudio.Properties.Resources.FolderOpen_16x;
+            this.openToolStripMenuItem.Name = "openToolStripMenuItem";
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(190, 24);
+            this.openToolStripMenuItem.Text = "Open...";
+            // 
+            // openTemplateToolStripMenuItem
+            // 
+            this.openTemplateToolStripMenuItem.Name = "openTemplateToolStripMenuItem";
+            this.openTemplateToolStripMenuItem.Size = new System.Drawing.Size(190, 24);
+            this.openTemplateToolStripMenuItem.Text = "Open Template...";
+            // 
+            // toolStripMenuItem2
+            // 
+            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(187, 6);
+            // 
+            // saveToolStripMenuItem1
+            // 
+            this.saveToolStripMenuItem1.Image = global::TJAStudio.Properties.Resources.Save_16x;
+            this.saveToolStripMenuItem1.Name = "saveToolStripMenuItem1";
+            this.saveToolStripMenuItem1.Size = new System.Drawing.Size(190, 24);
+            this.saveToolStripMenuItem1.Text = "Save";
+            // 
+            // saveToolStripMenuItem
+            // 
+            this.saveToolStripMenuItem.Image = global::TJAStudio.Properties.Resources.SaveAs_16x;
+            this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(190, 24);
+            this.saveToolStripMenuItem.Text = "Save As...";
+            // 
+            // exporttjaToolStripMenuItem
+            // 
+            this.exporttjaToolStripMenuItem.Name = "exporttjaToolStripMenuItem";
+            this.exporttjaToolStripMenuItem.Size = new System.Drawing.Size(190, 24);
+            this.exporttjaToolStripMenuItem.Text = "Export .tja...";
+            // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(187, 6);
+            // 
+            // exitToolStripMenuItem
+            // 
+            this.exitToolStripMenuItem.Image = global::TJAStudio.Properties.Resources.CloseSolution_16x;
+            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(190, 24);
+            this.exitToolStripMenuItem.Text = "Exit";
             // 
             // Menu_Edit
             // 
+            this.Menu_Edit.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.undoToolStripMenuItem,
+            this.redoToolStripMenuItem,
+            this.toolStripMenuItem4,
+            this.cutToolStripMenuItem,
+            this.copyToolStripMenuItem,
+            this.pasteToolStripMenuItem,
+            this.deleteToolStripMenuItem,
+            this.toolStripMenuItem5,
+            this.goToToolStripMenuItem,
+            this.toolStripMenuItem6,
+            this.selectAllToolStripMenuItem,
+            this.timeDateToolStripMenuItem,
+            this.toolStripMenuItem7,
+            this.repeatToolStripMenuItem,
+            this.notesOperationToolStripMenuItem});
+            this.Menu_Edit.Image = global::TJAStudio.Properties.Resources.Edit_16x;
             this.Menu_Edit.Name = "Menu_Edit";
-            this.Menu_Edit.Size = new System.Drawing.Size(45, 24);
+            this.Menu_Edit.Size = new System.Drawing.Size(61, 24);
             this.Menu_Edit.Text = "&Edit";
+            // 
+            // undoToolStripMenuItem
+            // 
+            this.undoToolStripMenuItem.Image = global::TJAStudio.Properties.Resources.Undo_16x;
+            this.undoToolStripMenuItem.Name = "undoToolStripMenuItem";
+            this.undoToolStripMenuItem.Size = new System.Drawing.Size(182, 24);
+            this.undoToolStripMenuItem.Text = "Undo";
+            // 
+            // redoToolStripMenuItem
+            // 
+            this.redoToolStripMenuItem.Image = global::TJAStudio.Properties.Resources.Redo_16x;
+            this.redoToolStripMenuItem.Name = "redoToolStripMenuItem";
+            this.redoToolStripMenuItem.Size = new System.Drawing.Size(182, 24);
+            this.redoToolStripMenuItem.Text = "Redo";
+            // 
+            // toolStripMenuItem4
+            // 
+            this.toolStripMenuItem4.Name = "toolStripMenuItem4";
+            this.toolStripMenuItem4.Size = new System.Drawing.Size(179, 6);
+            // 
+            // cutToolStripMenuItem
+            // 
+            this.cutToolStripMenuItem.Image = global::TJAStudio.Properties.Resources.Cut_16x;
+            this.cutToolStripMenuItem.Name = "cutToolStripMenuItem";
+            this.cutToolStripMenuItem.Size = new System.Drawing.Size(182, 24);
+            this.cutToolStripMenuItem.Text = "Cut";
+            // 
+            // copyToolStripMenuItem
+            // 
+            this.copyToolStripMenuItem.Image = global::TJAStudio.Properties.Resources.Copy_16x;
+            this.copyToolStripMenuItem.Name = "copyToolStripMenuItem";
+            this.copyToolStripMenuItem.Size = new System.Drawing.Size(182, 24);
+            this.copyToolStripMenuItem.Text = "Copy";
+            // 
+            // pasteToolStripMenuItem
+            // 
+            this.pasteToolStripMenuItem.Image = global::TJAStudio.Properties.Resources.Paste_16x;
+            this.pasteToolStripMenuItem.Name = "pasteToolStripMenuItem";
+            this.pasteToolStripMenuItem.Size = new System.Drawing.Size(182, 24);
+            this.pasteToolStripMenuItem.Text = "Paste";
+            // 
+            // deleteToolStripMenuItem
+            // 
+            this.deleteToolStripMenuItem.Name = "deleteToolStripMenuItem";
+            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(182, 24);
+            this.deleteToolStripMenuItem.Text = "Delete";
+            // 
+            // toolStripMenuItem5
+            // 
+            this.toolStripMenuItem5.Name = "toolStripMenuItem5";
+            this.toolStripMenuItem5.Size = new System.Drawing.Size(179, 6);
+            // 
+            // goToToolStripMenuItem
+            // 
+            this.goToToolStripMenuItem.Name = "goToToolStripMenuItem";
+            this.goToToolStripMenuItem.Size = new System.Drawing.Size(182, 24);
+            this.goToToolStripMenuItem.Text = "Go To...";
+            // 
+            // toolStripMenuItem6
+            // 
+            this.toolStripMenuItem6.Name = "toolStripMenuItem6";
+            this.toolStripMenuItem6.Size = new System.Drawing.Size(179, 6);
+            // 
+            // selectAllToolStripMenuItem
+            // 
+            this.selectAllToolStripMenuItem.Name = "selectAllToolStripMenuItem";
+            this.selectAllToolStripMenuItem.Size = new System.Drawing.Size(182, 24);
+            this.selectAllToolStripMenuItem.Text = "Select All";
+            // 
+            // timeDateToolStripMenuItem
+            // 
+            this.timeDateToolStripMenuItem.Name = "timeDateToolStripMenuItem";
+            this.timeDateToolStripMenuItem.Size = new System.Drawing.Size(182, 24);
+            this.timeDateToolStripMenuItem.Text = "Time / Date";
+            // 
+            // toolStripMenuItem7
+            // 
+            this.toolStripMenuItem7.Name = "toolStripMenuItem7";
+            this.toolStripMenuItem7.Size = new System.Drawing.Size(179, 6);
+            // 
+            // repeatToolStripMenuItem
+            // 
+            this.repeatToolStripMenuItem.Image = global::TJAStudio.Properties.Resources.Restart_16x;
+            this.repeatToolStripMenuItem.Name = "repeatToolStripMenuItem";
+            this.repeatToolStripMenuItem.Size = new System.Drawing.Size(182, 24);
+            this.repeatToolStripMenuItem.Text = "Repeat";
+            // 
+            // notesOperationToolStripMenuItem
+            // 
+            this.notesOperationToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toDonToolStripMenuItem,
+            this.toKaToolStripMenuItem,
+            this.abekobeToolStripMenuItem,
+            this.detarameToolStripMenuItem});
+            this.notesOperationToolStripMenuItem.Name = "notesOperationToolStripMenuItem";
+            this.notesOperationToolStripMenuItem.Size = new System.Drawing.Size(182, 24);
+            this.notesOperationToolStripMenuItem.Text = "Notes Operation";
+            // 
+            // toDonToolStripMenuItem
+            // 
+            this.toDonToolStripMenuItem.Name = "toDonToolStripMenuItem";
+            this.toDonToolStripMenuItem.Size = new System.Drawing.Size(142, 24);
+            this.toDonToolStripMenuItem.Text = "To Don";
+            // 
+            // toKaToolStripMenuItem
+            // 
+            this.toKaToolStripMenuItem.Name = "toKaToolStripMenuItem";
+            this.toKaToolStripMenuItem.Size = new System.Drawing.Size(142, 24);
+            this.toKaToolStripMenuItem.Text = "To Ka";
+            // 
+            // abekobeToolStripMenuItem
+            // 
+            this.abekobeToolStripMenuItem.Name = "abekobeToolStripMenuItem";
+            this.abekobeToolStripMenuItem.Size = new System.Drawing.Size(142, 24);
+            this.abekobeToolStripMenuItem.Text = "Abekobe";
+            // 
+            // detarameToolStripMenuItem
+            // 
+            this.detarameToolStripMenuItem.Name = "detarameToolStripMenuItem";
+            this.detarameToolStripMenuItem.Size = new System.Drawing.Size(142, 24);
+            this.detarameToolStripMenuItem.Text = "Detarame";
+            // 
+            // windowToolStripMenuItem
+            // 
+            this.windowToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.commonHeadersToolStripMenuItem,
+            this.courseHeadersToolStripMenuItem,
+            this.projectsToolStripMenuItem});
+            this.windowToolStripMenuItem.Image = global::TJAStudio.Properties.Resources.WindowsForm_16x;
+            this.windowToolStripMenuItem.Name = "windowToolStripMenuItem";
+            this.windowToolStripMenuItem.Size = new System.Drawing.Size(88, 24);
+            this.windowToolStripMenuItem.Text = "&Window";
+            // 
+            // commonHeadersToolStripMenuItem
+            // 
+            this.commonHeadersToolStripMenuItem.Name = "commonHeadersToolStripMenuItem";
+            this.commonHeadersToolStripMenuItem.Size = new System.Drawing.Size(192, 24);
+            this.commonHeadersToolStripMenuItem.Text = "Common Headers";
+            // 
+            // courseHeadersToolStripMenuItem
+            // 
+            this.courseHeadersToolStripMenuItem.Name = "courseHeadersToolStripMenuItem";
+            this.courseHeadersToolStripMenuItem.Size = new System.Drawing.Size(192, 24);
+            this.courseHeadersToolStripMenuItem.Text = "Course Headers";
+            // 
+            // projectsToolStripMenuItem
+            // 
+            this.projectsToolStripMenuItem.Name = "projectsToolStripMenuItem";
+            this.projectsToolStripMenuItem.Size = new System.Drawing.Size(192, 24);
+            this.projectsToolStripMenuItem.Text = "Projects";
             // 
             // Menu_Tool
             // 
+            this.Menu_Tool.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.Menu_Tool.Image = global::TJAStudio.Properties.Resources.Toolbox_16x;
             this.Menu_Tool.Name = "Menu_Tool";
-            this.Menu_Tool.Size = new System.Drawing.Size(47, 24);
+            this.Menu_Tool.Size = new System.Drawing.Size(63, 24);
             this.Menu_Tool.Text = "&Tool";
             // 
             // Status
@@ -97,6 +376,13 @@
             this.Tool.Size = new System.Drawing.Size(1264, 25);
             this.Tool.TabIndex = 4;
             this.Tool.Text = "toolStrip1";
+            // 
+            // tJAStudioVer10ToolStripMenuItem
+            // 
+            this.tJAStudioVer10ToolStripMenuItem.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.tJAStudioVer10ToolStripMenuItem.Name = "tJAStudioVer10ToolStripMenuItem";
+            this.tJAStudioVer10ToolStripMenuItem.Size = new System.Drawing.Size(133, 24);
+            this.tJAStudioVer10ToolStripMenuItem.Text = "TJAStudio Ver.1.0";
             // 
             // Studio
             // 
@@ -121,13 +407,51 @@
 
         #endregion
 
+#pragma warning disable CS0108 // 'Studio.Dock' は継承されたメンバー 'Control.Dock' を非表示にします。非表示にする場合は、キーワード new を使用してください。
         public WeifenLuo.WinFormsUI.Docking.DockPanel Dock;
+#pragma warning restore CS0108 // 'Studio.Dock' は継承されたメンバー 'Control.Dock' を非表示にします。非表示にする場合は、キーワード new を使用してください。
+#pragma warning disable CS0108 // 'Studio.Menu' は継承されたメンバー 'Form.Menu' を非表示にします。非表示にする場合は、キーワード new を使用してください。
         private System.Windows.Forms.MenuStrip Menu;
+#pragma warning restore CS0108 // 'Studio.Menu' は継承されたメンバー 'Form.Menu' を非表示にします。非表示にする場合は、キーワード new を使用してください。
         private System.Windows.Forms.ToolStripMenuItem Menu_File;
         private System.Windows.Forms.ToolStripMenuItem Menu_Edit;
-        private System.Windows.Forms.ToolStripMenuItem Menu_Tool;
         private System.Windows.Forms.StatusStrip Status;
         private System.Windows.Forms.ToolStrip Tool;
+        private System.Windows.Forms.ToolStripMenuItem newProjectToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripMenuItem3;
+        private System.Windows.Forms.ToolStripMenuItem openToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem openTemplateToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem saveToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem saveToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem exporttjaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem undoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem redoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripMenuItem4;
+        private System.Windows.Forms.ToolStripMenuItem cutToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem copyToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem pasteToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem deleteToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripMenuItem5;
+        private System.Windows.Forms.ToolStripMenuItem goToToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripMenuItem6;
+        private System.Windows.Forms.ToolStripMenuItem selectAllToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem timeDateToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripMenuItem7;
+        private System.Windows.Forms.ToolStripMenuItem repeatToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem notesOperationToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem toDonToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem toKaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem abekobeToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem detarameToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem windowToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem commonHeadersToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem courseHeadersToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem projectsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem Menu_Tool;
+        private System.Windows.Forms.ToolStripMenuItem tJAStudioVer10ToolStripMenuItem;
     }
 }
 
