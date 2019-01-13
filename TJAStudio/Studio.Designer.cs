@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Studio));
             this.Dock = new WeifenLuo.WinFormsUI.Docking.DockPanel();
             this.Menu = new System.Windows.Forms.MenuStrip();
             this.Menu_File = new System.Windows.Forms.ToolStripMenuItem();
@@ -380,8 +381,9 @@
             // Menu_Version
             // 
             this.Menu_Version.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.Menu_Version.Image = global::TJAStudio.Properties.Resources._64;
             this.Menu_Version.Name = "Menu_Version";
-            this.Menu_Version.Size = new System.Drawing.Size(133, 24);
+            this.Menu_Version.Size = new System.Drawing.Size(149, 24);
             this.Menu_Version.Text = "TJAStudio Ver.1.0";
             // 
             // Menu_Tool
@@ -396,6 +398,7 @@
             // 
             // Menu_Tool_About
             // 
+            this.Menu_Tool_About.Image = global::TJAStudio.Properties.Resources.VersionInformation_16x;
             this.Menu_Tool_About.Name = "Menu_Tool_About";
             this.Menu_Tool_About.Size = new System.Drawing.Size(198, 24);
             this.Menu_Tool_About.Text = "About TJAStudio...";
@@ -427,6 +430,7 @@
             this.Controls.Add(this.Dock);
             this.Controls.Add(this.Menu);
             this.Font = new System.Drawing.Font("メイリオ", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.Menu;
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Studio";
