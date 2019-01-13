@@ -32,6 +32,8 @@
             this.Tool_Add = new System.Windows.Forms.ToolStripButton();
             this.Tool_Delete = new System.Windows.Forms.ToolStripButton();
             this.List = new System.Windows.Forms.ListView();
+            this.Name = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.Parameter = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Tool.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -68,12 +70,25 @@
             this.List.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.List.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.Name,
+            this.Parameter});
+            this.List.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
             this.List.Location = new System.Drawing.Point(0, 30);
             this.List.Name = "List";
             this.List.Size = new System.Drawing.Size(539, 672);
             this.List.TabIndex = 4;
             this.List.UseCompatibleStateImageBehavior = false;
             this.List.View = System.Windows.Forms.View.Details;
+            this.List.Resize += new System.EventHandler(this.List_Resize);
+            // 
+            // Name
+            // 
+            this.Name.Text = "Name";
+            // 
+            // Parameter
+            // 
+            this.Parameter.Text = "Parameter";
             // 
             // HeaderWindow
             // 
@@ -85,7 +100,6 @@
             this.Font = new System.Drawing.Font("メイリオ", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.Name = "HeaderWindow";
             this.Text = "Header";
             this.Tool.ResumeLayout(false);
             this.Tool.PerformLayout();
@@ -100,5 +114,7 @@
         private System.Windows.Forms.ToolStripButton Tool_Add;
         private System.Windows.Forms.ToolStripButton Tool_Delete;
         private System.Windows.Forms.ListView List;
+        private System.Windows.Forms.ColumnHeader Name;
+        private System.Windows.Forms.ColumnHeader Parameter;
     }
 }

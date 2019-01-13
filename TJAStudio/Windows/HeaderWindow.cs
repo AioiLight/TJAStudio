@@ -15,7 +15,17 @@ namespace TJAStudio
         public HeaderWindow()
         {
             InitializeComponent();
+            Resized();
         }
 
+        private void List_Resize(object sender, EventArgs e)
+        {
+            Resized();
+        }
+
+        private void Resized()
+        {
+            List.AutoResizeColumns(ColumnHeaderAutoResizeStyle.HeaderSize);
+        }
     }
 }
