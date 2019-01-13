@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WeifenLuo.WinFormsUI.Docking;
 
 namespace TJAStudio
 {
@@ -15,7 +16,12 @@ namespace TJAStudio
         public Studio()
         {
             InitializeComponent();
+            Dock.Theme = new VS2015LightTheme();
+            Editor = new Editor();
+            Editor.Show(Dock);
         }
 
+
+        private Editor Editor;
     }
 }

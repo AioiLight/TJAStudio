@@ -8,9 +8,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace TJAStudio.Windows
+namespace TJAStudio
 {
-    public partial class Editor : Form
+    public partial class Editor : WeifenLuo.WinFormsUI.Docking.DockContent
     {
         public Editor()
         {

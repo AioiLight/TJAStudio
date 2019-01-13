@@ -46,16 +46,16 @@ namespace TJAStudio
             Parameter.BackColor = Color.Transparent;
         }
 
-        public ColorFormat Don { get; set; }
-        public ColorFormat Ka { get; set; }
-        public ColorFormat Space { get; set; }
-        public ColorFormat Other { get; set; }
-        public ColorFormat Roll { get; set; }
-        public ColorFormat Balloon { get; set; }
-        public ColorFormat Comment { get; set; }
-        public ColorFormat Keyword { get; set; }
-        public ColorFormat Command { get; set; }
-        public ColorFormat Parameter { get; set; }
+        public ColorFormat Don { get; set; } = new ColorFormat();
+        public ColorFormat Ka { get; set; } = new ColorFormat();
+        public ColorFormat Space { get; set; } = new ColorFormat();
+        public ColorFormat Other { get; set; } = new ColorFormat();
+        public ColorFormat Roll { get; set; } = new ColorFormat();
+        public ColorFormat Balloon { get; set; } = new ColorFormat();
+        public ColorFormat Comment { get; set; } = new ColorFormat();
+        public ColorFormat Keyword { get; set; } = new ColorFormat();
+        public ColorFormat Command { get; set; } = new ColorFormat();
+        public ColorFormat Parameter { get; set; } = new ColorFormat();
     }
     public class ColorFormat
     {

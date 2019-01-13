@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dockPanel1 = new WeifenLuo.WinFormsUI.Docking.DockPanel();
+            this.Dock = new WeifenLuo.WinFormsUI.Docking.DockPanel();
             this.Menu = new System.Windows.Forms.MenuStrip();
             this.Menu_File = new System.Windows.Forms.ToolStripMenuItem();
             this.Menu_Edit = new System.Windows.Forms.ToolStripMenuItem();
@@ -38,15 +38,17 @@
             this.Menu.SuspendLayout();
             this.SuspendLayout();
             // 
-            // dockPanel1
+            // Dock
             // 
-            this.dockPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dockPanel1.DocumentStyle = WeifenLuo.WinFormsUI.Docking.DocumentStyle.DockingWindow;
-            this.dockPanel1.Location = new System.Drawing.Point(0, 32);
-            this.dockPanel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.dockPanel1.Name = "dockPanel1";
-            this.dockPanel1.Size = new System.Drawing.Size(828, 440);
-            this.dockPanel1.TabIndex = 0;
+            this.Dock.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.Dock.DocumentStyle = WeifenLuo.WinFormsUI.Docking.DocumentStyle.DockingWindow;
+            this.Dock.Location = new System.Drawing.Point(13, 62);
+            this.Dock.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Dock.Name = "Dock";
+            this.Dock.Size = new System.Drawing.Size(802, 383);
+            this.Dock.TabIndex = 0;
             // 
             // Menu
             // 
@@ -102,7 +104,7 @@
             this.ClientSize = new System.Drawing.Size(828, 472);
             this.Controls.Add(this.Tool);
             this.Controls.Add(this.Status);
-            this.Controls.Add(this.dockPanel1);
+            this.Controls.Add(this.Dock);
             this.Controls.Add(this.Menu);
             this.Font = new System.Drawing.Font("メイリオ", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.MainMenuStrip = this.Menu;
@@ -118,7 +120,7 @@
 
         #endregion
 
-        private WeifenLuo.WinFormsUI.Docking.DockPanel dockPanel1;
+        private WeifenLuo.WinFormsUI.Docking.DockPanel Dock;
         private System.Windows.Forms.MenuStrip Menu;
         private System.Windows.Forms.ToolStripMenuItem Menu_File;
         private System.Windows.Forms.ToolStripMenuItem Menu_Edit;
