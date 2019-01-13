@@ -47,7 +47,7 @@
             this.Dock.Location = new System.Drawing.Point(13, 62);
             this.Dock.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Dock.Name = "Dock";
-            this.Dock.Size = new System.Drawing.Size(802, 383);
+            this.Dock.Size = new System.Drawing.Size(1238, 592);
             this.Dock.TabIndex = 0;
             // 
             // Menu
@@ -60,7 +60,7 @@
             this.Menu.Location = new System.Drawing.Point(0, 0);
             this.Menu.Name = "Menu";
             this.Menu.Padding = new System.Windows.Forms.Padding(10, 4, 0, 4);
-            this.Menu.Size = new System.Drawing.Size(828, 32);
+            this.Menu.Size = new System.Drawing.Size(1264, 32);
             this.Menu.TabIndex = 2;
             // 
             // Menu_File
@@ -84,16 +84,16 @@
             // Status
             // 
             this.Status.Font = new System.Drawing.Font("メイリオ", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.Status.Location = new System.Drawing.Point(0, 450);
+            this.Status.Location = new System.Drawing.Point(0, 659);
             this.Status.Name = "Status";
-            this.Status.Size = new System.Drawing.Size(828, 22);
+            this.Status.Size = new System.Drawing.Size(1264, 22);
             this.Status.TabIndex = 3;
             // 
             // Tool
             // 
             this.Tool.Location = new System.Drawing.Point(0, 32);
             this.Tool.Name = "Tool";
-            this.Tool.Size = new System.Drawing.Size(828, 25);
+            this.Tool.Size = new System.Drawing.Size(1264, 25);
             this.Tool.TabIndex = 4;
             this.Tool.Text = "toolStrip1";
             // 
@@ -101,7 +101,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(828, 472);
+            this.ClientSize = new System.Drawing.Size(1264, 681);
             this.Controls.Add(this.Tool);
             this.Controls.Add(this.Status);
             this.Controls.Add(this.Dock);

@@ -19,12 +19,12 @@ namespace TJAStudio
         /// <summary>
         /// コース別ヘッダのリスト。
         /// </summary>
-        public List<Header> Header { get; set; }
+        public List<Header> Header { get; set; } = new List<Header>();
         /// <summary>
         /// ドキュメント。
         /// </summary>
         [XmlIgnore]
-        public Sgry.Azuki.Document Document { get; set; }
+        public Sgry.Azuki.Document Document { get; set; } = new Sgry.Azuki.Document();
         /// <summary>
         /// ドキュメントの中のテキスト。
         /// </summary>

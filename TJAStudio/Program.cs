@@ -49,5 +49,9 @@ namespace TJAStudio
         /// 設定ファイルのパス。
         /// </summary>
         public static string SettingFileName { get; private set; }
+        /// <summary>
+        /// プロジェクト。
+        /// </summary>
+        public static Projects Project { get; set; } = new Projects();
     }
 }

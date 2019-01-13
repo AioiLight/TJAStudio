@@ -12,9 +12,11 @@ namespace TJAStudio
 {
     public partial class Editor : WeifenLuo.WinFormsUI.Docking.DockContent
     {
-        public Editor()
+        public Editor(Sgry.Azuki.Document doc, Course course)
         {
             InitializeComponent();
+            TextEditor.Document = doc;
+            Text = course.Name;
         }
     }
 }

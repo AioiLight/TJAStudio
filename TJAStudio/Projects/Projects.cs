@@ -11,7 +11,7 @@ namespace TJAStudio
     /// プロジェクト用のクラス。
     /// </summary>
     [Serializable()]
-    class Projects
+    public class Projects
     {
         /// <summary>
         /// プロジェクト名。

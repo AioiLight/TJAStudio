@@ -20,17 +20,12 @@ namespace TJAStudio
 
             Courses.Show(Dock, DockState.DockRight);
             Project.Show(Dock, DockState.DockRight);
-            ListEditor.Add(new Editor());
-            ListCourse.Add(new Course());
-            ListEditor[ListEditor.Count - 1].Show(Dock);
-            
-
+            var index = WindowManager.AddCourse("Oni");
+            WindowManager.Editors[index].Show(Dock);
         }
 
-
-        private List<Editor> ListEditor = new List<Editor>();
-        private List<Course> ListCourse = new List<Course>();
         private Courses Courses = new Courses();
         private Project Project = new Project();
+        private WindowManager WindowManager = new WindowManager();
     }
 }
