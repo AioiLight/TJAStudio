@@ -70,8 +70,8 @@
             this.Menu_Tool = new System.Windows.Forms.ToolStripMenuItem();
             this.Menu_Tool_About = new System.Windows.Forms.ToolStripMenuItem();
             this.Menu_Execution = new System.Windows.Forms.ToolStripMenuItem();
-            this.startSimulatorsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.liveUpdateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.Menu_Execution_Start = new System.Windows.Forms.ToolStripMenuItem();
+            this.Menu_Execution_LiveUpdate = new System.Windows.Forms.ToolStripMenuItem();
             this.Status = new System.Windows.Forms.StatusStrip();
             this.Tool = new System.Windows.Forms.ToolStrip();
             this.Tool_Undo = new System.Windows.Forms.ToolStripButton();
@@ -419,27 +419,29 @@
             // Menu_Execution
             // 
             this.Menu_Execution.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.startSimulatorsToolStripMenuItem,
-            this.liveUpdateToolStripMenuItem});
+            this.Menu_Execution_Start,
+            this.Menu_Execution_LiveUpdate});
             this.Menu_Execution.Image = global::TJAStudio.Properties.Resources.Run_16x;
             this.Menu_Execution.Name = "Menu_Execution";
             this.Menu_Execution.Size = new System.Drawing.Size(99, 24);
             this.Menu_Execution.Text = "&Execution";
             // 
-            // startSimulatorsToolStripMenuItem
+            // Menu_Execution_Start
             // 
-            this.startSimulatorsToolStripMenuItem.Image = global::TJAStudio.Properties.Resources.Run_16x;
-            this.startSimulatorsToolStripMenuItem.Name = "startSimulatorsToolStripMenuItem";
-            this.startSimulatorsToolStripMenuItem.Size = new System.Drawing.Size(194, 24);
-            this.startSimulatorsToolStripMenuItem.Text = "Start Simulators...";
+            this.Menu_Execution_Start.Image = global::TJAStudio.Properties.Resources.Run_16x;
+            this.Menu_Execution_Start.Name = "Menu_Execution_Start";
+            this.Menu_Execution_Start.Size = new System.Drawing.Size(194, 24);
+            this.Menu_Execution_Start.Text = "Start Simulators...";
+            this.Menu_Execution_Start.Click += new System.EventHandler(this.Menu_Execution_Start_Click);
             // 
-            // liveUpdateToolStripMenuItem
+            // Menu_Execution_LiveUpdate
             // 
-            this.liveUpdateToolStripMenuItem.Checked = true;
-            this.liveUpdateToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.liveUpdateToolStripMenuItem.Name = "liveUpdateToolStripMenuItem";
-            this.liveUpdateToolStripMenuItem.Size = new System.Drawing.Size(194, 24);
-            this.liveUpdateToolStripMenuItem.Text = "Live Update";
+            this.Menu_Execution_LiveUpdate.Checked = true;
+            this.Menu_Execution_LiveUpdate.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.Menu_Execution_LiveUpdate.Name = "Menu_Execution_LiveUpdate";
+            this.Menu_Execution_LiveUpdate.Size = new System.Drawing.Size(194, 24);
+            this.Menu_Execution_LiveUpdate.Text = "Live Update";
+            this.Menu_Execution_LiveUpdate.Click += new System.EventHandler(this.Menu_Execution_LiveUpdate_Click);
             // 
             // Status
             // 
@@ -605,8 +607,8 @@
         private System.Windows.Forms.ToolStripMenuItem Menu_Tool_About;
         private System.Windows.Forms.ToolStripMenuItem Menu_Window_Courses;
         private System.Windows.Forms.ToolStripMenuItem Menu_Execution;
-        private System.Windows.Forms.ToolStripMenuItem startSimulatorsToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem liveUpdateToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem Menu_Execution_Start;
+        private System.Windows.Forms.ToolStripMenuItem Menu_Execution_LiveUpdate;
         private System.Windows.Forms.ToolStripButton Tool_Undo;
         private System.Windows.Forms.ToolStripButton Tool_Redo;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;

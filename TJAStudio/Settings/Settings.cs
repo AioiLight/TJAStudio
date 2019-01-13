@@ -14,10 +14,18 @@ namespace TJAStudio
         /// UIの言語。
         /// </summary>
         public string Locale { get; set; } = System.Threading.Thread.CurrentThread.CurrentUICulture.ToString();
+
+        /// <summary>
+        /// シミュレーターをコマンドライン実行するためのファイルパス。
+        /// </summary>
+        public string SimulatorPath { get; set; } = "";
+
         /// <summary>
         /// テキスト表示に使用するフォント名。
         /// </summary>
         public string FontName { get; set; } = "MS Gothic";
+
+        public float FontSize { get; set; } = 16.0f;
 
         public EditorColorScheme ColorScheme { get; set; } = new EditorColorScheme();
 

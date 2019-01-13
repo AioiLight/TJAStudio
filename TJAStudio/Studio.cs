@@ -431,9 +431,60 @@ namespace TJAStudio
             Paste();
         }
 
+        private void Menu_Execution_Start_Click(object sender, EventArgs e)
+        {
+            Execute();
+        }
         private void Tool_Execute_Click(object sender, EventArgs e)
         {
+            Execute();
+        }
 
+        private static void Execute()
+        {
+            try
+            {
+                TJAStudio.MakePreview(Program.Project.Courses[Studio.CurrentCourseID]);
+                System.Diagnostics.Process.Start(Program.Setting.SimulatorPath, String.Format("\"{0}{1}\"", Program.EXEPath + @"\temp\", Program.Project.ProjectName + ".tja"));
+            }
+            catch (Exception)
+            {
+                
+            }
+        }
+
+        public void MakePreview(Course course, bool isCalledTextEditor = false)
+        {
+            if (isCalledTextEditor && !Menu_Execution_LiveUpdate.Checked) return;
+            var tempDir = Program.EXEPath + @"\temp\";
+            if (!Directory.Exists(tempDir))
+            {
+                Directory.CreateDirectory(tempDir);
+            }
+            TJAManager.Build(tempDir + Program.Project.ProjectName + ".tja", Program.Project, Encoding.UTF8);
+            foreach (var item in Program.Project.ProjectFile)
+            {
+                var fileName = tempDir + Path.GetFileName(item);
+                if (File.Exists(fileName))
+                {
+                    try
+                    {
+                        File.Delete(fileName);
+                    }
+                    catch (Exception)
+                    {
+
+                    }
+                }
+                try
+                {
+                    File.Copy(item, fileName);
+                }
+                catch (Exception)
+                {
+
+                }
+            }
         }
         private Courses Courses = new Courses();
         private Project Project = new Project();
@@ -443,5 +494,10 @@ namespace TJAStudio
         public static int CurrentCourseID { get; set; }
         public bool IsEdited { get; set; }
         public string FileName { get; set; }
+
+        private void Menu_Execution_LiveUpdate_Click(object sender, EventArgs e)
+        {
+            Menu_Execution_LiveUpdate.Checked = !Menu_Execution_LiveUpdate.Checked;
+        }
     }
 }
