@@ -6,6 +6,7 @@ using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using WeifenLuo.WinFormsUI.Docking;
@@ -182,6 +183,178 @@ namespace TJAStudio
         private void Menu_File_Exit_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void Menu_Edit_Undo_Click(object sender, EventArgs e)
+        {
+            if(Program.WindowManager.Editors[CurrentCourseID].TextEditor.Focused)
+                Program.WindowManager.Editors[CurrentCourseID].TextEditor.Undo();
+        }
+
+        private void Menu_Edit_Redo_Click(object sender, EventArgs e)
+        {
+            if (Program.WindowManager.Editors[CurrentCourseID].TextEditor.Focused)
+                Program.WindowManager.Editors[CurrentCourseID].TextEditor.Redo();
+        }
+
+        private void Menu_Edit_Cut_Click(object sender, EventArgs e)
+        {
+            if (Program.WindowManager.Editors[CurrentCourseID].TextEditor.Focused)
+                Program.WindowManager.Editors[CurrentCourseID].TextEditor.Cut();
+        }
+
+        private void Menu_Edit_Copy_Click(object sender, EventArgs e)
+        {
+            if (Program.WindowManager.Editors[CurrentCourseID].TextEditor.Focused)
+                Program.WindowManager.Editors[CurrentCourseID].TextEditor.Copy();
+        }
+
+        private void Menu_Edit_Paste_Click(object sender, EventArgs e)
+        {
+            if (Program.WindowManager.Editors[CurrentCourseID].TextEditor.Focused)
+                Program.WindowManager.Editors[CurrentCourseID].TextEditor.Paste();
+        }
+
+        private void Menu_Edit_GoTo_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Menu_Edit_SelectAll_Click(object sender, EventArgs e)
+        {
+            if (Program.WindowManager.Editors[CurrentCourseID].TextEditor.Focused)
+                Program.WindowManager.Editors[CurrentCourseID].TextEditor.SelectAll();
+        }
+
+        private void Menu_Edit_Time_Click(object sender, EventArgs e)
+        {
+            TextInsert("//" + DateTime.Now.ToString());
+        }
+
+        private void TextInsert(string text)
+        {
+            if (Program.WindowManager.Editors[CurrentCourseID].TextEditor.Focused)
+                Program.WindowManager.Editors[CurrentCourseID].TextEditor.Document.Replace(text);
+        }
+
+        private void Menu_Edit_NotesOperation_ToDon_Click(object sender, EventArgs e)
+        {
+            var splitedText = Program.WindowManager.Editors[CurrentCourseID].TextEditor.GetSelectedText().Split('\n');
+            string resultText = "";
+            for (int i = 0; i < splitedText.Length; i++)
+            {
+                var index = "";
+                splitedText[i] = Regex.Replace(splitedText[i], " *//.*", String.Empty);
+                if (!splitedText[i].StartsWith("#") || !splitedText[i].Contains(":"))
+                {
+                    index = splitedText[i].Replace('2', '1');
+                    index = index.Replace('4', '3');
+                }
+                resultText += index;
+                if (i != splitedText.Length - 1) resultText += "\n";
+            }
+            TextInsert(resultText);
+        }
+
+        private void Menu_Edit_NotesOperation_ToKa_Click(object sender, EventArgs e)
+        {
+            var splitedText = Program.WindowManager.Editors[CurrentCourseID].TextEditor.GetSelectedText().Split('\n');
+            string resultText = "";
+            for (int i = 0; i < splitedText.Length; i++)
+            {
+                var index = "";
+                splitedText[i] = Regex.Replace(splitedText[i], " *//.*", String.Empty);
+                if (!splitedText[i].StartsWith("#") || !splitedText[i].Contains(":"))
+                {
+                    index = splitedText[i].Replace('1', '2');
+                    index = index.Replace('3', '4');
+                }
+                resultText += index;
+                if (i != splitedText.Length - 1) resultText += "\n";
+            }
+            TextInsert(resultText);
+        }
+
+        private void Menu_Edit_NotesOperation_Abekobe_Click(object sender, EventArgs e)
+        {
+            var splitedText = Program.WindowManager.Editors[CurrentCourseID].TextEditor.GetSelectedText().Split('\n');
+            string resultText = "";
+            for (int i = 0; i < splitedText.Length; i++)
+            {
+                var index = "";
+                splitedText[i] = Regex.Replace(splitedText[i], " *//.*", String.Empty);
+                if (!splitedText[i].StartsWith("#") || !splitedText[i].Contains(":"))
+                {
+                    foreach (var item in splitedText[i])
+                    {
+                        if (item == '1')
+                        {
+                            index += '2';
+                        }
+                        else if (item == '2')
+                        {
+                            index += '1';
+                        }
+                        else if (item == '3')
+                        {
+                            index += '4';
+                        }
+                        else if (item == '4')
+                        {
+                            index += '3';
+                        }
+                        else
+                        {
+                            index += item;
+                        }
+                    }
+                }
+                resultText += index;
+                if (i != splitedText.Length - 1) resultText += "\n";
+            }
+            TextInsert(resultText);
+        }
+
+        private void Menu_Edit_NotesOperation_Detarame_Click(object sender, EventArgs e)
+        {
+            var splitedText = Program.WindowManager.Editors[CurrentCourseID].TextEditor.GetSelectedText().Split('\n');
+            string resultText = "";
+            Random random = new Random();
+            for (int i = 0; i < splitedText.Length; i++)
+            {
+                var index = "";
+                splitedText[i] = Regex.Replace(splitedText[i], " *//.*", String.Empty);
+                if (!splitedText[i].StartsWith("#") || !splitedText[i].Contains(":"))
+                {
+                    foreach (var item in splitedText[i])
+                    {
+                        if (item == '1')
+                        {
+                            index += random.Next(2) + 1;
+                        }
+                        else if (item == '2')
+                        {
+                            index += random.Next(2) + 1;
+                        }
+                        else if (item == '3')
+                        {
+                            index += random.Next(2) + 3;
+                        }
+                        else if (item == '4')
+                        {
+                            index += random.Next(2) + 3;
+                        }
+                        else
+                        {
+                            index += item;
+                        }
+                    }
+                }
+                resultText += index;
+                if (i != splitedText.Length - 1) resultText += "\n";
+            }
+            TextInsert(resultText);
+
         }
     }
 }

@@ -42,25 +42,24 @@
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripSeparator();
             this.Menu_File_Exit = new System.Windows.Forms.ToolStripMenuItem();
             this.Menu_Edit = new System.Windows.Forms.ToolStripMenuItem();
-            this.undoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.redoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.Menu_Edit_Undo = new System.Windows.Forms.ToolStripMenuItem();
+            this.Menu_Edit_Redo = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem4 = new System.Windows.Forms.ToolStripSeparator();
-            this.cutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.copyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.pasteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.deleteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.Menu_Edit_Cut = new System.Windows.Forms.ToolStripMenuItem();
+            this.Menu_Edit_Copy = new System.Windows.Forms.ToolStripMenuItem();
+            this.Menu_Edit_Paste = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem5 = new System.Windows.Forms.ToolStripSeparator();
-            this.goToToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.Menu_Edit_GoTo = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem6 = new System.Windows.Forms.ToolStripSeparator();
-            this.selectAllToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.timeDateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.Menu_Edit_SelectAll = new System.Windows.Forms.ToolStripMenuItem();
+            this.Menu_Edit_Time = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem7 = new System.Windows.Forms.ToolStripSeparator();
-            this.repeatToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.notesOperationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toDonToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toKaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.abekobeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.detarameToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.Menu_Edit_Repert = new System.Windows.Forms.ToolStripMenuItem();
+            this.Menu_Edit_NotesOperation = new System.Windows.Forms.ToolStripMenuItem();
+            this.Menu_Edit_NotesOperation_ToDon = new System.Windows.Forms.ToolStripMenuItem();
+            this.Menu_Edit_NotesOperation_ToKa = new System.Windows.Forms.ToolStripMenuItem();
+            this.Menu_Edit_NotesOperation_Abekobe = new System.Windows.Forms.ToolStripMenuItem();
+            this.Menu_Edit_NotesOperation_Detarame = new System.Windows.Forms.ToolStripMenuItem();
             this.Menu_Window = new System.Windows.Forms.ToolStripMenuItem();
             this.Menu_Window_CommonHeader = new System.Windows.Forms.ToolStripMenuItem();
             this.Menu_Window_CourseHeader = new System.Windows.Forms.ToolStripMenuItem();
@@ -190,146 +189,151 @@
             // Menu_Edit
             // 
             this.Menu_Edit.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.undoToolStripMenuItem,
-            this.redoToolStripMenuItem,
+            this.Menu_Edit_Undo,
+            this.Menu_Edit_Redo,
             this.toolStripMenuItem4,
-            this.cutToolStripMenuItem,
-            this.copyToolStripMenuItem,
-            this.pasteToolStripMenuItem,
-            this.deleteToolStripMenuItem,
+            this.Menu_Edit_Cut,
+            this.Menu_Edit_Copy,
+            this.Menu_Edit_Paste,
             this.toolStripMenuItem5,
-            this.goToToolStripMenuItem,
+            this.Menu_Edit_GoTo,
             this.toolStripMenuItem6,
-            this.selectAllToolStripMenuItem,
-            this.timeDateToolStripMenuItem,
+            this.Menu_Edit_SelectAll,
+            this.Menu_Edit_Time,
             this.toolStripMenuItem7,
-            this.repeatToolStripMenuItem,
-            this.notesOperationToolStripMenuItem});
+            this.Menu_Edit_Repert,
+            this.Menu_Edit_NotesOperation});
             this.Menu_Edit.Image = global::TJAStudio.Properties.Resources.Edit_16x;
             this.Menu_Edit.Name = "Menu_Edit";
             this.Menu_Edit.Size = new System.Drawing.Size(61, 24);
             this.Menu_Edit.Text = "&Edit";
             // 
-            // undoToolStripMenuItem
+            // Menu_Edit_Undo
             // 
-            this.undoToolStripMenuItem.Image = global::TJAStudio.Properties.Resources.Undo_16x;
-            this.undoToolStripMenuItem.Name = "undoToolStripMenuItem";
-            this.undoToolStripMenuItem.Size = new System.Drawing.Size(182, 24);
-            this.undoToolStripMenuItem.Text = "Undo";
+            this.Menu_Edit_Undo.Image = global::TJAStudio.Properties.Resources.Undo_16x;
+            this.Menu_Edit_Undo.Name = "Menu_Edit_Undo";
+            this.Menu_Edit_Undo.Size = new System.Drawing.Size(182, 24);
+            this.Menu_Edit_Undo.Text = "Undo";
+            this.Menu_Edit_Undo.Click += new System.EventHandler(this.Menu_Edit_Undo_Click);
             // 
-            // redoToolStripMenuItem
+            // Menu_Edit_Redo
             // 
-            this.redoToolStripMenuItem.Image = global::TJAStudio.Properties.Resources.Redo_16x;
-            this.redoToolStripMenuItem.Name = "redoToolStripMenuItem";
-            this.redoToolStripMenuItem.Size = new System.Drawing.Size(182, 24);
-            this.redoToolStripMenuItem.Text = "Redo";
+            this.Menu_Edit_Redo.Image = global::TJAStudio.Properties.Resources.Redo_16x;
+            this.Menu_Edit_Redo.Name = "Menu_Edit_Redo";
+            this.Menu_Edit_Redo.Size = new System.Drawing.Size(182, 24);
+            this.Menu_Edit_Redo.Text = "Redo";
+            this.Menu_Edit_Redo.Click += new System.EventHandler(this.Menu_Edit_Redo_Click);
             // 
             // toolStripMenuItem4
             // 
             this.toolStripMenuItem4.Name = "toolStripMenuItem4";
             this.toolStripMenuItem4.Size = new System.Drawing.Size(179, 6);
             // 
-            // cutToolStripMenuItem
+            // Menu_Edit_Cut
             // 
-            this.cutToolStripMenuItem.Image = global::TJAStudio.Properties.Resources.Cut_16x;
-            this.cutToolStripMenuItem.Name = "cutToolStripMenuItem";
-            this.cutToolStripMenuItem.Size = new System.Drawing.Size(182, 24);
-            this.cutToolStripMenuItem.Text = "Cut";
+            this.Menu_Edit_Cut.Image = global::TJAStudio.Properties.Resources.Cut_16x;
+            this.Menu_Edit_Cut.Name = "Menu_Edit_Cut";
+            this.Menu_Edit_Cut.Size = new System.Drawing.Size(182, 24);
+            this.Menu_Edit_Cut.Text = "Cut";
+            this.Menu_Edit_Cut.Click += new System.EventHandler(this.Menu_Edit_Cut_Click);
             // 
-            // copyToolStripMenuItem
+            // Menu_Edit_Copy
             // 
-            this.copyToolStripMenuItem.Image = global::TJAStudio.Properties.Resources.Copy_16x;
-            this.copyToolStripMenuItem.Name = "copyToolStripMenuItem";
-            this.copyToolStripMenuItem.Size = new System.Drawing.Size(182, 24);
-            this.copyToolStripMenuItem.Text = "Copy";
+            this.Menu_Edit_Copy.Image = global::TJAStudio.Properties.Resources.Copy_16x;
+            this.Menu_Edit_Copy.Name = "Menu_Edit_Copy";
+            this.Menu_Edit_Copy.Size = new System.Drawing.Size(182, 24);
+            this.Menu_Edit_Copy.Text = "Copy";
+            this.Menu_Edit_Copy.Click += new System.EventHandler(this.Menu_Edit_Copy_Click);
             // 
-            // pasteToolStripMenuItem
+            // Menu_Edit_Paste
             // 
-            this.pasteToolStripMenuItem.Image = global::TJAStudio.Properties.Resources.Paste_16x;
-            this.pasteToolStripMenuItem.Name = "pasteToolStripMenuItem";
-            this.pasteToolStripMenuItem.Size = new System.Drawing.Size(182, 24);
-            this.pasteToolStripMenuItem.Text = "Paste";
-            // 
-            // deleteToolStripMenuItem
-            // 
-            this.deleteToolStripMenuItem.Name = "deleteToolStripMenuItem";
-            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(182, 24);
-            this.deleteToolStripMenuItem.Text = "Delete";
+            this.Menu_Edit_Paste.Image = global::TJAStudio.Properties.Resources.Paste_16x;
+            this.Menu_Edit_Paste.Name = "Menu_Edit_Paste";
+            this.Menu_Edit_Paste.Size = new System.Drawing.Size(182, 24);
+            this.Menu_Edit_Paste.Text = "Paste";
+            this.Menu_Edit_Paste.Click += new System.EventHandler(this.Menu_Edit_Paste_Click);
             // 
             // toolStripMenuItem5
             // 
             this.toolStripMenuItem5.Name = "toolStripMenuItem5";
             this.toolStripMenuItem5.Size = new System.Drawing.Size(179, 6);
             // 
-            // goToToolStripMenuItem
+            // Menu_Edit_GoTo
             // 
-            this.goToToolStripMenuItem.Name = "goToToolStripMenuItem";
-            this.goToToolStripMenuItem.Size = new System.Drawing.Size(182, 24);
-            this.goToToolStripMenuItem.Text = "Go To...";
+            this.Menu_Edit_GoTo.Name = "Menu_Edit_GoTo";
+            this.Menu_Edit_GoTo.Size = new System.Drawing.Size(182, 24);
+            this.Menu_Edit_GoTo.Text = "Go To...";
+            this.Menu_Edit_GoTo.Click += new System.EventHandler(this.Menu_Edit_GoTo_Click);
             // 
             // toolStripMenuItem6
             // 
             this.toolStripMenuItem6.Name = "toolStripMenuItem6";
             this.toolStripMenuItem6.Size = new System.Drawing.Size(179, 6);
             // 
-            // selectAllToolStripMenuItem
+            // Menu_Edit_SelectAll
             // 
-            this.selectAllToolStripMenuItem.Name = "selectAllToolStripMenuItem";
-            this.selectAllToolStripMenuItem.Size = new System.Drawing.Size(182, 24);
-            this.selectAllToolStripMenuItem.Text = "Select All";
+            this.Menu_Edit_SelectAll.Name = "Menu_Edit_SelectAll";
+            this.Menu_Edit_SelectAll.Size = new System.Drawing.Size(182, 24);
+            this.Menu_Edit_SelectAll.Text = "Select All";
+            this.Menu_Edit_SelectAll.Click += new System.EventHandler(this.Menu_Edit_SelectAll_Click);
             // 
-            // timeDateToolStripMenuItem
+            // Menu_Edit_Time
             // 
-            this.timeDateToolStripMenuItem.Name = "timeDateToolStripMenuItem";
-            this.timeDateToolStripMenuItem.Size = new System.Drawing.Size(182, 24);
-            this.timeDateToolStripMenuItem.Text = "Time / Date";
+            this.Menu_Edit_Time.Name = "Menu_Edit_Time";
+            this.Menu_Edit_Time.Size = new System.Drawing.Size(182, 24);
+            this.Menu_Edit_Time.Text = "Time / Date";
+            this.Menu_Edit_Time.Click += new System.EventHandler(this.Menu_Edit_Time_Click);
             // 
             // toolStripMenuItem7
             // 
             this.toolStripMenuItem7.Name = "toolStripMenuItem7";
             this.toolStripMenuItem7.Size = new System.Drawing.Size(179, 6);
             // 
-            // repeatToolStripMenuItem
+            // Menu_Edit_Repert
             // 
-            this.repeatToolStripMenuItem.Image = global::TJAStudio.Properties.Resources.Restart_16x;
-            this.repeatToolStripMenuItem.Name = "repeatToolStripMenuItem";
-            this.repeatToolStripMenuItem.Size = new System.Drawing.Size(182, 24);
-            this.repeatToolStripMenuItem.Text = "Repeat";
+            this.Menu_Edit_Repert.Image = global::TJAStudio.Properties.Resources.Restart_16x;
+            this.Menu_Edit_Repert.Name = "Menu_Edit_Repert";
+            this.Menu_Edit_Repert.Size = new System.Drawing.Size(182, 24);
+            this.Menu_Edit_Repert.Text = "Repeat";
             // 
-            // notesOperationToolStripMenuItem
+            // Menu_Edit_NotesOperation
             // 
-            this.notesOperationToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toDonToolStripMenuItem,
-            this.toKaToolStripMenuItem,
-            this.abekobeToolStripMenuItem,
-            this.detarameToolStripMenuItem});
-            this.notesOperationToolStripMenuItem.Name = "notesOperationToolStripMenuItem";
-            this.notesOperationToolStripMenuItem.Size = new System.Drawing.Size(182, 24);
-            this.notesOperationToolStripMenuItem.Text = "Notes Operation";
+            this.Menu_Edit_NotesOperation.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.Menu_Edit_NotesOperation_ToDon,
+            this.Menu_Edit_NotesOperation_ToKa,
+            this.Menu_Edit_NotesOperation_Abekobe,
+            this.Menu_Edit_NotesOperation_Detarame});
+            this.Menu_Edit_NotesOperation.Name = "Menu_Edit_NotesOperation";
+            this.Menu_Edit_NotesOperation.Size = new System.Drawing.Size(182, 24);
+            this.Menu_Edit_NotesOperation.Text = "Notes Operation";
             // 
-            // toDonToolStripMenuItem
+            // Menu_Edit_NotesOperation_ToDon
             // 
-            this.toDonToolStripMenuItem.Name = "toDonToolStripMenuItem";
-            this.toDonToolStripMenuItem.Size = new System.Drawing.Size(142, 24);
-            this.toDonToolStripMenuItem.Text = "To Don";
+            this.Menu_Edit_NotesOperation_ToDon.Name = "Menu_Edit_NotesOperation_ToDon";
+            this.Menu_Edit_NotesOperation_ToDon.Size = new System.Drawing.Size(180, 24);
+            this.Menu_Edit_NotesOperation_ToDon.Text = "To Don";
+            this.Menu_Edit_NotesOperation_ToDon.Click += new System.EventHandler(this.Menu_Edit_NotesOperation_ToDon_Click);
             // 
-            // toKaToolStripMenuItem
+            // Menu_Edit_NotesOperation_ToKa
             // 
-            this.toKaToolStripMenuItem.Name = "toKaToolStripMenuItem";
-            this.toKaToolStripMenuItem.Size = new System.Drawing.Size(142, 24);
-            this.toKaToolStripMenuItem.Text = "To Ka";
+            this.Menu_Edit_NotesOperation_ToKa.Name = "Menu_Edit_NotesOperation_ToKa";
+            this.Menu_Edit_NotesOperation_ToKa.Size = new System.Drawing.Size(180, 24);
+            this.Menu_Edit_NotesOperation_ToKa.Text = "To Ka";
+            this.Menu_Edit_NotesOperation_ToKa.Click += new System.EventHandler(this.Menu_Edit_NotesOperation_ToKa_Click);
             // 
-            // abekobeToolStripMenuItem
+            // Menu_Edit_NotesOperation_Abekobe
             // 
-            this.abekobeToolStripMenuItem.Name = "abekobeToolStripMenuItem";
-            this.abekobeToolStripMenuItem.Size = new System.Drawing.Size(142, 24);
-            this.abekobeToolStripMenuItem.Text = "Abekobe";
+            this.Menu_Edit_NotesOperation_Abekobe.Name = "Menu_Edit_NotesOperation_Abekobe";
+            this.Menu_Edit_NotesOperation_Abekobe.Size = new System.Drawing.Size(180, 24);
+            this.Menu_Edit_NotesOperation_Abekobe.Text = "Abekobe";
+            this.Menu_Edit_NotesOperation_Abekobe.Click += new System.EventHandler(this.Menu_Edit_NotesOperation_Abekobe_Click);
             // 
-            // detarameToolStripMenuItem
+            // Menu_Edit_NotesOperation_Detarame
             // 
-            this.detarameToolStripMenuItem.Name = "detarameToolStripMenuItem";
-            this.detarameToolStripMenuItem.Size = new System.Drawing.Size(142, 24);
-            this.detarameToolStripMenuItem.Text = "Detarame";
+            this.Menu_Edit_NotesOperation_Detarame.Name = "Menu_Edit_NotesOperation_Detarame";
+            this.Menu_Edit_NotesOperation_Detarame.Size = new System.Drawing.Size(180, 24);
+            this.Menu_Edit_NotesOperation_Detarame.Text = "Detarame";
+            this.Menu_Edit_NotesOperation_Detarame.Click += new System.EventHandler(this.Menu_Edit_NotesOperation_Detarame_Click);
             // 
             // Menu_Window
             // 
@@ -444,25 +448,24 @@
         private System.Windows.Forms.ToolStripMenuItem exporttjaToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem Menu_File_Exit;
-        private System.Windows.Forms.ToolStripMenuItem undoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem redoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem Menu_Edit_Undo;
+        private System.Windows.Forms.ToolStripMenuItem Menu_Edit_Redo;
         private System.Windows.Forms.ToolStripSeparator toolStripMenuItem4;
-        private System.Windows.Forms.ToolStripMenuItem cutToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem copyToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem pasteToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem deleteToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem Menu_Edit_Cut;
+        private System.Windows.Forms.ToolStripMenuItem Menu_Edit_Copy;
+        private System.Windows.Forms.ToolStripMenuItem Menu_Edit_Paste;
         private System.Windows.Forms.ToolStripSeparator toolStripMenuItem5;
-        private System.Windows.Forms.ToolStripMenuItem goToToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem Menu_Edit_GoTo;
         private System.Windows.Forms.ToolStripSeparator toolStripMenuItem6;
-        private System.Windows.Forms.ToolStripMenuItem selectAllToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem timeDateToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem Menu_Edit_SelectAll;
+        private System.Windows.Forms.ToolStripMenuItem Menu_Edit_Time;
         private System.Windows.Forms.ToolStripSeparator toolStripMenuItem7;
-        private System.Windows.Forms.ToolStripMenuItem repeatToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem notesOperationToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem toDonToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem toKaToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem abekobeToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem detarameToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem Menu_Edit_Repert;
+        private System.Windows.Forms.ToolStripMenuItem Menu_Edit_NotesOperation;
+        private System.Windows.Forms.ToolStripMenuItem Menu_Edit_NotesOperation_ToDon;
+        private System.Windows.Forms.ToolStripMenuItem Menu_Edit_NotesOperation_ToKa;
+        private System.Windows.Forms.ToolStripMenuItem Menu_Edit_NotesOperation_Abekobe;
+        private System.Windows.Forms.ToolStripMenuItem Menu_Edit_NotesOperation_Detarame;
         private System.Windows.Forms.ToolStripMenuItem Menu_Window;
         private System.Windows.Forms.ToolStripMenuItem Menu_Window_CommonHeader;
         private System.Windows.Forms.ToolStripMenuItem Menu_Window_CourseHeader;
