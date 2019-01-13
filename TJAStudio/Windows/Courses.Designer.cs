@@ -99,8 +99,8 @@
         #endregion
 
         private System.Windows.Forms.ToolStrip Tool;
-        private System.Windows.Forms.ListView List;
         private System.Windows.Forms.ToolStripButton Tool_Add;
         private System.Windows.Forms.ToolStripButton Tool_Delete;
+        public System.Windows.Forms.ListView List;
     }
 }

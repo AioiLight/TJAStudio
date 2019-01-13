@@ -27,8 +27,8 @@ namespace TJAStudio.Charts
             headers.Add(new HeaderCheker("SCOREINIT", new string[] { "d+" }, Simulator.Taikojiro | Simulator.Taikojiro2 | Simulator.TJAPlayer2fPC | Simulator.TJAPlayer3 | Simulator.TaikoDaijiro2 | Simulator.TaikoWeb_Bui));
             headers.Add(new HeaderCheker("SCOREDIFF", new string[] { "d+" }, Simulator.Taikojiro | Simulator.Taikojiro2 | Simulator.TJAPlayer2fPC | Simulator.TJAPlayer3 | Simulator.TaikoDaijiro2 | Simulator.TaikoWeb_Bui));
 
-            headers.Add(new HeaderCheker("COURSE", new string[] { "[0-5]+", "(easy|normal|hard|oni|edit)" }, Simulator.Taikojiro | Simulator.Taikojiro2 | Simulator.TJAPlayer2fPC | Simulator.TJAPlayer3 | Simulator.TaikoDaijiro2 | Simulator.TaikoWeb_Bui));
-            headers.Add(new HeaderCheker("COURSE", new string[] { "[0-6]+", "(easy|normal|hard|oni|edit|tower)" }, Simulator.Taikojiro | Simulator.Taikojiro2 | Simulator.TJAPlayer3));
+            //headers.Add(new HeaderCheker("COURSE", new string[] { "[0-5]+", "(easy|normal|hard|oni|edit)" }, Simulator.Taikojiro | Simulator.Taikojiro2 | Simulator.TJAPlayer2fPC | Simulator.TJAPlayer3 | Simulator.TaikoDaijiro2 | Simulator.TaikoWeb_Bui));
+            //headers.Add(new HeaderCheker("COURSE", new string[] { "[0-6]+", "(easy|normal|hard|oni|edit|tower)" },Simulator.Taikojiro | Simulator.Taikojiro2 | Simulator.TJAPlayer2fPC | Simulator.TJAPlayer3 | Simulator.TaikoDaijiro2 | Simulator.TaikoWeb_Bui));
             headers.Add(new HeaderCheker("COURSE", new string[] { "[0-7]+", "(easy|normal|hard|oni|edit|tower|dan)" }, Simulator.TJAPlayer3));
 
             headers.Add(new HeaderCheker("STYLE", new string[] { "[1-2]+", "(single|double|couple)" }, Simulator.Taikojiro | Simulator.Taikojiro2 | Simulator.TJAPlayer2fPC | Simulator.TJAPlayer3 | Simulator.TaikoWeb_Bui));

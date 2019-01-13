@@ -32,14 +32,16 @@ namespace TJAStudio
 
         private void Dock_ActiveDocumentChanged(object sender, EventArgs e)
         {
-
+            CurrentCourseID = Courses.List.FindItemWithText(Dock.ActiveDocument.DockHandler.TabText.Substring(9)).Index;
+            HeaderWindow.SetHeaderFromList(Program.Project.Courses[CurrentCourseID].Header);
         }
 
         private Courses Courses = new Courses();
         private Project Project = new Project();
-        private HeaderWindow HeaderWindow = new HeaderWindow();
-        private HeaderWindow CommonHeaderWindow = new HeaderWindow("Common Header");
+        public  HeadersWindow HeaderWindow = new HeadersWindow(false);
+        private HeadersWindow CommonHeaderWindow = new HeadersWindow(true, "Common Header");
         public static Studio TJAStudio { get; set; }
+        public static int CurrentCourseID { get; set; }
 
     }
 }

@@ -78,6 +78,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Settings\SettingManager.cs" />
     <Compile Include="Settings\Settings.cs" />
+    <Compile Include="Windows\AddHeader.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\AddHeader.Designer.cs">
+      <DependentUpon>AddHeader.cs</DependentUpon>
+    </Compile>
     <Compile Include="Windows\Courses.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -90,11 +96,11 @@
     <Compile Include="Windows\Editor.Designer.cs">
       <DependentUpon>Editor.cs</DependentUpon>
     </Compile>
-    <Compile Include="Windows\HeaderWindow.cs">
+    <Compile Include="Windows\HeadersWindow.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Windows\HeaderWindow.Designer.cs">
-      <DependentUpon>HeaderWindow.cs</DependentUpon>
+    <Compile Include="Windows\HeadersWindow.Designer.cs">
+      <DependentUpon>HeadersWindow.cs</DependentUpon>
     </Compile>
     <Compile Include="Windows\Project.cs">
       <SubType>Form</SubType>
@@ -115,14 +121,17 @@
     <EmbeddedResource Include="Studio.resx">
       <DependentUpon>Studio.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Windows\AddHeader.resx">
+      <DependentUpon>AddHeader.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Windows\Courses.resx">
       <DependentUpon>Courses.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Windows\Editor.resx">
       <DependentUpon>Editor.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Windows\HeaderWindow.resx">
-      <DependentUpon>HeaderWindow.cs</DependentUpon>
+    <EmbeddedResource Include="Windows\HeadersWindow.resx">
+      <DependentUpon>HeadersWindow.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Windows\Project.resx">
       <DependentUpon>Project.cs</DependentUpon>
