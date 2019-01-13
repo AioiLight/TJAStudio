@@ -36,8 +36,8 @@
             this.openToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.openTemplateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripSeparator();
-            this.saveToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.Menu_File_Save = new System.Windows.Forms.ToolStripMenuItem();
+            this.Menu_File_SaveAs = new System.Windows.Forms.ToolStripMenuItem();
             this.exporttjaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripSeparator();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -67,9 +67,9 @@
             this.Menu_Window_Projects = new System.Windows.Forms.ToolStripMenuItem();
             this.Menu_Version = new System.Windows.Forms.ToolStripMenuItem();
             this.Menu_Tool = new System.Windows.Forms.ToolStripMenuItem();
+            this.Menu_Tool_About = new System.Windows.Forms.ToolStripMenuItem();
             this.Status = new System.Windows.Forms.StatusStrip();
             this.Tool = new System.Windows.Forms.ToolStrip();
-            this.Menu_Tool_About = new System.Windows.Forms.ToolStripMenuItem();
             this.Menu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -109,8 +109,8 @@
             this.openToolStripMenuItem,
             this.openTemplateToolStripMenuItem,
             this.toolStripMenuItem2,
-            this.saveToolStripMenuItem1,
-            this.saveToolStripMenuItem,
+            this.Menu_File_Save,
+            this.Menu_File_SaveAs,
             this.exporttjaToolStripMenuItem,
             this.toolStripMenuItem1,
             this.exitToolStripMenuItem});
@@ -149,19 +149,21 @@
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
             this.toolStripMenuItem2.Size = new System.Drawing.Size(187, 6);
             // 
-            // saveToolStripMenuItem1
+            // Menu_File_Save
             // 
-            this.saveToolStripMenuItem1.Image = global::TJAStudio.Properties.Resources.Save_16x;
-            this.saveToolStripMenuItem1.Name = "saveToolStripMenuItem1";
-            this.saveToolStripMenuItem1.Size = new System.Drawing.Size(190, 24);
-            this.saveToolStripMenuItem1.Text = "Save";
+            this.Menu_File_Save.Image = global::TJAStudio.Properties.Resources.Save_16x;
+            this.Menu_File_Save.Name = "Menu_File_Save";
+            this.Menu_File_Save.Size = new System.Drawing.Size(190, 24);
+            this.Menu_File_Save.Text = "Save";
+            this.Menu_File_Save.Click += new System.EventHandler(this.Menu_File_Save_Click);
             // 
-            // saveToolStripMenuItem
+            // Menu_File_SaveAs
             // 
-            this.saveToolStripMenuItem.Image = global::TJAStudio.Properties.Resources.SaveAs_16x;
-            this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(190, 24);
-            this.saveToolStripMenuItem.Text = "Save As...";
+            this.Menu_File_SaveAs.Image = global::TJAStudio.Properties.Resources.SaveAs_16x;
+            this.Menu_File_SaveAs.Name = "Menu_File_SaveAs";
+            this.Menu_File_SaveAs.Size = new System.Drawing.Size(190, 24);
+            this.Menu_File_SaveAs.Text = "Save As...";
+            this.Menu_File_SaveAs.Click += new System.EventHandler(this.Menu_File_SaveAs_Click);
             // 
             // exporttjaToolStripMenuItem
             // 
@@ -371,6 +373,13 @@
             this.Menu_Tool.Size = new System.Drawing.Size(63, 24);
             this.Menu_Tool.Text = "&Tool";
             // 
+            // Menu_Tool_About
+            // 
+            this.Menu_Tool_About.Name = "Menu_Tool_About";
+            this.Menu_Tool_About.Size = new System.Drawing.Size(198, 24);
+            this.Menu_Tool_About.Text = "About TJAStudio...";
+            this.Menu_Tool_About.Click += new System.EventHandler(this.Menu_Tool_About_Click);
+            // 
             // Status
             // 
             this.Status.Font = new System.Drawing.Font("メイリオ", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
@@ -387,13 +396,6 @@
             this.Tool.TabIndex = 4;
             this.Tool.Text = "toolStrip1";
             // 
-            // Menu_Tool_About
-            // 
-            this.Menu_Tool_About.Name = "Menu_Tool_About";
-            this.Menu_Tool_About.Size = new System.Drawing.Size(198, 24);
-            this.Menu_Tool_About.Text = "About TJAStudio...";
-            this.Menu_Tool_About.Click += new System.EventHandler(this.Menu_Tool_About_Click);
-            // 
             // Studio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 24F);
@@ -408,6 +410,7 @@
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Studio";
             this.Text = "TJAStudio";
+            this.Load += new System.EventHandler(this.Studio_Load);
             this.Menu.ResumeLayout(false);
             this.Menu.PerformLayout();
             this.ResumeLayout(false);
@@ -432,8 +435,8 @@
         private System.Windows.Forms.ToolStripMenuItem openToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem openTemplateToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripMenuItem2;
-        private System.Windows.Forms.ToolStripMenuItem saveToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem saveToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem Menu_File_Save;
+        private System.Windows.Forms.ToolStripMenuItem Menu_File_SaveAs;
         private System.Windows.Forms.ToolStripMenuItem exporttjaToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;

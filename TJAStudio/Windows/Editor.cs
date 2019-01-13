@@ -37,6 +37,8 @@ namespace TJAStudio
 
         private void TextEditor_TextChanged(object sender, EventArgs e)
         {
+            Program.Project.Courses[Studio.CurrentCourseID].Document = TextEditor.Document;
+            Program.Project.Courses[Studio.CurrentCourseID].Text = TextEditor.Document.Text;
             Studio.TJAStudio.EditorChanged();
         }
     }
