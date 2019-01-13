@@ -45,7 +45,7 @@
             this.List.Size = new System.Drawing.Size(422, 430);
             this.List.TabIndex = 2;
             this.List.UseCompatibleStateImageBehavior = false;
-            this.List.View = System.Windows.Forms.View.Details;
+            this.List.View = System.Windows.Forms.View.List;
             // 
             // Tool
             // 
@@ -66,6 +66,7 @@
             this.Tool_Add.Name = "Tool_Add";
             this.Tool_Add.Size = new System.Drawing.Size(79, 24);
             this.Tool_Add.Text = "Add File";
+            this.Tool_Add.Click += new System.EventHandler(this.Tool_Add_Click);
             // 
             // Tool_Delete
             // 
@@ -74,6 +75,7 @@
             this.Tool_Delete.Name = "Tool_Delete";
             this.Tool_Delete.Size = new System.Drawing.Size(96, 24);
             this.Tool_Delete.Text = "Delete File";
+            this.Tool_Delete.Click += new System.EventHandler(this.Tool_Delete_Click);
             // 
             // Project
             // 
