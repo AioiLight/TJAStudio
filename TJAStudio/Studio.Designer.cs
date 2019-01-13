@@ -30,9 +30,9 @@
         {
             this.dockPanel1 = new WeifenLuo.WinFormsUI.Docking.DockPanel();
             this.Menu = new System.Windows.Forms.MenuStrip();
-            this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.Menu_File = new System.Windows.Forms.ToolStripMenuItem();
+            this.Menu_Edit = new System.Windows.Forms.ToolStripMenuItem();
+            this.Menu_Tool = new System.Windows.Forms.ToolStripMenuItem();
             this.Status = new System.Windows.Forms.StatusStrip();
             this.Tool = new System.Windows.Forms.ToolStrip();
             this.Menu.SuspendLayout();
@@ -52,40 +52,40 @@
             // 
             this.Menu.Font = new System.Drawing.Font("メイリオ", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.Menu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.fileToolStripMenuItem,
-            this.editToolStripMenuItem,
-            this.toolToolStripMenuItem});
+            this.Menu_File,
+            this.Menu_Edit,
+            this.Menu_Tool});
             this.Menu.Location = new System.Drawing.Point(0, 0);
             this.Menu.Name = "Menu";
             this.Menu.Padding = new System.Windows.Forms.Padding(10, 4, 0, 4);
             this.Menu.Size = new System.Drawing.Size(828, 32);
             this.Menu.TabIndex = 2;
             // 
-            // fileToolStripMenuItem
+            // Menu_File
             // 
-            this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(42, 24);
-            this.fileToolStripMenuItem.Text = "&File";
+            this.Menu_File.Name = "Menu_File";
+            this.Menu_File.Size = new System.Drawing.Size(42, 24);
+            this.Menu_File.Text = "&File";
             // 
-            // editToolStripMenuItem
+            // Menu_Edit
             // 
-            this.editToolStripMenuItem.Name = "editToolStripMenuItem";
-            this.editToolStripMenuItem.Size = new System.Drawing.Size(45, 24);
-            this.editToolStripMenuItem.Text = "&Edit";
+            this.Menu_Edit.Name = "Menu_Edit";
+            this.Menu_Edit.Size = new System.Drawing.Size(45, 24);
+            this.Menu_Edit.Text = "&Edit";
             // 
-            // toolToolStripMenuItem
+            // Menu_Tool
             // 
-            this.toolToolStripMenuItem.Name = "toolToolStripMenuItem";
-            this.toolToolStripMenuItem.Size = new System.Drawing.Size(47, 24);
-            this.toolToolStripMenuItem.Text = "&Tool";
+            this.Menu_Tool.Name = "Menu_Tool";
+            this.Menu_Tool.Size = new System.Drawing.Size(47, 24);
+            this.Menu_Tool.Text = "&Tool";
             // 
             // Status
             // 
+            this.Status.Font = new System.Drawing.Font("メイリオ", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.Status.Location = new System.Drawing.Point(0, 450);
             this.Status.Name = "Status";
             this.Status.Size = new System.Drawing.Size(828, 22);
             this.Status.TabIndex = 3;
-            this.Status.Text = "statusStrip1";
             // 
             // Tool
             // 
@@ -120,9 +120,9 @@
 
         private WeifenLuo.WinFormsUI.Docking.DockPanel dockPanel1;
         private System.Windows.Forms.MenuStrip Menu;
-        private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem editToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem toolToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem Menu_File;
+        private System.Windows.Forms.ToolStripMenuItem Menu_Edit;
+        private System.Windows.Forms.ToolStripMenuItem Menu_Tool;
         private System.Windows.Forms.StatusStrip Status;
         private System.Windows.Forms.ToolStrip Tool;
     }
