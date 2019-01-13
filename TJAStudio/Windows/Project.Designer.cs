@@ -37,10 +37,12 @@
             // 
             // List
             // 
-            this.List.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.List.Location = new System.Drawing.Point(0, 0);
+            this.List.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.List.Location = new System.Drawing.Point(0, 30);
             this.List.Name = "List";
-            this.List.Size = new System.Drawing.Size(420, 460);
+            this.List.Size = new System.Drawing.Size(422, 430);
             this.List.TabIndex = 2;
             this.List.UseCompatibleStateImageBehavior = false;
             this.List.View = System.Windows.Forms.View.Details;

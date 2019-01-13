@@ -18,6 +18,7 @@ namespace TJAStudio
         }
         public int DeleteCourse(int index)
         {
+            if (!Editors[index].IsDisposed) Editors[index].Close();
             Editors.RemoveAt(index);
             Program.Project.Courses.RemoveAt(index);
             return index;

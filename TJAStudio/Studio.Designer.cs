@@ -49,6 +49,7 @@
             this.Dock.Name = "Dock";
             this.Dock.Size = new System.Drawing.Size(1238, 592);
             this.Dock.TabIndex = 0;
+            this.Dock.ActiveDocumentChanged += new System.EventHandler(this.Dock_ActiveDocumentChanged);
             // 
             // Menu
             // 
@@ -120,7 +121,7 @@
 
         #endregion
 
-        private WeifenLuo.WinFormsUI.Docking.DockPanel Dock;
+        public WeifenLuo.WinFormsUI.Docking.DockPanel Dock;
         private System.Windows.Forms.MenuStrip Menu;
         private System.Windows.Forms.ToolStripMenuItem Menu_File;
         private System.Windows.Forms.ToolStripMenuItem Menu_Edit;

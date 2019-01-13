@@ -1,6 +1,6 @@
 ﻿namespace TJAStudio
 {
-    partial class Courses
+    partial class HeaderWindow
     {
         /// <summary>
         /// Required designer variable.
@@ -43,25 +43,25 @@
             this.Tool_Delete});
             this.Tool.Location = new System.Drawing.Point(0, 0);
             this.Tool.Name = "Tool";
-            this.Tool.Size = new System.Drawing.Size(420, 27);
-            this.Tool.TabIndex = 0;
+            this.Tool.Size = new System.Drawing.Size(539, 27);
+            this.Tool.TabIndex = 5;
+            this.Tool.Text = "toolStrip1";
             // 
             // Tool_Add
             // 
             this.Tool_Add.Image = global::TJAStudio.Properties.Resources.AddColumn_16x;
             this.Tool_Add.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.Tool_Add.Name = "Tool_Add";
-            this.Tool_Add.Size = new System.Drawing.Size(102, 24);
-            this.Tool_Add.Text = "Add Course";
+            this.Tool_Add.Size = new System.Drawing.Size(105, 24);
+            this.Tool_Add.Text = "Add Header";
             // 
             // Tool_Delete
             // 
             this.Tool_Delete.Image = global::TJAStudio.Properties.Resources.DeleteColumn_16x;
             this.Tool_Delete.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.Tool_Delete.Name = "Tool_Delete";
-            this.Tool_Delete.Size = new System.Drawing.Size(119, 24);
-            this.Tool_Delete.Text = "Delete Course";
-            this.Tool_Delete.Click += new System.EventHandler(this.Tool_Delete_Click);
+            this.Tool_Delete.Size = new System.Drawing.Size(122, 24);
+            this.Tool_Delete.Text = "Delete Header";
             // 
             // List
             // 
@@ -69,26 +69,24 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.List.Location = new System.Drawing.Point(0, 30);
-            this.List.MultiSelect = false;
             this.List.Name = "List";
-            this.List.Size = new System.Drawing.Size(420, 428);
-            this.List.TabIndex = 1;
+            this.List.Size = new System.Drawing.Size(539, 672);
+            this.List.TabIndex = 4;
             this.List.UseCompatibleStateImageBehavior = false;
-            this.List.View = System.Windows.Forms.View.List;
-            this.List.SelectedIndexChanged += new System.EventHandler(this.List_SelectedIndexChanged);
+            this.List.View = System.Windows.Forms.View.Details;
             // 
-            // Courses
+            // HeaderWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(420, 460);
-            this.Controls.Add(this.List);
+            this.ClientSize = new System.Drawing.Size(539, 702);
             this.Controls.Add(this.Tool);
+            this.Controls.Add(this.List);
             this.Font = new System.Drawing.Font("メイリオ", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.Name = "Courses";
-            this.Text = "Courses";
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Name = "HeaderWindow";
+            this.Text = "Header";
             this.Tool.ResumeLayout(false);
             this.Tool.PerformLayout();
             this.ResumeLayout(false);
@@ -99,8 +97,8 @@
         #endregion
 
         private System.Windows.Forms.ToolStrip Tool;
-        private System.Windows.Forms.ListView List;
         private System.Windows.Forms.ToolStripButton Tool_Add;
         private System.Windows.Forms.ToolStripButton Tool_Delete;
+        private System.Windows.Forms.ListView List;
     }
 }

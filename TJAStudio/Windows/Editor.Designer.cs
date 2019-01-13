@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Sgry.Azuki.FontInfo fontInfo1 = new Sgry.Azuki.FontInfo();
+            Sgry.Azuki.FontInfo fontInfo2 = new Sgry.Azuki.FontInfo();
             this.TextEditor = new Sgry.Azuki.WinForms.AzukiControl();
             this.SuspendLayout();
             // 
@@ -45,10 +45,10 @@
             | Sgry.Azuki.DrawingOption.HighlightsMatchedBracket)));
             this.TextEditor.FirstVisibleLine = 0;
             this.TextEditor.Font = new System.Drawing.Font("ＭＳ ゴシック", 12F);
-            fontInfo1.Name = "ＭＳ ゴシック";
-            fontInfo1.Size = 12;
-            fontInfo1.Style = System.Drawing.FontStyle.Regular;
-            this.TextEditor.FontInfo = fontInfo1;
+            fontInfo2.Name = "ＭＳ ゴシック";
+            fontInfo2.Size = 12;
+            fontInfo2.Style = System.Drawing.FontStyle.Regular;
+            this.TextEditor.FontInfo = fontInfo2;
             this.TextEditor.ForeColor = System.Drawing.Color.Black;
             this.TextEditor.Location = new System.Drawing.Point(0, 0);
             this.TextEditor.Name = "TextEditor";
@@ -69,6 +69,7 @@
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Editor";
             this.Text = "Editor";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Editor_FormClosing);
             this.ResumeLayout(false);
 
         }

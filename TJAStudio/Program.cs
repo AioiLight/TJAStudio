@@ -53,5 +53,9 @@ namespace TJAStudio
         /// プロジェクト。
         /// </summary>
         public static Projects Project { get; set; } = new Projects();
+        /// <summary>
+        /// ウィンドウマネージャ。
+        /// </summary>
+        public static WindowManager WindowManager { get; set; } = new WindowManager();
     }
 }

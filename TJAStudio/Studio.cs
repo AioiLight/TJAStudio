@@ -16,16 +16,28 @@ namespace TJAStudio
         public Studio()
         {
             InitializeComponent();
+            TJAStudio = this;
             Dock.Theme = new VS2015LightTheme();
 
-            Courses.Show(Dock, DockState.DockRight);
             Project.Show(Dock, DockState.DockRight);
-            var index = WindowManager.AddCourse("Oni");
-            WindowManager.Editors[index].Show(Dock);
+            Courses.Show(Dock, DockState.DockRight);
+            HeaderWindow.Show(Dock, DockState.DockLeft);
+            var index = Program.WindowManager.AddCourse("Oni");
+            Program.WindowManager.AddCourse("Edit");
+            Courses.SetCoursesFromList();
+            Program.WindowManager.Editors[index].Show(Dock);
+            Program.WindowManager.Editors[index + 1].Show(Dock);
+        }
+
+        private void Dock_ActiveDocumentChanged(object sender, EventArgs e)
+        {
+
         }
 
         private Courses Courses = new Courses();
         private Project Project = new Project();
-        private WindowManager WindowManager = new WindowManager();
+        private HeaderWindow HeaderWindow = new HeaderWindow();
+        public static Studio TJAStudio { get; set; }
+
     }
 }

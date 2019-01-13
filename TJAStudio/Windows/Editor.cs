@@ -16,7 +16,13 @@ namespace TJAStudio
         {
             InitializeComponent();
             TextEditor.Document = doc;
-            Text = course.Name;
+            Text = "Editor - " + course.Name;
+        }
+
+        private void Editor_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Hide();
+            e.Cancel = true;
         }
     }
 }
