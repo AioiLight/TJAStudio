@@ -15,7 +15,7 @@ namespace TJAStudio
             SetColor(CharClass.Keyword, Program.Setting.ColorScheme.Keyword, azuki); // キーワード
             SetColor(CharClass.Keyword2, Program.Setting.ColorScheme.Command, azuki); // コマンド
             SetColor(CharClass.Keyword3, Program.Setting.ColorScheme.Parameter, azuki); // パラメータ
-            SetColor(CharClass.Comment, Program.Setting.ColorScheme.Comment, azuki) // コメント
+            SetColor(CharClass.Comment, Program.Setting.ColorScheme.Comment, azuki); // コメント
             SetColor(CharClass.Heading1, Program.Setting.ColorScheme.Don, azuki);
             SetColor(CharClass.Heading2, Program.Setting.ColorScheme.Ka, azuki);
             SetColor(CharClass.Heading3, Program.Setting.ColorScheme.Space, azuki);
