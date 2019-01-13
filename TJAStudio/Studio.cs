@@ -24,11 +24,7 @@ namespace TJAStudio
             Courses.Show(Dock, DockState.DockRight);
             HeaderWindow.Show(Dock, DockState.DockLeft);
             CommonHeaderWindow.Show(Dock, DockState.DockLeft);
-            var index = Program.WindowManager.AddCourse("Oni");
-            Program.WindowManager.AddCourse("Edit");
-            Courses.SetCoursesFromList();
-            Program.WindowManager.Editors[index].Show(Dock);
-            Program.WindowManager.Editors[index + 1].Show(Dock);
+            AddCourse("Oni");
             Dock.DockLeftPortion = 0.36;
             Dock.DockRightPortion = 0.36;
             Text = Properties.Common.Name;
@@ -39,6 +35,7 @@ namespace TJAStudio
 
         private void Dock_ActiveDocumentChanged(object sender, EventArgs e)
         {
+            if (Dock.DocumentsCount < 1) return;
             CurrentCourseID = Courses.List.FindItemWithText(Dock.ActiveDocument.DockHandler.TabText.Substring(9)).Index;
             HeaderWindow.SetHeaderFromList(Program.Project.Courses[CurrentCourseID].Header);
         }
@@ -111,5 +108,52 @@ namespace TJAStudio
         public static int CurrentCourseID { get; set; }
         public bool IsEdited { get; set; }
         public string FileName { get; set; }
+
+        private void AddCourse(string name)
+        {
+            var index = Program.WindowManager.AddCourse(name);
+            Courses.SetCoursesFromList();
+            Program.WindowManager.Editors[index].Show(Dock);
+           
+        }
+
+        private void Menu_File_New_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Application.Restart();
+        }
+
+        private void Initaize()
+        {
+            Program.WindowManager = new WindowManager();
+            Program.Project = new Projects();
+        }
+
+        private void Menu_File_Open_Click(object sender, EventArgs e)
+        {
+            Open();
+        }
+
+        private void Open(string defalutDir = null, bool isTemplate = false)
+        {
+            var dialog = new OpenFileDialog();
+            dialog.Title = isTemplate ? Properties.SystemMessage.OpenTemplate : Properties.SystemMessage.OpenProject;
+            if (defalutDir != null) dialog.InitialDirectory = defalutDir;
+            dialog.Filter = String.Format("{0}|*{1}", Properties.Common.ExtensionDescription, Properties.Common.ExtensionName);
+            if (dialog.ShowDialog() == DialogResult.OK)
+            {
+                Initaize();
+                Program.Project = FileManager.OpenFile(dialog.FileName);
+                Courses.SetCoursesFromList();
+
+                foreach (var item in Program.Project.Courses)
+                {
+                    Program.WindowManager.Editors.Add(new Editor(new Sgry.Azuki.Document(), item));
+                    Program.WindowManager.Editors[Program.WindowManager.Editors.Count - 1].TextEditor.Document.Text = item.Text;
+                    Program.WindowManager.Editors[Program.WindowManager.Editors.Count - 1].Show(Dock);
+                }
+                Courses.SetCoursesFromList();
+            }
+        }
     }
 }

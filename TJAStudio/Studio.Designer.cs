@@ -31,9 +31,9 @@
             this.Dock = new WeifenLuo.WinFormsUI.Docking.DockPanel();
             this.Menu = new System.Windows.Forms.MenuStrip();
             this.Menu_File = new System.Windows.Forms.ToolStripMenuItem();
-            this.newProjectToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.Menu_File_New = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripSeparator();
-            this.openToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.Menu_File_Open = new System.Windows.Forms.ToolStripMenuItem();
             this.openTemplateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripSeparator();
             this.Menu_File_Save = new System.Windows.Forms.ToolStripMenuItem();
@@ -104,9 +104,9 @@
             // Menu_File
             // 
             this.Menu_File.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.newProjectToolStripMenuItem,
+            this.Menu_File_New,
             this.toolStripMenuItem3,
-            this.openToolStripMenuItem,
+            this.Menu_File_Open,
             this.openTemplateToolStripMenuItem,
             this.toolStripMenuItem2,
             this.Menu_File_Save,
@@ -119,24 +119,26 @@
             this.Menu_File.Size = new System.Drawing.Size(58, 24);
             this.Menu_File.Text = "&File";
             // 
-            // newProjectToolStripMenuItem
+            // Menu_File_New
             // 
-            this.newProjectToolStripMenuItem.Image = global::TJAStudio.Properties.Resources.NewFile_16x;
-            this.newProjectToolStripMenuItem.Name = "newProjectToolStripMenuItem";
-            this.newProjectToolStripMenuItem.Size = new System.Drawing.Size(190, 24);
-            this.newProjectToolStripMenuItem.Text = "New Project...";
+            this.Menu_File_New.Image = global::TJAStudio.Properties.Resources.NewFile_16x;
+            this.Menu_File_New.Name = "Menu_File_New";
+            this.Menu_File_New.Size = new System.Drawing.Size(190, 24);
+            this.Menu_File_New.Text = "New Project...";
+            this.Menu_File_New.Click += new System.EventHandler(this.Menu_File_New_Click);
             // 
             // toolStripMenuItem3
             // 
             this.toolStripMenuItem3.Name = "toolStripMenuItem3";
             this.toolStripMenuItem3.Size = new System.Drawing.Size(187, 6);
             // 
-            // openToolStripMenuItem
+            // Menu_File_Open
             // 
-            this.openToolStripMenuItem.Image = global::TJAStudio.Properties.Resources.FolderOpen_16x;
-            this.openToolStripMenuItem.Name = "openToolStripMenuItem";
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(190, 24);
-            this.openToolStripMenuItem.Text = "Open...";
+            this.Menu_File_Open.Image = global::TJAStudio.Properties.Resources.FolderOpen_16x;
+            this.Menu_File_Open.Name = "Menu_File_Open";
+            this.Menu_File_Open.Size = new System.Drawing.Size(190, 24);
+            this.Menu_File_Open.Text = "Open...";
+            this.Menu_File_Open.Click += new System.EventHandler(this.Menu_File_Open_Click);
             // 
             // openTemplateToolStripMenuItem
             // 
@@ -430,9 +432,9 @@
         private System.Windows.Forms.ToolStripMenuItem Menu_Edit;
         private System.Windows.Forms.StatusStrip Status;
         private System.Windows.Forms.ToolStrip Tool;
-        private System.Windows.Forms.ToolStripMenuItem newProjectToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem Menu_File_New;
         private System.Windows.Forms.ToolStripSeparator toolStripMenuItem3;
-        private System.Windows.Forms.ToolStripMenuItem openToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem Menu_File_Open;
         private System.Windows.Forms.ToolStripMenuItem openTemplateToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripMenuItem2;
         private System.Windows.Forms.ToolStripMenuItem Menu_File_Save;
