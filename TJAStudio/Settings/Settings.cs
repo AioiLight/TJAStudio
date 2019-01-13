@@ -1,4 +1,5 @@
 ﻿using System.Drawing;
+using System.Globalization;
 using System.Xml.Serialization;
 
 namespace TJAStudio
@@ -12,7 +13,7 @@ namespace TJAStudio
         /// <summary>
         /// UIの言語。
         /// </summary>
-        public string Locale { get; set; } = "ja";
+        public string Locale { get; set; } = System.Threading.Thread.CurrentThread.CurrentUICulture.ToString();
         /// <summary>
         /// テキスト表示に使用するフォント名。
         /// </summary>

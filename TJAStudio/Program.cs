@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Reflection;
 using System.Threading.Tasks;
@@ -30,6 +31,7 @@ namespace TJAStudio
                 // なければ新規にnew。
                 Setting = new Setting();
             }
+            CultureInfo.CurrentUICulture = new CultureInfo(Setting.Locale, false);
             #endregion
             #endregion
             Application.EnableVisualStyles();
