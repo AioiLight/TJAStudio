@@ -72,6 +72,8 @@ namespace TJAStudio
                 return;
             }
             FileManager.SaveFile(FileName, Program.Project);
+            IsEdited = false;
+            TitleChange();
         }
 
         private void SaveAs()
@@ -100,14 +102,6 @@ namespace TJAStudio
             SaveAs();            
         }
 
-        private Courses Courses = new Courses();
-        private Project Project = new Project();
-        public  HeadersWindow HeaderWindow = new HeadersWindow(false);
-        private HeadersWindow CommonHeaderWindow = new HeadersWindow(true, "Common Header");
-        public static Studio TJAStudio { get; set; }
-        public static int CurrentCourseID { get; set; }
-        public bool IsEdited { get; set; }
-        public string FileName { get; set; }
 
         private void AddCourse(string name)
         {
@@ -119,6 +113,12 @@ namespace TJAStudio
 
         private void Menu_File_New_Click(object sender, EventArgs e)
         {
+            if (IsEdited)
+            {
+                var dialogResult = MessageBox.Show(String.Format(Properties.SystemMessage.ApplicationExit, Program.Project.ProjectName), Properties.Common.Name, MessageBoxButtons.YesNoCancel, MessageBoxIcon.Asterisk, MessageBoxDefaultButton.Button3);
+                if (dialogResult == DialogResult.Yes) Save();
+                else if (dialogResult == DialogResult.Cancel) return;
+            }
             this.Close();
             Application.Restart();
         }
@@ -136,6 +136,12 @@ namespace TJAStudio
 
         private void Open(string defalutDir = null, bool isTemplate = false)
         {
+            if (IsEdited)
+            {
+                var dialogResult = MessageBox.Show(String.Format(Properties.SystemMessage.ApplicationExit, Program.Project.ProjectName), Properties.Common.Name, MessageBoxButtons.YesNoCancel, MessageBoxIcon.Asterisk, MessageBoxDefaultButton.Button3);
+                if (dialogResult == DialogResult.Yes) Save();
+                else if (dialogResult == DialogResult.Cancel) return;
+            }
             var dialog = new OpenFileDialog();
             dialog.Title = isTemplate ? Properties.SystemMessage.OpenTemplate : Properties.SystemMessage.OpenProject;
             if (defalutDir != null) dialog.InitialDirectory = defalutDir;
@@ -153,7 +159,29 @@ namespace TJAStudio
                     Program.WindowManager.Editors[Program.WindowManager.Editors.Count - 1].Show(Dock);
                 }
                 Courses.SetCoursesFromList();
+                Program.Project.ProjectName = isTemplate ? Properties.Common.UntitledProjectName : Program.Project.ProjectName;
+                IsEdited = false;
+                TitleChange();
+                FileName = dialog.FileName;
             }
+        }
+
+        private void Menu_File_OpenTmpl_Click(object sender, EventArgs e)
+        {
+            Open(Program.EXEPath + @"\Template\", true);
+        }
+        private Courses Courses = new Courses();
+        private Project Project = new Project();
+        public  HeadersWindow HeaderWindow = new HeadersWindow(false);
+        private HeadersWindow CommonHeaderWindow = new HeadersWindow(true, "Common Header");
+        public static Studio TJAStudio { get; set; }
+        public static int CurrentCourseID { get; set; }
+        public bool IsEdited { get; set; }
+        public string FileName { get; set; }
+
+        private void Menu_File_Exit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
