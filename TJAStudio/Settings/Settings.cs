@@ -20,6 +20,8 @@ namespace TJAStudio
         /// </summary>
         public string SimulatorPath { get; set; } = "";
 
+        public bool UTF8Mode { get; set; } = false;
+
         /// <summary>
         /// テキスト表示に使用するフォント名。
         /// </summary>

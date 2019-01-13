@@ -461,7 +461,7 @@ namespace TJAStudio
             {
                 Directory.CreateDirectory(tempDir);
             }
-            TJAManager.Build(tempDir + Program.Project.ProjectName + ".tja", Program.Project, Encoding.UTF8);
+            TJAManager.Build(tempDir + Program.Project.ProjectName + ".tja", Program.Project, Program.Setting.UTF8Mode ? Encoding.UTF8 : Encoding.GetEncoding("Shift_JIS"));
             foreach (var item in Program.Project.ProjectFile)
             {
                 var fileName = tempDir + Path.GetFileName(item);
