@@ -31,9 +31,9 @@
             this.Tool = new System.Windows.Forms.ToolStrip();
             this.Tool_Add = new System.Windows.Forms.ToolStripButton();
             this.Tool_Delete = new System.Windows.Forms.ToolStripButton();
-            this.List = new System.Windows.Forms.ListView();
-            this.Tool_MoveDown = new System.Windows.Forms.ToolStripButton();
             this.Tool_MoveUp = new System.Windows.Forms.ToolStripButton();
+            this.Tool_MoveDown = new System.Windows.Forms.ToolStripButton();
+            this.List = new System.Windows.Forms.ListView();
             this.Tool.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -57,6 +57,7 @@
             this.Tool_Add.Name = "Tool_Add";
             this.Tool_Add.Size = new System.Drawing.Size(102, 24);
             this.Tool_Add.Text = "Add Course";
+            this.Tool_Add.Click += new System.EventHandler(this.Tool_Add_Click);
             // 
             // Tool_Delete
             // 
@@ -66,6 +67,24 @@
             this.Tool_Delete.Size = new System.Drawing.Size(119, 24);
             this.Tool_Delete.Text = "Delete Course";
             this.Tool_Delete.Click += new System.EventHandler(this.Tool_Delete_Click);
+            // 
+            // Tool_MoveUp
+            // 
+            this.Tool_MoveUp.Image = global::TJAStudio.Properties.Resources.GlyphUp_16x;
+            this.Tool_MoveUp.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.Tool_MoveUp.Name = "Tool_MoveUp";
+            this.Tool_MoveUp.Size = new System.Drawing.Size(84, 24);
+            this.Tool_MoveUp.Text = "Move Up";
+            this.Tool_MoveUp.Click += new System.EventHandler(this.Tool_MoveUp_Click);
+            // 
+            // Tool_MoveDown
+            // 
+            this.Tool_MoveDown.Image = global::TJAStudio.Properties.Resources.GlyphDown_16x;
+            this.Tool_MoveDown.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.Tool_MoveDown.Name = "Tool_MoveDown";
+            this.Tool_MoveDown.Size = new System.Drawing.Size(104, 24);
+            this.Tool_MoveDown.Text = "Move Down";
+            this.Tool_MoveDown.Click += new System.EventHandler(this.Tool_MoveDown_Click);
             // 
             // List
             // 
@@ -80,24 +99,6 @@
             this.List.UseCompatibleStateImageBehavior = false;
             this.List.View = System.Windows.Forms.View.List;
             this.List.SelectedIndexChanged += new System.EventHandler(this.List_SelectedIndexChanged);
-            // 
-            // Tool_MoveDown
-            // 
-            this.Tool_MoveDown.Image = global::TJAStudio.Properties.Resources.GlyphDown_16x;
-            this.Tool_MoveDown.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.Tool_MoveDown.Name = "Tool_MoveDown";
-            this.Tool_MoveDown.Size = new System.Drawing.Size(104, 24);
-            this.Tool_MoveDown.Text = "Move Down";
-            this.Tool_MoveDown.Click += new System.EventHandler(this.Tool_MoveDown_Click);
-            // 
-            // Tool_MoveUp
-            // 
-            this.Tool_MoveUp.Image = global::TJAStudio.Properties.Resources.GlyphUp_16x;
-            this.Tool_MoveUp.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.Tool_MoveUp.Name = "Tool_MoveUp";
-            this.Tool_MoveUp.Size = new System.Drawing.Size(84, 24);
-            this.Tool_MoveUp.Text = "Move Up";
-            this.Tool_MoveUp.Click += new System.EventHandler(this.Tool_MoveUp_Click);
             // 
             // Courses
             // 

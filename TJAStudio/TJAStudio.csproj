@@ -105,6 +105,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Settings\SettingManager.cs" />
     <Compile Include="Settings\Settings.cs" />
+    <Compile Include="Windows\AddCourse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\AddCourse.Designer.cs">
+      <DependentUpon>AddCourse.cs</DependentUpon>
+    </Compile>
     <Compile Include="Windows\AddHeader.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -157,6 +163,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Studio.resx">
       <DependentUpon>Studio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\AddCourse.resx">
+      <DependentUpon>AddCourse.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Windows\AddHeader.resx">
       <DependentUpon>AddHeader.cs</DependentUpon>

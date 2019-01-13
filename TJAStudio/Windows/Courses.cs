@@ -26,6 +26,17 @@ namespace TJAStudio
             }
         }
 
+        private void Tool_Add_Click(object sender, EventArgs e)
+        {
+            var dialog = new AddCourse();
+            var dialogResult = dialog.ShowDialog(this);
+            if (dialogResult == DialogResult.OK)
+            {
+                Program.WindowManager.AddCourse(dialog.TextBox_Name.Text);
+                SetCoursesFromList();
+                Studio.TJAStudio.EditorChanged();
+            }
+        }
         private void Tool_Delete_Click(object sender, EventArgs e)
         {
             if (Program.Project.Courses.Count <= 1 || List.SelectedItems.Count < 1) return;
@@ -37,7 +48,7 @@ namespace TJAStudio
         private void List_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (List.SelectedItems.Count < 1) return;
-            Program.WindowManager.Editors[List.SelectedItems[0].Index].Show();
+            Program.WindowManager.Editors[List.SelectedItems[0].Index].Show(Studio.TJAStudio.Dock);
 
         }
 
@@ -62,5 +73,6 @@ namespace TJAStudio
             SetCoursesFromList();
             Studio.TJAStudio.EditorChanged();
         }
+
     }
 }
