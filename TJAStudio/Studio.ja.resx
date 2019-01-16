@@ -337,6 +337,24 @@
   <data name="Menu_Execution.Text" xml:space="preserve">
     <value>実行 (&amp;E)</value>
   </data>
+  <data name="Tool_Open.Size" type="System.Drawing.Size, System.Drawing">
+    <value>136, 24</value>
+  </data>
+  <data name="Tool_Open.Text" xml:space="preserve">
+    <value>プロジェクトを開く</value>
+  </data>
+  <data name="Tool_SaveAs.Size" type="System.Drawing.Size, System.Drawing">
+    <value>256, 22</value>
+  </data>
+  <data name="Tool_SaveAs.Text" xml:space="preserve">
+    <value>プロジェクトを名前をつけて保存</value>
+  </data>
+  <data name="Tool_Save.Size" type="System.Drawing.Size, System.Drawing">
+    <value>148, 24</value>
+  </data>
+  <data name="Tool_Save.Text" xml:space="preserve">
+    <value>プロジェクトを保存</value>
+  </data>
   <data name="Tool_Undo.Size" type="System.Drawing.Size, System.Drawing">
     <value>76, 24</value>
   </data>

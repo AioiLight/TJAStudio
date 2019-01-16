@@ -620,5 +620,25 @@ namespace TJAStudio
             }
             return null;
         }
+
+        private void Tool_SaveAs_Click(object sender, EventArgs e)
+        {
+            SaveAs();
+        }
+
+        private void Tool_Save_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void Tool_Open_Click(object sender, EventArgs e)
+        {
+            Open();
+        }
+
+        private void Tool_Save_ButtonClick(object sender, EventArgs e)
+        {
+            Save();
+        }
     }
 }

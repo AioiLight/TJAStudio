@@ -30,12 +30,12 @@ namespace TJAStudio
                 // コース別ヘッダ。
                 foreach (var header in course.Header)
                 {
-                    result += header.Name + ":" + header.Value + "\r\n";
+                    result += header.Name + ":" + header.Value + Environment.NewLine;
                 }
                 // #START～#END
                 foreach (var item in course.Text.Split(new char[] { '\r', '\n' }) != null ? course.Text.Split(new char[] { '\r', '\n' }) : new string[] { "" })
                 {
-                    result += item + "\r\n";
+                    result += item + Environment.NewLine;
                 }
             }
             WriteToFile(result, fileName, encoding);
@@ -63,11 +63,11 @@ namespace TJAStudio
                 // コース別ヘッダ。
                 foreach (var header in argCourse.Header)
                 {
-                    result += header.Name + ":" + header.Value + "\r\n";
+                    result += header.Name + ":" + header.Value + Environment.NewLine;
                 }
                 foreach (var item in argCourse.Text != null ? argCourse.Text.Split(new char[] { '\r', '\n' }) : new string[] { "" })
                 {
-                    result += item + "\r\n";
+                    result += item + Environment.NewLine;
                 }
             }
             WriteToFile(result, fileName, encoding);
