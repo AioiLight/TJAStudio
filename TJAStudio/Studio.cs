@@ -21,10 +21,17 @@ namespace TJAStudio
             TJAStudio = this;
             Dock.Theme = new VS2015LightTheme();
 
-            Project.Show(Dock, DockState.DockRight);
-            Courses.Show(Dock, DockState.DockRight);
-            HeaderWindow.Show(Dock, DockState.DockLeft);
-            CommonHeaderWindow.Show(Dock, DockState.DockLeft);
+            if (File.Exists(Program.EXEPath + @"\Windows.xml"))
+            {
+                Dock.LoadFromXml(Program.EXEPath + @"\Windows.xml", new DeserializeDockContent(GetDockContentFromPersistString));
+            }
+            else
+            {
+                Project.Show(Dock, DockState.DockRight);
+                Courses.Show(Dock, DockState.DockRight);
+                HeaderWindow.Show(Dock, DockState.DockLeft);
+                CommonHeaderWindow.Show(Dock, DockState.DockLeft);
+            }
             AddCourse("Oni");
             Dock.DockLeftPortion = 0.36;
             Dock.DockRightPortion = 0.36;
@@ -592,6 +599,26 @@ namespace TJAStudio
                 }
                 else if (dialogResult == DialogResult.Cancel) e.Cancel = true;
             }
+
+            // 子ウィンドウの保存とか
+            Dock.SaveAsXml(Program.EXEPath + @"\Windows.xml");
+        }
+
+        private IDockContent GetDockContentFromPersistString(string persistString)
+        {
+            // GetPersistString()メソッドが返す名前に合わせたフォームを返す
+            switch (persistString)
+            {
+                case nameof(Courses):
+                    return Courses;
+                case "CommonHeader":
+                    return CommonHeaderWindow;
+                case "CourseHeader":
+                    return HeaderWindow;
+                case "Project":
+                    return Project;                
+            }
+            return null;
         }
     }
 }

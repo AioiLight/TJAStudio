@@ -17,6 +17,11 @@ namespace TJAStudio
             InitializeComponent();
         }
 
+        protected override string GetPersistString()
+        {
+            return "Courses";
+        }
+
         public void SetCoursesFromList()
         {
             List.Items.Clear();

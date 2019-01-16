@@ -20,6 +20,11 @@ namespace TJAStudio
             IsCommon = isCommon;
         }
 
+        protected override string GetPersistString()
+        {
+            return IsCommon ? "CommonHeader" : "CourseHeader";
+        }
+
         public HeadersWindow(bool isCommon, string name)
         {
             InitializeComponent();

@@ -17,6 +17,11 @@ namespace TJAStudio
             InitializeComponent();
         }
 
+        protected override string GetPersistString()
+        {
+            return "Project";
+        }
+
         private void Project_FormClosing(object sender, FormClosingEventArgs e)
         {
             Hide();
