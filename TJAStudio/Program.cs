@@ -14,7 +14,7 @@ namespace TJAStudio
         /// アプリケーションのメイン エントリ ポイントです。
         /// </summary>
         [STAThread]
-        static void Main()
+        static void Main(string[] args)
         {
             #region 起動前処理
             EXEPath = System.IO.Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location);
@@ -36,7 +36,14 @@ namespace TJAStudio
             #endregion
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Studio());
+            if(args.Length != 0 && !string.IsNullOrWhiteSpace(args[0]))
+            {
+                Application.Run(new Studio(args[0]));
+            }
+            else
+            {
+                Application.Run(new Studio());
+            }
             #region 終了処理
             SettingsManager.SetSettings(SettingFileName, Setting);
             #endregion

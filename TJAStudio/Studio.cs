@@ -34,6 +34,11 @@ namespace TJAStudio
             TitleChange();
         }
 
+        public Studio(string fileName) : this()
+        {
+            FileOpen(false, fileName);
+        } 
+
         private void Dock_ActiveDocumentChanged(object sender, EventArgs e)
         {
             if (Dock.DocumentsCount < 1) return;
@@ -155,30 +160,35 @@ namespace TJAStudio
             dialog.Filter = String.Format("{0}|*{1}", Properties.Common.ExtensionDescription, Properties.Common.ExtensionName);
             if (dialog.ShowDialog() == DialogResult.OK)
             {
-                Initaize();
-                Program.Project = FileManager.OpenFile(dialog.FileName);
-                Courses.SetCoursesFromList();
-                Project.SetCoursesFromList();
-
-
-                foreach (var item in Dock.Documents)
-                {
-                    item.DockHandler.Hide();
-                }
-
-                foreach (var item in Program.Project.Courses)
-                {
-                    Program.WindowManager.Editors.Add(new Editor(new Sgry.Azuki.Document(), item));
-                    Program.WindowManager.Editors[Program.WindowManager.Editors.Count - 1].TextEditor.Document.Text = item.Text;
-                    Program.WindowManager.Editors[Program.WindowManager.Editors.Count - 1].Show(Dock);
-                }
-                Courses.SetCoursesFromList();
-                Project.SetCoursesFromList();
-                Program.Project.ProjectName = isTemplate ? Properties.Common.UntitledProjectName : Program.Project.ProjectName;
-                IsEdited = false;
-                TitleChange();
-                FileName =  isTemplate ? "" : dialog.FileName;
+                FileOpen(isTemplate, dialog.FileName);
             }
+        }
+
+        private void FileOpen(bool isTemplate, string fileName)
+        {
+            Initaize();
+            Program.Project = FileManager.OpenFile(fileName);
+            Courses.SetCoursesFromList();
+            Project.SetCoursesFromList();
+
+
+            foreach (var item in Dock.Documents)
+            {
+                item.DockHandler.Hide();
+            }
+
+            foreach (var item in Program.Project.Courses)
+            {
+                Program.WindowManager.Editors.Add(new Editor(new Sgry.Azuki.Document(), item));
+                Program.WindowManager.Editors[Program.WindowManager.Editors.Count - 1].TextEditor.Document.Text = item.Text;
+                Program.WindowManager.Editors[Program.WindowManager.Editors.Count - 1].Show(Dock);
+            }
+            Courses.SetCoursesFromList();
+            Project.SetCoursesFromList();
+            Program.Project.ProjectName = isTemplate ? Properties.Common.UntitledProjectName : Program.Project.ProjectName;
+            IsEdited = false;
+            TitleChange();
+            FileName = isTemplate ? "" : fileName;
         }
 
         private void Menu_File_OpenTmpl_Click(object sender, EventArgs e)
