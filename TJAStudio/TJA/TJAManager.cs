@@ -33,7 +33,7 @@ namespace TJAStudio
                     result += header.Name + ":" + header.Value + "\r\n";
                 }
                 // #START～#END
-                foreach (var item in course.Text.Split('\n') != null ? course.Text.Split('\n') : new string[] { "" })
+                foreach (var item in course.Text.Split(new char[] { '\r', '\n' }) != null ? course.Text.Split(new char[] { '\r', '\n' }) : new string[] { "" })
                 {
                     result += item + "\r\n";
                 }
@@ -65,7 +65,7 @@ namespace TJAStudio
                 {
                     result += header.Name + ":" + header.Value + "\r\n";
                 }
-                foreach (var item in argCourse.Text != null ? argCourse.Text.Split('\n') : new string[] { "" })
+                foreach (var item in argCourse.Text != null ? argCourse.Text.Split(new char[] { '\r', '\n' }) : new string[] { "" })
                 {
                     result += item + "\r\n";
                 }
