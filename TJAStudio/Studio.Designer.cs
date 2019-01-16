@@ -67,12 +67,16 @@
             this.Menu_Window_CourseHeader = new System.Windows.Forms.ToolStripMenuItem();
             this.Menu_Window_Projects = new System.Windows.Forms.ToolStripMenuItem();
             this.Menu_Version = new System.Windows.Forms.ToolStripMenuItem();
+            this.Menu_Version_Site = new System.Windows.Forms.ToolStripMenuItem();
+            this.Menu_Version_TJAS = new System.Windows.Forms.ToolStripMenuItem();
             this.Menu_Tool = new System.Windows.Forms.ToolStripMenuItem();
             this.Menu_Tool_About = new System.Windows.Forms.ToolStripMenuItem();
             this.Menu_Execution = new System.Windows.Forms.ToolStripMenuItem();
             this.Menu_Execution_Start = new System.Windows.Forms.ToolStripMenuItem();
             this.Menu_Execution_LiveUpdate = new System.Windows.Forms.ToolStripMenuItem();
             this.Status = new System.Windows.Forms.StatusStrip();
+            this.Status_Measures = new System.Windows.Forms.ToolStripStatusLabel();
+            this.Status_Caret = new System.Windows.Forms.ToolStripStatusLabel();
             this.Tool = new System.Windows.Forms.ToolStrip();
             this.Tool_Undo = new System.Windows.Forms.ToolStripButton();
             this.Tool_Redo = new System.Windows.Forms.ToolStripButton();
@@ -82,8 +86,6 @@
             this.Tool_Paste = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.Tool_Execute = new System.Windows.Forms.ToolStripButton();
-            this.Status_Caret = new System.Windows.Forms.ToolStripStatusLabel();
-            this.Status_Measures = new System.Windows.Forms.ToolStripStatusLabel();
             this.Menu.SuspendLayout();
             this.Status.SuspendLayout();
             this.Tool.SuspendLayout();
@@ -360,8 +362,23 @@
             // Menu_Version
             // 
             this.Menu_Version.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.Menu_Version.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.Menu_Version_Site,
+            this.Menu_Version_TJAS});
             this.Menu_Version.Name = "Menu_Version";
             resources.ApplyResources(this.Menu_Version, "Menu_Version");
+            // 
+            // Menu_Version_Site
+            // 
+            this.Menu_Version_Site.Name = "Menu_Version_Site";
+            resources.ApplyResources(this.Menu_Version_Site, "Menu_Version_Site");
+            this.Menu_Version_Site.Click += new System.EventHandler(this.Menu_Version_Site_Click);
+            // 
+            // Menu_Version_TJAS
+            // 
+            this.Menu_Version_TJAS.Name = "Menu_Version_TJAS";
+            resources.ApplyResources(this.Menu_Version_TJAS, "Menu_Version_TJAS");
+            this.Menu_Version_TJAS.Click += new System.EventHandler(this.Menu_Version_TJAS_Click);
             // 
             // Menu_Tool
             // 
@@ -410,6 +427,17 @@
             this.Status_Measures,
             this.Status_Caret});
             this.Status.Name = "Status";
+            // 
+            // Status_Measures
+            // 
+            this.Status_Measures.Name = "Status_Measures";
+            resources.ApplyResources(this.Status_Measures, "Status_Measures");
+            this.Status_Measures.Spring = true;
+            // 
+            // Status_Caret
+            // 
+            this.Status_Caret.Name = "Status_Caret";
+            resources.ApplyResources(this.Status_Caret, "Status_Caret");
             // 
             // Tool
             // 
@@ -477,17 +505,6 @@
             this.Tool_Execute.Name = "Tool_Execute";
             this.Tool_Execute.Click += new System.EventHandler(this.Tool_Execute_Click);
             // 
-            // Status_Caret
-            // 
-            this.Status_Caret.Name = "Status_Caret";
-            resources.ApplyResources(this.Status_Caret, "Status_Caret");
-            // 
-            // Status_Measures
-            // 
-            this.Status_Measures.Name = "Status_Measures";
-            resources.ApplyResources(this.Status_Measures, "Status_Measures");
-            this.Status_Measures.Spring = true;
-            // 
             // Studio
             // 
             resources.ApplyResources(this, "$this");
@@ -498,7 +515,10 @@
             this.Controls.Add(this.Menu);
             this.MainMenuStrip = this.Menu;
             this.Name = "Studio";
+            this.Deactivate += new System.EventHandler(this.Studio_Deactivate);
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Studio_FormClosing);
             this.Load += new System.EventHandler(this.Studio_Load);
+            this.Leave += new System.EventHandler(this.Studio_Leave);
             this.Menu.ResumeLayout(false);
             this.Menu.PerformLayout();
             this.Status.ResumeLayout(false);
@@ -571,6 +591,8 @@
         private System.Windows.Forms.ToolStripButton Tool_Execute;
         private System.Windows.Forms.ToolStripStatusLabel Status_Caret;
         private System.Windows.Forms.ToolStripStatusLabel Status_Measures;
+        private System.Windows.Forms.ToolStripMenuItem Menu_Version_Site;
+        private System.Windows.Forms.ToolStripMenuItem Menu_Version_TJAS;
     }
 }
 

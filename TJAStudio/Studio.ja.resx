@@ -119,52 +119,52 @@
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="Menu_File_New.Size" type="System.Drawing.Size, System.Drawing">
-    <value>275, 24</value>
+    <value>375, 24</value>
   </data>
   <data name="Menu_File_New.Text" xml:space="preserve">
     <value>新規プロジェクト...</value>
   </data>
   <data name="toolStripMenuItem3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>272, 6</value>
+    <value>372, 6</value>
   </data>
   <data name="Menu_File_Open.Size" type="System.Drawing.Size, System.Drawing">
-    <value>275, 24</value>
+    <value>375, 24</value>
   </data>
   <data name="Menu_File_Open.Text" xml:space="preserve">
     <value>プロジェクトを開く...</value>
   </data>
   <data name="Menu_File_OpenTmpl.Size" type="System.Drawing.Size, System.Drawing">
-    <value>275, 24</value>
+    <value>375, 24</value>
   </data>
   <data name="Menu_File_OpenTmpl.Text" xml:space="preserve">
     <value>テンプレートを開く...</value>
   </data>
   <data name="toolStripMenuItem2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>272, 6</value>
+    <value>372, 6</value>
   </data>
   <data name="Menu_File_Save.Size" type="System.Drawing.Size, System.Drawing">
-    <value>275, 24</value>
+    <value>375, 24</value>
   </data>
   <data name="Menu_File_Save.Text" xml:space="preserve">
     <value>プロジェクトを保存</value>
   </data>
   <data name="Menu_File_SaveAs.Size" type="System.Drawing.Size, System.Drawing">
-    <value>275, 24</value>
+    <value>375, 24</value>
   </data>
   <data name="Menu_File_SaveAs.Text" xml:space="preserve">
-    <value>プロジェクトを名前をけて保存...</value>
+    <value>プロジェクトを名前を付けて保存...</value>
   </data>
   <data name="Menu_File_Export.Size" type="System.Drawing.Size, System.Drawing">
-    <value>275, 24</value>
+    <value>375, 24</value>
   </data>
   <data name="Menu_File_Export.Text" xml:space="preserve">
     <value>.tja ファイルをエクスポート</value>
   </data>
   <data name="toolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>272, 6</value>
+    <value>372, 6</value>
   </data>
   <data name="Menu_File_Exit.Size" type="System.Drawing.Size, System.Drawing">
-    <value>275, 24</value>
+    <value>375, 24</value>
   </data>
   <data name="Menu_File_Exit.Text" xml:space="preserve">
     <value>終了</value>
@@ -176,67 +176,67 @@
     <value>ファイル (&amp;F)</value>
   </data>
   <data name="Menu_Edit_Undo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>145, 24</value>
+    <value>195, 24</value>
   </data>
   <data name="Menu_Edit_Undo.Text" xml:space="preserve">
     <value>元に戻す</value>
   </data>
   <data name="Menu_Edit_Redo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>145, 24</value>
+    <value>195, 24</value>
   </data>
   <data name="Menu_Edit_Redo.Text" xml:space="preserve">
     <value>やり直し</value>
   </data>
   <data name="toolStripMenuItem4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>142, 6</value>
+    <value>192, 6</value>
   </data>
   <data name="Menu_Edit_Cut.Size" type="System.Drawing.Size, System.Drawing">
-    <value>145, 24</value>
+    <value>195, 24</value>
   </data>
   <data name="Menu_Edit_Cut.Text" xml:space="preserve">
     <value>切り取り</value>
   </data>
   <data name="Menu_Edit_Copy.Size" type="System.Drawing.Size, System.Drawing">
-    <value>145, 24</value>
+    <value>195, 24</value>
   </data>
   <data name="Menu_Edit_Copy.Text" xml:space="preserve">
     <value>コピー</value>
   </data>
   <data name="Menu_Edit_Paste.Size" type="System.Drawing.Size, System.Drawing">
-    <value>145, 24</value>
+    <value>195, 24</value>
   </data>
   <data name="Menu_Edit_Paste.Text" xml:space="preserve">
     <value>貼り付け</value>
   </data>
   <data name="toolStripMenuItem5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>142, 6</value>
+    <value>192, 6</value>
   </data>
   <data name="Menu_Edit_GoTo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>145, 24</value>
+    <value>195, 24</value>
   </data>
   <data name="Menu_Edit_GoTo.Text" xml:space="preserve">
     <value>行へ移動...</value>
   </data>
   <data name="toolStripMenuItem6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>142, 6</value>
+    <value>192, 6</value>
   </data>
   <data name="Menu_Edit_SelectAll.Size" type="System.Drawing.Size, System.Drawing">
-    <value>145, 24</value>
+    <value>195, 24</value>
   </data>
   <data name="Menu_Edit_SelectAll.Text" xml:space="preserve">
     <value>全て選択</value>
   </data>
   <data name="Menu_Edit_Time.Size" type="System.Drawing.Size, System.Drawing">
-    <value>145, 24</value>
+    <value>195, 24</value>
   </data>
   <data name="Menu_Edit_Time.Text" xml:space="preserve">
     <value>日時を挿入</value>
   </data>
   <data name="toolStripMenuItem7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>142, 6</value>
+    <value>192, 6</value>
   </data>
   <data name="Menu_Edit_Repert.Size" type="System.Drawing.Size, System.Drawing">
-    <value>145, 24</value>
+    <value>195, 24</value>
   </data>
   <data name="Menu_Edit_Repert.Text" xml:space="preserve">
     <value>リピート</value>
@@ -266,7 +266,7 @@
     <value>でたらめ</value>
   </data>
   <data name="Menu_Edit_NotesOperation.Size" type="System.Drawing.Size, System.Drawing">
-    <value>145, 24</value>
+    <value>195, 24</value>
   </data>
   <data name="Menu_Edit_NotesOperation.Text" xml:space="preserve">
     <value>ノーツ操作</value>
@@ -320,13 +320,13 @@
     <value>ツール (&amp;T)</value>
   </data>
   <data name="Menu_Execution_Start.Size" type="System.Drawing.Size, System.Drawing">
-    <value>234, 24</value>
+    <value>258, 24</value>
   </data>
   <data name="Menu_Execution_Start.Text" xml:space="preserve">
     <value>シミュレーターを起動する</value>
   </data>
   <data name="Menu_Execution_LiveUpdate.Size" type="System.Drawing.Size, System.Drawing">
-    <value>234, 24</value>
+    <value>258, 24</value>
   </data>
   <data name="Menu_Execution_LiveUpdate.Text" xml:space="preserve">
     <value>ライブ アップデート</value>

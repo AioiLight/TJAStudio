@@ -21,7 +21,7 @@ namespace TJAStudio
             // 共通ヘッダ。
             foreach (var item in project.CommonHeader)
             {
-                result += item.Name + ":" + item.Value + "\n";
+                result += item.Name + ":" + item.Value + "\r\n";
             }
 
             // 各コース。
@@ -30,10 +30,13 @@ namespace TJAStudio
                 // コース別ヘッダ。
                 foreach (var header in course.Header)
                 {
-                    result += header.Name + ":" + header.Value + "\n";
+                    result += header.Name + ":" + header.Value + "\r\n";
                 }
                 // #START～#END
-                result += course.Text + "\n";
+                foreach (var item in course.Text.Split('\n') != null ? course.Text.Split('\n') : new string[] { "" })
+                {
+                    result += item + "\r\n";
+                }
             }
             WriteToFile(result, fileName, encoding);
         }
@@ -51,7 +54,7 @@ namespace TJAStudio
             // 共通ヘッダ。
             foreach (var item in commonHeader)
             {
-                result += item.Name + ":" + item.Value + "\n";
+                result += item.Name + ":" + item.Value + "\r\n";
             }
 
             // 各コース。
@@ -60,10 +63,12 @@ namespace TJAStudio
                 // コース別ヘッダ。
                 foreach (var header in argCourse.Header)
                 {
-                    result += header.Name + ":" + header.Value + "\n";
+                    result += header.Name + ":" + header.Value + "\r\n";
                 }
-                // #START～#END
-                result += argCourse.Text + "\n";
+                foreach (var item in argCourse.Text != null ? argCourse.Text.Split('\n') : new string[] { "" })
+                {
+                    result += item + "\r\n";
+                }
             }
             WriteToFile(result, fileName, encoding);
         }
@@ -84,7 +89,7 @@ namespace TJAStudio
         {
             using (var streamWriter = new StreamWriter(fileName, false, encoding))
             {
-                streamWriter.WriteAsync(output);
+                streamWriter.Write(output);
             }
         }
     }

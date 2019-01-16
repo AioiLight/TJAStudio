@@ -23,6 +23,7 @@ namespace TJAStudio
             TextEditor.ForeColor = Program.Setting.Editor_ForeColor;
             TextEditor.BackColor = Program.Setting.Editor_BackColor;
             TextEditor.Font = new Font(Program.Setting.FontName, Program.Setting.FontSize);
+            TextEditor.SetKeyBind(Keys.Back | Keys.Shift, Sgry.Azuki.Actions.BackSpace);
         }
 
         private void Editor_FormClosing(object sender, FormClosingEventArgs e)
@@ -41,7 +42,7 @@ namespace TJAStudio
             Program.Project.Courses[Studio.CurrentCourseID].Document = TextEditor.Document;
             Program.Project.Courses[Studio.CurrentCourseID].Text = TextEditor.Document.Text;
             Studio.TJAStudio.EditorChanged();
-            Studio.TJAStudio.MakePreview(Program.Project.Courses[Studio.CurrentCourseID], true);
+            Studio.UpdateHistory();
         }
 
         private void TextEditor_CaretMoved(object sender, EventArgs e)

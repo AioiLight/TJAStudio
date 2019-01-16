@@ -37,12 +37,14 @@ namespace TJAStudio
         private void Dock_ActiveDocumentChanged(object sender, EventArgs e)
         {
             if (Dock.DocumentsCount < 1) return;
-            CurrentCourseID = Courses.List.FindItemWithText(Dock.ActiveDocument.DockHandler.TabText.Substring(Properties.Common.Editor.Length)).Index;
+            var index = Courses.List.FindItemWithText(Dock.ActiveDocument.DockHandler.TabText.Substring(Properties.Common.Editor.Length));
+            if(index != null)CurrentCourseID = index.Index;
             HeaderWindow.SetHeaderFromList(Program.Project.Courses[CurrentCourseID].Header);
             CommonHeaderWindow.SetHeaderFromList(Program.Project.CommonHeader);
             Program.Project.Courses[CurrentCourseID].Document.GetCaretIndex(out var line, out var col);
             Studio.UpdateCaret(line, col);
             Studio.UpdateMeasures();
+            Studio.UpdateHistory();
         }
 
 
@@ -156,6 +158,13 @@ namespace TJAStudio
                 Initaize();
                 Program.Project = FileManager.OpenFile(dialog.FileName);
                 Courses.SetCoursesFromList();
+                Project.SetCoursesFromList();
+
+
+                foreach (var item in Dock.Documents)
+                {
+                    item.DockHandler.Hide();
+                }
 
                 foreach (var item in Program.Project.Courses)
                 {
@@ -164,10 +173,11 @@ namespace TJAStudio
                     Program.WindowManager.Editors[Program.WindowManager.Editors.Count - 1].Show(Dock);
                 }
                 Courses.SetCoursesFromList();
+                Project.SetCoursesFromList();
                 Program.Project.ProjectName = isTemplate ? Properties.Common.UntitledProjectName : Program.Project.ProjectName;
                 IsEdited = false;
                 TitleChange();
-                FileName = dialog.FileName;
+                FileName =  isTemplate ? "" : dialog.FileName;
             }
         }
 
@@ -465,7 +475,7 @@ namespace TJAStudio
             {
                 Directory.CreateDirectory(tempDir);
             }
-            TJAManager.Build(tempDir + Program.Project.ProjectName + ".tja", Program.Project, Program.Setting.UTF8Mode ? Encoding.UTF8 : Encoding.GetEncoding("Shift_JIS"));
+            TJAManager.Build(tempDir + Program.Project.ProjectName + ".tja", Program.Project.CommonHeader, new Course[] { Program.Project.Courses[CurrentCourseID] }, Program.Setting.UTF8Mode ? Encoding.UTF8 : Encoding.GetEncoding("Shift_JIS"));
             foreach (var item in Program.Project.ProjectFile)
             {
                 var fileName = tempDir + Path.GetFileName(item);
@@ -518,6 +528,21 @@ namespace TJAStudio
             var measure = Measure.GetMeasure(Program.Project.Courses[Studio.CurrentCourseID].Document);
             TJAStudio.Status_Measures.Text = String.Format(Properties.SystemMessage.Status_Measure, measure[1] + 1, measure[0] + 1);
         }
+        private void Studio_Leave(object sender, EventArgs e)
+        {
+            //Studio.TJAStudio.MakePreview(Program.Project.Courses[Studio.CurrentCourseID], true);
+        }
+
+        public static void UpdateHistory()
+        {
+            var checkUndo = Program.Project.Courses[Studio.CurrentCourseID].Document.CanUndo;
+            var checkRedo = Program.Project.Courses[Studio.CurrentCourseID].Document.CanRedo;
+            TJAStudio.Menu_Edit_Undo.Enabled = checkUndo;
+            TJAStudio.Tool_Undo.Enabled = checkUndo;
+            TJAStudio.Menu_Edit_Redo.Enabled = checkRedo;
+            TJAStudio.Tool_Redo.Enabled = checkRedo;
+        }
+
         private Courses Courses = new Courses();
         private Project Project = new Project();
         public  HeadersWindow HeaderWindow = new HeadersWindow(false);
@@ -526,5 +551,37 @@ namespace TJAStudio
         public static int CurrentCourseID { get; set; }
         public bool IsEdited { get; set; }
         public string FileName { get; set; }
+
+        private void Menu_Version_Site_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start(@"https://aioilight.space/");
+        }
+
+        private void Menu_Version_TJAS_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start(@"https://aioilight.space/taiko/tjas/");
+        }
+
+        private void Studio_Deactivate(object sender, EventArgs e)
+        {
+            if (Menu_Execution_LiveUpdate.Checked && Program.Project != null)
+            {
+                Studio.TJAStudio.MakePreview(Program.Project.Courses[Studio.CurrentCourseID]);
+            }
+        }
+
+        private void Studio_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (IsEdited)
+            {
+                var dialogResult = MessageBox.Show(String.Format(Properties.SystemMessage.ApplicationExit, Program.Project.ProjectName), Properties.Common.Name, MessageBoxButtons.YesNoCancel, MessageBoxIcon.Asterisk, MessageBoxDefaultButton.Button3);
+                if (dialogResult == DialogResult.Yes)
+                {
+                    Save();
+                    if (IsEdited) e.Cancel = true; 
+                }
+                else if (dialogResult == DialogResult.Cancel) e.Cancel = true;
+            }
+        }
     }
 }
