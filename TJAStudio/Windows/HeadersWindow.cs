@@ -76,6 +76,7 @@ namespace TJAStudio
                 var header = new Header();
                 header.Name = dialog.TextBox_Name.Text;
                 header.Value = dialog.TextBox_Parameter.Text;
+                if (header.Name.EndsWith(":")) header.Name = header.Name.Remove(header.Name.Length - 1);
                 if(IsCommon)
                 {
                     Program.Project.CommonHeader.Add(header);
