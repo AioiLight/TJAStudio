@@ -59,16 +59,16 @@
             // 
             // Add
             // 
-            resources.ApplyResources(this.Add, "Add");
             this.Add.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            resources.ApplyResources(this.Add, "Add");
             this.Add.Name = "Add";
             this.Add.UseVisualStyleBackColor = true;
             this.Add.Click += new System.EventHandler(this.Add_Click);
             // 
             // Cancel
             // 
-            resources.ApplyResources(this.Cancel, "Cancel");
             this.Cancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            resources.ApplyResources(this.Cancel, "Cancel");
             this.Cancel.Name = "Cancel";
             this.Cancel.UseVisualStyleBackColor = true;
             this.Cancel.Click += new System.EventHandler(this.Cancel_Click);
