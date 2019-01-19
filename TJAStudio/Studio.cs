@@ -187,7 +187,7 @@ namespace TJAStudio
             foreach (var item in Program.Project.Courses)
             {
                 Program.WindowManager.Editors.Add(new Editor(new Sgry.Azuki.Document(), item));
-                Program.WindowManager.Editors[Program.WindowManager.Editors.Count - 1].TextEditor.Document.Text = item.Text;
+                Program.WindowManager.Editors[Program.WindowManager.Editors.Count - 1].TextEditor.Document.Text = item.Text.Replace("\n", Environment.NewLine);
                 Program.WindowManager.Editors[Program.WindowManager.Editors.Count - 1].Show(Dock);
             }
             Courses.SetCoursesFromList();
@@ -205,7 +205,7 @@ namespace TJAStudio
 
         private void Menu_File_Exit_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            Application.ExitThread();
         }
 
         private void Menu_Edit_Undo_Click(object sender, EventArgs e)
