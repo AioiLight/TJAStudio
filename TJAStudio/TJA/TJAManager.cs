@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 namespace TJAStudio
@@ -21,7 +22,7 @@ namespace TJAStudio
             // 共通ヘッダ。
             foreach (var item in project.CommonHeader)
             {
-                result += item.Name + ":" + item.Value + "\r\n";
+                result += item.Name + ":" + item.Value + Environment.NewLine;
             }
 
             // 各コース。
@@ -33,10 +34,7 @@ namespace TJAStudio
                     result += header.Name + ":" + header.Value + Environment.NewLine;
                 }
                 // #START～#END
-                foreach (var item in course.Text.Split(new char[] { '\r', '\n' }) != null ? course.Text.Split(new char[] { '\r', '\n' }) : new string[] { "" })
-                {
-                    result += item + Environment.NewLine;
-                }
+                result += course.Text;
             }
             WriteToFile(result, fileName, encoding);
         }
@@ -54,7 +52,7 @@ namespace TJAStudio
             // 共通ヘッダ。
             foreach (var item in commonHeader)
             {
-                result += item.Name + ":" + item.Value + "\r\n";
+                result += item.Name + ":" + item.Value + Environment.NewLine;
             }
 
             // 各コース。
@@ -65,10 +63,7 @@ namespace TJAStudio
                 {
                     result += header.Name + ":" + header.Value + Environment.NewLine;
                 }
-                foreach (var item in argCourse.Text != null ? argCourse.Text.Split(new char[] { '\r', '\n' }) : new string[] { "" })
-                {
-                    result += item + Environment.NewLine;
-                }
+                result += argCourse.Text;
             }
             WriteToFile(result, fileName, encoding);
         }
