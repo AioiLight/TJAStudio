@@ -314,6 +314,33 @@ namespace TJAStudio.Properties {
         }
         
         /// <summary>
+        ///   Mode: {0} に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string Status_Mode {
+            get {
+                return ResourceManager.GetString("Status_Mode", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Insert に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string Status_Mode_Insert {
+            get {
+                return ResourceManager.GetString("Status_Mode_Insert", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Overwrite に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string Status_Mode_Overwrite {
+            get {
+                return ResourceManager.GetString("Status_Mode_Overwrite", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   {0} Ver.{1}
         ///{0} was developed by {2}.
         ///{3} に類似しているローカライズされた文字列を検索します。

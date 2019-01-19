@@ -75,6 +75,7 @@
             this.Menu_Execution_Start = new System.Windows.Forms.ToolStripMenuItem();
             this.Menu_Execution_LiveUpdate = new System.Windows.Forms.ToolStripMenuItem();
             this.Status = new System.Windows.Forms.StatusStrip();
+            this.Status_Mode = new System.Windows.Forms.ToolStripStatusLabel();
             this.Status_Measures = new System.Windows.Forms.ToolStripStatusLabel();
             this.Status_Caret = new System.Windows.Forms.ToolStripStatusLabel();
             this.Tool = new System.Windows.Forms.ToolStrip();
@@ -90,6 +91,7 @@
             this.Tool_Paste = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.Tool_Execute = new System.Windows.Forms.ToolStripButton();
+            this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.Menu.SuspendLayout();
             this.Status.SuspendLayout();
             this.Tool.SuspendLayout();
@@ -428,9 +430,17 @@
             // 
             resources.ApplyResources(this.Status, "Status");
             this.Status.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripStatusLabel1,
+            this.Status_Mode,
             this.Status_Measures,
             this.Status_Caret});
             this.Status.Name = "Status";
+            // 
+            // Status_Mode
+            // 
+            this.Status_Mode.Name = "Status_Mode";
+            resources.ApplyResources(this.Status_Mode, "Status_Mode");
+            this.Status_Mode.Spring = true;
             // 
             // Status_Measures
             // 
@@ -442,6 +452,7 @@
             // 
             this.Status_Caret.Name = "Status_Caret";
             resources.ApplyResources(this.Status_Caret, "Status_Caret");
+            this.Status_Caret.Spring = true;
             // 
             // Tool
             // 
@@ -541,6 +552,12 @@
             this.Tool_Execute.Name = "Tool_Execute";
             this.Tool_Execute.Click += new System.EventHandler(this.Tool_Execute_Click);
             // 
+            // toolStripStatusLabel1
+            // 
+            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
+            resources.ApplyResources(this.toolStripStatusLabel1, "toolStripStatusLabel1");
+            this.toolStripStatusLabel1.Spring = true;
+            // 
             // Studio
             // 
             resources.ApplyResources(this, "$this");
@@ -633,6 +650,8 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
         private System.Windows.Forms.ToolStripSplitButton Tool_Save;
         private System.Windows.Forms.ToolStripMenuItem Tool_SaveAs;
+        private System.Windows.Forms.ToolStripStatusLabel Status_Mode;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
     }
 }
 

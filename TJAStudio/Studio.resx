@@ -444,17 +444,29 @@
   <data name="Status.Font" type="System.Drawing.Font, System.Drawing">
     <value>メイリオ, 9.75pt</value>
   </data>
+  <data name="toolStripStatusLabel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>312, 20</value>
+  </data>
+  <data name="Status_Mode.Size" type="System.Drawing.Size, System.Drawing">
+    <value>312, 20</value>
+  </data>
+  <data name="Status_Mode.Text" xml:space="preserve">
+    <value>Mode:</value>
+  </data>
+  <data name="Status_Mode.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
   <data name="Status_Measures.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1176, 20</value>
+    <value>312, 20</value>
   </data>
   <data name="Status_Measures.Text" xml:space="preserve">
     <value>Measure: </value>
   </data>
   <data name="Status_Measures.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>BottomRight</value>
+    <value>MiddleRight</value>
   </data>
   <data name="Status_Caret.Size" type="System.Drawing.Size, System.Drawing">
-    <value>73, 20</value>
+    <value>312, 20</value>
   </data>
   <data name="Status_Caret.Text" xml:space="preserve">
     <value>Row: Col:</value>
@@ -7048,6 +7060,12 @@
   <data name="&gt;&gt;Menu_Execution_LiveUpdate.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="&gt;&gt;Status_Mode.Name" xml:space="preserve">
+    <value>Status_Mode</value>
+  </data>
+  <data name="&gt;&gt;Status_Mode.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripStatusLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;Status_Measures.Name" xml:space="preserve">
     <value>Status_Measures</value>
   </data>
@@ -7131,6 +7149,12 @@
   </data>
   <data name="&gt;&gt;Tool_Execute.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripStatusLabel1.Name" xml:space="preserve">
+    <value>toolStripStatusLabel1</value>
+  </data>
+  <data name="&gt;&gt;toolStripStatusLabel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripStatusLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>Studio</value>

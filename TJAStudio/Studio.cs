@@ -19,6 +19,7 @@ namespace TJAStudio
         {
             InitializeComponent();
             TJAStudio = this;
+            Application.Idle += Idling_Process;
             Dock.Theme = new VS2015LightTheme();
 
             if (File.Exists(Program.EXEPath + @"\Windows.xml"))
@@ -639,6 +640,16 @@ namespace TJAStudio
         private void Tool_Save_ButtonClick(object sender, EventArgs e)
         {
             Save();
+        }
+
+        private void Idling_Process(object sender, EventArgs e)
+        {
+            // 入力モードの決定
+            var mode = Properties.SystemMessage.Status_Mode;
+            mode = !Control.IsKeyLocked(Keys.Insert)
+                ? String.Format(mode, Properties.SystemMessage.Status_Mode_Insert)
+                : String.Format(mode, Properties.SystemMessage.Status_Mode_Overwrite);
+            Status_Mode.Text = mode;
         }
     }
 }
