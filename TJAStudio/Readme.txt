@@ -28,9 +28,9 @@ TJAStudio では、.tja ファイルを直接編集するのではなく、独�
 
 ## ライセンス
 本ソフトウェアで利用しているライブラリは以下のとおりです。
-・Azuki テキストエディタエンジン
+・Azuki テキストエディタエンジン - https://ja.osdn.net/projects/azuki/
 (TJAStudio用に、一部コードに改造を施しています。)
-・DockPanelSuite
+・DockPanelSuite - https://github.com/dockpanelsuite/dockpanelsuite
 
 ## 二次配布、転載について
 https://aioilight.space/taiko/tjas/ からダウンロードした圧縮ファイルを**そのまま**ミラーしたり二次配布したりすることを許可します。
