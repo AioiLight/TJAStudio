@@ -88,6 +88,7 @@
             this.List.AllowUserToResizeRows = false;
             this.List.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.List.BackgroundColor = System.Drawing.SystemColors.Window;
+            this.List.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.EnableWithoutHeaderText;
             this.List.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.List.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Name,
@@ -104,11 +105,13 @@
             // 
             resources.ApplyResources(this.Name, "Name");
             this.Name.Name = "Name";
+            this.Name.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             // 
             // Parameter
             // 
             resources.ApplyResources(this.Parameter, "Parameter");
             this.Parameter.Name = "Parameter";
+            this.Parameter.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             // 
             // HeadersWindow
             // 

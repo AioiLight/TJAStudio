@@ -147,13 +147,13 @@
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="Name.Width" type="System.Int32, mscorlib">
-    <value>99</value>
+    <value>80</value>
   </data>
   <data name="Parameter.HeaderText" xml:space="preserve">
     <value>パラメーター</value>
   </data>
   <data name="Parameter.Width" type="System.Int32, mscorlib">
-    <value>112</value>
+    <value>93</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>ヘッダー</value>
