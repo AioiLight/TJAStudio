@@ -414,6 +414,7 @@
             // 
             // Menu_Window_FormatCheker
             // 
+            this.Menu_Window_FormatCheker.Image = global::TJAStudio.Properties.Resources.FindResults_16x;
             this.Menu_Window_FormatCheker.Name = "Menu_Window_FormatCheker";
             resources.ApplyResources(this.Menu_Window_FormatCheker, "Menu_Window_FormatCheker");
             this.Menu_Window_FormatCheker.Click += new System.EventHandler(this.Menu_Window_FormatCheker_Click);
@@ -478,6 +479,7 @@
             // 
             // Tool
             // 
+            resources.ApplyResources(this.Tool, "Tool");
             this.Tool.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.Tool_Open,
             this.Tool_Save,
@@ -491,7 +493,6 @@
             this.toolStripSeparator2,
             this.Tool_Execute,
             this.Tool_FormatCheker});
-            resources.ApplyResources(this.Tool, "Tool");
             this.Tool.Name = "Tool";
             // 
             // Tool_Open

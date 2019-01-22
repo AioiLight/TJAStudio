@@ -123,13 +123,13 @@
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="Dock.Location" type="System.Drawing.Point, System.Drawing">
-    <value>13, 62</value>
+    <value>13, 64</value>
   </data>
   <data name="Dock.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 5, 4, 5</value>
   </data>
   <data name="Dock.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1238, 592</value>
+    <value>1238, 590</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="Dock.TabIndex" type="System.Int32, mscorlib">
@@ -507,17 +507,20 @@
   <metadata name="Tool.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>263, 17</value>
   </metadata>
+  <data name="Tool.Font" type="System.Drawing.Font, System.Drawing">
+    <value>メイリオ, 9.75pt</value>
+  </data>
   <data name="Tool_Open.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
     <value>Magenta</value>
   </data>
   <data name="Tool_Open.Size" type="System.Drawing.Size, System.Drawing">
-    <value>58, 24</value>
+    <value>63, 24</value>
   </data>
   <data name="Tool_Open.Text" xml:space="preserve">
     <value>Open</value>
   </data>
   <data name="Tool_SaveAs.Size" type="System.Drawing.Size, System.Drawing">
-    <value>135, 22</value>
+    <value>143, 24</value>
   </data>
   <data name="Tool_SaveAs.Text" xml:space="preserve">
     <value>Save As...</value>
@@ -526,7 +529,7 @@
     <value>Magenta</value>
   </data>
   <data name="Tool_Save.Size" type="System.Drawing.Size, System.Drawing">
-    <value>69, 24</value>
+    <value>72, 24</value>
   </data>
   <data name="Tool_Save.Text" xml:space="preserve">
     <value>Save</value>
@@ -538,7 +541,7 @@
     <value>Magenta</value>
   </data>
   <data name="Tool_Undo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>58, 24</value>
+    <value>62, 24</value>
   </data>
   <data name="Tool_Undo.Text" xml:space="preserve">
     <value>Undo</value>
@@ -547,7 +550,7 @@
     <value>Magenta</value>
   </data>
   <data name="Tool_Redo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>57, 24</value>
+    <value>62, 24</value>
   </data>
   <data name="Tool_Redo.Text" xml:space="preserve">
     <value>Redo</value>
@@ -559,7 +562,7 @@
     <value>Magenta</value>
   </data>
   <data name="Tool_Cut.Size" type="System.Drawing.Size, System.Drawing">
-    <value>48, 24</value>
+    <value>51, 24</value>
   </data>
   <data name="Tool_Cut.Text" xml:space="preserve">
     <value>Cut</value>
@@ -580,7 +583,7 @@
     <value>Magenta</value>
   </data>
   <data name="Tool_Paste.Size" type="System.Drawing.Size, System.Drawing">
-    <value>60, 24</value>
+    <value>64, 24</value>
   </data>
   <data name="Tool_Paste.Text" xml:space="preserve">
     <value>Paste</value>
@@ -592,7 +595,7 @@
     <value>Magenta</value>
   </data>
   <data name="Tool_Execute.Size" type="System.Drawing.Size, System.Drawing">
-    <value>86, 24</value>
+    <value>95, 24</value>
   </data>
   <data name="Tool_Execute.Text" xml:space="preserve">
     <value>Execute...</value>
@@ -601,7 +604,7 @@
     <value>Magenta</value>
   </data>
   <data name="Tool_FormatCheker.Size" type="System.Drawing.Size, System.Drawing">
-    <value>122, 24</value>
+    <value>130, 24</value>
   </data>
   <data name="Tool_FormatCheker.Text" xml:space="preserve">
     <value>Format Chekcer</value>
