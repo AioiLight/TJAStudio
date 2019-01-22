@@ -346,10 +346,10 @@
     <value>https://aioilight.space/taiko/tjas/</value>
   </data>
   <data name="Menu_Version.Size" type="System.Drawing.Size, System.Drawing">
-    <value>133, 24</value>
+    <value>84, 24</value>
   </data>
   <data name="Menu_Version.Text" xml:space="preserve">
-    <value>TJAStudio Ver.1.3</value>
+    <value>TJAStudio</value>
   </data>
   <data name="Menu_Tool_About.Size" type="System.Drawing.Size, System.Drawing">
     <value>198, 24</value>
@@ -386,6 +386,15 @@
   </data>
   <data name="Menu_Window_Projects.Text" xml:space="preserve">
     <value>Projects</value>
+  </data>
+  <data name="toolStripMenuItem8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>189, 6</value>
+  </data>
+  <data name="Menu_Window_FormatCheker.Size" type="System.Drawing.Size, System.Drawing">
+    <value>192, 24</value>
+  </data>
+  <data name="Menu_Window_FormatCheker.Text" xml:space="preserve">
+    <value>Format Cheker</value>
   </data>
   <data name="Menu_Window.Size" type="System.Drawing.Size, System.Drawing">
     <value>88, 24</value>
@@ -588,29 +597,14 @@
   <data name="Tool_Execute.Text" xml:space="preserve">
     <value>Execute...</value>
   </data>
-  <data name="toolStripButton1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIDSURBVDhPpZLrS5NhGMb3j4SWh0oRQVExD4gonkDpg4hG
-        YKxG6WBogkMZKgPNCEVJFBGdGETEvgwyO9DJE5syZw3PIlPEE9pgBCLZ5XvdMB8Ew8gXbl54nuf63dd9
-        0OGSnwCahxbPRNPAPMw9Xpg6ZmF46kZZ0xSKzJPIrhpDWsVnpBhGkKx3nAX8Pv7z1zg8OoY/cITdn4fw
-        bf/C0kYAN3Ma/w3gWfZL5kzTKBxjWyK2DftwI9tyMYCZKXbNHaD91bLYJrDXsYbrWfUKwJrPE9M2M1Oc
-        VzOOpHI7Jr376Hi9ogHqFIANO0/MmmmbmSmm9a8ze+I4MrNWAdjtoJgWcx+PSzg166yZZ8xM8XvXDix9
-        c4jIqFYAjoriBV9AhEPv1mH/sonogha0afbZMMZz+yreTGyhpusHwtNNCsA5U1zS4BLxzJIfg299qO32
-        Ir7UJtZfftyATqeT+8o2D8JSjQrAJblrncYL7ZJ2+bfaFnC/1S1NjL3diRat7qrO7wLRP3HjWsojBeCo
-        mDEo5mNjuweFGvjWg2EBhCbpkW78htSHHwRyNdmgAFzPEee2iFkzayy2OLXzT4gr6UdUnlXrullsxxQ+
-        kx0g8BTA3aZlButjSTyjODq/WcQcW/B/Je4OQhLvKQDnzN1mp0nnkvAhR8VuMzNrpm1mpjgkoVwB/v8D
-        TgDQASA1MVpwzwAAAABJRU5ErkJggg==
-</value>
-  </data>
-  <data name="toolStripButton1.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+  <data name="Tool_FormatCheker.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
     <value>Magenta</value>
   </data>
-  <data name="toolStripButton1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>23, 24</value>
+  <data name="Tool_FormatCheker.Size" type="System.Drawing.Size, System.Drawing">
+    <value>122, 24</value>
   </data>
-  <data name="toolStripButton1.Text" xml:space="preserve">
-    <value>toolStripButton1</value>
+  <data name="Tool_FormatCheker.Text" xml:space="preserve">
+    <value>Format Chekcer</value>
   </data>
   <data name="Tool.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 32</value>
@@ -7006,6 +7000,36 @@
   <data name="&gt;&gt;Menu_Edit_NotesOperation_Detarame.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="&gt;&gt;Menu_Version.Name" xml:space="preserve">
+    <value>Menu_Version</value>
+  </data>
+  <data name="&gt;&gt;Menu_Version.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Menu_Version_Site.Name" xml:space="preserve">
+    <value>Menu_Version_Site</value>
+  </data>
+  <data name="&gt;&gt;Menu_Version_Site.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Menu_Version_TJAS.Name" xml:space="preserve">
+    <value>Menu_Version_TJAS</value>
+  </data>
+  <data name="&gt;&gt;Menu_Version_TJAS.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Menu_Tool.Name" xml:space="preserve">
+    <value>Menu_Tool</value>
+  </data>
+  <data name="&gt;&gt;Menu_Tool.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Menu_Tool_About.Name" xml:space="preserve">
+    <value>Menu_Tool_About</value>
+  </data>
+  <data name="&gt;&gt;Menu_Tool_About.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;Menu_Window.Name" xml:space="preserve">
     <value>Menu_Window</value>
   </data>
@@ -7036,34 +7060,16 @@
   <data name="&gt;&gt;Menu_Window_Projects.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;Menu_Version.Name" xml:space="preserve">
-    <value>Menu_Version</value>
+  <data name="&gt;&gt;toolStripMenuItem8.Name" xml:space="preserve">
+    <value>toolStripMenuItem8</value>
   </data>
-  <data name="&gt;&gt;Menu_Version.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;toolStripMenuItem8.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;Menu_Version_Site.Name" xml:space="preserve">
-    <value>Menu_Version_Site</value>
+  <data name="&gt;&gt;Menu_Window_FormatCheker.Name" xml:space="preserve">
+    <value>Menu_Window_FormatCheker</value>
   </data>
-  <data name="&gt;&gt;Menu_Version_Site.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Menu_Version_TJAS.Name" xml:space="preserve">
-    <value>Menu_Version_TJAS</value>
-  </data>
-  <data name="&gt;&gt;Menu_Version_TJAS.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Menu_Tool.Name" xml:space="preserve">
-    <value>Menu_Tool</value>
-  </data>
-  <data name="&gt;&gt;Menu_Tool.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Menu_Tool_About.Name" xml:space="preserve">
-    <value>Menu_Tool_About</value>
-  </data>
-  <data name="&gt;&gt;Menu_Tool_About.Type" xml:space="preserve">
+  <data name="&gt;&gt;Menu_Window_FormatCheker.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;Menu_Execution.Name" xml:space="preserve">
@@ -7180,10 +7186,10 @@
   <data name="&gt;&gt;Tool_Execute.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;toolStripButton1.Name" xml:space="preserve">
-    <value>toolStripButton1</value>
+  <data name="&gt;&gt;Tool_FormatCheker.Name" xml:space="preserve">
+    <value>Tool_FormatCheker</value>
   </data>
-  <data name="&gt;&gt;toolStripButton1.Type" xml:space="preserve">
+  <data name="&gt;&gt;Tool_FormatCheker.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
