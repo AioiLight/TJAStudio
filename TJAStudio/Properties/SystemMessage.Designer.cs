@@ -61,6 +61,15 @@ namespace TJAStudio.Properties {
         }
         
         /// <summary>
+        ///   No problem. に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string AllClear {
+            get {
+                return ResourceManager.GetString("AllClear", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Do you want to save changes to {0}? に類似しているローカライズされた文字列を検索します。
         /// </summary>
         internal static string ApplicationExit {
@@ -84,6 +93,15 @@ namespace TJAStudio.Properties {
         internal static string CheckingFile {
             get {
                 return ResourceManager.GetString("CheckingFile", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Common Header に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string CommonHeader {
+            get {
+                return ResourceManager.GetString("CommonHeader", resourceCulture);
             }
         }
         
@@ -215,6 +233,24 @@ namespace TJAStudio.Properties {
         }
         
         /// <summary>
+        ///   Header {0} is not in the correct format. に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string InvaildHeader {
+            get {
+                return ResourceManager.GetString("InvaildHeader", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Command {0} is not in the correct format. に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string InvalidCommand {
+            get {
+                return ResourceManager.GetString("InvalidCommand", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Do you use the value of the last 8 beats? に類似しているローカライズされた文字列を検索します。
         /// </summary>
         internal static string Measured_BPM {
@@ -301,6 +337,24 @@ namespace TJAStudio.Properties {
         internal static string SaveTJA {
             get {
                 return ResourceManager.GetString("SaveTJA", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Command {0} can not be used in simulator {1}. It may be ignored or cause problems. に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string SimulatorDoesNotSupportCommand {
+            get {
+                return ResourceManager.GetString("SimulatorDoesNotSupportCommand", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Header {0} can not be used in simulator {1}. It may be ignored or cause problems. に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string SimulatorDoesNotSupportHeader {
+            get {
+                return ResourceManager.GetString("SimulatorDoesNotSupportHeader", resourceCulture);
             }
         }
         

@@ -35,11 +35,16 @@ namespace TJAStudio.Charts
             var parameterText = text.Substring(("#" + Name).Length);
             foreach (var item in Format)
             {
+                if (item == null)
+                {
+                    isValid = true;
+                    continue;
+                }
                 if(Regex.IsMatch(parameterText, item)) isValid = true;
+                // 命令名の後に空白がなかったら例外を出す。
+                if (Regex.IsMatch("#" + Name + " ", text, RegexOptions.IgnoreCase)) throw new CommandWithoutSpaceException();
             }
-            if (!isValid) throw new InvalidTJAFormatException();
-            // 命令名の後に空白がなかったら例外を出す。
-            if (Regex.IsMatch("#" + Name + " ", text, RegexOptions.IgnoreCase)) throw new CommandWithoutSpaceException();
+            if (!isValid) throw new InvalidTJAFormatException(String.Format(Properties.SystemMessage.InvalidCommand, text));
         }
 
         /// <summary>

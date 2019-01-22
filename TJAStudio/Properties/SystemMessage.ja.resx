@@ -117,8 +117,14 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="AllClear" xml:space="preserve">
+    <value>問題はありません。</value>
+  </data>
   <data name="ApplicationExit" xml:space="preserve">
     <value>{0} への変更内容を保存しますか?</value>
+  </data>
+  <data name="CommonHeader" xml:space="preserve">
+    <value>共通ヘッダー</value>
   </data>
   <data name="Copied" xml:space="preserve">
     <value>"{0}" をクリップボードにコピーしました。</value>
@@ -178,6 +184,12 @@
 プログラムの実行に必要なファイルが不足しています。
 プログラムを再ダウンロードしてください。</value>
   </data>
+  <data name="InvaildHeader" xml:space="preserve">
+    <value>ヘッダー {0} が正しいフォーマットではありません。</value>
+  </data>
+  <data name="InvalidCommand" xml:space="preserve">
+    <value>コマンド {0} が正しいフォーマットではありません。</value>
+  </data>
   <data name="Measured_BPM" xml:space="preserve">
     <value>最後の8拍の値を使用しますか?</value>
   </data>
@@ -208,8 +220,14 @@
   <data name="SaveTJA" xml:space="preserve">
     <value>.tja ファイルを保存</value>
   </data>
+  <data name="SimulatorDoesNotSupportCommand" xml:space="preserve">
+    <value>コマンド {0} はシミュレーター {1} で使用できません。無視されるか、不具合を起こす可能性があります。</value>
+  </data>
+  <data name="SimulatorDoesNotSupportHeader" xml:space="preserve">
+    <value>ヘッダー {0} はシミュレーター {1} で使用できません。無視されるか、不具合を起こす可能性があります。</value>
+  </data>
   <data name="Status_Measure" xml:space="preserve">
-    <value>小節数: {0} / {1}</value>
+    <value> </value>
   </data>
   <data name="Status_Mode" xml:space="preserve">
     <value>入力モード: {0}</value>

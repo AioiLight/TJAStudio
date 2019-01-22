@@ -117,139 +117,22 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="AllClear" xml:space="preserve">
-    <value>No problem.</value>
+  <data name="TaikoDaijiro2" xml:space="preserve">
+    <value>太鼓さん大次郎2</value>
   </data>
-  <data name="ApplicationExit" xml:space="preserve">
-    <value>Do you want to save changes to {0}?</value>
+  <data name="Taikojiro" xml:space="preserve">
+    <value>太鼓さん次郎</value>
   </data>
-  <data name="CheckingDirectory" xml:space="preserve">
-    <value>Cheking Directroy... {0}</value>
+  <data name="Taikojiro2" xml:space="preserve">
+    <value>太鼓さん次郎2</value>
   </data>
-  <data name="CheckingFile" xml:space="preserve">
-    <value>Cheking File... {0}</value>
+  <data name="TaikoWeb_Bui" xml:space="preserve">
+    <value>太鼓ウェブ(Bui)</value>
   </data>
-  <data name="CommonHeader" xml:space="preserve">
-    <value>Common Header</value>
+  <data name="TJAPlayer2fPC" xml:space="preserve">
+    <value>TJAPlayer2 forPC</value>
   </data>
-  <data name="Copied" xml:space="preserve">
-    <value>Copied to clipboard. "{0}"</value>
-  </data>
-  <data name="CourseInfomation" xml:space="preserve">
-    <value>All Measures: {0}
-Don (Small/Big/All/Raito): {1} / {2} / {3} / {4:0.00}%
-Ka  (Small/Big/All/Raito): {5} / {6} / {7} / {8:0.00}%
-Small / Big Notes Raito: {9:0.00}% / {10:0.00}%
-Max. Combo: {11}
-Play Time: {12}s</value>
-  </data>
-  <data name="CourseInfomationTitle" xml:space="preserve">
-    <value>Course: {0}</value>
-  </data>
-  <data name="CourseInfomation_Selection" xml:space="preserve">
-    <value>
-
-
-Selection:
-Don (Small/Big/All/Raito): {0} / {1} / {2} / {3:0.00}%
-Ka  (Small/Big/All/Raito): {4} / {5} / {6} / {7:0.00}%
-Small / Big Notes Raito: {8:0.00}% / {9:0.00}%
-Time Span: {10}s</value>
-  </data>
-  <data name="CourseInfomation_ThisMeasure" xml:space="preserve">
-    <value>
-
-
-This Measure: {0} / {1}
-Don (Small/Big/All/Raito): {2} / {3} / {4} / {5:0.00}%
-Ka  (Small/Big/All/Raito): {6} / {7} / {8} / {9:0.00}%
-Small / Big Notes Raito: {10:0.00}% / {11:0.00}%
-Resolution: {12}
-Time Span: {13}s</value>
-  </data>
-  <data name="Cutted" xml:space="preserve">
-    <value>Cutted to clipboard. "{0}"</value>
-  </data>
-  <data name="DirectoryNotFound" xml:space="preserve">
-    <value>The directory "{0}" could not be found.
-There is not enough directory to run the program.
-Please download the program again.</value>
-  </data>
-  <data name="DrawNotesPreview" xml:space="preserve">
-    <value>This measure
-:{0}
-Without command:{1}
-Notes: {2}</value>
-  </data>
-  <data name="DuplicateHeader" xml:space="preserve">
-    <value>Duplicate header name.
-Delete previous header?</value>
-  </data>
-  <data name="EditedWarning" xml:space="preserve">
-    <value>This project {0} is not saved.</value>
-  </data>
-  <data name="FileNotFound" xml:space="preserve">
-    <value>The file "{0}" could not be found.
-There is not enough file to run the program.
-Please download the program again.</value>
-  </data>
-  <data name="InvaildHeader" xml:space="preserve">
-    <value>Header {0} is not in the correct format.</value>
-  </data>
-  <data name="InvalidCommand" xml:space="preserve">
-    <value>Command {0} is not in the correct format.</value>
-  </data>
-  <data name="Measured_BPM" xml:space="preserve">
-    <value>Do you use the value of the last 8 beats?</value>
-  </data>
-  <data name="MissedCourseName" xml:space="preserve">
-    <value>Please enter the course name.</value>
-  </data>
-  <data name="MissedHeaderName" xml:space="preserve">
-    <value>Please enter the header name.</value>
-  </data>
-  <data name="NowCaret" xml:space="preserve">
-    <value>Line: {0}, Column: {1}</value>
-  </data>
-  <data name="OpenProject" xml:space="preserve">
-    <value>Open Project</value>
-  </data>
-  <data name="OpenProjectFile" xml:space="preserve">
-    <value>Open Project File</value>
-  </data>
-  <data name="OpenTemplate" xml:space="preserve">
-    <value>Open Template</value>
-  </data>
-  <data name="Pasted" xml:space="preserve">
-    <value>Pasted from clipboard. "{0}"</value>
-  </data>
-  <data name="SaveProject" xml:space="preserve">
-    <value>Save Project</value>
-  </data>
-  <data name="SaveTJA" xml:space="preserve">
-    <value>Save .tja</value>
-  </data>
-  <data name="SimulatorDoesNotSupportCommand" xml:space="preserve">
-    <value>Command {0} can not be used in simulator {1}. It may be ignored or cause problems.</value>
-  </data>
-  <data name="SimulatorDoesNotSupportHeader" xml:space="preserve">
-    <value>Header {0} can not be used in simulator {1}. It may be ignored or cause problems.</value>
-  </data>
-  <data name="Status_Measure" xml:space="preserve">
-    <value>Measure: {0} / {1}</value>
-  </data>
-  <data name="Status_Mode" xml:space="preserve">
-    <value>Mode: {0}</value>
-  </data>
-  <data name="Status_Mode_Insert" xml:space="preserve">
-    <value>Insert</value>
-  </data>
-  <data name="Status_Mode_Overwrite" xml:space="preserve">
-    <value>Overwrite</value>
-  </data>
-  <data name="VersionDialog" xml:space="preserve">
-    <value>{0} Ver.{1}
-{0} was developed by {2}.
-{3}</value>
+  <data name="TJAPlayer3" xml:space="preserve">
+    <value>TJAPlayer3</value>
   </data>
 </root>

@@ -22,6 +22,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <LangVersion>7.2</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -31,6 +32,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <LangVersion>7.2</LangVersion>
   </PropertyGroup>
   <PropertyGroup>
     <StartupObject>TJAStudio.Program</StartupObject>
@@ -61,6 +63,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FormatChecker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormatChecker.Designer.cs">
+      <DependentUpon>FormatChecker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Natori\Natori.cs" />
+    <Compile Include="Natori\NatoriInfo.cs" />
     <Compile Include="Charts\CommandChecker.cs" />
     <Compile Include="Charts\HeaderCheker.cs" />
     <Compile Include="Charts\Commands.cs" />
@@ -89,6 +99,16 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Simulator.ja.Designer.cs">
+      <DependentUpon>Simulator.ja.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Properties\Simulator.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Simulator.resx</DependentUpon>
     </Compile>
     <Compile Include="Properties\SystemMessage.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -155,6 +175,9 @@
     <Compile Include="Windows\Project.Designer.cs">
       <DependentUpon>Project.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="FormatChecker.resx">
+      <DependentUpon>FormatChecker.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Common.ja.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Common.ja.Designer.cs</LastGenOutput>
@@ -166,6 +189,14 @@
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Simulator.ja.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Simulator.ja.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Simulator.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Simulator.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\SystemMessage.ja.resx">
       <Generator>ResXFileCodeGenerator</Generator>

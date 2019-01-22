@@ -565,6 +565,7 @@ namespace TJAStudio
         private Project Project = new Project();
         public  HeadersWindow HeaderWindow = new HeadersWindow(false);
         private HeadersWindow CommonHeaderWindow = new HeadersWindow(true, Properties.Common.CommonHeader);
+        private FormatChecker FormatChecker { get; set; }
         public static Studio TJAStudio { get; set; }
         public static int CurrentCourseID { get; set; }
         public bool IsEdited { get; set; }
@@ -650,6 +651,25 @@ namespace TJAStudio
                 ? String.Format(mode, Properties.SystemMessage.Status_Mode_Insert)
                 : String.Format(mode, Properties.SystemMessage.Status_Mode_Overwrite);
             Status_Mode.Text = mode;
+        }
+
+        private void Menu_Window_FormatCheker_Click(object sender, EventArgs e)
+        {
+            ShowFormatChecker();
+        }
+
+        private void ShowFormatChecker()
+        {
+            if (FormatChecker == null || FormatChecker.IsDisposed)
+            {
+                FormatChecker = new FormatChecker();
+                FormatChecker.Show(this);
+            }
+        }
+
+        private void Tool_FormatCheker_Click(object sender, EventArgs e)
+        {
+            ShowFormatChecker();
         }
     }
 }
