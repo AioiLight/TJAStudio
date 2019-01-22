@@ -221,7 +221,7 @@
     <value>.tja ファイルを保存</value>
   </data>
   <data name="SimulatorDoesNotSupportCommand" xml:space="preserve">
-    <value>コマンド {0} はシミュレーター {1} で使用できません。無視されるか、不具合を起こします。</value>
+    <value>コマンド {0} はシミュレーター {1} で使用できません。無視されるか、不具合を起こす可能性があります。</value>
   </data>
   <data name="SimulatorDoesNotSupportHeader" xml:space="preserve">
     <value>ヘッダー {0} はシミュレーター {1} で使用できません。無視されるか、不具合を起こす可能性があります。</value>

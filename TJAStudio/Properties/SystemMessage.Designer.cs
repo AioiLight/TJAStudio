@@ -341,7 +341,7 @@ namespace TJAStudio.Properties {
         }
         
         /// <summary>
-        ///   Command {0} can not be used in simulator {1}. It is ignored or causes problems. に類似しているローカライズされた文字列を検索します。
+        ///   Command {0} can not be used in simulator {1}. It may be ignored or cause problems. に類似しているローカライズされた文字列を検索します。
         /// </summary>
         internal static string SimulatorDoesNotSupportCommand {
             get {
