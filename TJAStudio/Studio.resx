@@ -406,13 +406,13 @@
     <value>F5</value>
   </data>
   <data name="Menu_Execution_Start.Size" type="System.Drawing.Size, System.Drawing">
-    <value>218, 24</value>
+    <value>197, 24</value>
   </data>
   <data name="Menu_Execution_Start.Text" xml:space="preserve">
-    <value>Start Simulators...</value>
+    <value>Start Simulator</value>
   </data>
   <data name="Menu_Execution_LiveUpdate.Size" type="System.Drawing.Size, System.Drawing">
-    <value>218, 24</value>
+    <value>197, 24</value>
   </data>
   <data name="Menu_Execution_LiveUpdate.Text" xml:space="preserve">
     <value>Live Update</value>
@@ -595,10 +595,10 @@
     <value>Magenta</value>
   </data>
   <data name="Tool_Execute.Size" type="System.Drawing.Size, System.Drawing">
-    <value>95, 24</value>
+    <value>80, 24</value>
   </data>
   <data name="Tool_Execute.Text" xml:space="preserve">
-    <value>Execute...</value>
+    <value>Execute</value>
   </data>
   <data name="Tool_FormatCheker.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
     <value>Magenta</value>
