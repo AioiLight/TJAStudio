@@ -651,5 +651,12 @@ namespace TJAStudio
                 : String.Format(mode, Properties.SystemMessage.Status_Mode_Overwrite);
             Status_Mode.Text = mode;
         }
+
+        private void toolStripButton1_Click(object sender, EventArgs e)
+        {
+            var dialog = new FormatChecker();
+            dialog.ShowDialog(this);
+            dialog.Dispose();
+        }
     }
 }

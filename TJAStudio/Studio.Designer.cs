@@ -75,6 +75,7 @@
             this.Menu_Execution_Start = new System.Windows.Forms.ToolStripMenuItem();
             this.Menu_Execution_LiveUpdate = new System.Windows.Forms.ToolStripMenuItem();
             this.Status = new System.Windows.Forms.StatusStrip();
+            this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.Status_Mode = new System.Windows.Forms.ToolStripStatusLabel();
             this.Status_Measures = new System.Windows.Forms.ToolStripStatusLabel();
             this.Status_Caret = new System.Windows.Forms.ToolStripStatusLabel();
@@ -91,7 +92,7 @@
             this.Tool_Paste = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.Tool_Execute = new System.Windows.Forms.ToolStripButton();
-            this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.Menu.SuspendLayout();
             this.Status.SuspendLayout();
             this.Tool.SuspendLayout();
@@ -110,9 +111,9 @@
             this.Menu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.Menu_File,
             this.Menu_Edit,
-            this.Menu_Window,
             this.Menu_Version,
             this.Menu_Tool,
+            this.Menu_Window,
             this.Menu_Execution});
             this.Menu.Name = "Menu";
             // 
@@ -436,6 +437,12 @@
             this.Status_Caret});
             this.Status.Name = "Status";
             // 
+            // toolStripStatusLabel1
+            // 
+            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
+            resources.ApplyResources(this.toolStripStatusLabel1, "toolStripStatusLabel1");
+            this.toolStripStatusLabel1.Spring = true;
+            // 
             // Status_Mode
             // 
             this.Status_Mode.Name = "Status_Mode";
@@ -467,7 +474,8 @@
             this.Tool_Copy,
             this.Tool_Paste,
             this.toolStripSeparator2,
-            this.Tool_Execute});
+            this.Tool_Execute,
+            this.toolStripButton1});
             resources.ApplyResources(this.Tool, "Tool");
             this.Tool.Name = "Tool";
             // 
@@ -552,11 +560,12 @@
             this.Tool_Execute.Name = "Tool_Execute";
             this.Tool_Execute.Click += new System.EventHandler(this.Tool_Execute_Click);
             // 
-            // toolStripStatusLabel1
+            // toolStripButton1
             // 
-            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            resources.ApplyResources(this.toolStripStatusLabel1, "toolStripStatusLabel1");
-            this.toolStripStatusLabel1.Spring = true;
+            this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            resources.ApplyResources(this.toolStripButton1, "toolStripButton1");
+            this.toolStripButton1.Name = "toolStripButton1";
+            this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click);
             // 
             // Studio
             // 
@@ -652,6 +661,7 @@
         private System.Windows.Forms.ToolStripMenuItem Tool_SaveAs;
         private System.Windows.Forms.ToolStripStatusLabel Status_Mode;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
+        private System.Windows.Forms.ToolStripButton toolStripButton1;
     }
 }
 
