@@ -15,13 +15,18 @@ namespace TJAStudio
     {
         public Natori(string input)
         {
+            if (!string.IsNullOrEmpty(input)) Init(input);
+        }
+
+        private void Init(string input)
+        {
             foreach (var item in Regex.Split(input, "\r\n"))
             {
                 Result.Add(new NatoriInfo(item));
             }
             foreach (var item in Result)
             {
-                if(Regex.Replace(item.Text, " *//.*", "").Contains(":"))
+                if (Regex.Replace(item.Text, " *//.*", "").Contains(":"))
                 {
                     item.Type = LineType.Header;
                 }
@@ -36,7 +41,7 @@ namespace TJAStudio
             }
             foreach (var item in Result)
             {
-                if(item.Type == LineType.Text)
+                if (item.Type == LineType.Text)
                 {
                     item.Amount = Regex.Replace(item.Text, " *//.*", "").Trim().Length;
                     var notesCount = 0;
@@ -51,14 +56,15 @@ namespace TJAStudio
                 }
             }
         }
+
         public Natori(List<Header> input)
-            : this(string.Join(Environment.NewLine, input.ToArray().ToString()))
         {
             var constructor = "";
             foreach (var item in input)
             {
                 constructor += String.Format("{0}:{1}", item.Name, item.Value) + Environment.NewLine;
             }
+            Init(constructor);
         }
 
         public Natori SelectByType(LineType lineType)
@@ -100,7 +106,5 @@ namespace TJAStudio
         }
 
         public List<NatoriInfo> Result { get; private set; } = new List<NatoriInfo>();
-
-
     }
 }
