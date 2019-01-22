@@ -37,7 +37,7 @@ namespace TJAStudio.Charts
             {
                 if(Regex.IsMatch(parameterText, item, RegexOptions.IgnoreCase)) isValid = true;
             }
-            if (!isValid) throw new InvalidTJAFormatException();
+            if (!isValid) throw new InvalidTJAFormatException(String.Format(Properties.SystemMessage.InvaildHeader, text));
         }
 
         /// <summary>
