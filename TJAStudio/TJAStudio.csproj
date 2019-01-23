@@ -120,6 +120,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>SystemMessage.ja.resx</DependentUpon>
     </Compile>
+    <Compile Include="SettingWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SettingWindow.Designer.cs">
+      <DependentUpon>SettingWindow.cs</DependentUpon>
+    </Compile>
     <Compile Include="Simulators\Simulator.cs" />
     <Compile Include="Studio.cs">
       <SubType>Form</SubType>
@@ -205,6 +211,9 @@
     <EmbeddedResource Include="Properties\SystemMessage.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>SystemMessage.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SettingWindow.resx">
+      <DependentUpon>SettingWindow.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Studio.ja.resx">
       <DependentUpon>Studio.cs</DependentUpon>
