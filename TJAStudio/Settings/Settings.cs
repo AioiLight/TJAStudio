@@ -25,6 +25,9 @@ namespace TJAStudio
         /// </summary>
         public string WorkspacePath { get; set; } = "";
 
+        /// <summary>
+        /// UTF-8モード。
+        /// </summary>
         public bool UTF8Mode { get; set; } = false;
 
         /// <summary>
