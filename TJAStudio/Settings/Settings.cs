@@ -20,6 +20,11 @@ namespace TJAStudio
         /// </summary>
         public string SimulatorPath { get; set; } = "";
 
+        /// <summary>
+        /// ワークスペースのパス。
+        /// </summary>
+        public string WorkspacePath { get; set; } = "";
+
         public bool UTF8Mode { get; set; } = false;
 
         /// <summary>
