@@ -62,6 +62,7 @@
             this.Tab_Editor_Header = new System.Windows.Forms.Button();
             this.Tab_Editor_Command = new System.Windows.Forms.Button();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.Tab_Editor_Label = new System.Windows.Forms.Label();
             this.Tab.SuspendLayout();
             this.Tab_General.SuspendLayout();
             this.Tab_Editor.SuspendLayout();
@@ -169,6 +170,7 @@
             this.Tab_Editor.Controls.Add(this.Tab_Editor_Don);
             this.Tab_Editor.Controls.Add(this.Tab_Editor_Normal);
             this.Tab_Editor.Controls.Add(this.Tab_Editor_Sample);
+            this.Tab_Editor.Controls.Add(this.Tab_Editor_Label);
             this.Tab_Editor.Location = new System.Drawing.Point(4, 29);
             this.Tab_Editor.Name = "Tab_Editor";
             this.Tab_Editor.Padding = new System.Windows.Forms.Padding(3);
@@ -406,6 +408,17 @@
             this.checkBox1.Text = "Horizontal ruler starts from zero";
             this.checkBox1.UseVisualStyleBackColor = true;
             // 
+            // Tab_Editor_Label
+            // 
+            this.Tab_Editor_Label.AutoSize = true;
+            this.Tab_Editor_Label.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Tab_Editor_Label.Location = new System.Drawing.Point(501, 3);
+            this.Tab_Editor_Label.Name = "Tab_Editor_Label";
+            this.Tab_Editor_Label.Size = new System.Drawing.Size(165, 40);
+            this.Tab_Editor_Label.TabIndex = 18;
+            this.Tab_Editor_Label.Text = "Click: Foreground\r\nAlt + Click: Backgrounds";
+            this.Tab_Editor_Label.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
             // SettingWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -467,5 +480,6 @@
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.Button Tab_Editor_Command;
         private System.Windows.Forms.Button Tab_Editor_Header;
+        private System.Windows.Forms.Label Tab_Editor_Label;
     }
 }

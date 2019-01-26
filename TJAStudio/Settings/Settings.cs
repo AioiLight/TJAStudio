@@ -37,6 +37,20 @@ namespace TJAStudio
 
         public float FontSize { get; set; } = 16.0f;
 
+        public bool Show_Horizontal_Ruler { get; set; } = true;
+
+        public bool Show_Line_Nunmber { get; set; } = true;
+
+        public bool Show_Horizontal_Ruler_Zero { get; set; } = true;
+
+        public bool Show_Space_Mark { get; set; } = true;
+
+        public bool Show_Tab_Mark { get; set; } = true;
+
+        public bool Show_EoL_Mark { get; set; } = true;
+
+        public bool Show_EoF_Mark { get; set; } = true;
+
         public EditorColorScheme ColorScheme { get; set; } = new EditorColorScheme();
 
         [XmlIgnore]
