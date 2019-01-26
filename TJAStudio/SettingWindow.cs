@@ -61,6 +61,37 @@ namespace TJAStudio
             GetBooleanFromSettings(Program.Setting.Show_EoF_Mark, ref Tab_Editor_EoF);
         }
 
+        private void SetSettings()
+        {
+            // 言語
+            Program.Setting.Locale = Tab_General_Language_ComboBox.SelectedText;
+            Program.Setting.SimulatorPath = Tab_General_SimulatorPath_TextBox.Text;
+            Program.Setting.WorkspacePath = Tab_General_Workspace_TextBox.Text;
+
+            // 色
+            SetColorsFromSettings(Program.Setting.Editor_ForeColor, Program.Setting.Editor_BackColor, ref Tab_Editor_Normal);
+            SetColorsFromSettings(Program.Setting.ColorScheme.Comment, ref Tab_Editor_Comment);
+            SetColorsFromSettings(Program.Setting.ColorScheme.Keyword, ref Tab_Editor_Header);
+            SetColorsFromSettings(Program.Setting.ColorScheme.Command, ref Tab_Editor_Command);
+
+            SetColorsFromSettings(Program.Setting.ColorScheme.Space, ref Tab_Editor_Space);
+            SetColorsFromSettings(Program.Setting.ColorScheme.Don, ref Tab_Editor_Don);
+            SetColorsFromSettings(Program.Setting.ColorScheme.Ka, ref Tab_Editor_Ka);
+            SetColorsFromSettings(Program.Setting.ColorScheme.Roll, ref Tab_Editor_Roll);
+            SetColorsFromSettings(Program.Setting.ColorScheme.Balloon, ref Tab_Editor_Balloon);
+            SetColorsFromSettings(Program.Setting.ColorScheme.Other, ref Tab_Editor_Other);
+
+            // チェックボックス
+            Program.Setting.UTF8Mode = Tab_General_UTF8Mode.Checked;
+            Program.Setting.Show_Horizontal_Ruler = Tab_Editor_Show_HR.Checked;
+            Program.Setting.Show_Line_Number = Tab_Editor_Line.Checked;
+            Program.Setting.Show_Horizontal_Ruler_Zero = Tab_Editor_HR_From_Zero.Checked;
+            Program.Setting.Show_Space_Mark = Tab_Editor_SpaceMark.Checked;
+            Program.Setting.Show_Tab_Mark = Tab_Editor_TabMark.Checked;
+            Program.Setting.Show_EoL_Mark = Tab_Editor_EoL.Checked;
+            Program.Setting.Show_EoF_Mark = Tab_Editor_EoF.Checked;
+        }
+
         private void GetBooleanFromSettings(bool boolean, ref CheckBox checkbox)
         {
             checkbox.Checked = boolean;
@@ -75,9 +106,36 @@ namespace TJAStudio
             button.BackColor = backColor;
         }
 
+        private void SetBooleanFromSettings(ref bool boolean, ref CheckBox checkbox)
+        {
+            boolean = checkbox.Checked;
+        }
+        private void SetColorsFromSettings(ColorFormat colorFormat, ref Button button)
+        {
+            SetColorsFromSettings(colorFormat.ForeColor, colorFormat.BackColor, ref button);
+        }
+        private void SetColorsFromSettings(Color foreColor, Color backColor, ref Button button)
+        {
+            foreColor = button.ForeColor;
+            backColor = button.BackColor;
+        }
+
         private void Tab_Editor_HR_From_Zero_CheckedChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void Button_Cancel_Click(object sender, EventArgs e)
+        {
+            DialogResult = DialogResult.Cancel;
+            this.Close();
+        }
+
+        private void Button_Apply_Click(object sender, EventArgs e)
+        {
+            SetSettings();
+            DialogResult = DialogResult.OK;
+            this.Close();
         }
     }
 }

@@ -63,6 +63,8 @@
             this.Tab_Editor_Label = new System.Windows.Forms.Label();
             this.Button_Apply = new System.Windows.Forms.Button();
             this.Button_Cancel = new System.Windows.Forms.Button();
+            this.Tab_Editor_Font = new System.Windows.Forms.Button();
+            this.Tab_Editor_Font_Sample = new System.Windows.Forms.Label();
             this.Tab.SuspendLayout();
             this.Tab_General.SuspendLayout();
             this.Tab_Editor.SuspendLayout();
@@ -174,6 +176,9 @@
             // 
             this.Tab_General_Language_ComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.Tab_General_Language_ComboBox.FormattingEnabled = true;
+            this.Tab_General_Language_ComboBox.Items.AddRange(new object[] {
+            "en",
+            "ja"});
             this.Tab_General_Language_ComboBox.Location = new System.Drawing.Point(142, 6);
             this.Tab_General_Language_ComboBox.Name = "Tab_General_Language_ComboBox";
             this.Tab_General_Language_ComboBox.Size = new System.Drawing.Size(151, 28);
@@ -181,6 +186,8 @@
             // 
             // Tab_Editor
             // 
+            this.Tab_Editor.Controls.Add(this.Tab_Editor_Font_Sample);
+            this.Tab_Editor.Controls.Add(this.Tab_Editor_Font);
             this.Tab_Editor.Controls.Add(this.Tab_Editor_HR_From_Zero);
             this.Tab_Editor.Controls.Add(this.Tab_Editor_Command);
             this.Tab_Editor.Controls.Add(this.Tab_Editor_Header);
@@ -373,12 +380,11 @@
             // 
             this.Tab_Editor_Sample.BackColor = System.Drawing.Color.White;
             this.Tab_Editor_Sample.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.Tab_Editor_Sample.DrawingOption = ((Sgry.Azuki.DrawingOption)((((((((Sgry.Azuki.DrawingOption.DrawsFullWidthSpace | Sgry.Azuki.DrawingOption.DrawsTab) 
+            this.Tab_Editor_Sample.DrawingOption = ((Sgry.Azuki.DrawingOption)(((((((Sgry.Azuki.DrawingOption.DrawsFullWidthSpace | Sgry.Azuki.DrawingOption.DrawsTab) 
             | Sgry.Azuki.DrawingOption.DrawsEol) 
             | Sgry.Azuki.DrawingOption.HighlightCurrentLine) 
             | Sgry.Azuki.DrawingOption.ShowsLineNumber) 
             | Sgry.Azuki.DrawingOption.ShowsHRuler) 
-            | Sgry.Azuki.DrawingOption.ShowsDirtBar) 
             | Sgry.Azuki.DrawingOption.HighlightsMatchedBracket)));
             this.Tab_Editor_Sample.FirstVisibleLine = 0;
             this.Tab_Editor_Sample.Font = new System.Drawing.Font("MS UI Gothic", 9F);
@@ -387,13 +393,16 @@
             fontInfo1.Style = System.Drawing.FontStyle.Regular;
             this.Tab_Editor_Sample.FontInfo = fontInfo1;
             this.Tab_Editor_Sample.ForeColor = System.Drawing.Color.Black;
-            this.Tab_Editor_Sample.Location = new System.Drawing.Point(6, 157);
+            this.Tab_Editor_Sample.IsReadOnly = true;
+            this.Tab_Editor_Sample.Location = new System.Drawing.Point(6, 165);
+            this.Tab_Editor_Sample.MarksUri = true;
             this.Tab_Editor_Sample.Name = "Tab_Editor_Sample";
             this.Tab_Editor_Sample.ScrollPos = new System.Drawing.Point(0, 0);
+            this.Tab_Editor_Sample.ShowsDirtBar = false;
             this.Tab_Editor_Sample.ShowsHRuler = true;
-            this.Tab_Editor_Sample.Size = new System.Drawing.Size(660, 197);
+            this.Tab_Editor_Sample.Size = new System.Drawing.Size(660, 189);
             this.Tab_Editor_Sample.TabIndex = 0;
-            this.Tab_Editor_Sample.ViewWidth = 4129;
+            this.Tab_Editor_Sample.ViewWidth = 4126;
             // 
             // Tab_Editor_Label
             // 
@@ -408,26 +417,50 @@
             // 
             // Button_Apply
             // 
+            this.Button_Apply.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.Button_Apply.Location = new System.Drawing.Point(378, 379);
             this.Button_Apply.Name = "Button_Apply";
             this.Button_Apply.Size = new System.Drawing.Size(154, 30);
             this.Button_Apply.TabIndex = 1;
             this.Button_Apply.Text = "Apply and Restart";
             this.Button_Apply.UseVisualStyleBackColor = true;
+            this.Button_Apply.Click += new System.EventHandler(this.Button_Apply_Click);
             // 
             // Button_Cancel
             // 
+            this.Button_Cancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.Button_Cancel.Location = new System.Drawing.Point(538, 379);
             this.Button_Cancel.Name = "Button_Cancel";
             this.Button_Cancel.Size = new System.Drawing.Size(154, 30);
             this.Button_Cancel.TabIndex = 2;
             this.Button_Cancel.Text = "Cancel";
             this.Button_Cancel.UseVisualStyleBackColor = true;
+            this.Button_Cancel.Click += new System.EventHandler(this.Button_Cancel_Click);
+            // 
+            // Tab_Editor_Font
+            // 
+            this.Tab_Editor_Font.Location = new System.Drawing.Point(6, 132);
+            this.Tab_Editor_Font.Name = "Tab_Editor_Font";
+            this.Tab_Editor_Font.Size = new System.Drawing.Size(96, 27);
+            this.Tab_Editor_Font.TabIndex = 19;
+            this.Tab_Editor_Font.Text = "Font...";
+            this.Tab_Editor_Font.UseVisualStyleBackColor = true;
+            // 
+            // Tab_Editor_Font_Sample
+            // 
+            this.Tab_Editor_Font_Sample.AutoSize = true;
+            this.Tab_Editor_Font_Sample.Location = new System.Drawing.Point(108, 135);
+            this.Tab_Editor_Font_Sample.Name = "Tab_Editor_Font_Sample";
+            this.Tab_Editor_Font_Sample.Size = new System.Drawing.Size(47, 20);
+            this.Tab_Editor_Font_Sample.TabIndex = 20;
+            this.Tab_Editor_Font_Sample.Text = "label1";
             // 
             // SettingWindow
             // 
+            this.AcceptButton = this.Button_Apply;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.CancelButton = this.Button_Cancel;
             this.ClientSize = new System.Drawing.Size(704, 421);
             this.Controls.Add(this.Button_Cancel);
             this.Controls.Add(this.Button_Apply);
@@ -486,5 +519,7 @@
         private System.Windows.Forms.Button Tab_Editor_Command;
         private System.Windows.Forms.Button Tab_Editor_Header;
         private System.Windows.Forms.Label Tab_Editor_Label;
+        private System.Windows.Forms.Label Tab_Editor_Font_Sample;
+        private System.Windows.Forms.Button Tab_Editor_Font;
     }
 }

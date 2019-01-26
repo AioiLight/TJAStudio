@@ -666,8 +666,13 @@ namespace TJAStudio
         private void Menu_Tool_Settings_Click(object sender, EventArgs e)
         {
             var dialog = new SettingWindow();
-            dialog.ShowDialog(this);
+            var dialogResult = dialog.ShowDialog(this);
             dialog.Dispose();
+            if(dialogResult == DialogResult.OK)
+            {
+                Close();
+                Application.Restart();
+            }
         }
 
         private Courses Courses = new Courses();
