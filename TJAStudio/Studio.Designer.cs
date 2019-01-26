@@ -95,6 +95,7 @@
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.Tool_Execute = new System.Windows.Forms.ToolStripButton();
             this.Tool_FormatCheker = new System.Windows.Forms.ToolStripButton();
+            this.Menu_Tool_Settings = new System.Windows.Forms.ToolStripMenuItem();
             this.Menu.SuspendLayout();
             this.Status.SuspendLayout();
             this.Tool.SuspendLayout();
@@ -358,7 +359,8 @@
             // 
             this.Menu_Tool.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
             this.Menu_Tool.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.Menu_Tool_About});
+            this.Menu_Tool_About,
+            this.Menu_Tool_Settings});
             this.Menu_Tool.Image = global::TJAStudio.Properties.Resources.Toolbox_16x;
             this.Menu_Tool.Name = "Menu_Tool";
             resources.ApplyResources(this.Menu_Tool, "Menu_Tool");
@@ -583,6 +585,13 @@
             this.Tool_FormatCheker.Name = "Tool_FormatCheker";
             this.Tool_FormatCheker.Click += new System.EventHandler(this.Tool_FormatCheker_Click);
             // 
+            // Menu_Tool_Settings
+            // 
+            this.Menu_Tool_Settings.Image = global::TJAStudio.Properties.Resources.Settings_16x;
+            this.Menu_Tool_Settings.Name = "Menu_Tool_Settings";
+            resources.ApplyResources(this.Menu_Tool_Settings, "Menu_Tool_Settings");
+            this.Menu_Tool_Settings.Click += new System.EventHandler(this.Menu_Tool_Settings_Click);
+            // 
             // Studio
             // 
             resources.ApplyResources(this, "$this");
@@ -680,6 +689,7 @@
         private System.Windows.Forms.ToolStripSeparator toolStripMenuItem8;
         private System.Windows.Forms.ToolStripMenuItem Menu_Window_FormatCheker;
         private System.Windows.Forms.ToolStripButton Tool_FormatCheker;
+        private System.Windows.Forms.ToolStripMenuItem Menu_Tool_Settings;
     }
 }
 

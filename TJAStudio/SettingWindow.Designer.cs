@@ -42,7 +42,7 @@
             this.Tab_General_Language_Label = new System.Windows.Forms.Label();
             this.Tab_General_Language_ComboBox = new System.Windows.Forms.ComboBox();
             this.Tab_Editor = new System.Windows.Forms.TabPage();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.Tab_Editor_HR_From_Zero = new System.Windows.Forms.CheckBox();
             this.Tab_Editor_Command = new System.Windows.Forms.Button();
             this.Tab_Editor_Header = new System.Windows.Forms.Button();
             this.Tab_Editor_EoF = new System.Windows.Forms.CheckBox();
@@ -70,12 +70,16 @@
             // 
             // Tab
             // 
+            this.Tab.Alignment = System.Windows.Forms.TabAlignment.Bottom;
             this.Tab.Controls.Add(this.Tab_General);
             this.Tab.Controls.Add(this.Tab_Editor);
+            this.Tab.HotTrack = true;
             this.Tab.Location = new System.Drawing.Point(12, 12);
+            this.Tab.Multiline = true;
             this.Tab.Name = "Tab";
             this.Tab.SelectedIndex = 0;
-            this.Tab.Size = new System.Drawing.Size(680, 361);
+            this.Tab.Size = new System.Drawing.Size(680, 393);
+            this.Tab.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.Tab.TabIndex = 0;
             // 
             // Tab_General
@@ -89,10 +93,10 @@
             this.Tab_General.Controls.Add(this.Tab_General_SimulatorPath_Label);
             this.Tab_General.Controls.Add(this.Tab_General_Language_Label);
             this.Tab_General.Controls.Add(this.Tab_General_Language_ComboBox);
-            this.Tab_General.Location = new System.Drawing.Point(4, 29);
+            this.Tab_General.Location = new System.Drawing.Point(4, 4);
             this.Tab_General.Name = "Tab_General";
             this.Tab_General.Padding = new System.Windows.Forms.Padding(3);
-            this.Tab_General.Size = new System.Drawing.Size(672, 328);
+            this.Tab_General.Size = new System.Drawing.Size(672, 360);
             this.Tab_General.TabIndex = 0;
             this.Tab_General.Text = "General";
             this.Tab_General.UseVisualStyleBackColor = true;
@@ -177,7 +181,7 @@
             // 
             // Tab_Editor
             // 
-            this.Tab_Editor.Controls.Add(this.checkBox1);
+            this.Tab_Editor.Controls.Add(this.Tab_Editor_HR_From_Zero);
             this.Tab_Editor.Controls.Add(this.Tab_Editor_Command);
             this.Tab_Editor.Controls.Add(this.Tab_Editor_Header);
             this.Tab_Editor.Controls.Add(this.Tab_Editor_EoF);
@@ -196,23 +200,24 @@
             this.Tab_Editor.Controls.Add(this.Tab_Editor_Normal);
             this.Tab_Editor.Controls.Add(this.Tab_Editor_Sample);
             this.Tab_Editor.Controls.Add(this.Tab_Editor_Label);
-            this.Tab_Editor.Location = new System.Drawing.Point(4, 29);
+            this.Tab_Editor.Location = new System.Drawing.Point(4, 4);
             this.Tab_Editor.Name = "Tab_Editor";
             this.Tab_Editor.Padding = new System.Windows.Forms.Padding(3);
-            this.Tab_Editor.Size = new System.Drawing.Size(672, 328);
+            this.Tab_Editor.Size = new System.Drawing.Size(672, 360);
             this.Tab_Editor.TabIndex = 1;
             this.Tab_Editor.Text = "Editor";
             this.Tab_Editor.UseVisualStyleBackColor = true;
             // 
-            // checkBox1
+            // Tab_Editor_HR_From_Zero
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(335, 72);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(230, 24);
-            this.checkBox1.TabIndex = 17;
-            this.checkBox1.Text = "Horizontal ruler starts from zero";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.Tab_Editor_HR_From_Zero.AutoSize = true;
+            this.Tab_Editor_HR_From_Zero.Location = new System.Drawing.Point(335, 72);
+            this.Tab_Editor_HR_From_Zero.Name = "Tab_Editor_HR_From_Zero";
+            this.Tab_Editor_HR_From_Zero.Size = new System.Drawing.Size(230, 24);
+            this.Tab_Editor_HR_From_Zero.TabIndex = 17;
+            this.Tab_Editor_HR_From_Zero.Text = "Horizontal ruler starts from zero";
+            this.Tab_Editor_HR_From_Zero.UseVisualStyleBackColor = true;
+            this.Tab_Editor_HR_From_Zero.CheckedChanged += new System.EventHandler(this.Tab_Editor_HR_From_Zero_CheckedChanged);
             // 
             // Tab_Editor_Command
             // 
@@ -382,11 +387,11 @@
             fontInfo1.Style = System.Drawing.FontStyle.Regular;
             this.Tab_Editor_Sample.FontInfo = fontInfo1;
             this.Tab_Editor_Sample.ForeColor = System.Drawing.Color.Black;
-            this.Tab_Editor_Sample.Location = new System.Drawing.Point(6, 141);
+            this.Tab_Editor_Sample.Location = new System.Drawing.Point(6, 157);
             this.Tab_Editor_Sample.Name = "Tab_Editor_Sample";
             this.Tab_Editor_Sample.ScrollPos = new System.Drawing.Point(0, 0);
             this.Tab_Editor_Sample.ShowsHRuler = true;
-            this.Tab_Editor_Sample.Size = new System.Drawing.Size(660, 181);
+            this.Tab_Editor_Sample.Size = new System.Drawing.Size(660, 197);
             this.Tab_Editor_Sample.TabIndex = 0;
             this.Tab_Editor_Sample.ViewWidth = 4129;
             // 
@@ -394,11 +399,11 @@
             // 
             this.Tab_Editor_Label.AutoSize = true;
             this.Tab_Editor_Label.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Tab_Editor_Label.Location = new System.Drawing.Point(501, 3);
+            this.Tab_Editor_Label.Location = new System.Drawing.Point(510, 3);
             this.Tab_Editor_Label.Name = "Tab_Editor_Label";
-            this.Tab_Editor_Label.Size = new System.Drawing.Size(165, 40);
+            this.Tab_Editor_Label.Size = new System.Drawing.Size(159, 40);
             this.Tab_Editor_Label.TabIndex = 18;
-            this.Tab_Editor_Label.Text = "Click: Foreground\r\nAlt + Click: Backgrounds";
+            this.Tab_Editor_Label.Text = "Click: Foreground\r\nAlt + Click: Background";
             this.Tab_Editor_Label.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // Button_Apply
@@ -477,7 +482,7 @@
         private System.Windows.Forms.Button Tab_General_Workspace_Button;
         private System.Windows.Forms.TextBox Tab_General_Workspace_TextBox;
         private System.Windows.Forms.Label Tab_General_Workspace_Label;
-        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.CheckBox Tab_Editor_HR_From_Zero;
         private System.Windows.Forms.Button Tab_Editor_Command;
         private System.Windows.Forms.Button Tab_Editor_Header;
         private System.Windows.Forms.Label Tab_Editor_Label;

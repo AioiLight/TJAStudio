@@ -39,7 +39,7 @@ namespace TJAStudio
 
         public bool Show_Horizontal_Ruler { get; set; } = true;
 
-        public bool Show_Line_Nunmber { get; set; } = true;
+        public bool Show_Line_Number { get; set; } = true;
 
         public bool Show_Horizontal_Ruler_Zero { get; set; } = true;
 

@@ -357,6 +357,12 @@
   <data name="Menu_Tool_About.Text" xml:space="preserve">
     <value>About TJAStudio...</value>
   </data>
+  <data name="Menu_Tool_Settings.Size" type="System.Drawing.Size, System.Drawing">
+    <value>198, 24</value>
+  </data>
+  <data name="Menu_Tool_Settings.Text" xml:space="preserve">
+    <value>Settings...</value>
+  </data>
   <data name="Menu_Tool.Size" type="System.Drawing.Size, System.Drawing">
     <value>63, 24</value>
   </data>
@@ -7194,6 +7200,12 @@
   </data>
   <data name="&gt;&gt;Tool_FormatCheker.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Menu_Tool_Settings.Name" xml:space="preserve">
+    <value>Menu_Tool_Settings</value>
+  </data>
+  <data name="&gt;&gt;Menu_Tool_Settings.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>Studio</value>
