@@ -133,6 +133,24 @@ namespace TJAStudio.Properties {
         }
         
         /// <summary>
+        ///   TITLE:The Sample M@ster
+        ///#START
+        ///0000,
+        ///1000200010102000, // This is comment!
+        ///1010201000304000,
+        ///#GOGOSTART
+        ///5000008060000080,
+        ///7008000000000011,
+        ///1,
+        ///#END に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string SampleText {
+            get {
+                return ResourceManager.GetString("SampleText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   .tja File Format に類似しているローカライズされた文字列を検索します。
         /// </summary>
         internal static string TJAExtensionDescription {

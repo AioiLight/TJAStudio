@@ -17,5 +17,10 @@ namespace TJAStudio
             InitializeComponent();
         }
 
+        private void SettingWindow_Load(object sender, EventArgs e)
+        {
+            Tab_Editor_Sample.Text = Properties.Common.SampleText;
+        }
+
     }
 }

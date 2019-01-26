@@ -141,6 +141,18 @@
   <data name="Name" xml:space="preserve">
     <value>TJAStudio</value>
   </data>
+  <data name="SampleText" xml:space="preserve">
+    <value>TITLE:The Sample M@ster
+#START
+0000,
+1000200010102000, // これはコメントです!
+1010201000304000,
+#GOGOSTART
+5000008060000080,
+7008000000000011,
+1,
+#END</value>
+  </data>
   <data name="TJAExtensionDescription" xml:space="preserve">
     <value>.tja ファイル フォーマット</value>
   </data>
