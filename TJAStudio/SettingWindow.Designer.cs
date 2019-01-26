@@ -32,6 +32,9 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SettingWindow));
             this.Tab = new System.Windows.Forms.TabControl();
             this.Tab_General = new System.Windows.Forms.TabPage();
+            this.Tab_General_Workspace_Button = new System.Windows.Forms.Button();
+            this.Tab_General_Workspace_TextBox = new System.Windows.Forms.TextBox();
+            this.Tab_General_Workspace_Label = new System.Windows.Forms.Label();
             this.Tab_General_UTF8Mode = new System.Windows.Forms.CheckBox();
             this.Tab_General_SimulatorPath_Button = new System.Windows.Forms.Button();
             this.Tab_General_SimulatorPath_TextBox = new System.Windows.Forms.TextBox();
@@ -39,6 +42,13 @@
             this.Tab_General_Language_Label = new System.Windows.Forms.Label();
             this.Tab_General_Language_ComboBox = new System.Windows.Forms.ComboBox();
             this.Tab_Editor = new System.Windows.Forms.TabPage();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.Tab_Editor_Command = new System.Windows.Forms.Button();
+            this.Tab_Editor_Header = new System.Windows.Forms.Button();
+            this.Tab_Editor_EoF = new System.Windows.Forms.CheckBox();
+            this.Tab_Editor_EoL = new System.Windows.Forms.CheckBox();
+            this.Tab_Editor_TabMark = new System.Windows.Forms.CheckBox();
+            this.Tab_Editor_SpaceMark = new System.Windows.Forms.CheckBox();
             this.Tab_Editor_Line = new System.Windows.Forms.CheckBox();
             this.Tab_Editor_Show_HR = new System.Windows.Forms.CheckBox();
             this.Tab_Editor_Other = new System.Windows.Forms.Button();
@@ -50,19 +60,9 @@
             this.Tab_Editor_Don = new System.Windows.Forms.Button();
             this.Tab_Editor_Normal = new System.Windows.Forms.Button();
             this.Tab_Editor_Sample = new Sgry.Azuki.WinForms.AzukiControl();
+            this.Tab_Editor_Label = new System.Windows.Forms.Label();
             this.Button_Apply = new System.Windows.Forms.Button();
             this.Button_Cancel = new System.Windows.Forms.Button();
-            this.Tab_Editor_SpaceMark = new System.Windows.Forms.CheckBox();
-            this.Tab_Editor_TabMark = new System.Windows.Forms.CheckBox();
-            this.Tab_Editor_EoL = new System.Windows.Forms.CheckBox();
-            this.Tab_Editor_EoF = new System.Windows.Forms.CheckBox();
-            this.Tab_General_Workspace_Button = new System.Windows.Forms.Button();
-            this.Tab_General_Workspace_TextBox = new System.Windows.Forms.TextBox();
-            this.Tab_General_Workspace_Label = new System.Windows.Forms.Label();
-            this.Tab_Editor_Header = new System.Windows.Forms.Button();
-            this.Tab_Editor_Command = new System.Windows.Forms.Button();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.Tab_Editor_Label = new System.Windows.Forms.Label();
             this.Tab.SuspendLayout();
             this.Tab_General.SuspendLayout();
             this.Tab_Editor.SuspendLayout();
@@ -96,6 +96,31 @@
             this.Tab_General.TabIndex = 0;
             this.Tab_General.Text = "General";
             this.Tab_General.UseVisualStyleBackColor = true;
+            // 
+            // Tab_General_Workspace_Button
+            // 
+            this.Tab_General_Workspace_Button.Location = new System.Drawing.Point(633, 40);
+            this.Tab_General_Workspace_Button.Name = "Tab_General_Workspace_Button";
+            this.Tab_General_Workspace_Button.Size = new System.Drawing.Size(32, 27);
+            this.Tab_General_Workspace_Button.TabIndex = 8;
+            this.Tab_General_Workspace_Button.Text = "...";
+            this.Tab_General_Workspace_Button.UseVisualStyleBackColor = true;
+            // 
+            // Tab_General_Workspace_TextBox
+            // 
+            this.Tab_General_Workspace_TextBox.Location = new System.Drawing.Point(141, 40);
+            this.Tab_General_Workspace_TextBox.Name = "Tab_General_Workspace_TextBox";
+            this.Tab_General_Workspace_TextBox.Size = new System.Drawing.Size(486, 27);
+            this.Tab_General_Workspace_TextBox.TabIndex = 7;
+            // 
+            // Tab_General_Workspace_Label
+            // 
+            this.Tab_General_Workspace_Label.AutoSize = true;
+            this.Tab_General_Workspace_Label.Location = new System.Drawing.Point(6, 43);
+            this.Tab_General_Workspace_Label.Name = "Tab_General_Workspace_Label";
+            this.Tab_General_Workspace_Label.Size = new System.Drawing.Size(117, 20);
+            this.Tab_General_Workspace_Label.TabIndex = 6;
+            this.Tab_General_Workspace_Label.Text = "Workspace Path:";
             // 
             // Tab_General_UTF8Mode
             // 
@@ -178,6 +203,74 @@
             this.Tab_Editor.TabIndex = 1;
             this.Tab_Editor.Text = "Editor";
             this.Tab_Editor.UseVisualStyleBackColor = true;
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(335, 72);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(230, 24);
+            this.checkBox1.TabIndex = 17;
+            this.checkBox1.Text = "Horizontal ruler starts from zero";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            // 
+            // Tab_Editor_Command
+            // 
+            this.Tab_Editor_Command.Location = new System.Drawing.Point(312, 6);
+            this.Tab_Editor_Command.Name = "Tab_Editor_Command";
+            this.Tab_Editor_Command.Size = new System.Drawing.Size(96, 27);
+            this.Tab_Editor_Command.TabIndex = 16;
+            this.Tab_Editor_Command.Text = "Command";
+            this.Tab_Editor_Command.UseVisualStyleBackColor = true;
+            // 
+            // Tab_Editor_Header
+            // 
+            this.Tab_Editor_Header.Location = new System.Drawing.Point(210, 6);
+            this.Tab_Editor_Header.Name = "Tab_Editor_Header";
+            this.Tab_Editor_Header.Size = new System.Drawing.Size(96, 27);
+            this.Tab_Editor_Header.TabIndex = 15;
+            this.Tab_Editor_Header.Text = "Header";
+            this.Tab_Editor_Header.UseVisualStyleBackColor = true;
+            // 
+            // Tab_Editor_EoF
+            // 
+            this.Tab_Editor_EoF.AutoSize = true;
+            this.Tab_Editor_EoF.Location = new System.Drawing.Point(432, 102);
+            this.Tab_Editor_EoF.Name = "Tab_Editor_EoF";
+            this.Tab_Editor_EoF.Size = new System.Drawing.Size(132, 24);
+            this.Tab_Editor_EoF.TabIndex = 14;
+            this.Tab_Editor_EoF.Text = "Shows EoF mark";
+            this.Tab_Editor_EoF.UseVisualStyleBackColor = true;
+            // 
+            // Tab_Editor_EoL
+            // 
+            this.Tab_Editor_EoL.AutoSize = true;
+            this.Tab_Editor_EoL.Location = new System.Drawing.Point(294, 102);
+            this.Tab_Editor_EoL.Name = "Tab_Editor_EoL";
+            this.Tab_Editor_EoL.Size = new System.Drawing.Size(132, 24);
+            this.Tab_Editor_EoL.TabIndex = 13;
+            this.Tab_Editor_EoL.Text = "Shows EoL mark";
+            this.Tab_Editor_EoL.UseVisualStyleBackColor = true;
+            // 
+            // Tab_Editor_TabMark
+            // 
+            this.Tab_Editor_TabMark.AutoSize = true;
+            this.Tab_Editor_TabMark.Location = new System.Drawing.Point(158, 102);
+            this.Tab_Editor_TabMark.Name = "Tab_Editor_TabMark";
+            this.Tab_Editor_TabMark.Size = new System.Drawing.Size(130, 24);
+            this.Tab_Editor_TabMark.TabIndex = 12;
+            this.Tab_Editor_TabMark.Text = "Shows tab mark";
+            this.Tab_Editor_TabMark.UseVisualStyleBackColor = true;
+            // 
+            // Tab_Editor_SpaceMark
+            // 
+            this.Tab_Editor_SpaceMark.AutoSize = true;
+            this.Tab_Editor_SpaceMark.Location = new System.Drawing.Point(6, 102);
+            this.Tab_Editor_SpaceMark.Name = "Tab_Editor_SpaceMark";
+            this.Tab_Editor_SpaceMark.Size = new System.Drawing.Size(146, 24);
+            this.Tab_Editor_SpaceMark.TabIndex = 11;
+            this.Tab_Editor_SpaceMark.Text = "Shows space mark";
+            this.Tab_Editor_SpaceMark.UseVisualStyleBackColor = true;
             // 
             // Tab_Editor_Line
             // 
@@ -297,6 +390,17 @@
             this.Tab_Editor_Sample.TabIndex = 0;
             this.Tab_Editor_Sample.ViewWidth = 4129;
             // 
+            // Tab_Editor_Label
+            // 
+            this.Tab_Editor_Label.AutoSize = true;
+            this.Tab_Editor_Label.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Tab_Editor_Label.Location = new System.Drawing.Point(501, 3);
+            this.Tab_Editor_Label.Name = "Tab_Editor_Label";
+            this.Tab_Editor_Label.Size = new System.Drawing.Size(165, 40);
+            this.Tab_Editor_Label.TabIndex = 18;
+            this.Tab_Editor_Label.Text = "Click: Foreground\r\nAlt + Click: Backgrounds";
+            this.Tab_Editor_Label.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
             // Button_Apply
             // 
             this.Button_Apply.Location = new System.Drawing.Point(378, 379);
@@ -314,110 +418,6 @@
             this.Button_Cancel.TabIndex = 2;
             this.Button_Cancel.Text = "Cancel";
             this.Button_Cancel.UseVisualStyleBackColor = true;
-            // 
-            // Tab_Editor_SpaceMark
-            // 
-            this.Tab_Editor_SpaceMark.AutoSize = true;
-            this.Tab_Editor_SpaceMark.Location = new System.Drawing.Point(6, 102);
-            this.Tab_Editor_SpaceMark.Name = "Tab_Editor_SpaceMark";
-            this.Tab_Editor_SpaceMark.Size = new System.Drawing.Size(146, 24);
-            this.Tab_Editor_SpaceMark.TabIndex = 11;
-            this.Tab_Editor_SpaceMark.Text = "Shows space mark";
-            this.Tab_Editor_SpaceMark.UseVisualStyleBackColor = true;
-            // 
-            // Tab_Editor_TabMark
-            // 
-            this.Tab_Editor_TabMark.AutoSize = true;
-            this.Tab_Editor_TabMark.Location = new System.Drawing.Point(158, 102);
-            this.Tab_Editor_TabMark.Name = "Tab_Editor_TabMark";
-            this.Tab_Editor_TabMark.Size = new System.Drawing.Size(130, 24);
-            this.Tab_Editor_TabMark.TabIndex = 12;
-            this.Tab_Editor_TabMark.Text = "Shows tab mark";
-            this.Tab_Editor_TabMark.UseVisualStyleBackColor = true;
-            // 
-            // Tab_Editor_EoL
-            // 
-            this.Tab_Editor_EoL.AutoSize = true;
-            this.Tab_Editor_EoL.Location = new System.Drawing.Point(294, 102);
-            this.Tab_Editor_EoL.Name = "Tab_Editor_EoL";
-            this.Tab_Editor_EoL.Size = new System.Drawing.Size(132, 24);
-            this.Tab_Editor_EoL.TabIndex = 13;
-            this.Tab_Editor_EoL.Text = "Shows EoL mark";
-            this.Tab_Editor_EoL.UseVisualStyleBackColor = true;
-            // 
-            // Tab_Editor_EoF
-            // 
-            this.Tab_Editor_EoF.AutoSize = true;
-            this.Tab_Editor_EoF.Location = new System.Drawing.Point(432, 102);
-            this.Tab_Editor_EoF.Name = "Tab_Editor_EoF";
-            this.Tab_Editor_EoF.Size = new System.Drawing.Size(132, 24);
-            this.Tab_Editor_EoF.TabIndex = 14;
-            this.Tab_Editor_EoF.Text = "Shows EoF mark";
-            this.Tab_Editor_EoF.UseVisualStyleBackColor = true;
-            // 
-            // Tab_General_Workspace_Button
-            // 
-            this.Tab_General_Workspace_Button.Location = new System.Drawing.Point(633, 40);
-            this.Tab_General_Workspace_Button.Name = "Tab_General_Workspace_Button";
-            this.Tab_General_Workspace_Button.Size = new System.Drawing.Size(32, 27);
-            this.Tab_General_Workspace_Button.TabIndex = 8;
-            this.Tab_General_Workspace_Button.Text = "...";
-            this.Tab_General_Workspace_Button.UseVisualStyleBackColor = true;
-            // 
-            // Tab_General_Workspace_TextBox
-            // 
-            this.Tab_General_Workspace_TextBox.Location = new System.Drawing.Point(141, 40);
-            this.Tab_General_Workspace_TextBox.Name = "Tab_General_Workspace_TextBox";
-            this.Tab_General_Workspace_TextBox.Size = new System.Drawing.Size(486, 27);
-            this.Tab_General_Workspace_TextBox.TabIndex = 7;
-            // 
-            // Tab_General_Workspace_Label
-            // 
-            this.Tab_General_Workspace_Label.AutoSize = true;
-            this.Tab_General_Workspace_Label.Location = new System.Drawing.Point(6, 43);
-            this.Tab_General_Workspace_Label.Name = "Tab_General_Workspace_Label";
-            this.Tab_General_Workspace_Label.Size = new System.Drawing.Size(117, 20);
-            this.Tab_General_Workspace_Label.TabIndex = 6;
-            this.Tab_General_Workspace_Label.Text = "Workspace Path:";
-            // 
-            // Tab_Editor_Header
-            // 
-            this.Tab_Editor_Header.Location = new System.Drawing.Point(210, 6);
-            this.Tab_Editor_Header.Name = "Tab_Editor_Header";
-            this.Tab_Editor_Header.Size = new System.Drawing.Size(96, 27);
-            this.Tab_Editor_Header.TabIndex = 15;
-            this.Tab_Editor_Header.Text = "Comment";
-            this.Tab_Editor_Header.UseVisualStyleBackColor = true;
-            // 
-            // Tab_Editor_Command
-            // 
-            this.Tab_Editor_Command.Location = new System.Drawing.Point(312, 6);
-            this.Tab_Editor_Command.Name = "Tab_Editor_Command";
-            this.Tab_Editor_Command.Size = new System.Drawing.Size(96, 27);
-            this.Tab_Editor_Command.TabIndex = 16;
-            this.Tab_Editor_Command.Text = "Comment";
-            this.Tab_Editor_Command.UseVisualStyleBackColor = true;
-            // 
-            // checkBox1
-            // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(335, 72);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(230, 24);
-            this.checkBox1.TabIndex = 17;
-            this.checkBox1.Text = "Horizontal ruler starts from zero";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            // 
-            // Tab_Editor_Label
-            // 
-            this.Tab_Editor_Label.AutoSize = true;
-            this.Tab_Editor_Label.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Tab_Editor_Label.Location = new System.Drawing.Point(501, 3);
-            this.Tab_Editor_Label.Name = "Tab_Editor_Label";
-            this.Tab_Editor_Label.Size = new System.Drawing.Size(165, 40);
-            this.Tab_Editor_Label.TabIndex = 18;
-            this.Tab_Editor_Label.Text = "Click: Foreground\r\nAlt + Click: Backgrounds";
-            this.Tab_Editor_Label.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // SettingWindow
             // 
