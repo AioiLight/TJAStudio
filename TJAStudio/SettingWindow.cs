@@ -120,6 +120,29 @@ namespace TJAStudio
             backColor = button.BackColor;
         }
 
+        private void SetColor(ref Button button)
+        {
+            var isBackground = (ModifierKeys & Keys.Alt) == Keys.Alt;
+            var color = isBackground ? button.BackColor : button.ForeColor;
+            var dialog = new ColorDialog();
+            dialog.Color = color;
+            dialog.FullOpen = true;
+            dialog.SolidColorOnly = false;
+            if(dialog.ShowDialog() == DialogResult.OK)
+            {
+                color = dialog.Color;
+            }
+            dialog.Dispose();
+            if(isBackground)
+            {
+                button.BackColor = color;
+            }
+            else
+            {
+                button.ForeColor = color;
+            }
+        }
+
         private void Tab_Editor_HR_From_Zero_CheckedChanged(object sender, EventArgs e)
         {
 
@@ -136,6 +159,56 @@ namespace TJAStudio
             SetSettings();
             DialogResult = DialogResult.OK;
             this.Close();
+        }
+
+        private void Tab_Editor_Normal_Click(object sender, EventArgs e)
+        {
+            SetColor(ref Tab_Editor_Normal);
+        }
+
+        private void Tab_Editor_Comment_Click(object sender, EventArgs e)
+        {
+            SetColor(ref Tab_Editor_Comment);
+        }
+
+        private void Tab_Editor_Header_Click(object sender, EventArgs e)
+        {
+            SetColor(ref Tab_Editor_Header);
+        }
+
+        private void Tab_Editor_Command_Click(object sender, EventArgs e)
+        {
+            SetColor(ref Tab_Editor_Command);
+        }
+
+        private void Tab_Editor_Space_Click(object sender, EventArgs e)
+        {
+            SetColor(ref Tab_Editor_Space);
+        }
+
+        private void Tab_Editor_Don_Click(object sender, EventArgs e)
+        {
+            SetColor(ref Tab_Editor_Don);
+        }
+
+        private void Tab_Editor_Ka_Click(object sender, EventArgs e)
+        {
+            SetColor(ref Tab_Editor_Ka);
+        }
+
+        private void Tab_Editor_Roll_Click(object sender, EventArgs e)
+        {
+            SetColor(ref Tab_Editor_Roll);
+        }
+
+        private void Tab_Editor_Balloon_Click(object sender, EventArgs e)
+        {
+            SetColor(ref Tab_Editor_Balloon);
+        }
+
+        private void Tab_Editor_Other_Click(object sender, EventArgs e)
+        {
+            SetColor(ref Tab_Editor_Other);
         }
     }
 }
