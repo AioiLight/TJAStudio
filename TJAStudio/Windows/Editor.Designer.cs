@@ -38,14 +38,15 @@
             this.TextEditor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(250)))), ((int)(((byte)(240)))));
             this.TextEditor.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.TextEditor.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.TextEditor.DrawingOption = ((Sgry.Azuki.DrawingOption)(((((((((Sgry.Azuki.DrawingOption.DrawsSpace | Sgry.Azuki.DrawingOption.DrawsFullWidthSpace) 
+            this.TextEditor.DrawingOption = ((Sgry.Azuki.DrawingOption)((((((((((Sgry.Azuki.DrawingOption.DrawsSpace | Sgry.Azuki.DrawingOption.DrawsFullWidthSpace) 
             | Sgry.Azuki.DrawingOption.DrawsTab) 
             | Sgry.Azuki.DrawingOption.DrawsEol) 
             | Sgry.Azuki.DrawingOption.HighlightCurrentLine) 
             | Sgry.Azuki.DrawingOption.ShowsLineNumber) 
             | Sgry.Azuki.DrawingOption.ShowsHRuler) 
             | Sgry.Azuki.DrawingOption.DrawsEof) 
-            | Sgry.Azuki.DrawingOption.HighlightsMatchedBracket)));
+            | Sgry.Azuki.DrawingOption.HighlightsMatchedBracket) 
+            | Sgry.Azuki.DrawingOption.HRulerStartsFromZero)));
             this.TextEditor.DrawsEofMark = true;
             this.TextEditor.DrawsSpace = true;
             this.TextEditor.FirstVisibleLine = 0;

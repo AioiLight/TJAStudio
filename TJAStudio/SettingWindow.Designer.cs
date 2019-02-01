@@ -273,6 +273,7 @@
             this.Tab_Editor_EoF.TabIndex = 14;
             this.Tab_Editor_EoF.Text = "Shows EoF mark";
             this.Tab_Editor_EoF.UseVisualStyleBackColor = true;
+            this.Tab_Editor_EoF.CheckedChanged += new System.EventHandler(this.Tab_Editor_EoF_CheckedChanged);
             // 
             // Tab_Editor_EoL
             // 
@@ -283,6 +284,7 @@
             this.Tab_Editor_EoL.TabIndex = 13;
             this.Tab_Editor_EoL.Text = "Shows EoL mark";
             this.Tab_Editor_EoL.UseVisualStyleBackColor = true;
+            this.Tab_Editor_EoL.CheckedChanged += new System.EventHandler(this.Tab_Editor_EoL_CheckedChanged);
             // 
             // Tab_Editor_TabMark
             // 
@@ -293,6 +295,7 @@
             this.Tab_Editor_TabMark.TabIndex = 12;
             this.Tab_Editor_TabMark.Text = "Shows tab mark";
             this.Tab_Editor_TabMark.UseVisualStyleBackColor = true;
+            this.Tab_Editor_TabMark.CheckedChanged += new System.EventHandler(this.Tab_Editor_TabMark_CheckedChanged);
             // 
             // Tab_Editor_SpaceMark
             // 
@@ -303,6 +306,7 @@
             this.Tab_Editor_SpaceMark.TabIndex = 11;
             this.Tab_Editor_SpaceMark.Text = "Shows space mark";
             this.Tab_Editor_SpaceMark.UseVisualStyleBackColor = true;
+            this.Tab_Editor_SpaceMark.CheckedChanged += new System.EventHandler(this.Tab_Editor_SpaceMark_CheckedChanged);
             // 
             // Tab_Editor_Line
             // 
@@ -313,6 +317,7 @@
             this.Tab_Editor_Line.TabIndex = 10;
             this.Tab_Editor_Line.Text = "Shows line number";
             this.Tab_Editor_Line.UseVisualStyleBackColor = true;
+            this.Tab_Editor_Line.CheckedChanged += new System.EventHandler(this.Tab_Editor_Line_CheckedChanged);
             // 
             // Tab_Editor_Show_HR
             // 
@@ -323,6 +328,7 @@
             this.Tab_Editor_Show_HR.TabIndex = 9;
             this.Tab_Editor_Show_HR.Text = "Shows horizontal ruler";
             this.Tab_Editor_Show_HR.UseVisualStyleBackColor = true;
+            this.Tab_Editor_Show_HR.CheckedChanged += new System.EventHandler(this.Tab_Editor_Show_HR_CheckedChanged);
             // 
             // Tab_Editor_Other
             // 
@@ -421,6 +427,7 @@
             fontInfo1.Style = System.Drawing.FontStyle.Regular;
             this.Tab_Editor_Sample.FontInfo = fontInfo1;
             this.Tab_Editor_Sample.ForeColor = System.Drawing.Color.Black;
+            this.Tab_Editor_Sample.HRulerStartsFromZero = false;
             this.Tab_Editor_Sample.IsReadOnly = true;
             this.Tab_Editor_Sample.Location = new System.Drawing.Point(6, 165);
             this.Tab_Editor_Sample.MarksUri = true;

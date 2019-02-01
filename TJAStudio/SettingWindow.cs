@@ -36,7 +36,6 @@ namespace TJAStudio
 
             Tab_General_SimulatorPath_TextBox.Text = Program.Setting.SimulatorPath;
             Tab_General_Workspace_TextBox.Text = Program.Setting.WorkspacePath;
-
             // 色
             GetColorsFromSettings(Program.Setting.Editor_ForeColor, Program.Setting.Editor_BackColor, ref Tab_Editor_Normal);
             GetColorsFromSettings(Program.Setting.ColorScheme.Comment, ref Tab_Editor_Comment);
@@ -59,6 +58,7 @@ namespace TJAStudio
             GetBooleanFromSettings(Program.Setting.Show_Tab_Mark, ref Tab_Editor_TabMark);
             GetBooleanFromSettings(Program.Setting.Show_EoL_Mark, ref Tab_Editor_EoL);
             GetBooleanFromSettings(Program.Setting.Show_EoF_Mark, ref Tab_Editor_EoF);
+
         }
 
         private void SetSettings()
@@ -95,6 +95,7 @@ namespace TJAStudio
         private void GetBooleanFromSettings(bool boolean, ref CheckBox checkbox)
         {
             checkbox.Checked = boolean;
+            Update();
         }
         private void GetColorsFromSettings(ColorFormat colorFormat, ref Button button)
         {
@@ -143,10 +144,6 @@ namespace TJAStudio
             }
         }
 
-        private void Tab_Editor_HR_From_Zero_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
 
         private void Button_Cancel_Click(object sender, EventArgs e)
         {
@@ -209,6 +206,41 @@ namespace TJAStudio
         private void Tab_Editor_Other_Click(object sender, EventArgs e)
         {
             SetColor(ref Tab_Editor_Other);
+        }
+
+        private void Tab_Editor_Show_HR_CheckedChanged(object sender, EventArgs e)
+        {
+            Tab_Editor_Sample.ShowsHRuler = Tab_Editor_Show_HR.Checked;
+        }
+
+        private void Tab_Editor_Line_CheckedChanged(object sender, EventArgs e)
+        {
+            Tab_Editor_Sample.ShowsLineNumber = Tab_Editor_Line.Checked;
+        }
+
+        private void Tab_Editor_HR_From_Zero_CheckedChanged(object sender, EventArgs e)
+        {
+            Tab_Editor_Sample.HRulerStartsFromZero = Tab_Editor_HR_From_Zero.Checked;
+        }
+        private void Tab_Editor_SpaceMark_CheckedChanged(object sender, EventArgs e)
+        {
+            Tab_Editor_Sample.DrawsSpace = Tab_Editor_SpaceMark.Checked;
+            Tab_Editor_Sample.DrawsFullWidthSpace = Tab_Editor_SpaceMark.Checked;
+        }
+
+        private void Tab_Editor_TabMark_CheckedChanged(object sender, EventArgs e)
+        {
+            Tab_Editor_Sample.DrawsTab = Tab_Editor_TabMark.Checked;
+        }
+
+        private void Tab_Editor_EoL_CheckedChanged(object sender, EventArgs e)
+        {
+            Tab_Editor_Sample.DrawsEolCode = Tab_Editor_EoL.Checked;
+        }
+
+        private void Tab_Editor_EoF_CheckedChanged(object sender, EventArgs e)
+        {
+            Tab_Editor_Sample.DrawsEofMark = Tab_Editor_EoF.Checked;
         }
     }
 }
