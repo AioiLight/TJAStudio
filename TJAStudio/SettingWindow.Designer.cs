@@ -118,6 +118,7 @@
             this.Tab_General_Workspace_TextBox.Name = "Tab_General_Workspace_TextBox";
             this.Tab_General_Workspace_TextBox.Size = new System.Drawing.Size(486, 27);
             this.Tab_General_Workspace_TextBox.TabIndex = 7;
+            this.Tab_General_Workspace_TextBox.TextChanged += new System.EventHandler(this.Tab_General_Workspace_TextBox_TextChanged);
             // 
             // Tab_General_Workspace_Label
             // 
@@ -155,6 +156,7 @@
             this.Tab_General_SimulatorPath_TextBox.Name = "Tab_General_SimulatorPath_TextBox";
             this.Tab_General_SimulatorPath_TextBox.Size = new System.Drawing.Size(486, 27);
             this.Tab_General_SimulatorPath_TextBox.TabIndex = 3;
+            this.Tab_General_SimulatorPath_TextBox.TextChanged += new System.EventHandler(this.Tab_General_SimulatorPath_TextBox_TextChanged);
             // 
             // Tab_General_SimulatorPath_Label
             // 
