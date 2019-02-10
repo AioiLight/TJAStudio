@@ -129,6 +129,12 @@
   <data name="Editor" xml:space="preserve">
     <value>Editor - </value>
   </data>
+  <data name="EXEExtensionDescripion" xml:space="preserve">
+    <value>Executable File</value>
+  </data>
+  <data name="EXEExtensionName" xml:space="preserve">
+    <value>.exe</value>
+  </data>
   <data name="ExtensionDescription" xml:space="preserve">
     <value>TJAStudio Project File</value>
   </data>

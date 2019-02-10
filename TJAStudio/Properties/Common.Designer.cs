@@ -97,6 +97,24 @@ namespace TJAStudio.Properties {
         }
         
         /// <summary>
+        ///   Executable File に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string EXEExtensionDescripion {
+            get {
+                return ResourceManager.GetString("EXEExtensionDescripion", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   .exe に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string EXEExtensionName {
+            get {
+                return ResourceManager.GetString("EXEExtensionName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   TJAStudio Project File に類似しているローカライズされた文字列を検索します。
         /// </summary>
         internal static string ExtensionDescription {
