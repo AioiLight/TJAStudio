@@ -212,6 +212,9 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>SystemMessage.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="SettingWindow.ja.resx">
+      <DependentUpon>SettingWindow.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SettingWindow.resx">
       <DependentUpon>SettingWindow.cs</DependentUpon>
     </EmbeddedResource>

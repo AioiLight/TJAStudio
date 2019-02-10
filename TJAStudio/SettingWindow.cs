@@ -301,6 +301,10 @@ namespace TJAStudio
         {
             Setting.SimulatorPath = Tab_General_SimulatorPath_TextBox.Text;
         }
+        private void Tab_General_Language_ComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            Setting.Locale = GetLocaleFromLocale((Locale)Tab_General_Language_ComboBox.SelectedIndex);
+        }
 
         private void GetSettings()
         {
@@ -310,7 +314,7 @@ namespace TJAStudio
             Tab_Editor_Sample.BackColor = Setting.Editor_BackColor;
             Tab_Editor_Sample.Font = new Font(Setting.FontName, Setting.FontSize);
             Tab_Editor_Font.Font = new Font(Setting.FontName, Setting.FontSize);
-            Tab_General_Language_ComboBox.SelectedText = Setting.Locale;
+            Tab_General_Language_ComboBox.SelectedIndex = (int)GetLocaleFromText(Setting.Locale);
 
             Tab_General_SimulatorPath_TextBox.Text = Setting.SimulatorPath;
             Tab_General_Workspace_TextBox.Text = Setting.WorkspacePath;
@@ -416,6 +420,37 @@ namespace TJAStudio
             if (dialog.ShowDialog() == DialogResult.OK)
             {
                 textBox.Text = dialog.FileName;
+            }
+        }
+
+        private enum Locale
+        {
+            English,
+            Japanese
+        }
+
+        private static Locale GetLocaleFromText(string text)
+        {
+            switch (text)
+            {
+                case "en-US":
+                    return Locale.English;
+                case "ja-JP":
+                    return Locale.Japanese;
+                default:
+                    return Locale.English;
+            }
+        }
+        private static string GetLocaleFromLocale(Locale locale)
+        {
+            switch (locale)
+            {
+                case Locale.English:
+                    return "en-US";
+                case Locale.Japanese:
+                    return "ja-JP";
+                default:
+                    return "en-US";
             }
         }
     }

@@ -117,774 +117,124 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="&gt;&gt;Tab_General_Language_ComboBox.Parent" xml:space="preserve">
-    <value>Tab_General</value>
-  </data>
-  <data name="&gt;&gt;Tab_General_Workspace_Label.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="Tab_Editor_Command.Location" type="System.Drawing.Point, System.Drawing">
-    <value>312, 6</value>
-  </data>
-  <data name="&gt;&gt;Tab_General_Language_Label.Parent" xml:space="preserve">
-    <value>Tab_General</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Tab_Editor_HR_From_Zero.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="Tab_Editor_Balloon.Text" xml:space="preserve">
-    <value>Balloon(7)</value>
-  </data>
-  <data name="&gt;&gt;Tab_Editor_Header.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Tab_Editor_Ka.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Tab_Editor_Header.Name" xml:space="preserve">
-    <value>Tab_Editor_Header</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Tab.Alignment" type="System.Windows.Forms.TabAlignment, System.Windows.Forms">
-    <value>Bottom</value>
-  </data>
-  <data name="&gt;&gt;Tab_Editor_EoF.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="Tab_General_Language_Label.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 9</value>
-  </data>
-  <data name="Tab_Editor_Sample.Font" type="System.Drawing.Font, System.Drawing">
-    <value>MS UI Gothic, 9pt</value>
-  </data>
-  <data name="&gt;&gt;Tab_General_Workspace_Button.Name" xml:space="preserve">
-    <value>Tab_General_Workspace_Button</value>
+  <data name="Tab_General_Workspace_Label.Size" type="System.Drawing.Size, System.Drawing">
+    <value>106, 20</value>
   </data>
   <data name="Tab_General_Workspace_Label.Text" xml:space="preserve">
-    <value>Workspace Path:</value>
-  </data>
-  <data name="&gt;&gt;Tab_Editor_EoL.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="Button_Apply.Size" type="System.Drawing.Size, System.Drawing">
-    <value>154, 30</value>
-  </data>
-  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 5, 4, 5</value>
-  </data>
-  <data name="Tab_General_Workspace_Label.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 43</value>
-  </data>
-  <data name="Tab_General.Text" xml:space="preserve">
-    <value>General</value>
-  </data>
-  <data name="Tab_General_Language_ComboBox.Items1" xml:space="preserve">
-    <value>Japanese</value>
-  </data>
-  <data name="&gt;&gt;Tab_General_Language_Label.Name" xml:space="preserve">
-    <value>Tab_General_Language_Label</value>
-  </data>
-  <data name="&gt;&gt;Tab_Editor_Space.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Tab_Editor_SpaceMark.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="Tab_Editor_Label.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>TopRight</value>
-  </data>
-  <data name="&gt;&gt;Button_Cancel.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;Tab_Editor_EoF.Name" xml:space="preserve">
-    <value>Tab_Editor_EoF</value>
-  </data>
-  <data name="Button_Cancel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>154, 30</value>
-  </data>
-  <data name="Tab_Editor_Space.Text" xml:space="preserve">
-    <value>Space(0)</value>
-  </data>
-  <data name="Tab_Editor_HR_From_Zero.Size" type="System.Drawing.Size, System.Drawing">
-    <value>230, 24</value>
-  </data>
-  <data name="Tab_Editor_Font.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 132</value>
-  </data>
-  <data name="&gt;&gt;Tab_Editor_Command.Parent" xml:space="preserve">
-    <value>Tab_Editor</value>
-  </data>
-  <data name="Button_Cancel.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="Tab_General.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;Tab_General_Workspace_Label.Parent" xml:space="preserve">
-    <value>Tab_General</value>
-  </data>
-  <data name="Tab_Editor_EoF.Text" xml:space="preserve">
-    <value>Shows EoF mark</value>
-  </data>
-  <data name="&gt;&gt;Tab_Editor_Balloon.Name" xml:space="preserve">
-    <value>Tab_Editor_Balloon</value>
-  </data>
-  <data name="Tab_Editor_Header.Size" type="System.Drawing.Size, System.Drawing">
-    <value>96, 27</value>
-  </data>
-  <data name="&gt;&gt;Button_Apply.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;Tab_Editor_Other.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Tab_Editor_Label.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="Tab_Editor_SpaceMark.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 102</value>
-  </data>
-  <data name="Tab_General_UTF8Mode.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 106</value>
-  </data>
-  <data name="Tab_Editor_Show_HR.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="Tab_Editor_SpaceMark.Text" xml:space="preserve">
-    <value>Shows space mark</value>
-  </data>
-  <data name="Tab_General_UTF8Mode.Text" xml:space="preserve">
-    <value>Use UTF-8 encoding when export .tja</value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>Setting</value>
-  </data>
-  <data name="&gt;&gt;Tab_Editor_Roll.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="Tab_Editor_Show_HR.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;Tab_General_Workspace_Label.Name" xml:space="preserve">
-    <value>Tab_General_Workspace_Label</value>
-  </data>
-  <data name="&gt;&gt;Tab_Editor_Comment.Parent" xml:space="preserve">
-    <value>Tab_Editor</value>
-  </data>
-  <data name="&gt;&gt;Tab_General_Workspace_TextBox.Parent" xml:space="preserve">
-    <value>Tab_General</value>
-  </data>
-  <data name="&gt;&gt;Tab_Editor.Name" xml:space="preserve">
-    <value>Tab_Editor</value>
-  </data>
-  <data name="Tab_Editor_EoF.Location" type="System.Drawing.Point, System.Drawing">
-    <value>432, 102</value>
-  </data>
-  <data name="&gt;&gt;Tab_Editor_Space.Name" xml:space="preserve">
-    <value>Tab_Editor_Space</value>
-  </data>
-  <data name="&gt;&gt;Tab_Editor_EoL.Name" xml:space="preserve">
-    <value>Tab_Editor_EoL</value>
-  </data>
-  <data name="Tab_Editor_TabMark.Size" type="System.Drawing.Size, System.Drawing">
-    <value>130, 24</value>
-  </data>
-  <data name="&gt;&gt;Tab_General_SimulatorPath_Button.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="Tab_General_SimulatorPath_TextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>141, 73</value>
-  </data>
-  <data name="Tab_Editor_TabMark.Location" type="System.Drawing.Point, System.Drawing">
-    <value>158, 102</value>
-  </data>
-  <data name="Tab_Editor_Sample.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 165</value>
-  </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>8, 20</value>
-  </data>
-  <data name="&gt;&gt;Tab_General_Language_Label.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="Tab_Editor_Other.Size" type="System.Drawing.Size, System.Drawing">
-    <value>96, 27</value>
-  </data>
-  <data name="Tab_General_SimulatorPath_Button.Size" type="System.Drawing.Size, System.Drawing">
-    <value>32, 27</value>
-  </data>
-  <data name="&gt;&gt;Tab_Editor_EoL.Parent" xml:space="preserve">
-    <value>Tab_Editor</value>
-  </data>
-  <data name="Tab_Editor_Don.Size" type="System.Drawing.Size, System.Drawing">
-    <value>96, 27</value>
-  </data>
-  <data name="Tab_Editor_Font.TabIndex" type="System.Int32, mscorlib">
-    <value>19</value>
-  </data>
-  <data name="&gt;&gt;Tab_Editor_Command.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="Tab_Editor_Font.Size" type="System.Drawing.Size, System.Drawing">
-    <value>282, 27</value>
-  </data>
-  <data name="Tab_Editor_EoF.TabIndex" type="System.Int32, mscorlib">
-    <value>14</value>
-  </data>
-  <data name="&gt;&gt;Button_Apply.Name" xml:space="preserve">
-    <value>Button_Apply</value>
-  </data>
-  <data name="Tab_Editor_Ka.Location" type="System.Drawing.Point, System.Drawing">
-    <value>210, 39</value>
-  </data>
-  <data name="Tab_Editor_Space.Size" type="System.Drawing.Size, System.Drawing">
-    <value>96, 27</value>
-  </data>
-  <data name="&gt;&gt;Tab_Editor_TabMark.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="Tab_General_Workspace_TextBox.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="Tab_Editor_Line.Location" type="System.Drawing.Point, System.Drawing">
-    <value>181, 72</value>
-  </data>
-  <data name="Tab_General_Language_Label.Size" type="System.Drawing.Size, System.Drawing">
-    <value>78, 20</value>
-  </data>
-  <data name="Tab_Editor_Normal.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="Tab_General_Workspace_Label.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;Tab_Editor_Label.Name" xml:space="preserve">
-    <value>Tab_Editor_Label</value>
-  </data>
-  <data name="&gt;&gt;Tab.Name" xml:space="preserve">
-    <value>Tab</value>
-  </data>
-  <data name="Tab_General_Language_Label.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;Tab_Editor_Space.ZOrder" xml:space="preserve">
-    <value>11</value>
-  </data>
-  <data name="&gt;&gt;Tab_General_Language_ComboBox.Name" xml:space="preserve">
-    <value>Tab_General_Language_ComboBox</value>
-  </data>
-  <data name="&gt;&gt;Tab_General_UTF8Mode.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="Tab_Editor_Sample.Size" type="System.Drawing.Size, System.Drawing">
-    <value>660, 189</value>
-  </data>
-  <data name="Tab_Editor_Normal.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 6</value>
-  </data>
-  <data name="&gt;&gt;Tab_Editor_Comment.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Button_Apply.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Tab_Editor_TabMark.Parent" xml:space="preserve">
-    <value>Tab_Editor</value>
-  </data>
-  <data name="&gt;&gt;Tab_Editor_Balloon.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="Tab_Editor_EoF.Size" type="System.Drawing.Size, System.Drawing">
-    <value>132, 24</value>
-  </data>
-  <data name="&gt;&gt;Tab_General_SimulatorPath_TextBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="Tab_General.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 4</value>
-  </data>
-  <data name="&gt;&gt;Tab_Editor_TabMark.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="Tab_Editor_Space.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 39</value>
-  </data>
-  <data name="&gt;&gt;Tab_Editor_Header.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="Tab_General_Language_ComboBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>151, 28</value>
-  </data>
-  <data name="Tab_Editor_Ka.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="Tab_General_SimulatorPath_Button.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="Button_Apply.Location" type="System.Drawing.Point, System.Drawing">
-    <value>378, 379</value>
-  </data>
-  <data name="Tab_Editor_HR_From_Zero.Location" type="System.Drawing.Point, System.Drawing">
-    <value>335, 72</value>
-  </data>
-  <data name="&gt;&gt;Tab_Editor_HR_From_Zero.Name" xml:space="preserve">
-    <value>Tab_Editor_HR_From_Zero</value>
-  </data>
-  <data name="Tab_General_SimulatorPath_TextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>486, 27</value>
-  </data>
-  <data name="&gt;&gt;Tab_Editor_Space.Parent" xml:space="preserve">
-    <value>Tab_Editor</value>
-  </data>
-  <data name="Tab_Editor_Don.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="Tab_General_Language_Label.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;Tab_General_Language_ComboBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="Tab_General_SimulatorPath_TextBox.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="Button_Cancel.Text" xml:space="preserve">
-    <value>Cancel</value>
-  </data>
-  <data name="&gt;&gt;Tab_General_UTF8Mode.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Button_Apply.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;Tab_General_SimulatorPath_Label.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="Tab_Editor_Roll.Text" xml:space="preserve">
-    <value>Roll(5,6)</value>
-  </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>SettingWindow</value>
-  </data>
-  <data name="Tab_Editor_Sample.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="Tab_Editor_Command.Size" type="System.Drawing.Size, System.Drawing">
-    <value>96, 27</value>
-  </data>
-  <data name="&gt;&gt;Tab_Editor_HR_From_Zero.Parent" xml:space="preserve">
-    <value>Tab_Editor</value>
-  </data>
-  <data name="&gt;&gt;Tab_General_SimulatorPath_Button.Parent" xml:space="preserve">
-    <value>Tab_General</value>
-  </data>
-  <data name="Tab_Editor.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 3</value>
-  </data>
-  <data name="&gt;&gt;Tab_Editor_Balloon.Parent" xml:space="preserve">
-    <value>Tab_Editor</value>
-  </data>
-  <data name="Tab_Editor_Other.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="&gt;&gt;Tab_Editor_SpaceMark.Name" xml:space="preserve">
-    <value>Tab_Editor_SpaceMark</value>
-  </data>
-  <data name="Tab_Editor_TabMark.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;Tab_General_Workspace_TextBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="Tab_Editor_TabMark.Text" xml:space="preserve">
-    <value>Shows tab mark</value>
-  </data>
-  <data name="Tab_Editor_Comment.Size" type="System.Drawing.Size, System.Drawing">
-    <value>96, 27</value>
-  </data>
-  <data name="Tab_Editor.Text" xml:space="preserve">
-    <value>Editor</value>
-  </data>
-  <data name="Tab_General_Workspace_Button.Location" type="System.Drawing.Point, System.Drawing">
-    <value>633, 40</value>
-  </data>
-  <data name="Tab_Editor_Label.Text" xml:space="preserve">
-    <value>Click: Foreground
-Alt + Click: Background</value>
-  </data>
-  <data name="&gt;&gt;Tab_General_Workspace_Button.Parent" xml:space="preserve">
-    <value>Tab_General</value>
-  </data>
-  <data name="&gt;&gt;Tab_Editor_Font.Name" xml:space="preserve">
-    <value>Tab_Editor_Font</value>
-  </data>
-  <data name="Tab_Editor_Header.TabIndex" type="System.Int32, mscorlib">
-    <value>15</value>
-  </data>
-  <data name="&gt;&gt;Tab_Editor_Command.Name" xml:space="preserve">
-    <value>Tab_Editor_Command</value>
-  </data>
-  <data name="Tab_General_UTF8Mode.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;Tab_Editor_Line.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="&gt;&gt;Tab_General_Workspace_Label.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="Tab_Editor_Comment.Text" xml:space="preserve">
-    <value>Comment</value>
-  </data>
-  <data name="Tab_General.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 3</value>
-  </data>
-  <data name="&gt;&gt;Tab_General_SimulatorPath_Button.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="Tab_General_Workspace_Label.Size" type="System.Drawing.Size, System.Drawing">
-    <value>117, 20</value>
-  </data>
-  <data name="Tab_Editor_Label.TabIndex" type="System.Int32, mscorlib">
-    <value>18</value>
-  </data>
-  <data name="&gt;&gt;Tab_General.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;Tab_Editor_Font.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="Tab_Editor_Don.Location" type="System.Drawing.Point, System.Drawing">
-    <value>108, 39</value>
-  </data>
-  <data name="Tab_Editor_EoL.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
-    <value>CenterParent</value>
-  </data>
-  <data name="&gt;&gt;Button_Cancel.Name" xml:space="preserve">
-    <value>Button_Cancel</value>
+    <value>ワークスペース:</value>
   </data>
   <data name="Tab_General_UTF8Mode.Size" type="System.Drawing.Size, System.Drawing">
-    <value>265, 24</value>
+    <value>404, 24</value>
   </data>
-  <data name="&gt;&gt;Tab_Editor_Line.Name" xml:space="preserve">
-    <value>Tab_Editor_Line</value>
+  <data name="Tab_General_UTF8Mode.Text" xml:space="preserve">
+    <value>.tja ファイルのエクスポート時にUTF-8エンコーディングを使う</value>
   </data>
-  <data name="Tab_Editor_Comment.Location" type="System.Drawing.Point, System.Drawing">
-    <value>108, 6</value>
-  </data>
-  <data name="&gt;&gt;Tab_Editor_EoL.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="Tab_Editor_Line.Size" type="System.Drawing.Size, System.Drawing">
-    <value>148, 24</value>
-  </data>
-  <data name="Tab_General_SimulatorPath_Button.Location" type="System.Drawing.Point, System.Drawing">
-    <value>633, 73</value>
-  </data>
-  <data name="Tab.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="Tab_Editor_Command.TabIndex" type="System.Int32, mscorlib">
-    <value>16</value>
-  </data>
-  <data name="&gt;&gt;Tab.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Tab_General_Language_ComboBox.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="Tab_Editor_Header.Text" xml:space="preserve">
-    <value>Header</value>
-  </data>
-  <data name="Tab_Editor_Command.Text" xml:space="preserve">
-    <value>Command</value>
-  </data>
-  <data name="&gt;&gt;Tab_Editor_Label.Parent" xml:space="preserve">
-    <value>Tab_Editor</value>
-  </data>
-  <data name="&gt;&gt;Tab_Editor_Ka.Parent" xml:space="preserve">
-    <value>Tab_Editor</value>
-  </data>
-  <data name="&gt;&gt;Tab_General_SimulatorPath_Button.Name" xml:space="preserve">
-    <value>Tab_General_SimulatorPath_Button</value>
-  </data>
-  <data name="Tab_Editor_Normal.Text" xml:space="preserve">
-    <value>Normal</value>
-  </data>
-  <data name="&gt;&gt;Tab_Editor_Roll.Name" xml:space="preserve">
-    <value>Tab_Editor_Roll</value>
-  </data>
-  <data name="&gt;&gt;Tab_Editor_Normal.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Tab_Editor.Parent" xml:space="preserve">
-    <value>Tab</value>
-  </data>
-  <data name="Tab_Editor_HR_From_Zero.Text" xml:space="preserve">
-    <value>Horizontal ruler starts from zero</value>
-  </data>
-  <data name="Button_Apply.Text" xml:space="preserve">
-    <value>Apply and Restart</value>
-  </data>
-  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
-    <value>メイリオ, 9.75pt</value>
-  </data>
-  <data name="Tab_Editor_Don.Text" xml:space="preserve">
-    <value>Don(1,3)</value>
-  </data>
-  <data name="&gt;&gt;Tab_Editor_Comment.Name" xml:space="preserve">
-    <value>Tab_Editor_Comment</value>
-  </data>
-  <data name="&gt;&gt;Tab_Editor_Font.Parent" xml:space="preserve">
-    <value>Tab_Editor</value>
-  </data>
-  <data name="&gt;&gt;Button_Cancel.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;Tab_General_SimulatorPath_TextBox.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;Button_Cancel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="Tab_Editor_Ka.Text" xml:space="preserve">
-    <value>Ka(2,4)</value>
-  </data>
-  <data name="&gt;&gt;Tab_Editor_Command.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Tab_General_Workspace_Button.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="Tab_Editor_Comment.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="Tab_Editor_Line.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="Tab_General_Workspace_Button.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="&gt;&gt;Tab_Editor_EoF.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Tab_Editor.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Tab_General_SimulatorPath_TextBox.Parent" xml:space="preserve">
-    <value>Tab_General</value>
-  </data>
-  <data name="Tab_Editor_SpaceMark.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
-  </data>
-  <data name="&gt;&gt;Tab_Editor_Sample.Parent" xml:space="preserve">
-    <value>Tab_Editor</value>
-  </data>
-  <data name="Tab_Editor.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;Tab_Editor_Line.Parent" xml:space="preserve">
-    <value>Tab_Editor</value>
-  </data>
-  <data name="Tab_Editor_Show_HR.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 72</value>
-  </data>
-  <data name="Tab_Editor_Show_HR.Size" type="System.Drawing.Size, System.Drawing">
-    <value>169, 24</value>
-  </data>
-  <data name="Tab_General_Workspace_TextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>141, 40</value>
-  </data>
-  <data name="&gt;&gt;Tab_Editor_HR_From_Zero.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;Tab_General.Parent" xml:space="preserve">
-    <value>Tab</value>
-  </data>
-  <data name="Tab_Editor_Balloon.Size" type="System.Drawing.Size, System.Drawing">
-    <value>96, 27</value>
-  </data>
-  <data name="&gt;&gt;Tab_Editor_Ka.ZOrder" xml:space="preserve">
-    <value>15</value>
-  </data>
-  <data name="Tab_Editor_Other.Location" type="System.Drawing.Point, System.Drawing">
-    <value>516, 39</value>
-  </data>
-  <data name="&gt;&gt;Tab_Editor_Other.Parent" xml:space="preserve">
-    <value>Tab_Editor</value>
-  </data>
-  <data name="Tab_General_Workspace_Button.Size" type="System.Drawing.Size, System.Drawing">
-    <value>32, 27</value>
-  </data>
-  <data name="&gt;&gt;Tab_Editor_Comment.ZOrder" xml:space="preserve">
-    <value>12</value>
-  </data>
-  <data name="Tab_General_UTF8Mode.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="Tab.Size" type="System.Drawing.Size, System.Drawing">
-    <value>680, 393</value>
-  </data>
-  <data name="&gt;&gt;Tab_Editor_Roll.ZOrder" xml:space="preserve">
-    <value>14</value>
-  </data>
-  <data name="&gt;&gt;Tab_General_SimulatorPath_Label.Parent" xml:space="preserve">
-    <value>Tab_General</value>
-  </data>
-  <data name="Tab_Editor_Roll.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="Tab_Editor_Balloon.Location" type="System.Drawing.Point, System.Drawing">
-    <value>414, 39</value>
-  </data>
-  <data name="&gt;&gt;Tab_General_Workspace_TextBox.Name" xml:space="preserve">
-    <value>Tab_General_Workspace_TextBox</value>
-  </data>
-  <data name="Tab_Editor_TabMark.TabIndex" type="System.Int32, mscorlib">
-    <value>12</value>
-  </data>
-  <data name="Tab_Editor_Label.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;Tab_Editor_Other.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
-  <data name="&gt;&gt;Tab_Editor_Sample.Type" xml:space="preserve">
-    <value>Sgry.Azuki.WinForms.AzukiControl, Azuki, Version=1.7.10.39660, Culture=neutral, PublicKeyToken=46b77eb7f2d82aba</value>
-  </data>
-  <data name="&gt;&gt;Tab_Editor_Don.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="Tab_Editor_SpaceMark.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="Tab_General_Language_Label.Text" xml:space="preserve">
-    <value>Language:</value>
-  </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Tab_General.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="Button_Apply.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="Tab_General_SimulatorPath_Button.Text" xml:space="preserve">
-    <value>...</value>
-  </data>
-  <data name="Tab_General_SimulatorPath_Label.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 76</value>
-  </data>
-  <data name="&gt;&gt;Tab_General_Language_Label.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="Tab_Editor_EoL.Text" xml:space="preserve">
-    <value>Shows EoL mark</value>
-  </data>
-  <data name="Tab_Editor_Label.Size" type="System.Drawing.Size, System.Drawing">
-    <value>159, 40</value>
-  </data>
-  <data name="&gt;&gt;Tab_Editor_Sample.ZOrder" xml:space="preserve">
-    <value>18</value>
-  </data>
-  <data name="Tab_Editor_SpaceMark.Size" type="System.Drawing.Size, System.Drawing">
-    <value>146, 24</value>
-  </data>
-  <data name="&gt;&gt;Tab_Editor_Other.Name" xml:space="preserve">
-    <value>Tab_Editor_Other</value>
-  </data>
-  <data name="&gt;&gt;Tab_General_SimulatorPath_TextBox.Name" xml:space="preserve">
-    <value>Tab_General_SimulatorPath_TextBox</value>
-  </data>
-  <data name="Tab_General_Workspace_Button.Text" xml:space="preserve">
-    <value>...</value>
-  </data>
-  <data name="&gt;&gt;Tab_Editor_Show_HR.Name" xml:space="preserve">
-    <value>Tab_Editor_Show_HR</value>
-  </data>
-  <data name="Tab_Editor_Balloon.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="Tab_General_SimulatorPath_Label.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;Tab.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="Tab_General_Language_ComboBox.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;Tab_General_Workspace_TextBox.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;Tab_Editor_Sample.Name" xml:space="preserve">
-    <value>Tab_Editor_Sample</value>
-  </data>
-  <data name="&gt;&gt;Tab_General_SimulatorPath_Label.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Tab_Editor_Don.Name" xml:space="preserve">
-    <value>Tab_Editor_Don</value>
-  </data>
-  <data name="&gt;&gt;Tab_Editor_Show_HR.Parent" xml:space="preserve">
-    <value>Tab_Editor</value>
-  </data>
-  <data name="&gt;&gt;Tab_Editor_HR_From_Zero.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Tab_General_Workspace_Button.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Tab_General_UTF8Mode.Name" xml:space="preserve">
-    <value>Tab_General_UTF8Mode</value>
-  </data>
-  <data name="&gt;&gt;Tab_Editor_Don.Parent" xml:space="preserve">
-    <value>Tab_Editor</value>
-  </data>
-  <data name="&gt;&gt;Tab_Editor_Label.ZOrder" xml:space="preserve">
-    <value>19</value>
-  </data>
-  <data name="Tab_Editor_Roll.Size" type="System.Drawing.Size, System.Drawing">
-    <value>96, 27</value>
-  </data>
-  <data name="&gt;&gt;Tab.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="Tab_Editor_EoL.Size" type="System.Drawing.Size, System.Drawing">
-    <value>132, 24</value>
+  <data name="Tab_General_SimulatorPath_Label.Size" type="System.Drawing.Size, System.Drawing">
+    <value>106, 20</value>
   </data>
   <data name="Tab_General_SimulatorPath_Label.Text" xml:space="preserve">
-    <value>Simulator Path:</value>
+    <value>シミュレーター:</value>
   </data>
-  <data name="Tab_General_Workspace_Label.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
+  <data name="Tab_General_Language_Label.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 20</value>
+  </data>
+  <data name="Tab_General_Language_Label.Text" xml:space="preserve">
+    <value>言語:</value>
+  </data>
+  <data name="Tab_General.Text" xml:space="preserve">
+    <value>共通</value>
+  </data>
+  <data name="Tab_Editor_Font.Text" xml:space="preserve">
+    <value>フォント...</value>
+  </data>
+  <data name="Tab_Editor_HR_From_Zero.Size" type="System.Drawing.Size, System.Drawing">
+    <value>192, 24</value>
+  </data>
+  <data name="Tab_Editor_HR_From_Zero.Text" xml:space="preserve">
+    <value>水平ルーラーを0から始める</value>
+  </data>
+  <data name="Tab_Editor_Command.Text" xml:space="preserve">
+    <value>コマンド</value>
+  </data>
+  <data name="Tab_Editor_Header.Text" xml:space="preserve">
+    <value>ヘッダー</value>
+  </data>
+  <data name="Tab_Editor_EoF.Size" type="System.Drawing.Size, System.Drawing">
+    <value>171, 24</value>
+  </data>
+  <data name="Tab_Editor_EoF.Text" xml:space="preserve">
+    <value>ファイルの終端にマーク</value>
+  </data>
+  <data name="Tab_Editor_EoL.Size" type="System.Drawing.Size, System.Drawing">
+    <value>119, 24</value>
+  </data>
+  <data name="Tab_Editor_EoL.Text" xml:space="preserve">
+    <value>行終端にマーク</value>
+  </data>
+  <data name="Tab_Editor_TabMark.Size" type="System.Drawing.Size, System.Drawing">
+    <value>132, 24</value>
+  </data>
+  <data name="Tab_Editor_TabMark.Text" xml:space="preserve">
+    <value>タブにマークする</value>
+  </data>
+  <data name="Tab_Editor_SpaceMark.Size" type="System.Drawing.Size, System.Drawing">
+    <value>132, 24</value>
+  </data>
+  <data name="Tab_Editor_SpaceMark.Text" xml:space="preserve">
+    <value>空白にマークする</value>
+  </data>
+  <data name="Tab_Editor_Line.Size" type="System.Drawing.Size, System.Drawing">
+    <value>106, 24</value>
+  </data>
+  <data name="Tab_Editor_Line.Text" xml:space="preserve">
+    <value>行番号を表示</value>
+  </data>
+  <data name="Tab_Editor_Show_HR.Size" type="System.Drawing.Size, System.Drawing">
+    <value>145, 24</value>
+  </data>
+  <data name="Tab_Editor_Show_HR.Text" xml:space="preserve">
+    <value>水平ルーラーを表示</value>
   </data>
   <data name="Tab_Editor_Other.Text" xml:space="preserve">
-    <value>Other</value>
+    <value>その他</value>
   </data>
-  <data name="&gt;&gt;Tab_Editor_Show_HR.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="Tab_Editor_Space.Text" xml:space="preserve">
+    <value>空白(0)</value>
   </data>
-  <data name="&gt;&gt;Tab_General.Name" xml:space="preserve">
-    <value>Tab_General</value>
+  <data name="Tab_Editor_Comment.Text" xml:space="preserve">
+    <value>コメント</value>
   </data>
-  <data name="Tab_Editor_EoL.Location" type="System.Drawing.Point, System.Drawing">
-    <value>294, 102</value>
+  <data name="Tab_Editor_Balloon.Text" xml:space="preserve">
+    <value>ふうせん連打(7)</value>
   </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>704, 421</value>
+  <data name="Tab_Editor_Roll.Text" xml:space="preserve">
+    <value>黄色連打(5,6)</value>
   </data>
-  <data name="Tab_Editor_Space.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
+  <data name="Tab_Editor_Ka.Text" xml:space="preserve">
+    <value>カツ(2,4)</value>
   </data>
-  <data name="Tab_General_Language_ComboBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>142, 6</value>
+  <data name="Tab_Editor_Don.Text" xml:space="preserve">
+    <value>ドン(1,3)</value>
+  </data>
+  <data name="Tab_Editor_Normal.Text" xml:space="preserve">
+    <value>標準色</value>
+  </data>
+  <data name="Tab_Editor_Label.Size" type="System.Drawing.Size, System.Drawing">
+    <value>145, 40</value>
+  </data>
+  <data name="Tab_Editor_Label.Text" xml:space="preserve">
+    <value>クリック: 文字色
+Alt + クリック: 背景色</value>
+  </data>
+  <data name="Tab_Editor.Text" xml:space="preserve">
+    <value>エディター</value>
+  </data>
+  <data name="Button_Apply.Text" xml:space="preserve">
+    <value>設定を保存して再起動</value>
+  </data>
+  <data name="Button_Cancel.Text" xml:space="preserve">
+    <value>キャンセル</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -7058,127 +6408,7 @@ Alt + Click: Background</value>
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
 </value>
   </data>
-  <data name="&gt;&gt;Tab_General_UTF8Mode.Parent" xml:space="preserve">
-    <value>Tab_General</value>
+  <data name="$this.Text" xml:space="preserve">
+    <value>設定</value>
   </data>
-  <data name="Tab_Editor_Roll.Location" type="System.Drawing.Point, System.Drawing">
-    <value>312, 39</value>
-  </data>
-  <data name="Tab_General_SimulatorPath_Label.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;Tab_Editor_Ka.Name" xml:space="preserve">
-    <value>Tab_Editor_Ka</value>
-  </data>
-  <data name="Tab_Editor.Size" type="System.Drawing.Size, System.Drawing">
-    <value>672, 360</value>
-  </data>
-  <data name="Tab_Editor_Label.Location" type="System.Drawing.Point, System.Drawing">
-    <value>510, 3</value>
-  </data>
-  <data name="&gt;&gt;Tab_General_SimulatorPath_Label.Name" xml:space="preserve">
-    <value>Tab_General_SimulatorPath_Label</value>
-  </data>
-  <data name="&gt;&gt;Tab_Editor_Header.Parent" xml:space="preserve">
-    <value>Tab_Editor</value>
-  </data>
-  <data name="&gt;&gt;Tab_Editor_Roll.Parent" xml:space="preserve">
-    <value>Tab_Editor</value>
-  </data>
-  <data name="&gt;&gt;Tab_Editor_Show_HR.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="&gt;&gt;Tab_Editor_Normal.ZOrder" xml:space="preserve">
-    <value>17</value>
-  </data>
-  <data name="Tab_Editor_EoF.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;Tab_Editor_SpaceMark.Parent" xml:space="preserve">
-    <value>Tab_Editor</value>
-  </data>
-  <data name="Tab_Editor_Line.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
-  </data>
-  <data name="Tab_Editor_Header.Location" type="System.Drawing.Point, System.Drawing">
-    <value>210, 6</value>
-  </data>
-  <data name="&gt;&gt;Tab_Editor_Normal.Parent" xml:space="preserve">
-    <value>Tab_Editor</value>
-  </data>
-  <data name="Tab.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 12</value>
-  </data>
-  <data name="&gt;&gt;Tab_Editor_Balloon.ZOrder" xml:space="preserve">
-    <value>13</value>
-  </data>
-  <data name="Tab_Editor_Ka.Size" type="System.Drawing.Size, System.Drawing">
-    <value>96, 27</value>
-  </data>
-  <data name="Tab_General.Size" type="System.Drawing.Size, System.Drawing">
-    <value>672, 360</value>
-  </data>
-  <data name="Tab_Editor.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 4</value>
-  </data>
-  <data name="&gt;&gt;Tab_Editor_EoF.Parent" xml:space="preserve">
-    <value>Tab_Editor</value>
-  </data>
-  <data name="&gt;&gt;Tab_Editor_SpaceMark.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="Tab_General_Workspace_TextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>486, 27</value>
-  </data>
-  <data name="&gt;&gt;Tab_Editor_Font.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="Tab_Editor_Font.Text" xml:space="preserve">
-    <value>Font...</value>
-  </data>
-  <data name="Tab_Editor_Line.Text" xml:space="preserve">
-    <value>Shows line number</value>
-  </data>
-  <data name="&gt;&gt;Tab_Editor_Normal.Name" xml:space="preserve">
-    <value>Tab_Editor_Normal</value>
-  </data>
-  <data name="Tab_Editor_EoL.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
-  </data>
-  <data name="Tab_General_Language_ComboBox.Items" xml:space="preserve">
-    <value>English</value>
-  </data>
-  <data name="Tab_General_SimulatorPath_Label.Size" type="System.Drawing.Size, System.Drawing">
-    <value>108, 20</value>
-  </data>
-  <data name="Tab_Editor_HR_From_Zero.TabIndex" type="System.Int32, mscorlib">
-    <value>17</value>
-  </data>
-  <data name="&gt;&gt;Tab_Editor_Line.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Tab_Editor_Don.ZOrder" xml:space="preserve">
-    <value>16</value>
-  </data>
-  <data name="Tab_Editor_Normal.Size" type="System.Drawing.Size, System.Drawing">
-    <value>96, 27</value>
-  </data>
-  <data name="Button_Cancel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>538, 379</value>
-  </data>
-  <data name="&gt;&gt;Tab_Editor_TabMark.Name" xml:space="preserve">
-    <value>Tab_Editor_TabMark</value>
-  </data>
-  <data name="&gt;&gt;Tab_Editor.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="Tab_Editor_Show_HR.Text" xml:space="preserve">
-    <value>Shows horizontal ruler</value>
-  </data>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>ja</value>
-  </metadata>
 </root>
