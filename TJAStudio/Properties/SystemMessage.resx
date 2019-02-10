@@ -217,8 +217,14 @@ Please download the program again.</value>
   <data name="OpenProjectFile" xml:space="preserve">
     <value>Open Project File</value>
   </data>
+  <data name="OpenSimulatorPath" xml:space="preserve">
+    <value>Select Simulator</value>
+  </data>
   <data name="OpenTemplate" xml:space="preserve">
     <value>Open Template</value>
+  </data>
+  <data name="OpenWorkspacePath" xml:space="preserve">
+    <value>Select Workspace</value>
   </data>
   <data name="Pasted" xml:space="preserve">
     <value>Pasted from clipboard. "{0}"</value>

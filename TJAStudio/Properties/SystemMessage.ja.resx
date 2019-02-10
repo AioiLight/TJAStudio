@@ -208,8 +208,14 @@
   <data name="OpenProjectFile" xml:space="preserve">
     <value>プロジェクトファイルを開く</value>
   </data>
+  <data name="OpenSimulatorPath" xml:space="preserve">
+    <value>シミュレーターを選択する</value>
+  </data>
   <data name="OpenTemplate" xml:space="preserve">
     <value>テンプレートを開く</value>
+  </data>
+  <data name="OpenWorkspacePath" xml:space="preserve">
+    <value>ワークスペースを選択する</value>
   </data>
   <data name="Pasted" xml:space="preserve">
     <value>"{0}" をクリップボードから貼り付けました。</value>

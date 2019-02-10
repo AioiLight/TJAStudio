@@ -305,11 +305,29 @@ namespace TJAStudio.Properties {
         }
         
         /// <summary>
+        ///   Select Simulator に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string OpenSimulatorPath {
+            get {
+                return ResourceManager.GetString("OpenSimulatorPath", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Open Template に類似しているローカライズされた文字列を検索します。
         /// </summary>
         internal static string OpenTemplate {
             get {
                 return ResourceManager.GetString("OpenTemplate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Select Workspace に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string OpenWorkspacePath {
+            get {
+                return ResourceManager.GetString("OpenWorkspacePath", resourceCulture);
             }
         }
         
