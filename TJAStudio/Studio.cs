@@ -533,6 +533,18 @@ namespace TJAStudio
             if (dialog.ShowDialog(this) == DialogResult.OK)
             {
                 TJAManager.Build(dialog.FileName, Program.Project, Program.Setting.UTF8Mode ? Encoding.UTF8 : Encoding.GetEncoding("Shift_JIS"));
+                foreach (var item in Program.Project.ProjectFile)
+                {
+                    var fileName = Path.GetDirectoryName(dialog.FileName) + "\\" + Path.GetFileName(item);
+                    try
+                    {
+                        File.Copy(item, fileName, true);
+                    }
+                    catch (Exception)
+                    {
+
+                    }
+                }
             }
         }
 
