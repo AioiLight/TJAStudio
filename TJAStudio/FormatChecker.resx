@@ -117,9 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="&gt;&gt;Tool_Sims.Name" xml:space="preserve">
-    <value>Tool_Sims</value>
-  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>8, 20</value>
@@ -6309,17 +6306,14 @@
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
     <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>FormatChecker</value>
+  <data name="&gt;&gt;Tool_Run.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="Tool_Run.Size" type="System.Drawing.Size, System.Drawing">
     <value>114, 25</value>
   </data>
-  <data name="List.Location" type="System.Drawing.Point, System.Drawing">
-    <value>16, 32</value>
-  </data>
-  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
-    <value>メイリオ, 9.75pt</value>
+  <data name="Tool_Run.Text" xml:space="preserve">
+    <value>Check format</value>
   </data>
   <data name="&gt;&gt;Line.Type" xml:space="preserve">
     <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -6342,6 +6336,12 @@
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>904, 441</value>
   </data>
+  <data name="Tool.Font" type="System.Drawing.Font, System.Drawing">
+    <value>メイリオ, 9.75pt</value>
+  </data>
+  <data name="&gt;&gt;Tool.Name" xml:space="preserve">
+    <value>Tool</value>
+  </data>
   <data name="Details.Text" xml:space="preserve">
     <value>Details</value>
   </data>
@@ -6354,14 +6354,8 @@
   <data name="&gt;&gt;List.Name" xml:space="preserve">
     <value>List</value>
   </data>
-  <data name="Tool_Sims.Font" type="System.Drawing.Font, System.Drawing">
-    <value>メイリオ, 9.75pt</value>
-  </data>
   <data name="&gt;&gt;Details.Name" xml:space="preserve">
     <value>Details</value>
-  </data>
-  <data name="&gt;&gt;Tool.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="Tool_Sims.Items2" xml:space="preserve">
     <value>Taikojiro2</value>
@@ -6369,14 +6363,17 @@
   <data name="List.Size" type="System.Drawing.Size, System.Drawing">
     <value>875, 395</value>
   </data>
-  <data name="Tool_Sims.Items1" xml:space="preserve">
-    <value>Taikojiro</value>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>FormatChecker</value>
   </data>
   <data name="Tool_Run.ToolTipText" xml:space="preserve">
     <value>Tool_Run</value>
   </data>
   <data name="Tool.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
+  </data>
+  <data name="&gt;&gt;Line.Name" xml:space="preserve">
+    <value>Line</value>
   </data>
   <data name="Line.Text" xml:space="preserve">
     <value>Line</value>
@@ -6387,15 +6384,18 @@
   <data name="Tool_Sims.Items4" xml:space="preserve">
     <value>TJAPlayer3</value>
   </data>
-  <data name="&gt;&gt;Tool_Run.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="List.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 32</value>
+  </data>
+  <data name="Details.Width" type="System.Int32, mscorlib">
+    <value>571</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="List.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 5, 4, 5</value>
   </data>
-  <data name="Tool_Run.Text" xml:space="preserve">
-    <value>Check format</value>
+  <data name="Tool_Sims.Items3" xml:space="preserve">
+    <value>TJAPlayer2 forPC</value>
   </data>
   <data name="List.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left, Right</value>
@@ -6403,11 +6403,11 @@
   <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 5, 4, 5</value>
   </data>
-  <data name="&gt;&gt;Line.Name" xml:space="preserve">
-    <value>Line</value>
-  </data>
   <data name="List.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
+  </data>
+  <data name="Tool_Sims.Items5" xml:space="preserve">
+    <value>TaikoDaijiro2</value>
   </data>
   <data name="&gt;&gt;Tool_Run.Name" xml:space="preserve">
     <value>Tool_Run</value>
@@ -6415,11 +6415,11 @@
   <data name="&gt;&gt;Details.Type" xml:space="preserve">
     <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Tool.Font" type="System.Drawing.Font, System.Drawing">
-    <value>メイリオ, 9.75pt</value>
+  <data name="Tool_Sims.Items1" xml:space="preserve">
+    <value>Taikojiro</value>
   </data>
-  <data name="Tool_Sims.Items5" xml:space="preserve">
-    <value>TaikoDaijiro2</value>
+  <data name="&gt;&gt;Tool_Sims.Name" xml:space="preserve">
+    <value>Tool_Sims</value>
   </data>
   <data name="&gt;&gt;Tool.Parent" xml:space="preserve">
     <value>$this</value>
@@ -6427,17 +6427,17 @@
   <data name="&gt;&gt;Tool.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="Details.Width" type="System.Int32, mscorlib">
-    <value>571</value>
+  <data name="&gt;&gt;Tool.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;Tool.Name" xml:space="preserve">
-    <value>Tool</value>
+  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
+    <value>メイリオ, 9.75pt</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Format Checker</value>
   </data>
-  <data name="Tool_Sims.Items3" xml:space="preserve">
-    <value>TJAPlayer2 forPC</value>
+  <data name="Tool_Sims.Font" type="System.Drawing.Font, System.Drawing">
+    <value>メイリオ, 9.75pt</value>
   </data>
   <data name="&gt;&gt;List.Parent" xml:space="preserve">
     <value>$this</value>
