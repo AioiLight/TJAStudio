@@ -26,7 +26,7 @@ namespace TJAStudio
             keyWordHighlighter.AddRegex(@"F", true, CharClass.Heading6);
             keyWordHighlighter.AddLineHighlight("//", CharClass.Comment);
             keyWordHighlighter.AddLineHighlight("#", CharClass.Keyword2);
-            keyWordHighlighter.AddLineHighlight(":", CharClass.Keyword3);
+            keyWordHighlighter.AddLineHighlight(":", CharClass.Keyword2);
             var keyWords = Charts.Headers.GetHeaders();
             var words = new List<string>();
             foreach (var item in keyWords)
