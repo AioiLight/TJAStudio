@@ -181,6 +181,9 @@
     <Compile Include="Windows\Project.Designer.cs">
       <DependentUpon>Project.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="FormatChecker.ja.resx">
+      <DependentUpon>FormatChecker.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormatChecker.resx">
       <DependentUpon>FormatChecker.cs</DependentUpon>
     </EmbeddedResource>
