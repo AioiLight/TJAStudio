@@ -19,7 +19,7 @@ namespace TJAStudio
             Text = Properties.Common.Editor + course.Name;
             TextEditor.Highlighter = null;
             TextEditor.Highlighter = Highlighter.InitHighlighter();
-            ColorScheme.SetColorScheme(TextEditor.ColorScheme);
+            ColorScheme.SetColorScheme(TextEditor.ColorScheme, Program.Setting);
             TextEditor.ForeColor = Program.Setting.Editor_ForeColor;
             TextEditor.BackColor = Program.Setting.Editor_BackColor;
             TextEditor.Font = new Font(Program.Setting.FontName, Program.Setting.FontSize);

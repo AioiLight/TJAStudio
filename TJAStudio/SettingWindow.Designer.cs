@@ -42,7 +42,6 @@
             this.Tab_General_Language_Label = new System.Windows.Forms.Label();
             this.Tab_General_Language_ComboBox = new System.Windows.Forms.ComboBox();
             this.Tab_Editor = new System.Windows.Forms.TabPage();
-            this.Tab_Editor_Font_Sample = new System.Windows.Forms.Label();
             this.Tab_Editor_Font = new System.Windows.Forms.Button();
             this.Tab_Editor_HR_From_Zero = new System.Windows.Forms.CheckBox();
             this.Tab_Editor_Command = new System.Windows.Forms.Button();
@@ -111,6 +110,7 @@
             this.Tab_General_Workspace_Button.TabIndex = 8;
             this.Tab_General_Workspace_Button.Text = "...";
             this.Tab_General_Workspace_Button.UseVisualStyleBackColor = true;
+            this.Tab_General_Workspace_Button.Click += new System.EventHandler(this.Tab_General_Workspace_Button_Click);
             // 
             // Tab_General_Workspace_TextBox
             // 
@@ -137,6 +137,7 @@
             this.Tab_General_UTF8Mode.TabIndex = 5;
             this.Tab_General_UTF8Mode.Text = "Use UTF-8 encoding when export .tja";
             this.Tab_General_UTF8Mode.UseVisualStyleBackColor = true;
+            this.Tab_General_UTF8Mode.CheckedChanged += new System.EventHandler(this.Tab_General_UTF8Mode_CheckedChanged);
             // 
             // Tab_General_SimulatorPath_Button
             // 
@@ -146,6 +147,7 @@
             this.Tab_General_SimulatorPath_Button.TabIndex = 4;
             this.Tab_General_SimulatorPath_Button.Text = "...";
             this.Tab_General_SimulatorPath_Button.UseVisualStyleBackColor = true;
+            this.Tab_General_SimulatorPath_Button.Click += new System.EventHandler(this.Tab_General_SimulatorPath_Button_Click);
             // 
             // Tab_General_SimulatorPath_TextBox
             // 
@@ -186,7 +188,6 @@
             // 
             // Tab_Editor
             // 
-            this.Tab_Editor.Controls.Add(this.Tab_Editor_Font_Sample);
             this.Tab_Editor.Controls.Add(this.Tab_Editor_Font);
             this.Tab_Editor.Controls.Add(this.Tab_Editor_HR_From_Zero);
             this.Tab_Editor.Controls.Add(this.Tab_Editor_Command);
@@ -215,23 +216,16 @@
             this.Tab_Editor.Text = "Editor";
             this.Tab_Editor.UseVisualStyleBackColor = true;
             // 
-            // Tab_Editor_Font_Sample
-            // 
-            this.Tab_Editor_Font_Sample.AutoSize = true;
-            this.Tab_Editor_Font_Sample.Location = new System.Drawing.Point(108, 135);
-            this.Tab_Editor_Font_Sample.Name = "Tab_Editor_Font_Sample";
-            this.Tab_Editor_Font_Sample.Size = new System.Drawing.Size(47, 20);
-            this.Tab_Editor_Font_Sample.TabIndex = 20;
-            this.Tab_Editor_Font_Sample.Text = "label1";
-            // 
             // Tab_Editor_Font
             // 
             this.Tab_Editor_Font.Location = new System.Drawing.Point(6, 132);
             this.Tab_Editor_Font.Name = "Tab_Editor_Font";
-            this.Tab_Editor_Font.Size = new System.Drawing.Size(96, 27);
+            this.Tab_Editor_Font.Size = new System.Drawing.Size(282, 27);
             this.Tab_Editor_Font.TabIndex = 19;
             this.Tab_Editor_Font.Text = "Font...";
             this.Tab_Editor_Font.UseVisualStyleBackColor = true;
+            this.Tab_Editor_Font.FontChanged += new System.EventHandler(this.Tab_Editor_Font_FontChanged);
+            this.Tab_Editor_Font.Click += new System.EventHandler(this.Tab_Editor_Font_Click);
             // 
             // Tab_Editor_HR_From_Zero
             // 
@@ -252,6 +246,8 @@
             this.Tab_Editor_Command.TabIndex = 16;
             this.Tab_Editor_Command.Text = "Command";
             this.Tab_Editor_Command.UseVisualStyleBackColor = true;
+            this.Tab_Editor_Command.BackColorChanged += new System.EventHandler(this.Tab_Editor_Command_BackColorChanged);
+            this.Tab_Editor_Command.ForeColorChanged += new System.EventHandler(this.Tab_Editor_Command_ForeColorChanged);
             this.Tab_Editor_Command.Click += new System.EventHandler(this.Tab_Editor_Command_Click);
             // 
             // Tab_Editor_Header
@@ -262,6 +258,8 @@
             this.Tab_Editor_Header.TabIndex = 15;
             this.Tab_Editor_Header.Text = "Header";
             this.Tab_Editor_Header.UseVisualStyleBackColor = true;
+            this.Tab_Editor_Header.BackColorChanged += new System.EventHandler(this.Tab_Editor_Header_BackColorChanged);
+            this.Tab_Editor_Header.ForeColorChanged += new System.EventHandler(this.Tab_Editor_Header_ForeColorChanged);
             this.Tab_Editor_Header.Click += new System.EventHandler(this.Tab_Editor_Header_Click);
             // 
             // Tab_Editor_EoF
@@ -338,6 +336,8 @@
             this.Tab_Editor_Other.TabIndex = 8;
             this.Tab_Editor_Other.Text = "Other";
             this.Tab_Editor_Other.UseVisualStyleBackColor = true;
+            this.Tab_Editor_Other.BackColorChanged += new System.EventHandler(this.Tab_Editor_Other_BackColorChanged);
+            this.Tab_Editor_Other.ForeColorChanged += new System.EventHandler(this.Tab_Editor_Other_ForeColorChanged);
             this.Tab_Editor_Other.Click += new System.EventHandler(this.Tab_Editor_Other_Click);
             // 
             // Tab_Editor_Space
@@ -348,6 +348,8 @@
             this.Tab_Editor_Space.TabIndex = 7;
             this.Tab_Editor_Space.Text = "Space(0)";
             this.Tab_Editor_Space.UseVisualStyleBackColor = true;
+            this.Tab_Editor_Space.BackColorChanged += new System.EventHandler(this.Tab_Editor_Space_BackColorChanged);
+            this.Tab_Editor_Space.ForeColorChanged += new System.EventHandler(this.Tab_Editor_Space_ForeColorChanged);
             this.Tab_Editor_Space.Click += new System.EventHandler(this.Tab_Editor_Space_Click);
             // 
             // Tab_Editor_Comment
@@ -358,6 +360,8 @@
             this.Tab_Editor_Comment.TabIndex = 6;
             this.Tab_Editor_Comment.Text = "Comment";
             this.Tab_Editor_Comment.UseVisualStyleBackColor = true;
+            this.Tab_Editor_Comment.BackColorChanged += new System.EventHandler(this.Tab_Editor_Comment_BackColorChanged);
+            this.Tab_Editor_Comment.ForeColorChanged += new System.EventHandler(this.Tab_Editor_Comment_ForeColorChanged);
             this.Tab_Editor_Comment.Click += new System.EventHandler(this.Tab_Editor_Comment_Click);
             // 
             // Tab_Editor_Balloon
@@ -368,6 +372,8 @@
             this.Tab_Editor_Balloon.TabIndex = 5;
             this.Tab_Editor_Balloon.Text = "Balloon(7)";
             this.Tab_Editor_Balloon.UseVisualStyleBackColor = true;
+            this.Tab_Editor_Balloon.BackColorChanged += new System.EventHandler(this.Tab_Editor_Balloon_BackColorChanged);
+            this.Tab_Editor_Balloon.ForeColorChanged += new System.EventHandler(this.Tab_Editor_Balloon_ForeColorChanged);
             this.Tab_Editor_Balloon.Click += new System.EventHandler(this.Tab_Editor_Balloon_Click);
             // 
             // Tab_Editor_Roll
@@ -378,6 +384,8 @@
             this.Tab_Editor_Roll.TabIndex = 4;
             this.Tab_Editor_Roll.Text = "Roll(5,6)";
             this.Tab_Editor_Roll.UseVisualStyleBackColor = true;
+            this.Tab_Editor_Roll.BackColorChanged += new System.EventHandler(this.Tab_Editor_Roll_BackColorChanged);
+            this.Tab_Editor_Roll.ForeColorChanged += new System.EventHandler(this.Tab_Editor_Roll_ForeColorChanged);
             this.Tab_Editor_Roll.Click += new System.EventHandler(this.Tab_Editor_Roll_Click);
             // 
             // Tab_Editor_Ka
@@ -388,6 +396,8 @@
             this.Tab_Editor_Ka.TabIndex = 3;
             this.Tab_Editor_Ka.Text = "Ka(2,4)";
             this.Tab_Editor_Ka.UseVisualStyleBackColor = true;
+            this.Tab_Editor_Ka.BackColorChanged += new System.EventHandler(this.Tab_Editor_Ka_BackColorChanged);
+            this.Tab_Editor_Ka.ForeColorChanged += new System.EventHandler(this.Tab_Editor_Ka_ForeColorChanged);
             this.Tab_Editor_Ka.Click += new System.EventHandler(this.Tab_Editor_Ka_Click);
             // 
             // Tab_Editor_Don
@@ -398,6 +408,8 @@
             this.Tab_Editor_Don.TabIndex = 2;
             this.Tab_Editor_Don.Text = "Don(1,3)";
             this.Tab_Editor_Don.UseVisualStyleBackColor = true;
+            this.Tab_Editor_Don.BackColorChanged += new System.EventHandler(this.Tab_Editor_Don_BackColorChanged);
+            this.Tab_Editor_Don.ForeColorChanged += new System.EventHandler(this.Tab_Editor_Don_ForeColorChanged);
             this.Tab_Editor_Don.Click += new System.EventHandler(this.Tab_Editor_Don_Click);
             // 
             // Tab_Editor_Normal
@@ -408,6 +420,8 @@
             this.Tab_Editor_Normal.TabIndex = 1;
             this.Tab_Editor_Normal.Text = "Normal";
             this.Tab_Editor_Normal.UseVisualStyleBackColor = true;
+            this.Tab_Editor_Normal.BackColorChanged += new System.EventHandler(this.Tab_Editor_Normal_BackColorChanged);
+            this.Tab_Editor_Normal.ForeColorChanged += new System.EventHandler(this.Tab_Editor_Normal_ForeColorChanged);
             this.Tab_Editor_Normal.Click += new System.EventHandler(this.Tab_Editor_Normal_Click);
             // 
             // Tab_Editor_Sample
@@ -536,7 +550,6 @@
         private System.Windows.Forms.Button Tab_Editor_Command;
         private System.Windows.Forms.Button Tab_Editor_Header;
         private System.Windows.Forms.Label Tab_Editor_Label;
-        private System.Windows.Forms.Label Tab_Editor_Font_Sample;
         private System.Windows.Forms.Button Tab_Editor_Font;
     }
 }

@@ -1,5 +1,8 @@
-﻿using System.Drawing;
+﻿using System;
+using System.Drawing;
 using System.Globalization;
+using System.IO;
+using System.Runtime.Serialization.Formatters.Binary;
 using System.Xml.Serialization;
 
 namespace TJAStudio
@@ -7,7 +10,7 @@ namespace TJAStudio
     /// <summary>
     /// 設定を管理するクラス。
     /// </summary>
-    
+    [Serializable]
     public class Setting
     {
         /// <summary>
@@ -73,8 +76,9 @@ namespace TJAStudio
             set { Editor_BackColor = ColorTranslator.FromHtml(value); }
         }
 
-    }
 
+    }
+    [Serializable]
     public class EditorColorScheme
     {
         public EditorColorScheme()
@@ -113,6 +117,7 @@ namespace TJAStudio
         public ColorFormat Command { get; set; } = new ColorFormat();
         public ColorFormat Parameter { get; set; } = new ColorFormat();
     }
+    [Serializable]
     public class ColorFormat
     {
         [XmlIgnore]
