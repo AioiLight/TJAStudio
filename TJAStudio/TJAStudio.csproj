@@ -63,6 +63,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DanMarge\ExamHeader.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DanMarge\ExamHeader.Designer.cs">
+      <DependentUpon>ExamHeader.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormatChecker.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -181,6 +187,9 @@
     <Compile Include="Windows\Project.Designer.cs">
       <DependentUpon>Project.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="DanMarge\ExamHeader.resx">
+      <DependentUpon>ExamHeader.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormatChecker.ja.resx">
       <DependentUpon>FormatChecker.cs</DependentUpon>
     </EmbeddedResource>
