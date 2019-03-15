@@ -63,6 +63,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DanMarge\ExamExtensions.cs" />
     <Compile Include="DanMarge\ExamHeader.cs">
       <SubType>UserControl</SubType>
     </Compile>
