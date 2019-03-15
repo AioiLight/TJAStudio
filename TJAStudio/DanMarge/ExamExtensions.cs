@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TJAStudio.DanMarge
 {
-    public static class ExamCondition
+    public class ExamCondition
     {
         public enum ExamConditions
         {
@@ -46,7 +46,7 @@ namespace TJAStudio.DanMarge
         }
     }
 
-    public static class ExamScope
+    public class ExamScope
     {
         public enum ExamScopes
         {

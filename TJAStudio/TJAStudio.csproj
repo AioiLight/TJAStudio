@@ -70,6 +70,7 @@
     <Compile Include="DanMarge\ExamHeader.Designer.cs">
       <DependentUpon>ExamHeader.cs</DependentUpon>
     </Compile>
+    <Compile Include="DanMarge\NumBoxSuggestion.cs" />
     <Compile Include="FormatChecker.cs">
       <SubType>Form</SubType>
     </Compile>
