@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace TJAStudio.DanMarge
 {
-    public partial class DanMarge : Form
+    public partial class DanBuilder : Form
     {
-        public DanMarge()
+        public DanBuilder()
         {
             InitializeComponent();
         }

@@ -63,11 +63,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DanMarge\DanMarge.cs">
+    <Compile Include="DanMarge\DanBuilder.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DanMarge\DanMarge.Designer.cs">
-      <DependentUpon>DanMarge.cs</DependentUpon>
+    <Compile Include="DanMarge\DanBuilder.Designer.cs">
+      <DependentUpon>DanBuilder.cs</DependentUpon>
     </Compile>
     <Compile Include="DanMarge\ExamExtensions.cs" />
     <Compile Include="DanMarge\ExamHeader.cs">
@@ -195,8 +195,8 @@
     <Compile Include="Windows\Project.Designer.cs">
       <DependentUpon>Project.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="DanMarge\DanMarge.resx">
-      <DependentUpon>DanMarge.cs</DependentUpon>
+    <EmbeddedResource Include="DanMarge\DanBuilder.resx">
+      <DependentUpon>DanBuilder.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DanMarge\ExamHeader.ja.resx">
       <DependentUpon>ExamHeader.cs</DependentUpon>
