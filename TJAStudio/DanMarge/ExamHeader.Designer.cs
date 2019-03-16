@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ExamHeader));
             this.Label_Condition = new System.Windows.Forms.Label();
             this.ComboBox_Condition = new System.Windows.Forms.ComboBox();
             this.ComboBox_Scope = new System.Windows.Forms.ComboBox();
@@ -42,89 +43,66 @@
             // 
             // Label_Condition
             // 
-            this.Label_Condition.AutoSize = true;
-            this.Label_Condition.Location = new System.Drawing.Point(3, 6);
+            resources.ApplyResources(this.Label_Condition, "Label_Condition");
             this.Label_Condition.Name = "Label_Condition";
-            this.Label_Condition.Size = new System.Drawing.Size(75, 20);
-            this.Label_Condition.TabIndex = 0;
-            this.Label_Condition.Text = "Condition:";
             // 
             // ComboBox_Condition
             // 
+            resources.ApplyResources(this.ComboBox_Condition, "ComboBox_Condition");
             this.ComboBox_Condition.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.ComboBox_Condition.FormattingEnabled = true;
             this.ComboBox_Condition.Items.AddRange(new object[] {
-            "Gauge percentage",
-            "Perfect amount",
-            "Good amount",
-            "Bad amount",
-            "Score",
-            "Drumroll hits",
-            "Hits amount",
-            "Max. combo"});
-            this.ComboBox_Condition.Location = new System.Drawing.Point(84, 3);
+            resources.GetString("ComboBox_Condition.Items"),
+            resources.GetString("ComboBox_Condition.Items1"),
+            resources.GetString("ComboBox_Condition.Items2"),
+            resources.GetString("ComboBox_Condition.Items3"),
+            resources.GetString("ComboBox_Condition.Items4"),
+            resources.GetString("ComboBox_Condition.Items5"),
+            resources.GetString("ComboBox_Condition.Items6"),
+            resources.GetString("ComboBox_Condition.Items7")});
             this.ComboBox_Condition.Name = "ComboBox_Condition";
-            this.ComboBox_Condition.Size = new System.Drawing.Size(121, 28);
-            this.ComboBox_Condition.TabIndex = 1;
+            this.ComboBox_Condition.SelectedIndexChanged += new System.EventHandler(this.ComboBox_Condition_SelectedIndexChanged);
             // 
             // ComboBox_Scope
             // 
+            resources.ApplyResources(this.ComboBox_Scope, "ComboBox_Scope");
             this.ComboBox_Scope.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.ComboBox_Scope.FormattingEnabled = true;
             this.ComboBox_Scope.Items.AddRange(new object[] {
-            "More",
-            "Less"});
-            this.ComboBox_Scope.Location = new System.Drawing.Point(710, 3);
+            resources.GetString("ComboBox_Scope.Items"),
+            resources.GetString("ComboBox_Scope.Items1")});
             this.ComboBox_Scope.Name = "ComboBox_Scope";
-            this.ComboBox_Scope.Size = new System.Drawing.Size(107, 28);
-            this.ComboBox_Scope.TabIndex = 3;
             // 
             // Label_Scope
             // 
-            this.Label_Scope.AutoSize = true;
-            this.Label_Scope.Location = new System.Drawing.Point(650, 6);
+            resources.ApplyResources(this.Label_Scope, "Label_Scope");
             this.Label_Scope.Name = "Label_Scope";
-            this.Label_Scope.Size = new System.Drawing.Size(54, 20);
-            this.Label_Scope.TabIndex = 2;
-            this.Label_Scope.Text = "Scope:";
             // 
             // Label_Req_Red
             // 
-            this.Label_Req_Red.AutoSize = true;
-            this.Label_Req_Red.Location = new System.Drawing.Point(211, 6);
+            resources.ApplyResources(this.Label_Req_Red, "Label_Req_Red");
             this.Label_Req_Red.Name = "Label_Req_Red";
-            this.Label_Req_Red.Size = new System.Drawing.Size(86, 20);
-            this.Label_Req_Red.TabIndex = 4;
-            this.Label_Req_Red.Text = "Req. (Red):";
             // 
             // NumBox_Req_Red
             // 
-            this.NumBox_Req_Red.Location = new System.Drawing.Point(303, 4);
+            resources.ApplyResources(this.NumBox_Req_Red, "NumBox_Req_Red");
             this.NumBox_Req_Red.Name = "NumBox_Req_Red";
-            this.NumBox_Req_Red.Size = new System.Drawing.Size(120, 27);
-            this.NumBox_Req_Red.TabIndex = 5;
-            this.NumBox_Req_Red.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.NumBox_Req_Red.ValueChanged += new System.EventHandler(this.NumBox_Req_Red_ValueChanged);
             // 
             // NumBox_Req_Gold
             // 
-            this.NumBox_Req_Gold.Location = new System.Drawing.Point(524, 3);
+            resources.ApplyResources(this.NumBox_Req_Gold, "NumBox_Req_Gold");
             this.NumBox_Req_Gold.Name = "NumBox_Req_Gold";
-            this.NumBox_Req_Gold.Size = new System.Drawing.Size(120, 27);
-            this.NumBox_Req_Gold.TabIndex = 7;
-            this.NumBox_Req_Gold.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.NumBox_Req_Gold.ValueChanged += new System.EventHandler(this.NumBox_Req_Gold_ValueChanged);
             // 
             // Label_Req_Gold
             // 
-            this.Label_Req_Gold.AutoSize = true;
-            this.Label_Req_Gold.Location = new System.Drawing.Point(429, 6);
+            resources.ApplyResources(this.Label_Req_Gold, "Label_Req_Gold");
             this.Label_Req_Gold.Name = "Label_Req_Gold";
-            this.Label_Req_Gold.Size = new System.Drawing.Size(89, 20);
-            this.Label_Req_Gold.TabIndex = 6;
-            this.Label_Req_Gold.Text = "Req. (Gold):";
             // 
             // ExamHeader
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.NumBox_Req_Gold);
             this.Controls.Add(this.Label_Req_Gold);
@@ -134,10 +112,7 @@
             this.Controls.Add(this.Label_Scope);
             this.Controls.Add(this.ComboBox_Condition);
             this.Controls.Add(this.Label_Condition);
-            this.Font = new System.Drawing.Font("メイリオ", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "ExamHeader";
-            this.Size = new System.Drawing.Size(820, 34);
             ((System.ComponentModel.ISupportInitialize)(this.NumBox_Req_Red)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.NumBox_Req_Gold)).EndInit();
             this.ResumeLayout(false);

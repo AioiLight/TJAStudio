@@ -117,6 +117,258 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="NumBox_Req_Red.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="ComboBox_Condition.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="Label_Condition.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 6</value>
+  </data>
+  <data name="&gt;&gt;ComboBox_Scope.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;NumBox_Req_Gold.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="NumBox_Req_Gold.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="ComboBox_Scope.Items1" xml:space="preserve">
+    <value>Less</value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="Label_Condition.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;ComboBox_Scope.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ComboBox_Scope.Name" xml:space="preserve">
+    <value>ComboBox_Scope</value>
+  </data>
+  <data name="&gt;&gt;Label_Req_Red.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;NumBox_Req_Gold.Name" xml:space="preserve">
+    <value>NumBox_Req_Gold</value>
+  </data>
+  <data name="&gt;&gt;Label_Req_Gold.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Label_Req_Red.Location" type="System.Drawing.Point, System.Drawing">
+    <value>211, 6</value>
+  </data>
+  <data name="Label_Req_Gold.Size" type="System.Drawing.Size, System.Drawing">
+    <value>89, 20</value>
+  </data>
+  <data name="ComboBox_Scope.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>8, 20</value>
+  </data>
+  <data name="ComboBox_Scope.Location" type="System.Drawing.Point, System.Drawing">
+    <value>710, 3</value>
+  </data>
+  <data name="&gt;&gt;Label_Req_Red.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;Label_Scope.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Label_Req_Red.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Label_Condition.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="NumBox_Req_Red.Location" type="System.Drawing.Point, System.Drawing">
+    <value>303, 4</value>
+  </data>
+  <data name="Label_Req_Red.Size" type="System.Drawing.Size, System.Drawing">
+    <value>86, 20</value>
+  </data>
+  <data name="&gt;&gt;Label_Condition.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;ComboBox_Condition.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Label_Scope.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="Label_Condition.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;NumBox_Req_Gold.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ComboBox_Condition.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="Label_Scope.Size" type="System.Drawing.Size, System.Drawing">
+    <value>54, 20</value>
+  </data>
+  <data name="Label_Scope.Text" xml:space="preserve">
+    <value>Scope:</value>
+  </data>
+  <data name="&gt;&gt;Label_Req_Gold.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="NumBox_Req_Gold.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="&gt;&gt;ComboBox_Condition.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Label_Req_Gold.Name" xml:space="preserve">
+    <value>Label_Req_Gold</value>
+  </data>
+  <data name="ComboBox_Condition.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 28</value>
+  </data>
+  <data name="&gt;&gt;ComboBox_Scope.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;NumBox_Req_Red.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;Label_Condition.Name" xml:space="preserve">
+    <value>Label_Condition</value>
+  </data>
+  <data name="Label_Scope.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="NumBox_Req_Red.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 27</value>
+  </data>
+  <data name="Label_Condition.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 20</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.UserControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Label_Req_Gold.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="ComboBox_Scope.Size" type="System.Drawing.Size, System.Drawing">
+    <value>107, 28</value>
+  </data>
+  <data name="ComboBox_Condition.Items" xml:space="preserve">
+    <value>Gauge percentage</value>
+  </data>
+  <data name="ComboBox_Scope.Items" xml:space="preserve">
+    <value>More</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>ExamHeader</value>
+  </data>
+  <data name="Label_Req_Gold.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="NumBox_Req_Red.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="Label_Req_Gold.Location" type="System.Drawing.Point, System.Drawing">
+    <value>429, 6</value>
+  </data>
+  <data name="Label_Scope.Location" type="System.Drawing.Point, System.Drawing">
+    <value>650, 6</value>
+  </data>
+  <data name="&gt;&gt;Label_Req_Gold.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="Label_Req_Gold.Text" xml:space="preserve">
+    <value>Req. (Gold):</value>
+  </data>
+  <data name="Label_Req_Red.Text" xml:space="preserve">
+    <value>Req. (Red):</value>
+  </data>
+  <data name="Label_Req_Red.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="ComboBox_Condition.Items1" xml:space="preserve">
+    <value>Perfect amount</value>
+  </data>
+  <data name="ComboBox_Condition.Items2" xml:space="preserve">
+    <value>Good amount</value>
+  </data>
+  <data name="ComboBox_Condition.Items3" xml:space="preserve">
+    <value>Bad amount</value>
+  </data>
+  <data name="ComboBox_Condition.Items4" xml:space="preserve">
+    <value>Score</value>
+  </data>
+  <data name="ComboBox_Condition.Items5" xml:space="preserve">
+    <value>Drumroll hits</value>
+  </data>
+  <data name="ComboBox_Condition.Items6" xml:space="preserve">
+    <value>Hits amount</value>
+  </data>
+  <data name="ComboBox_Condition.Items7" xml:space="preserve">
+    <value>Max. combo</value>
+  </data>
+  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
+    <value>820, 34</value>
+  </data>
+  <data name="&gt;&gt;Label_Scope.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="Label_Req_Red.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;Label_Req_Red.Name" xml:space="preserve">
+    <value>Label_Req_Red</value>
+  </data>
+  <data name="&gt;&gt;ComboBox_Condition.Name" xml:space="preserve">
+    <value>ComboBox_Condition</value>
+  </data>
+  <data name="&gt;&gt;Label_Condition.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;NumBox_Req_Red.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;NumBox_Req_Gold.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;NumBox_Req_Red.Name" xml:space="preserve">
+    <value>NumBox_Req_Red</value>
+  </data>
+  <data name="&gt;&gt;NumBox_Req_Red.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Label_Scope.Name" xml:space="preserve">
+    <value>Label_Scope</value>
+  </data>
+  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
+    <value>メイリオ, 9.75pt</value>
+  </data>
+  <data name="NumBox_Req_Gold.Location" type="System.Drawing.Point, System.Drawing">
+    <value>524, 3</value>
+  </data>
+  <data name="ComboBox_Condition.Location" type="System.Drawing.Point, System.Drawing">
+    <value>84, 3</value>
+  </data>
+  <data name="NumBox_Req_Gold.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 27</value>
+  </data>
+  <data name="Label_Scope.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="Label_Condition.Text" xml:space="preserve">
+    <value>Condition:</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <metadata name="$this.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>

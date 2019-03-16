@@ -189,6 +189,9 @@
     <Compile Include="Windows\Project.Designer.cs">
       <DependentUpon>Project.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="DanMarge\ExamHeader.ja.resx">
+      <DependentUpon>ExamHeader.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DanMarge\ExamHeader.resx">
       <DependentUpon>ExamHeader.cs</DependentUpon>
     </EmbeddedResource>
