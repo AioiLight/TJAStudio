@@ -54,202 +54,140 @@
             // 
             // GroupBox_Conditions
             // 
+            resources.ApplyResources(this.GroupBox_Conditions, "GroupBox_Conditions");
             this.GroupBox_Conditions.Controls.Add(this.Label_Exam3);
             this.GroupBox_Conditions.Controls.Add(this.ExamHeader_Exam3);
             this.GroupBox_Conditions.Controls.Add(this.Label_Exam2);
             this.GroupBox_Conditions.Controls.Add(this.ExamHeader_Exam2);
             this.GroupBox_Conditions.Controls.Add(this.Label_Exam1);
             this.GroupBox_Conditions.Controls.Add(this.ExamHeader_Exam1);
-            this.GroupBox_Conditions.Location = new System.Drawing.Point(12, 12);
             this.GroupBox_Conditions.Name = "GroupBox_Conditions";
-            this.GroupBox_Conditions.Size = new System.Drawing.Size(920, 166);
-            this.GroupBox_Conditions.TabIndex = 0;
             this.GroupBox_Conditions.TabStop = false;
-            this.GroupBox_Conditions.Text = "Conditions";
             // 
             // Label_Exam3
             // 
-            this.Label_Exam3.AutoSize = true;
-            this.Label_Exam3.Location = new System.Drawing.Point(6, 122);
+            resources.ApplyResources(this.Label_Exam3, "Label_Exam3");
             this.Label_Exam3.Name = "Label_Exam3";
-            this.Label_Exam3.Size = new System.Drawing.Size(60, 20);
-            this.Label_Exam3.TabIndex = 5;
-            this.Label_Exam3.Text = "EXAM3:";
             // 
             // ExamHeader_Exam3
             // 
-            this.ExamHeader_Exam3.Font = new System.Drawing.Font("メイリオ", 9.75F);
-            this.ExamHeader_Exam3.Location = new System.Drawing.Point(73, 116);
-            this.ExamHeader_Exam3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            resources.ApplyResources(this.ExamHeader_Exam3, "ExamHeader_Exam3");
             this.ExamHeader_Exam3.Name = "ExamHeader_Exam3";
-            this.ExamHeader_Exam3.Size = new System.Drawing.Size(820, 34);
-            this.ExamHeader_Exam3.TabIndex = 4;
             // 
             // Label_Exam2
             // 
-            this.Label_Exam2.AutoSize = true;
-            this.Label_Exam2.Location = new System.Drawing.Point(6, 78);
+            resources.ApplyResources(this.Label_Exam2, "Label_Exam2");
             this.Label_Exam2.Name = "Label_Exam2";
-            this.Label_Exam2.Size = new System.Drawing.Size(60, 20);
-            this.Label_Exam2.TabIndex = 3;
-            this.Label_Exam2.Text = "EXAM2:";
             // 
             // ExamHeader_Exam2
             // 
-            this.ExamHeader_Exam2.Font = new System.Drawing.Font("メイリオ", 9.75F);
-            this.ExamHeader_Exam2.Location = new System.Drawing.Point(73, 72);
-            this.ExamHeader_Exam2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            resources.ApplyResources(this.ExamHeader_Exam2, "ExamHeader_Exam2");
             this.ExamHeader_Exam2.Name = "ExamHeader_Exam2";
-            this.ExamHeader_Exam2.Size = new System.Drawing.Size(820, 34);
-            this.ExamHeader_Exam2.TabIndex = 2;
             // 
             // Label_Exam1
             // 
-            this.Label_Exam1.AutoSize = true;
-            this.Label_Exam1.Location = new System.Drawing.Point(6, 34);
+            resources.ApplyResources(this.Label_Exam1, "Label_Exam1");
             this.Label_Exam1.Name = "Label_Exam1";
-            this.Label_Exam1.Size = new System.Drawing.Size(60, 20);
-            this.Label_Exam1.TabIndex = 1;
-            this.Label_Exam1.Text = "EXAM1:";
             // 
             // ExamHeader_Exam1
             // 
-            this.ExamHeader_Exam1.Font = new System.Drawing.Font("メイリオ", 9.75F);
-            this.ExamHeader_Exam1.Location = new System.Drawing.Point(73, 28);
-            this.ExamHeader_Exam1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            resources.ApplyResources(this.ExamHeader_Exam1, "ExamHeader_Exam1");
             this.ExamHeader_Exam1.Name = "ExamHeader_Exam1";
-            this.ExamHeader_Exam1.Size = new System.Drawing.Size(820, 34);
-            this.ExamHeader_Exam1.TabIndex = 0;
             // 
             // GroupBox_Songs
             // 
+            resources.ApplyResources(this.GroupBox_Songs, "GroupBox_Songs");
             this.GroupBox_Songs.Controls.Add(this.Button_DownSong);
             this.GroupBox_Songs.Controls.Add(this.Button_UpSong);
             this.GroupBox_Songs.Controls.Add(this.Button_RemoveSong);
             this.GroupBox_Songs.Controls.Add(this.Button_AddSong);
             this.GroupBox_Songs.Controls.Add(this.ListView_Songs);
-            this.GroupBox_Songs.Location = new System.Drawing.Point(12, 184);
             this.GroupBox_Songs.Name = "GroupBox_Songs";
-            this.GroupBox_Songs.Size = new System.Drawing.Size(920, 180);
-            this.GroupBox_Songs.TabIndex = 1;
             this.GroupBox_Songs.TabStop = false;
-            this.GroupBox_Songs.Text = "Songs";
             // 
             // Button_DownSong
             // 
+            resources.ApplyResources(this.Button_DownSong, "Button_DownSong");
             this.Button_DownSong.BackgroundImage = global::TJAStudio.Properties.Resources.GlyphDown_16x;
-            this.Button_DownSong.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.Button_DownSong.Location = new System.Drawing.Point(884, 144);
             this.Button_DownSong.Name = "Button_DownSong";
-            this.Button_DownSong.Size = new System.Drawing.Size(30, 30);
-            this.Button_DownSong.TabIndex = 4;
             this.Button_DownSong.UseVisualStyleBackColor = true;
             // 
             // Button_UpSong
             // 
+            resources.ApplyResources(this.Button_UpSong, "Button_UpSong");
             this.Button_UpSong.BackgroundImage = global::TJAStudio.Properties.Resources.GlyphUp_16x;
-            this.Button_UpSong.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.Button_UpSong.Location = new System.Drawing.Point(884, 108);
             this.Button_UpSong.Name = "Button_UpSong";
-            this.Button_UpSong.Size = new System.Drawing.Size(30, 30);
-            this.Button_UpSong.TabIndex = 3;
             this.Button_UpSong.UseVisualStyleBackColor = true;
             // 
             // Button_RemoveSong
             // 
+            resources.ApplyResources(this.Button_RemoveSong, "Button_RemoveSong");
             this.Button_RemoveSong.BackgroundImage = global::TJAStudio.Properties.Resources.DeleteColumn_16x;
-            this.Button_RemoveSong.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.Button_RemoveSong.Location = new System.Drawing.Point(884, 62);
             this.Button_RemoveSong.Name = "Button_RemoveSong";
-            this.Button_RemoveSong.Size = new System.Drawing.Size(30, 30);
-            this.Button_RemoveSong.TabIndex = 2;
             this.Button_RemoveSong.UseVisualStyleBackColor = true;
             // 
             // Button_AddSong
             // 
+            resources.ApplyResources(this.Button_AddSong, "Button_AddSong");
             this.Button_AddSong.BackgroundImage = global::TJAStudio.Properties.Resources.AddColumn_16x;
-            this.Button_AddSong.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.Button_AddSong.Location = new System.Drawing.Point(884, 26);
             this.Button_AddSong.Name = "Button_AddSong";
-            this.Button_AddSong.Size = new System.Drawing.Size(30, 30);
-            this.Button_AddSong.TabIndex = 1;
             this.Button_AddSong.UseVisualStyleBackColor = true;
             // 
             // ListView_Songs
             // 
+            resources.ApplyResources(this.ListView_Songs, "ListView_Songs");
             this.ListView_Songs.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.FilePath});
-            this.ListView_Songs.Location = new System.Drawing.Point(6, 26);
             this.ListView_Songs.Name = "ListView_Songs";
-            this.ListView_Songs.Size = new System.Drawing.Size(872, 148);
-            this.ListView_Songs.TabIndex = 0;
             this.ListView_Songs.UseCompatibleStateImageBehavior = false;
             this.ListView_Songs.View = System.Windows.Forms.View.Details;
             // 
             // FilePath
             // 
-            this.FilePath.Text = "File path";
-            this.FilePath.Width = 805;
+            resources.ApplyResources(this.FilePath, "FilePath");
             // 
             // Status
             // 
-            this.Status.Font = new System.Drawing.Font("メイリオ", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            resources.ApplyResources(this.Status, "Status");
             this.Status.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.Status_Songs});
-            this.Status.Location = new System.Drawing.Point(0, 416);
             this.Status.Name = "Status";
-            this.Status.Size = new System.Drawing.Size(944, 25);
-            this.Status.TabIndex = 2;
-            this.Status.Text = "statusStrip1";
             // 
             // Status_Songs
             // 
+            resources.ApplyResources(this.Status_Songs, "Status_Songs");
             this.Status_Songs.Name = "Status_Songs";
-            this.Status_Songs.Size = new System.Drawing.Size(59, 20);
-            this.Status_Songs.Text = "n Songs";
             // 
             // Button_Build
             // 
+            resources.ApplyResources(this.Button_Build, "Button_Build");
             this.Button_Build.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.Button_Build.Location = new System.Drawing.Point(752, 383);
             this.Button_Build.Name = "Button_Build";
-            this.Button_Build.Size = new System.Drawing.Size(180, 30);
-            this.Button_Build.TabIndex = 3;
-            this.Button_Build.Text = "Build .tja file";
             this.Button_Build.UseVisualStyleBackColor = true;
             // 
             // Button_Close
             // 
+            resources.ApplyResources(this.Button_Close, "Button_Close");
             this.Button_Close.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.Button_Close.Location = new System.Drawing.Point(566, 383);
             this.Button_Close.Name = "Button_Close";
-            this.Button_Close.Size = new System.Drawing.Size(180, 30);
-            this.Button_Close.TabIndex = 4;
-            this.Button_Close.Text = "Close";
             this.Button_Close.UseVisualStyleBackColor = true;
             // 
             // DanBuilder
             // 
             this.AcceptButton = this.Button_Build;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.Button_Close;
-            this.ClientSize = new System.Drawing.Size(944, 441);
             this.Controls.Add(this.Button_Close);
             this.Controls.Add(this.Button_Build);
             this.Controls.Add(this.Status);
             this.Controls.Add(this.GroupBox_Songs);
             this.Controls.Add(this.GroupBox_Conditions);
-            this.Font = new System.Drawing.Font("メイリオ", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "DanBuilder";
             this.ShowInTaskbar = false;
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "TJAStudio - Dan Builder";
             this.GroupBox_Conditions.ResumeLayout(false);
             this.GroupBox_Conditions.PerformLayout();
             this.GroupBox_Songs.ResumeLayout(false);

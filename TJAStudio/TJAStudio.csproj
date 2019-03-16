@@ -195,6 +195,9 @@
     <Compile Include="Windows\Project.Designer.cs">
       <DependentUpon>Project.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="DanMarge\DanBuilder.ja.resx">
+      <DependentUpon>DanBuilder.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DanMarge\DanBuilder.resx">
       <DependentUpon>DanBuilder.cs</DependentUpon>
     </EmbeddedResource>
