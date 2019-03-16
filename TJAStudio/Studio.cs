@@ -687,6 +687,12 @@ namespace TJAStudio
             }
         }
 
+        private void Menu_Tool_DanBuilder_Click(object sender, EventArgs e)
+        {
+            var dialog = new DanMarge.DanBuilder();
+            dialog.ShowDialog(this);
+            dialog.Dispose();
+        }
         private Courses Courses = new Courses();
         private Project Project = new Project();
         public  HeadersWindow HeaderWindow = new HeadersWindow(false);
@@ -696,5 +702,6 @@ namespace TJAStudio
         public static int CurrentCourseID { get; set; }
         public bool IsEdited { get; set; }
         public string FileName { get; set; }
+
     }
 }
