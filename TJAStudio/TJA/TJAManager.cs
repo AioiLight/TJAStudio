@@ -16,7 +16,7 @@ namespace TJAStudio
         /// <param name="fileName">ファイル名。</param>
         /// <param name="project">プロジェクト。</param>
         /// <param name="encoding">エンコーディング。</param>
-        public static string Build(string fileName, Projects project, Encoding encoding)
+        public static string Build(string fileName, Projects project, Encoding encoding, bool writeToFile = true)
         {
             var result = "";
             // 共通ヘッダ。
@@ -36,7 +36,7 @@ namespace TJAStudio
                 // #START～#END
                 result += course.Text;
             }
-            WriteToFile(result, fileName, encoding);
+            if (writeToFile) WriteToFile(result, fileName, encoding);
             return result;
         }
 
@@ -47,7 +47,7 @@ namespace TJAStudio
         /// <param name="commonheader">共通ヘッダ。</param>
         /// <param name="course">コース。</param>
         /// <param name="encoding">エンコーディング。</param>
-        public static string Build(string fileName,  List<Header> commonHeader, Course[] course, Encoding encoding)
+        public static string Build(string fileName,  List<Header> commonHeader, Course[] course, Encoding encoding, bool writeToFile = true)
         {
             var result = "";
             // 共通ヘッダ。
@@ -66,7 +66,7 @@ namespace TJAStudio
                 }
                 result += argCourse.Text;
             }
-            WriteToFile(result, fileName, encoding);
+            if (writeToFile) WriteToFile(result, fileName, encoding);
             return result;
         }
 
