@@ -27,22 +27,22 @@ namespace TJAStudio.DanMarge
 
         private void NumBox_Req_Red_ValueChanged(object sender, EventArgs e)
         {
-            NumBoxSuggestion.SuggestConsiderRedRequirement(NumBox_Req_Red, NumBox_Req_Gold, (ExamScope.ExamScopes)ComboBox_Scope.SelectedIndex);
+            //NumBoxSuggestion.SuggestConsiderRedRequirement(NumBox_Req_Red, NumBox_Req_Gold, (ExamScope.ExamScopes)ComboBox_Scope.SelectedIndex);
         }
 
         private void NumBox_Req_Gold_ValueChanged(object sender, EventArgs e)
         {
-            NumBoxSuggestion.SuggestConsiderGoldRequirement(NumBox_Req_Gold, NumBox_Req_Red, (ExamScope.ExamScopes)ComboBox_Scope.SelectedIndex);
+            //NumBoxSuggestion.SuggestConsiderGoldRequirement(NumBox_Req_Gold, NumBox_Req_Red, (ExamScope.ExamScopes)ComboBox_Scope.SelectedIndex);
         }
 
         public override string ToString()
         {
-            return string.Format("{0},{1},{2},{3}",
+            return ComboBox_Condition.SelectedIndex != 0 ? string.Format("{0},{1},{2},{3}",
                 ExamCondition.ExamConditionToString((ExamCondition.ExamConditions)ComboBox_Condition.SelectedIndex),
                 NumBox_Req_Red.Value,
                 NumBox_Req_Gold.Value,
                 ExamScope.ExamScopeToString((ExamScope.ExamScopes)ComboBox_Scope.SelectedIndex)
-                );
+                ) : null;
         }
     }
 }

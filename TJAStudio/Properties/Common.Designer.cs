@@ -79,6 +79,15 @@ namespace TJAStudio.Properties {
         }
         
         /// <summary>
+        ///   Dan Builder に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string DanBuilder {
+            get {
+                return ResourceManager.GetString("DanBuilder", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   AioiLight に類似しているローカライズされた文字列を検索します。
         /// </summary>
         internal static string Developer {

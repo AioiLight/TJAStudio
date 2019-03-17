@@ -123,6 +123,9 @@
   <data name="ApplicationExit" xml:space="preserve">
     <value>Do you want to save changes to {0}?</value>
   </data>
+  <data name="AreYouSure" xml:space="preserve">
+    <value>Are you sure?</value>
+  </data>
   <data name="CheckingDirectory" xml:space="preserve">
     <value>Cheking Directroy... {0}</value>
   </data>

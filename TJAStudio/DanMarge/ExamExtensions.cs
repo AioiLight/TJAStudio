@@ -10,6 +10,7 @@ namespace TJAStudio.DanMarge
     {
         public enum ExamConditions
         {
+            None,
             Gauge,
             Perfect,
             Good,

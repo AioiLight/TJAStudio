@@ -44,10 +44,10 @@
             this.Status_Songs = new System.Windows.Forms.ToolStripStatusLabel();
             this.Button_Build = new System.Windows.Forms.Button();
             this.Button_Close = new System.Windows.Forms.Button();
+            this.Status_NotesRemain = new System.Windows.Forms.ToolStripStatusLabel();
             this.ExamHeader_Exam3 = new TJAStudio.DanMarge.ExamHeader();
             this.ExamHeader_Exam2 = new TJAStudio.DanMarge.ExamHeader();
             this.ExamHeader_Exam1 = new TJAStudio.DanMarge.ExamHeader();
-            this.Status_NotesRemain = new System.Windows.Forms.ToolStripStatusLabel();
             this.GroupBox_Conditions.SuspendLayout();
             this.GroupBox_Songs.SuspendLayout();
             this.Status.SuspendLayout();
@@ -158,6 +158,7 @@
             resources.ApplyResources(this.Button_Build, "Button_Build");
             this.Button_Build.Name = "Button_Build";
             this.Button_Build.UseVisualStyleBackColor = true;
+            this.Button_Build.Click += new System.EventHandler(this.Button_Build_Click);
             // 
             // Button_Close
             // 
@@ -165,6 +166,12 @@
             resources.ApplyResources(this.Button_Close, "Button_Close");
             this.Button_Close.Name = "Button_Close";
             this.Button_Close.UseVisualStyleBackColor = true;
+            this.Button_Close.Click += new System.EventHandler(this.Button_Close_Click);
+            // 
+            // Status_NotesRemain
+            // 
+            this.Status_NotesRemain.Name = "Status_NotesRemain";
+            resources.ApplyResources(this.Status_NotesRemain, "Status_NotesRemain");
             // 
             // ExamHeader_Exam3
             // 
@@ -180,11 +187,6 @@
             // 
             resources.ApplyResources(this.ExamHeader_Exam1, "ExamHeader_Exam1");
             this.ExamHeader_Exam1.Name = "ExamHeader_Exam1";
-            // 
-            // Status_NotesRemain
-            // 
-            this.Status_NotesRemain.Name = "Status_NotesRemain";
-            resources.ApplyResources(this.Status_NotesRemain, "Status_NotesRemain");
             // 
             // DanBuilder
             // 

@@ -124,30 +124,6 @@
   <data name="Label_Condition.Text" xml:space="preserve">
     <value>条件タイプ:</value>
   </data>
-  <data name="ComboBox_Condition.Items" xml:space="preserve">
-    <value>魂ゲージ</value>
-  </data>
-  <data name="ComboBox_Condition.Items1" xml:space="preserve">
-    <value>良の数</value>
-  </data>
-  <data name="ComboBox_Condition.Items2" xml:space="preserve">
-    <value>可の数</value>
-  </data>
-  <data name="ComboBox_Condition.Items3" xml:space="preserve">
-    <value>不可の数</value>
-  </data>
-  <data name="ComboBox_Condition.Items4" xml:space="preserve">
-    <value>得点</value>
-  </data>
-  <data name="ComboBox_Condition.Items5" xml:space="preserve">
-    <value>連打数</value>
-  </data>
-  <data name="ComboBox_Condition.Items6" xml:space="preserve">
-    <value>たたけた数</value>
-  </data>
-  <data name="ComboBox_Condition.Items7" xml:space="preserve">
-    <value>最大コンボ数</value>
-  </data>
   <data name="ComboBox_Scope.Items" xml:space="preserve">
     <value>～以上</value>
   </data>
@@ -180,5 +156,32 @@
   </data>
   <data name="Label_Req_Gold.Text" xml:space="preserve">
     <value>金合格条件:</value>
+  </data>
+  <data name="ComboBox_Condition.Items" xml:space="preserve">
+    <value>なし</value>
+  </data>
+  <data name="ComboBox_Condition.Items1" xml:space="preserve">
+    <value>魂ゲージ</value>
+  </data>
+  <data name="ComboBox_Condition.Items2" xml:space="preserve">
+    <value>良の数</value>
+  </data>
+  <data name="ComboBox_Condition.Items3" xml:space="preserve">
+    <value>可の数</value>
+  </data>
+  <data name="ComboBox_Condition.Items4" xml:space="preserve">
+    <value>不可の数</value>
+  </data>
+  <data name="ComboBox_Condition.Items5" xml:space="preserve">
+    <value>得点</value>
+  </data>
+  <data name="ComboBox_Condition.Items6" xml:space="preserve">
+    <value>連打数</value>
+  </data>
+  <data name="ComboBox_Condition.Items7" xml:space="preserve">
+    <value>たたけた数</value>
+  </data>
+  <data name="ComboBox_Condition.Items8" xml:space="preserve">
+    <value>最大コンボ数</value>
   </data>
 </root>

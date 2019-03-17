@@ -6,6 +6,7 @@ using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -55,7 +56,7 @@ namespace TJAStudio.DanMarge
 
         public Songs FromTJAFile(string fileName)
         {
-            var result = System.IO.File.ReadAllText(fileName);
+            var result = System.IO.File.ReadAllText(fileName, Program.Setting.UTF8Mode ? new UTF8Encoding() : Encoding.GetEncoding("Shift-JIS"));
             return GetCourseFromCourses(result);
         }
 
@@ -84,7 +85,7 @@ namespace TJAStudio.DanMarge
                 }
                 var dialog = new CourseSelect(courseName);
                 dialog.ShowDialog(this);
-                if(dialog.DialogResult != DialogResult.OK)
+                if (dialog.DialogResult != DialogResult.OK)
                 {
                     // DialogResultがOK以外ならnullでリターン。
                     dialog.Dispose();
@@ -93,15 +94,118 @@ namespace TJAStudio.DanMarge
                 var selectedIndex = dialog.SelectedCourseIndex;
                 dialog.Dispose();
 
-                result.Chart = commonHeader + splitedcourses[selectedIndex];
+                var chart = "";
+                var inChart = false;
+                foreach (var item in splitedcourses[selectedIndex].Split(new string[] { Environment.NewLine }, StringSplitOptions.None))
+                {
+                    if(item.Trim().StartsWith("#START"))
+                    {
+                        inChart = true;
+                        continue;
+                    }
+                    if(item.Trim().StartsWith("#END"))
+                    {
+                        inChart = false;
+                    }
+                    if (inChart)
+                    {
+                        chart += item + Environment.NewLine;
+                    }
+                }
+
+                result.Chart = chart;
                 result.Course = courseName[selectedIndex];
+
+                ParseTJA(result, splitedcourses[selectedIndex].Split(new string[] { Environment.NewLine }, StringSplitOptions.None).Concat(commonHeader.Split(new string[] { Environment.NewLine }, StringSplitOptions.None)).ToArray());
             }
             else
             {
-                result.Chart = commonHeader + splitedcourses[0];
+                var chart = "";
+                var inChart = false;
+                foreach (var item in splitedcourses[0].Split(new string[] { Environment.NewLine }, StringSplitOptions.None))
+                {
+                    if (item.Trim().StartsWith("#START"))
+                    {
+                        inChart = true;
+                        continue;
+                    }
+                    if (item.Trim().StartsWith("#END"))
+                    {
+                        inChart = false;
+                    }
+                    if (inChart)
+                    {
+                        chart += item + Environment.NewLine;
+                    }
+                }
+                result.Chart = chart;
                 result.Course = splitedcourses[0].Split(new string[] { Environment.NewLine }, StringSplitOptions.None)[0];
+
+                ParseTJA(result, splitedcourses[0].Split(new string[] { Environment.NewLine }, StringSplitOptions.None).Concat(commonHeader.Split(new string[] { Environment.NewLine }, StringSplitOptions.None)).ToArray());
             }
             return result;
+        }
+
+        private static void ParseTJA(Songs result, string[] text)
+        {
+            foreach (var item in text)
+            {
+                var nowLine = Regex.Replace(item, " *//.*", "");
+                if (!nowLine.Contains(":")) continue;
+                if (nowLine.StartsWith("TITLE:"))
+                {
+                    result.Title = nowLine.Substring("TITLE:".Length);
+                }
+                else if (nowLine.StartsWith("SUBTITLE:"))
+                {
+                    var subTitle = nowLine.Substring("SUBTITLE:".Length);
+                    if (subTitle.StartsWith("++") || subTitle.StartsWith("--"))
+                    {
+                        subTitle = subTitle.Substring("++".Length);
+                    }
+                    result.SubTitle = subTitle;
+                }
+                else if (nowLine.StartsWith("BPM:"))
+                {
+                    result.BPM = nowLine.Substring("BPM:".Length);
+                }
+                else if (item.StartsWith("OFFSET:"))
+                {
+                    result.Offset = (Convert.ToDouble(nowLine.Substring("OFFSET:".Length)) * -1).ToString();
+                }
+                else if (nowLine.StartsWith("GENRE:"))
+                {
+                    result.Genre = nowLine.Substring("GENRE:".Length);
+                }
+                else if (nowLine.StartsWith("SCOREINIT:"))
+                {
+                    result.ScoreInit = Convert.ToInt32(nowLine.Substring("SCOREINIT:".Length));
+                }
+                else if (nowLine.StartsWith("SCOREDIFF:"))
+                {
+                    result.ScoreDiff = Convert.ToInt32(nowLine.Substring("SCOREDIFF:".Length));
+                }
+                else if (nowLine.StartsWith("WAVE:"))
+                {
+                    result.Wave = nowLine.Substring("WAVE:".Length);
+                }
+                else if (nowLine.StartsWith("LEVEL:"))
+                {
+                    result.Level = nowLine.Substring("LEVEL:".Length);
+                }
+                else if (nowLine.StartsWith("SCOREMODE:"))
+                {
+                    result.ScoreMode = nowLine.Substring("SCOREMODE:".Length);
+                }
+                else if (nowLine.StartsWith("BALLOON:"))
+                {
+                    result.Balloon = nowLine.Trim().EndsWith(",") ? nowLine.Substring("BALLOON:".Length, nowLine.Length - 1) : nowLine.Substring("BALLOON:".Length);
+                }
+                else if (nowLine.StartsWith("DEMOSTART:"))
+                {
+                    result.DemoStart = nowLine.Substring("DEMOSTART:".Length);
+                }
+            }
         }
 
         private void Button_AddSong_Click(object sender, EventArgs e)
@@ -160,5 +264,67 @@ namespace TJAStudio.DanMarge
         }
 
         public List<Songs> SongList { get; set; } = new List<Songs>();
+
+        private void Button_Build_Click(object sender, EventArgs e)
+        {
+            if (SongList.Count > 0)
+            {
+                var dialog = new SaveFileDialog();
+                dialog.Title = Properties.SystemMessage.SaveTJA;
+                dialog.Filter = String.Format("{0}|*{1}", Properties.Common.TJAExtensionDescription, Properties.Common.TJAExtensionName);
+                if (dialog.ShowDialog() == DialogResult.OK)
+                {
+                    var result = "";
+                    var danTitle = Path.GetFileNameWithoutExtension(dialog.FileName);
+                    result += string.Format("TITLE:{0}" + Environment.NewLine, danTitle);
+                    result += string.Format("BPM:{0}" + Environment.NewLine, SongList[0].BPM);
+                    result += string.Format("WAVE:{0}" + Environment.NewLine, SongList[0].Wave);
+                    result += string.Format("DEMOSTART:{0}" + Environment.NewLine, SongList[0].DemoStart);
+                    result += string.Format("SCOREMODE:{0}" + Environment.NewLine, SongList[0].ScoreMode);
+
+                    result += string.Format("COURSE:Dan" + Environment.NewLine);
+                    result += string.Format("LEVEL:{0}" + Environment.NewLine, SongList[0].Level);
+                    var balloon = "";
+                    for (int i = 0; i < SongList.Count; i++)
+                    {
+                        balloon += SongList[i].Balloon;
+                        if (!string.IsNullOrWhiteSpace(SongList[i].Balloon) && i != SongList.Count - 1) balloon += ",";
+                    }
+                    result += string.Format("BALLOON:{0}" + Environment.NewLine, balloon);
+
+                    if (ExamHeader_Exam1.ToString() != null) result += string.Format("EXAM1:{0}" + Environment.NewLine, ExamHeader_Exam1.ToString());
+                    if (ExamHeader_Exam2.ToString() != null) result += string.Format("EXAM2:{0}" + Environment.NewLine, ExamHeader_Exam2.ToString());
+                    if (ExamHeader_Exam3.ToString() != null) result += string.Format("EXAM3:{0}" + Environment.NewLine, ExamHeader_Exam3.ToString());
+
+                    result += string.Format("#START" + Environment.NewLine);
+                    foreach (var item in SongList)
+                    {
+                        result += item.ToString();
+                    }
+                    result += string.Format("#END" + Environment.NewLine);
+
+                    TJAManager.Build(dialog.FileName, result, Program.Setting.UTF8Mode ? new UTF8Encoding() : Encoding.GetEncoding("Shift-JIS"));
+                }
+                dialog.Dispose();
+            }
+            DialogResult = DialogResult.None;
+        }
+
+        private void Button_Close_Click(object sender, EventArgs e)
+        {
+            if(SongList.Count > 0)
+            {
+                var dialog = MessageBox.Show(Properties.SystemMessage.AreYouSure,
+                    string.Format("{0} - {1}", Properties.Common.Name, Properties.Common.DanBuilder),
+                    MessageBoxButtons.YesNo,
+                    MessageBoxIcon.Asterisk);
+                if(dialog == DialogResult.No)
+                {
+                    DialogResult = DialogResult.None;
+                    return;
+                }
+            }
+            Close();
+        }
     }
 }

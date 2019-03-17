@@ -48,7 +48,6 @@
             // 
             // ComboBox_Condition
             // 
-            resources.ApplyResources(this.ComboBox_Condition, "ComboBox_Condition");
             this.ComboBox_Condition.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.ComboBox_Condition.FormattingEnabled = true;
             this.ComboBox_Condition.Items.AddRange(new object[] {
@@ -59,18 +58,20 @@
             resources.GetString("ComboBox_Condition.Items4"),
             resources.GetString("ComboBox_Condition.Items5"),
             resources.GetString("ComboBox_Condition.Items6"),
-            resources.GetString("ComboBox_Condition.Items7")});
+            resources.GetString("ComboBox_Condition.Items7"),
+            resources.GetString("ComboBox_Condition.Items8")});
+            resources.ApplyResources(this.ComboBox_Condition, "ComboBox_Condition");
             this.ComboBox_Condition.Name = "ComboBox_Condition";
             this.ComboBox_Condition.SelectedIndexChanged += new System.EventHandler(this.ComboBox_Condition_SelectedIndexChanged);
             // 
             // ComboBox_Scope
             // 
-            resources.ApplyResources(this.ComboBox_Scope, "ComboBox_Scope");
             this.ComboBox_Scope.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.ComboBox_Scope.FormattingEnabled = true;
             this.ComboBox_Scope.Items.AddRange(new object[] {
             resources.GetString("ComboBox_Scope.Items"),
             resources.GetString("ComboBox_Scope.Items1")});
+            resources.ApplyResources(this.ComboBox_Scope, "ComboBox_Scope");
             this.ComboBox_Scope.Name = "ComboBox_Scope";
             // 
             // Label_Scope

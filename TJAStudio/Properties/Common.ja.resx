@@ -171,4 +171,7 @@
   <data name="Website" xml:space="preserve">
     <value>https://aioilight.space/</value>
   </data>
+  <data name="DanBuilder" xml:space="preserve">
+    <value>段位認定生成器</value>
+  </data>
 </root>
