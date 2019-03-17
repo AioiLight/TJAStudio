@@ -63,6 +63,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DanMarge\CourseSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanMarge\CourseSelect.Designer.cs">
+      <DependentUpon>CourseSelect.cs</DependentUpon>
+    </Compile>
     <Compile Include="DanMarge\DanBuilder.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -196,6 +202,12 @@
     <Compile Include="Windows\Project.Designer.cs">
       <DependentUpon>Project.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="DanMarge\CourseSelect.ja.resx">
+      <DependentUpon>CourseSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DanMarge\CourseSelect.resx">
+      <DependentUpon>CourseSelect.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DanMarge\DanBuilder.ja.resx">
       <DependentUpon>DanBuilder.cs</DependentUpon>
     </EmbeddedResource>

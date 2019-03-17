@@ -117,145 +117,151 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="AllClear" xml:space="preserve">
-    <value>問題はありません。</value>
+  <data name="&gt;&gt;Label_Text.Name" xml:space="preserve">
+    <value>Label_Text</value>
   </data>
-  <data name="ApplicationExit" xml:space="preserve">
-    <value>{0} への変更内容を保存しますか?</value>
+  <data name="Button_Select.Text" xml:space="preserve">
+    <value>Select</value>
   </data>
-  <data name="CommonHeader" xml:space="preserve">
-    <value>共通ヘッダー</value>
+  <data name="ListBox_Courses.Items1" xml:space="preserve">
+    <value>Course 2</value>
   </data>
-  <data name="Copied" xml:space="preserve">
-    <value>"{0}" をクリップボードにコピーしました。</value>
+  <data name="&gt;&gt;Label_Text.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
-  <data name="CourseInfomation" xml:space="preserve">
-    <value>小節数: {0}
-ドンの数 (小/大/総/%): {1} / {2} / {3} / {4:0.00}%
-カッの数 (小/大/総/%): {5} / {6} / {7} / {8:0.00}%
-小音符 / 大音符 の割合: {9:0.00}% / {10:0.00}%
-最大コンボ数: {11}
-演奏時間: {12}s</value>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>8, 20</value>
   </data>
-  <data name="CourseInfomation_Selection" xml:space="preserve">
-    <value>
-
-
-選択範囲:
-ドンの数 (小/大/総/%): {0} / {1} / {2} / {3:0.00}%
-カッの数 (小/大/総/%): {4} / {5} / {6} / {7:0.00}%
-小音符 / 大音符 の割合: {8:0.00}% / {9:0.00}%
-時間: {10}s</value>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Dan Builder - Select course</value>
   </data>
-  <data name="CourseInfomation_ThisMeasure" xml:space="preserve">
-    <value>
-
-
-現在位置の小節: {0} / {1}
-ドンの数 (小/大/総/%): {2} / {3} / {4} / {5:0.00}%
-カッの数 (小/大/総/%): {6} / {7} / {8} / {9:0.00}%
-小音符 / 大音符 の割合: {10:0.00}% / {11:0.00}%
-分解能: {12}
-時間: {13}s</value>
+  <data name="Label_Text.Text" xml:space="preserve">
+    <value>Which course do you use? :</value>
   </data>
-  <data name="Cutted" xml:space="preserve">
-    <value>"{0}" をクリップボードに切り取りました。</value>
+  <data name="&gt;&gt;Button_Select.Name" xml:space="preserve">
+    <value>Button_Select</value>
   </data>
-  <data name="DanMarge_NotesRemain" xml:space="preserve">
-    <value>{0} ノーツ</value>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="DanMarge_Songs" xml:space="preserve">
-    <value>{0} 曲</value>
+  <data name="&gt;&gt;Button_Select.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
-  <data name="DirectoryNotFound" xml:space="preserve">
-    <value>ディレクトリ "{0}" が見つかりませんでした。
-プログラムの実行に必要なディレクトリが不足しています。
-プログラムを再ダウンロードしてください。</value>
+  <data name="Button_Select.Location" type="System.Drawing.Point, System.Drawing">
+    <value>166, 237</value>
   </data>
-  <data name="DrawNotesPreview" xml:space="preserve">
-    <value>この小節の文字列:
-{0}
-コマンドなし:{1}
-音符数: {2}</value>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>CourseSelect</value>
   </data>
-  <data name="DuplicateHeader" xml:space="preserve">
-    <value>ヘッダ名が重複しています。
-前のヘッダを削除しますか?</value>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="ListBox_Courses.ItemHeight" type="System.Int32, mscorlib">
+    <value>20</value>
   </data>
-  <data name="EditedWarning" xml:space="preserve">
-    <value>プロジェクト "{0}" は保存されていません。</value>
+  <data name="&gt;&gt;ListBox_Courses.Name" xml:space="preserve">
+    <value>ListBox_Courses</value>
   </data>
-  <data name="FileNotFound" xml:space="preserve">
-    <value>ファイル "{0}" が見つかりませんでした。
-プログラムの実行に必要なファイルが不足しています。
-プログラムを再ダウンロードしてください。</value>
+  <data name="Button_Select.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
   </data>
-  <data name="InvaildHeader" xml:space="preserve">
-    <value>ヘッダー {0} が正しいフォーマットではありません。</value>
+  <data name="&gt;&gt;Button_Cancel.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
-  <data name="InvalidCommand" xml:space="preserve">
-    <value>コマンド {0} が正しいフォーマットではありません。</value>
+  <data name="&gt;&gt;Button_Cancel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Measured_BPM" xml:space="preserve">
-    <value>最後の8拍の値を使用しますか?</value>
+  <data name="Label_Text.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
-  <data name="MissedCourseName" xml:space="preserve">
-    <value>コース名を入力してください。</value>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>298, 279</value>
   </data>
-  <data name="MissedHeaderName" xml:space="preserve">
-    <value>ヘッダ名を入力してください。</value>
+  <data name="&gt;&gt;ListBox_Courses.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
-  <data name="NowCaret" xml:space="preserve">
-    <value>{0} 行、 {1} 列</value>
+  <data name="ListBox_Courses.Items" xml:space="preserve">
+    <value>Course 1</value>
   </data>
-  <data name="OpenProject" xml:space="preserve">
-    <value>プロジェクトを開く</value>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterParent</value>
   </data>
-  <data name="OpenProjectFile" xml:space="preserve">
-    <value>プロジェクトファイルを開く</value>
+  <data name="Button_Cancel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 30</value>
   </data>
-  <data name="OpenSimulatorPath" xml:space="preserve">
-    <value>シミュレーターを選択する</value>
+  <data name="Button_Select.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 30</value>
   </data>
-  <data name="OpenSongs" xml:space="preserve">
-    <value>課題曲を開く</value>
+  <data name="Button_Cancel.Text" xml:space="preserve">
+    <value>Cancel</value>
   </data>
-  <data name="OpenTemplate" xml:space="preserve">
-    <value>テンプレートを開く</value>
+  <data name="ListBox_Courses.HorizontalScrollbar" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
-  <data name="OpenWorkspacePath" xml:space="preserve">
-    <value>ワークスペースを選択する</value>
+  <data name="Button_Cancel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>40, 237</value>
   </data>
-  <data name="Pasted" xml:space="preserve">
-    <value>"{0}" をクリップボードから貼り付けました。</value>
+  <data name="&gt;&gt;Button_Cancel.Name" xml:space="preserve">
+    <value>Button_Cancel</value>
   </data>
-  <data name="SaveProject" xml:space="preserve">
-    <value>プロジェクトを保存</value>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
   </data>
-  <data name="SaveTJA" xml:space="preserve">
-    <value>.tja ファイルを保存</value>
+  <data name="ListBox_Courses.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
   </data>
-  <data name="SimulatorDoesNotSupportCommand" xml:space="preserve">
-    <value>コマンド {0} はシミュレーター {1} で使用できません。無視されるか、不具合を起こす可能性があります。</value>
+  <data name="&gt;&gt;Button_Select.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
-  <data name="SimulatorDoesNotSupportHeader" xml:space="preserve">
-    <value>ヘッダー {0} はシミュレーター {1} で使用できません。無視されるか、不具合を起こす可能性があります。</value>
+  <data name="Button_Cancel.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
   </data>
-  <data name="Status_Measure" xml:space="preserve">
-    <value> </value>
+  <data name="&gt;&gt;Button_Cancel.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
-  <data name="Status_Mode" xml:space="preserve">
-    <value>入力モード: {0}</value>
+  <data name="Label_Text.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 9</value>
   </data>
-  <data name="Status_Mode_Insert" xml:space="preserve">
-    <value>挿入</value>
+  <data name="&gt;&gt;Label_Text.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Status_Mode_Overwrite" xml:space="preserve">
-    <value>置換</value>
+  <data name="&gt;&gt;ListBox_Courses.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
-  <data name="VersionDialog" xml:space="preserve">
-    <value>{0} Ver.{1}
-{0} was developed by {2}.
-{3}</value>
+  <data name="&gt;&gt;Button_Select.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="&gt;&gt;ListBox_Courses.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ListBox_Courses.ScrollAlwaysVisible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="Label_Text.Size" type="System.Drawing.Size, System.Drawing">
+    <value>184, 20</value>
+  </data>
+  <data name="Label_Text.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="ListBox_Courses.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 32</value>
+  </data>
+  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
+    <value>メイリオ, 9.75pt</value>
+  </data>
+  <data name="ListBox_Courses.Items2" xml:space="preserve">
+    <value>Course 3</value>
+  </data>
+  <data name="&gt;&gt;Label_Text.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="ListBox_Courses.Size" type="System.Drawing.Size, System.Drawing">
+    <value>274, 184</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>ja</value>
+  </metadata>
 </root>

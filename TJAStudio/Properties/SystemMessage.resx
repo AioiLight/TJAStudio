@@ -170,6 +170,12 @@ Time Span: {13}s</value>
   <data name="Cutted" xml:space="preserve">
     <value>Cutted to clipboard. "{0}"</value>
   </data>
+  <data name="DanMarge_NotesRemain" xml:space="preserve">
+    <value>{0} notes</value>
+  </data>
+  <data name="DanMarge_Songs" xml:space="preserve">
+    <value>{0} songs</value>
+  </data>
   <data name="DirectoryNotFound" xml:space="preserve">
     <value>The directory "{0}" could not be found.
 There is not enough directory to run the program.
@@ -219,6 +225,9 @@ Please download the program again.</value>
   </data>
   <data name="OpenSimulatorPath" xml:space="preserve">
     <value>Select Simulator</value>
+  </data>
+  <data name="OpenSongs" xml:space="preserve">
+    <value>Open song file</value>
   </data>
   <data name="OpenTemplate" xml:space="preserve">
     <value>Open Template</value>

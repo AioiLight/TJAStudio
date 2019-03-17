@@ -180,6 +180,24 @@ namespace TJAStudio.Properties {
         }
         
         /// <summary>
+        ///   {0} notes に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string DanMarge_NotesRemain {
+            get {
+                return ResourceManager.GetString("DanMarge_NotesRemain", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   {0} songs に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string DanMarge_Songs {
+            get {
+                return ResourceManager.GetString("DanMarge_Songs", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   The directory &quot;{0}&quot; could not be found.
         ///There is not enough directory to run the program.
         ///Please download the program again. に類似しているローカライズされた文字列を検索します。
@@ -310,6 +328,15 @@ namespace TJAStudio.Properties {
         internal static string OpenSimulatorPath {
             get {
                 return ResourceManager.GetString("OpenSimulatorPath", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Open song file に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string OpenSongs {
+            get {
+                return ResourceManager.GetString("OpenSongs", resourceCulture);
             }
         }
         

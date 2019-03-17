@@ -117,145 +117,16 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="AllClear" xml:space="preserve">
-    <value>問題はありません。</value>
+  <data name="Label_Text.Text" xml:space="preserve">
+    <value>どの難易度を使用しますか？:</value>
   </data>
-  <data name="ApplicationExit" xml:space="preserve">
-    <value>{0} への変更内容を保存しますか?</value>
+  <data name="Button_Select.Text" xml:space="preserve">
+    <value>選択</value>
   </data>
-  <data name="CommonHeader" xml:space="preserve">
-    <value>共通ヘッダー</value>
+  <data name="Button_Cancel.Text" xml:space="preserve">
+    <value>キャンセル</value>
   </data>
-  <data name="Copied" xml:space="preserve">
-    <value>"{0}" をクリップボードにコピーしました。</value>
-  </data>
-  <data name="CourseInfomation" xml:space="preserve">
-    <value>小節数: {0}
-ドンの数 (小/大/総/%): {1} / {2} / {3} / {4:0.00}%
-カッの数 (小/大/総/%): {5} / {6} / {7} / {8:0.00}%
-小音符 / 大音符 の割合: {9:0.00}% / {10:0.00}%
-最大コンボ数: {11}
-演奏時間: {12}s</value>
-  </data>
-  <data name="CourseInfomation_Selection" xml:space="preserve">
-    <value>
-
-
-選択範囲:
-ドンの数 (小/大/総/%): {0} / {1} / {2} / {3:0.00}%
-カッの数 (小/大/総/%): {4} / {5} / {6} / {7:0.00}%
-小音符 / 大音符 の割合: {8:0.00}% / {9:0.00}%
-時間: {10}s</value>
-  </data>
-  <data name="CourseInfomation_ThisMeasure" xml:space="preserve">
-    <value>
-
-
-現在位置の小節: {0} / {1}
-ドンの数 (小/大/総/%): {2} / {3} / {4} / {5:0.00}%
-カッの数 (小/大/総/%): {6} / {7} / {8} / {9:0.00}%
-小音符 / 大音符 の割合: {10:0.00}% / {11:0.00}%
-分解能: {12}
-時間: {13}s</value>
-  </data>
-  <data name="Cutted" xml:space="preserve">
-    <value>"{0}" をクリップボードに切り取りました。</value>
-  </data>
-  <data name="DanMarge_NotesRemain" xml:space="preserve">
-    <value>{0} ノーツ</value>
-  </data>
-  <data name="DanMarge_Songs" xml:space="preserve">
-    <value>{0} 曲</value>
-  </data>
-  <data name="DirectoryNotFound" xml:space="preserve">
-    <value>ディレクトリ "{0}" が見つかりませんでした。
-プログラムの実行に必要なディレクトリが不足しています。
-プログラムを再ダウンロードしてください。</value>
-  </data>
-  <data name="DrawNotesPreview" xml:space="preserve">
-    <value>この小節の文字列:
-{0}
-コマンドなし:{1}
-音符数: {2}</value>
-  </data>
-  <data name="DuplicateHeader" xml:space="preserve">
-    <value>ヘッダ名が重複しています。
-前のヘッダを削除しますか?</value>
-  </data>
-  <data name="EditedWarning" xml:space="preserve">
-    <value>プロジェクト "{0}" は保存されていません。</value>
-  </data>
-  <data name="FileNotFound" xml:space="preserve">
-    <value>ファイル "{0}" が見つかりませんでした。
-プログラムの実行に必要なファイルが不足しています。
-プログラムを再ダウンロードしてください。</value>
-  </data>
-  <data name="InvaildHeader" xml:space="preserve">
-    <value>ヘッダー {0} が正しいフォーマットではありません。</value>
-  </data>
-  <data name="InvalidCommand" xml:space="preserve">
-    <value>コマンド {0} が正しいフォーマットではありません。</value>
-  </data>
-  <data name="Measured_BPM" xml:space="preserve">
-    <value>最後の8拍の値を使用しますか?</value>
-  </data>
-  <data name="MissedCourseName" xml:space="preserve">
-    <value>コース名を入力してください。</value>
-  </data>
-  <data name="MissedHeaderName" xml:space="preserve">
-    <value>ヘッダ名を入力してください。</value>
-  </data>
-  <data name="NowCaret" xml:space="preserve">
-    <value>{0} 行、 {1} 列</value>
-  </data>
-  <data name="OpenProject" xml:space="preserve">
-    <value>プロジェクトを開く</value>
-  </data>
-  <data name="OpenProjectFile" xml:space="preserve">
-    <value>プロジェクトファイルを開く</value>
-  </data>
-  <data name="OpenSimulatorPath" xml:space="preserve">
-    <value>シミュレーターを選択する</value>
-  </data>
-  <data name="OpenSongs" xml:space="preserve">
-    <value>課題曲を開く</value>
-  </data>
-  <data name="OpenTemplate" xml:space="preserve">
-    <value>テンプレートを開く</value>
-  </data>
-  <data name="OpenWorkspacePath" xml:space="preserve">
-    <value>ワークスペースを選択する</value>
-  </data>
-  <data name="Pasted" xml:space="preserve">
-    <value>"{0}" をクリップボードから貼り付けました。</value>
-  </data>
-  <data name="SaveProject" xml:space="preserve">
-    <value>プロジェクトを保存</value>
-  </data>
-  <data name="SaveTJA" xml:space="preserve">
-    <value>.tja ファイルを保存</value>
-  </data>
-  <data name="SimulatorDoesNotSupportCommand" xml:space="preserve">
-    <value>コマンド {0} はシミュレーター {1} で使用できません。無視されるか、不具合を起こす可能性があります。</value>
-  </data>
-  <data name="SimulatorDoesNotSupportHeader" xml:space="preserve">
-    <value>ヘッダー {0} はシミュレーター {1} で使用できません。無視されるか、不具合を起こす可能性があります。</value>
-  </data>
-  <data name="Status_Measure" xml:space="preserve">
-    <value> </value>
-  </data>
-  <data name="Status_Mode" xml:space="preserve">
-    <value>入力モード: {0}</value>
-  </data>
-  <data name="Status_Mode_Insert" xml:space="preserve">
-    <value>挿入</value>
-  </data>
-  <data name="Status_Mode_Overwrite" xml:space="preserve">
-    <value>置換</value>
-  </data>
-  <data name="VersionDialog" xml:space="preserve">
-    <value>{0} Ver.{1}
-{0} was developed by {2}.
-{3}</value>
+  <data name="$this.Text" xml:space="preserve">
+    <value>段位認定生成器 - コースの選択</value>
   </data>
 </root>

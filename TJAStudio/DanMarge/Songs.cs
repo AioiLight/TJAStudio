@@ -10,5 +10,6 @@ namespace TJAStudio.DanMarge
     {
         public string FilePath { get; set; }
         public string Chart { get; set; }
+        public string Course { get; set; }
     }
 }
