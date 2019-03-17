@@ -117,107 +117,11 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="&gt;&gt;Label_Exam3.Name" xml:space="preserve">
-    <value>Label_Exam3</value>
-  </data>
-  <data name="&gt;&gt;Label_Exam3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Label_Exam3.Parent" xml:space="preserve">
-    <value>GroupBox_Conditions</value>
-  </data>
-  <data name="&gt;&gt;Label_Exam3.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;ExamHeader_Exam3.Name" xml:space="preserve">
-    <value>ExamHeader_Exam3</value>
-  </data>
-  <data name="&gt;&gt;ExamHeader_Exam3.Type" xml:space="preserve">
-    <value>TJAStudio.DanMarge.ExamHeader, TJAStudio, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;ExamHeader_Exam3.Parent" xml:space="preserve">
-    <value>GroupBox_Conditions</value>
-  </data>
-  <data name="&gt;&gt;ExamHeader_Exam3.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;Label_Exam2.Name" xml:space="preserve">
-    <value>Label_Exam2</value>
-  </data>
-  <data name="&gt;&gt;Label_Exam2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Label_Exam2.Parent" xml:space="preserve">
-    <value>GroupBox_Conditions</value>
-  </data>
-  <data name="&gt;&gt;Label_Exam2.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;ExamHeader_Exam2.Name" xml:space="preserve">
-    <value>ExamHeader_Exam2</value>
-  </data>
-  <data name="&gt;&gt;ExamHeader_Exam2.Type" xml:space="preserve">
-    <value>TJAStudio.DanMarge.ExamHeader, TJAStudio, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;ExamHeader_Exam2.Parent" xml:space="preserve">
-    <value>GroupBox_Conditions</value>
-  </data>
-  <data name="&gt;&gt;ExamHeader_Exam2.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;Label_Exam1.Name" xml:space="preserve">
-    <value>Label_Exam1</value>
-  </data>
-  <data name="&gt;&gt;Label_Exam1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Label_Exam1.Parent" xml:space="preserve">
-    <value>GroupBox_Conditions</value>
-  </data>
-  <data name="&gt;&gt;Label_Exam1.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;ExamHeader_Exam1.Name" xml:space="preserve">
-    <value>ExamHeader_Exam1</value>
-  </data>
-  <data name="&gt;&gt;ExamHeader_Exam1.Type" xml:space="preserve">
-    <value>TJAStudio.DanMarge.ExamHeader, TJAStudio, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;ExamHeader_Exam1.Parent" xml:space="preserve">
-    <value>GroupBox_Conditions</value>
-  </data>
-  <data name="&gt;&gt;ExamHeader_Exam1.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="GroupBox_Conditions.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 12</value>
-  </data>
-  <data name="GroupBox_Conditions.Size" type="System.Drawing.Size, System.Drawing">
-    <value>920, 166</value>
-  </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="GroupBox_Conditions.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="GroupBox_Conditions.Text" xml:space="preserve">
-    <value>Conditions</value>
-  </data>
-  <data name="&gt;&gt;GroupBox_Conditions.Name" xml:space="preserve">
-    <value>GroupBox_Conditions</value>
-  </data>
-  <data name="&gt;&gt;GroupBox_Conditions.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;GroupBox_Conditions.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;GroupBox_Conditions.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
   <data name="Label_Exam3.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="Label_Exam3.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 122</value>
   </data>
@@ -378,6 +282,30 @@
   <data name="&gt;&gt;ExamHeader_Exam1.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
+  <data name="GroupBox_Conditions.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 12</value>
+  </data>
+  <data name="GroupBox_Conditions.Size" type="System.Drawing.Size, System.Drawing">
+    <value>920, 166</value>
+  </data>
+  <data name="GroupBox_Conditions.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="GroupBox_Conditions.Text" xml:space="preserve">
+    <value>Conditions</value>
+  </data>
+  <data name="&gt;&gt;GroupBox_Conditions.Name" xml:space="preserve">
+    <value>GroupBox_Conditions</value>
+  </data>
+  <data name="&gt;&gt;GroupBox_Conditions.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;GroupBox_Conditions.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;GroupBox_Conditions.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
   <data name="Button_DownSong.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Center</value>
   </data>
@@ -474,6 +402,12 @@
   <data name="&gt;&gt;Button_AddSong.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
+  <data name="FilePath.Text" xml:space="preserve">
+    <value>File path</value>
+  </data>
+  <data name="FilePath.Width" type="System.Int32, mscorlib">
+    <value>805</value>
+  </data>
   <data name="ListView_Songs.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 26</value>
   </data>
@@ -519,17 +453,17 @@
   <data name="&gt;&gt;GroupBox_Songs.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="FilePath.Text" xml:space="preserve">
-    <value>File path</value>
-  </data>
-  <data name="FilePath.Width" type="System.Int32, mscorlib">
-    <value>805</value>
-  </data>
   <metadata name="Status.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
   <data name="Status.Font" type="System.Drawing.Font, System.Drawing">
     <value>メイリオ, 9.75pt</value>
+  </data>
+  <data name="Status_Songs.Size" type="System.Drawing.Size, System.Drawing">
+    <value>59, 20</value>
+  </data>
+  <data name="Status_Songs.Text" xml:space="preserve">
+    <value>n Songs</value>
   </data>
   <data name="Status.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 416</value>
@@ -554,12 +488,6 @@
   </data>
   <data name="&gt;&gt;Status.ZOrder" xml:space="preserve">
     <value>2</value>
-  </data>
-  <data name="Status_Songs.Size" type="System.Drawing.Size, System.Drawing">
-    <value>59, 20</value>
-  </data>
-  <data name="Status_Songs.Text" xml:space="preserve">
-    <value>n Songs</value>
   </data>
   <data name="Button_Build.Location" type="System.Drawing.Point, System.Drawing">
     <value>752, 383</value>

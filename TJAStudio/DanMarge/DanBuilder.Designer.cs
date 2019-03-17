@@ -141,8 +141,11 @@
             // 
             this.ListView_Songs.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.FilePath});
+            this.ListView_Songs.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
             resources.ApplyResources(this.ListView_Songs, "ListView_Songs");
+            this.ListView_Songs.MultiSelect = false;
             this.ListView_Songs.Name = "ListView_Songs";
+            this.ListView_Songs.Scrollable = false;
             this.ListView_Songs.UseCompatibleStateImageBehavior = false;
             this.ListView_Songs.View = System.Windows.Forms.View.Details;
             // 
