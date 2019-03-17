@@ -16,6 +16,23 @@ namespace TJAStudio.DanMarge
         public DanBuilder()
         {
             InitializeComponent();
+            Status_Songs.Text = string.Format(Properties.SystemMessage.DanMarge_Songs, SongList.Count);
+            SetNotesRemain();
+        }
+
+        private void SetNotesRemain()
+        {
+            var natori = new Natori[SongList.Count];
+            var notesRemain = 0;
+            for (int i = 0; i < natori.Length; i++)
+            {
+                natori[i] = new Natori(SongList[i].Chart);
+                foreach (var item in natori[i].Result)
+                {
+                    if (item.Type == LineType.Text) notesRemain += Convert.ToInt32(item.NotesAmount);
+                }
+            }
+            Status_NotesRemain.Text = string.Format(Properties.SystemMessage.DanMarge_NotesRemain, notesRemain);
         }
 
         private void SetCoursesFromList()
@@ -25,6 +42,8 @@ namespace TJAStudio.DanMarge
             {
                 ListView_Songs.Items.Add(item.Course + " : " + item.FilePath);
             }
+            Status_Songs.Text = string.Format(Properties.SystemMessage.DanMarge_Songs, SongList.Count);
+            SetNotesRemain();
         }
 
         public Songs FromProjectFile(string fileName)
@@ -102,9 +121,11 @@ namespace TJAStudio.DanMarge
                 {
                     songs = FromTJAFile(dialog.FileName);
                 }
-
-                songs.FilePath = dialog.FileName;
-                SongList.Add(songs);
+                if(songs != null)
+                {
+                    songs.FilePath = dialog.FileName;
+                    SongList.Add(songs);
+                }
             }
             dialog.Dispose();
 

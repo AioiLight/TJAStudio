@@ -180,7 +180,7 @@ namespace TJAStudio.Properties {
         }
         
         /// <summary>
-        ///   {0} notes に類似しているローカライズされた文字列を検索します。
+        ///   Notes: {0} に類似しているローカライズされた文字列を検索します。
         /// </summary>
         internal static string DanMarge_NotesRemain {
             get {
@@ -189,7 +189,7 @@ namespace TJAStudio.Properties {
         }
         
         /// <summary>
-        ///   {0} songs に類似しているローカライズされた文字列を検索します。
+        ///   Songs: {0} に類似しているローカライズされた文字列を検索します。
         /// </summary>
         internal static string DanMarge_Songs {
             get {

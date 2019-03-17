@@ -31,11 +31,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DanBuilder));
             this.GroupBox_Conditions = new System.Windows.Forms.GroupBox();
             this.Label_Exam3 = new System.Windows.Forms.Label();
-            this.ExamHeader_Exam3 = new TJAStudio.DanMarge.ExamHeader();
             this.Label_Exam2 = new System.Windows.Forms.Label();
-            this.ExamHeader_Exam2 = new TJAStudio.DanMarge.ExamHeader();
             this.Label_Exam1 = new System.Windows.Forms.Label();
-            this.ExamHeader_Exam1 = new TJAStudio.DanMarge.ExamHeader();
             this.GroupBox_Songs = new System.Windows.Forms.GroupBox();
             this.Button_DownSong = new System.Windows.Forms.Button();
             this.Button_UpSong = new System.Windows.Forms.Button();
@@ -47,6 +44,10 @@
             this.Status_Songs = new System.Windows.Forms.ToolStripStatusLabel();
             this.Button_Build = new System.Windows.Forms.Button();
             this.Button_Close = new System.Windows.Forms.Button();
+            this.ExamHeader_Exam3 = new TJAStudio.DanMarge.ExamHeader();
+            this.ExamHeader_Exam2 = new TJAStudio.DanMarge.ExamHeader();
+            this.ExamHeader_Exam1 = new TJAStudio.DanMarge.ExamHeader();
+            this.Status_NotesRemain = new System.Windows.Forms.ToolStripStatusLabel();
             this.GroupBox_Conditions.SuspendLayout();
             this.GroupBox_Songs.SuspendLayout();
             this.Status.SuspendLayout();
@@ -69,30 +70,15 @@
             resources.ApplyResources(this.Label_Exam3, "Label_Exam3");
             this.Label_Exam3.Name = "Label_Exam3";
             // 
-            // ExamHeader_Exam3
-            // 
-            resources.ApplyResources(this.ExamHeader_Exam3, "ExamHeader_Exam3");
-            this.ExamHeader_Exam3.Name = "ExamHeader_Exam3";
-            // 
             // Label_Exam2
             // 
             resources.ApplyResources(this.Label_Exam2, "Label_Exam2");
             this.Label_Exam2.Name = "Label_Exam2";
             // 
-            // ExamHeader_Exam2
-            // 
-            resources.ApplyResources(this.ExamHeader_Exam2, "ExamHeader_Exam2");
-            this.ExamHeader_Exam2.Name = "ExamHeader_Exam2";
-            // 
             // Label_Exam1
             // 
             resources.ApplyResources(this.Label_Exam1, "Label_Exam1");
             this.Label_Exam1.Name = "Label_Exam1";
-            // 
-            // ExamHeader_Exam1
-            // 
-            resources.ApplyResources(this.ExamHeader_Exam1, "ExamHeader_Exam1");
-            this.ExamHeader_Exam1.Name = "ExamHeader_Exam1";
             // 
             // GroupBox_Songs
             // 
@@ -157,7 +143,8 @@
             // 
             resources.ApplyResources(this.Status, "Status");
             this.Status.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.Status_Songs});
+            this.Status_Songs,
+            this.Status_NotesRemain});
             this.Status.Name = "Status";
             // 
             // Status_Songs
@@ -178,6 +165,26 @@
             resources.ApplyResources(this.Button_Close, "Button_Close");
             this.Button_Close.Name = "Button_Close";
             this.Button_Close.UseVisualStyleBackColor = true;
+            // 
+            // ExamHeader_Exam3
+            // 
+            resources.ApplyResources(this.ExamHeader_Exam3, "ExamHeader_Exam3");
+            this.ExamHeader_Exam3.Name = "ExamHeader_Exam3";
+            // 
+            // ExamHeader_Exam2
+            // 
+            resources.ApplyResources(this.ExamHeader_Exam2, "ExamHeader_Exam2");
+            this.ExamHeader_Exam2.Name = "ExamHeader_Exam2";
+            // 
+            // ExamHeader_Exam1
+            // 
+            resources.ApplyResources(this.ExamHeader_Exam1, "ExamHeader_Exam1");
+            this.ExamHeader_Exam1.Name = "ExamHeader_Exam1";
+            // 
+            // Status_NotesRemain
+            // 
+            this.Status_NotesRemain.Name = "Status_NotesRemain";
+            resources.ApplyResources(this.Status_NotesRemain, "Status_NotesRemain");
             // 
             // DanBuilder
             // 
@@ -225,5 +232,6 @@
         private System.Windows.Forms.Button Button_AddSong;
         private System.Windows.Forms.ListView ListView_Songs;
         private System.Windows.Forms.ColumnHeader FilePath;
+        private System.Windows.Forms.ToolStripStatusLabel Status_NotesRemain;
     }
 }

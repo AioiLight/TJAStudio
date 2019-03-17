@@ -162,10 +162,10 @@
     <value>"{0}" をクリップボードに切り取りました。</value>
   </data>
   <data name="DanMarge_NotesRemain" xml:space="preserve">
-    <value>{0} ノーツ</value>
+    <value>総音符数: {0}</value>
   </data>
   <data name="DanMarge_Songs" xml:space="preserve">
-    <value>{0} 曲</value>
+    <value>曲数: {0}</value>
   </data>
   <data name="DirectoryNotFound" xml:space="preserve">
     <value>ディレクトリ "{0}" が見つかりませんでした。

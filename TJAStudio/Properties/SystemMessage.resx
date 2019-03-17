@@ -171,10 +171,10 @@ Time Span: {13}s</value>
     <value>Cutted to clipboard. "{0}"</value>
   </data>
   <data name="DanMarge_NotesRemain" xml:space="preserve">
-    <value>{0} notes</value>
+    <value>Notes: {0}</value>
   </data>
   <data name="DanMarge_Songs" xml:space="preserve">
-    <value>{0} songs</value>
+    <value>Songs: {0}</value>
   </data>
   <data name="DirectoryNotFound" xml:space="preserve">
     <value>The directory "{0}" could not be found.
