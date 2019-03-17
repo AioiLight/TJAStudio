@@ -54,13 +54,13 @@
             // 
             // GroupBox_Conditions
             // 
-            resources.ApplyResources(this.GroupBox_Conditions, "GroupBox_Conditions");
             this.GroupBox_Conditions.Controls.Add(this.Label_Exam3);
             this.GroupBox_Conditions.Controls.Add(this.ExamHeader_Exam3);
             this.GroupBox_Conditions.Controls.Add(this.Label_Exam2);
             this.GroupBox_Conditions.Controls.Add(this.ExamHeader_Exam2);
             this.GroupBox_Conditions.Controls.Add(this.Label_Exam1);
             this.GroupBox_Conditions.Controls.Add(this.ExamHeader_Exam1);
+            resources.ApplyResources(this.GroupBox_Conditions, "GroupBox_Conditions");
             this.GroupBox_Conditions.Name = "GroupBox_Conditions";
             this.GroupBox_Conditions.TabStop = false;
             // 
@@ -96,48 +96,52 @@
             // 
             // GroupBox_Songs
             // 
-            resources.ApplyResources(this.GroupBox_Songs, "GroupBox_Songs");
             this.GroupBox_Songs.Controls.Add(this.Button_DownSong);
             this.GroupBox_Songs.Controls.Add(this.Button_UpSong);
             this.GroupBox_Songs.Controls.Add(this.Button_RemoveSong);
             this.GroupBox_Songs.Controls.Add(this.Button_AddSong);
             this.GroupBox_Songs.Controls.Add(this.ListView_Songs);
+            resources.ApplyResources(this.GroupBox_Songs, "GroupBox_Songs");
             this.GroupBox_Songs.Name = "GroupBox_Songs";
             this.GroupBox_Songs.TabStop = false;
             // 
             // Button_DownSong
             // 
-            resources.ApplyResources(this.Button_DownSong, "Button_DownSong");
             this.Button_DownSong.BackgroundImage = global::TJAStudio.Properties.Resources.GlyphDown_16x;
+            resources.ApplyResources(this.Button_DownSong, "Button_DownSong");
             this.Button_DownSong.Name = "Button_DownSong";
             this.Button_DownSong.UseVisualStyleBackColor = true;
+            this.Button_DownSong.Click += new System.EventHandler(this.Button_DownSong_Click);
             // 
             // Button_UpSong
             // 
-            resources.ApplyResources(this.Button_UpSong, "Button_UpSong");
             this.Button_UpSong.BackgroundImage = global::TJAStudio.Properties.Resources.GlyphUp_16x;
+            resources.ApplyResources(this.Button_UpSong, "Button_UpSong");
             this.Button_UpSong.Name = "Button_UpSong";
             this.Button_UpSong.UseVisualStyleBackColor = true;
+            this.Button_UpSong.Click += new System.EventHandler(this.Button_UpSong_Click);
             // 
             // Button_RemoveSong
             // 
-            resources.ApplyResources(this.Button_RemoveSong, "Button_RemoveSong");
             this.Button_RemoveSong.BackgroundImage = global::TJAStudio.Properties.Resources.DeleteColumn_16x;
+            resources.ApplyResources(this.Button_RemoveSong, "Button_RemoveSong");
             this.Button_RemoveSong.Name = "Button_RemoveSong";
             this.Button_RemoveSong.UseVisualStyleBackColor = true;
+            this.Button_RemoveSong.Click += new System.EventHandler(this.Button_RemoveSong_Click);
             // 
             // Button_AddSong
             // 
-            resources.ApplyResources(this.Button_AddSong, "Button_AddSong");
             this.Button_AddSong.BackgroundImage = global::TJAStudio.Properties.Resources.AddColumn_16x;
+            resources.ApplyResources(this.Button_AddSong, "Button_AddSong");
             this.Button_AddSong.Name = "Button_AddSong";
             this.Button_AddSong.UseVisualStyleBackColor = true;
+            this.Button_AddSong.Click += new System.EventHandler(this.Button_AddSong_Click);
             // 
             // ListView_Songs
             // 
-            resources.ApplyResources(this.ListView_Songs, "ListView_Songs");
             this.ListView_Songs.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.FilePath});
+            resources.ApplyResources(this.ListView_Songs, "ListView_Songs");
             this.ListView_Songs.Name = "ListView_Songs";
             this.ListView_Songs.UseCompatibleStateImageBehavior = false;
             this.ListView_Songs.View = System.Windows.Forms.View.Details;
@@ -155,20 +159,20 @@
             // 
             // Status_Songs
             // 
-            resources.ApplyResources(this.Status_Songs, "Status_Songs");
             this.Status_Songs.Name = "Status_Songs";
+            resources.ApplyResources(this.Status_Songs, "Status_Songs");
             // 
             // Button_Build
             // 
-            resources.ApplyResources(this.Button_Build, "Button_Build");
             this.Button_Build.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            resources.ApplyResources(this.Button_Build, "Button_Build");
             this.Button_Build.Name = "Button_Build";
             this.Button_Build.UseVisualStyleBackColor = true;
             // 
             // Button_Close
             // 
-            resources.ApplyResources(this.Button_Close, "Button_Close");
             this.Button_Close.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            resources.ApplyResources(this.Button_Close, "Button_Close");
             this.Button_Close.Name = "Button_Close";
             this.Button_Close.UseVisualStyleBackColor = true;
             // 
