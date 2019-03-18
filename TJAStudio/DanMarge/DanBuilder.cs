@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.IO;
 using System.Linq;
@@ -296,6 +297,8 @@ namespace TJAStudio.DanMarge
                     if (ExamHeader_Exam2.ToString() != null) result += string.Format("EXAM2:{0}" + Environment.NewLine, ExamHeader_Exam2.ToString());
                     if (ExamHeader_Exam3.ToString() != null) result += string.Format("EXAM3:{0}" + Environment.NewLine, ExamHeader_Exam3.ToString());
 
+                    result += string.Format(Environment.NewLine);
+
                     result += string.Format("#START" + Environment.NewLine);
                     foreach (var item in SongList)
                     {
@@ -304,6 +307,16 @@ namespace TJAStudio.DanMarge
                     result += string.Format("#END" + Environment.NewLine);
 
                     TJAManager.Build(dialog.FileName, result, Program.Setting.UTF8Mode ? new UTF8Encoding() : Encoding.GetEncoding("Shift-JIS"));
+                    foreach (var item in SongList)
+                    {
+                        if(File.Exists(Path.GetDirectoryName(item.FilePath) + @"\" + item.Wave))
+                        {
+                            // ファイルが存在するならコピーしてあげる
+                            File.Copy(Path.GetDirectoryName(item.FilePath) + @"\" + item.Wave, Path.GetDirectoryName(dialog.FileName) + @"\" + item.Wave, true);
+                        }
+                    }
+                    // ふぉるだを開いてあげる
+                    Process.Start(Path.GetDirectoryName(dialog.FileName));
                 }
                 dialog.Dispose();
             }
