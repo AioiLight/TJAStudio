@@ -146,6 +146,36 @@
   <data name="&gt;&gt;Label_Condition.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
+  <data name="ComboBox_Condition.IntegralHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="ComboBox_Condition.Items" xml:space="preserve">
+    <value>None</value>
+  </data>
+  <data name="ComboBox_Condition.Items1" xml:space="preserve">
+    <value>Gauge percentage</value>
+  </data>
+  <data name="ComboBox_Condition.Items2" xml:space="preserve">
+    <value>Perfect amount</value>
+  </data>
+  <data name="ComboBox_Condition.Items3" xml:space="preserve">
+    <value>Good amount</value>
+  </data>
+  <data name="ComboBox_Condition.Items4" xml:space="preserve">
+    <value>Bad amount</value>
+  </data>
+  <data name="ComboBox_Condition.Items5" xml:space="preserve">
+    <value>Score</value>
+  </data>
+  <data name="ComboBox_Condition.Items6" xml:space="preserve">
+    <value>Drumroll hits</value>
+  </data>
+  <data name="ComboBox_Condition.Items7" xml:space="preserve">
+    <value>Hits amount</value>
+  </data>
+  <data name="ComboBox_Condition.Items8" xml:space="preserve">
+    <value>Max. combo</value>
+  </data>
   <data name="ComboBox_Condition.Location" type="System.Drawing.Point, System.Drawing">
     <value>84, 3</value>
   </data>
@@ -166,6 +196,9 @@
   </data>
   <data name="&gt;&gt;ComboBox_Condition.ZOrder" xml:space="preserve">
     <value>6</value>
+  </data>
+  <data name="ComboBox_Scope.IntegralHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="ComboBox_Scope.Items" xml:space="preserve">
     <value>More</value>
@@ -324,12 +357,12 @@
   <data name="&gt;&gt;Label_Req_Gold.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="$this.Localizable" type="System.Boolean, mscorlib">
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
-  </data>
-  <data name="$this.Locked" type="System.Boolean, mscorlib">
+  </metadata>
+  <metadata name="$this.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
-  </data>
+  </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>8, 20</value>
   </data>
@@ -347,32 +380,5 @@
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
     <value>System.Windows.Forms.UserControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="ComboBox_Condition.Items" xml:space="preserve">
-    <value>None</value>
-  </data>
-  <data name="ComboBox_Condition.Items1" xml:space="preserve">
-    <value>Gauge percentage</value>
-  </data>
-  <data name="ComboBox_Condition.Items2" xml:space="preserve">
-    <value>Perfect amount</value>
-  </data>
-  <data name="ComboBox_Condition.Items3" xml:space="preserve">
-    <value>Good amount</value>
-  </data>
-  <data name="ComboBox_Condition.Items4" xml:space="preserve">
-    <value>Bad amount</value>
-  </data>
-  <data name="ComboBox_Condition.Items5" xml:space="preserve">
-    <value>Score</value>
-  </data>
-  <data name="ComboBox_Condition.Items6" xml:space="preserve">
-    <value>Drumroll hits</value>
-  </data>
-  <data name="ComboBox_Condition.Items7" xml:space="preserve">
-    <value>Hits amount</value>
-  </data>
-  <data name="ComboBox_Condition.Items8" xml:space="preserve">
-    <value>Max. combo</value>
   </data>
 </root>

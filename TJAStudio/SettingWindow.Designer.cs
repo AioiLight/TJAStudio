@@ -147,6 +147,7 @@
             // 
             resources.ApplyResources(this.Tab_General_Language_ComboBox, "Tab_General_Language_ComboBox");
             this.Tab_General_Language_ComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.Tab_General_Language_ComboBox.DropDownWidth = 180;
             this.Tab_General_Language_ComboBox.FormattingEnabled = true;
             this.Tab_General_Language_ComboBox.Items.AddRange(new object[] {
             resources.GetString("Tab_General_Language_ComboBox.Items"),

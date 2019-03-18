@@ -68,15 +68,16 @@
             // 
             // Tool_Run
             // 
-            resources.ApplyResources(this.Tool_Run, "Tool_Run");
             this.Tool_Run.Image = global::TJAStudio.Properties.Resources.FindResults_16x;
+            resources.ApplyResources(this.Tool_Run, "Tool_Run");
             this.Tool_Run.Name = "Tool_Run";
             this.Tool_Run.Click += new System.EventHandler(this.Tool_Run_Click);
             // 
             // Tool_Sims
             // 
-            resources.ApplyResources(this.Tool_Sims, "Tool_Sims");
             this.Tool_Sims.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.Tool_Sims.DropDownWidth = 180;
+            resources.ApplyResources(this.Tool_Sims, "Tool_Sims");
             this.Tool_Sims.Items.AddRange(new object[] {
             resources.GetString("Tool_Sims.Items"),
             resources.GetString("Tool_Sims.Items1"),
