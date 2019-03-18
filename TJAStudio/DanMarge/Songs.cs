@@ -26,7 +26,7 @@ namespace TJAStudio.DanMarge
 
         public override string ToString()
         {
-            return string.Format("#NEXTSONG {0},{1},{2},{3},{4},{5}\r\n#BPMCHANGE {6}\r\n#SCROLL 1.0\r\n#DELAY {7}\r\n{8}", Title, SubTitle, Genre, ScoreInit, ScoreDiff, Wave, BPM, Offset, Chart);
+            return string.Format("#NEXTSONG {0},{1},{2},{3},{4},{5}\r\n#BPMCHANGE {6}\r\n#MEASURE 4/4\r\n#SCROLL 1.0\r\n#DELAY {7}\r\n{8}", Title, SubTitle, Genre, ScoreInit, ScoreDiff, Wave, BPM, Offset, Chart);
         }
     }
 }
