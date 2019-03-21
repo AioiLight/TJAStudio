@@ -474,4 +474,12 @@
     <Content Include="tjas.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>xcopy "$(TargetDir)*" "$(SolutionDir)Build" /s/e/i/y
+xcopy "$(SolutionDir)License" "$(SolutionDir)Build\License"  /s/e/i/y
+copy "$(ProjectDir)Readme.txt" "$(SolutionDir)Build\Readme.txt"
+del "$(SolutionDir)Build\Windows.xml" /q
+del "$(SolutionDir)Build\Settings.xml" /q
+del "$(SolutionDir)Build\temp\*" /q</PostBuildEvent>
+  </PropertyGroup>
 </Project>

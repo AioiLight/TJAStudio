@@ -180,7 +180,8 @@ namespace TJAStudio.DanMarge
                 }
                 else if (nowLine.StartsWith("SCOREINIT:"))
                 {
-                    result.ScoreInit = Convert.ToInt32(nowLine.Substring("SCOREINIT:".Length));
+                    var scoreInit = nowLine.Substring("SCOREINIT:".Length).Split(',');
+                    result.ScoreInit = Convert.ToInt32(scoreInit[0]);
                 }
                 else if (nowLine.StartsWith("SCOREDIFF:"))
                 {
