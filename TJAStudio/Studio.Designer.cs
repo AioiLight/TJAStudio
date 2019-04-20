@@ -61,7 +61,7 @@
             this.Menu_Edit_NotesOperation_ToKa = new System.Windows.Forms.ToolStripMenuItem();
             this.Menu_Edit_NotesOperation_Abekobe = new System.Windows.Forms.ToolStripMenuItem();
             this.Menu_Edit_NotesOperation_Detarame = new System.Windows.Forms.ToolStripMenuItem();
-            this.removeCommandToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.Menu_Edit_NotesOperation_Command = new System.Windows.Forms.ToolStripMenuItem();
             this.Menu_Version = new System.Windows.Forms.ToolStripMenuItem();
             this.Menu_Version_Site = new System.Windows.Forms.ToolStripMenuItem();
             this.Menu_Version_TJAS = new System.Windows.Forms.ToolStripMenuItem();
@@ -77,6 +77,12 @@
             this.Menu_Window_Projects = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem8 = new System.Windows.Forms.ToolStripSeparator();
             this.Menu_Window_FormatCheker = new System.Windows.Forms.ToolStripMenuItem();
+            this.commandToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.sTARTENDToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.goGoTimeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.scrollChangeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.bPMChangeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.measureChangeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.Menu_Execution = new System.Windows.Forms.ToolStripMenuItem();
             this.Menu_Execution_Start = new System.Windows.Forms.ToolStripMenuItem();
             this.Menu_Execution_LiveUpdate = new System.Windows.Forms.ToolStripMenuItem();
@@ -120,6 +126,7 @@
             this.Menu_Version,
             this.Menu_Tool,
             this.Menu_Window,
+            this.commandToolStripMenuItem,
             this.Menu_Execution});
             this.Menu.Name = "Menu";
             // 
@@ -311,7 +318,7 @@
             this.Menu_Edit_NotesOperation_ToKa,
             this.Menu_Edit_NotesOperation_Abekobe,
             this.Menu_Edit_NotesOperation_Detarame,
-            this.removeCommandToolStripMenuItem});
+            this.Menu_Edit_NotesOperation_Command});
             this.Menu_Edit_NotesOperation.Name = "Menu_Edit_NotesOperation";
             // 
             // Menu_Edit_NotesOperation_ToDon
@@ -338,11 +345,11 @@
             this.Menu_Edit_NotesOperation_Detarame.Name = "Menu_Edit_NotesOperation_Detarame";
             this.Menu_Edit_NotesOperation_Detarame.Click += new System.EventHandler(this.Menu_Edit_NotesOperation_Detarame_Click);
             // 
-            // removeCommandToolStripMenuItem
+            // Menu_Edit_NotesOperation_Command
             // 
-            resources.ApplyResources(this.removeCommandToolStripMenuItem, "removeCommandToolStripMenuItem");
-            this.removeCommandToolStripMenuItem.Name = "removeCommandToolStripMenuItem";
-            this.removeCommandToolStripMenuItem.Click += new System.EventHandler(this.RemoveCommandToolStripMenuItem_Click);
+            resources.ApplyResources(this.Menu_Edit_NotesOperation_Command, "Menu_Edit_NotesOperation_Command");
+            this.Menu_Edit_NotesOperation_Command.Name = "Menu_Edit_NotesOperation_Command";
+            this.Menu_Edit_NotesOperation_Command.Click += new System.EventHandler(this.Menu_Edit_NotesOperation_Command_Click);
             // 
             // Menu_Version
             // 
@@ -450,6 +457,43 @@
             this.Menu_Window_FormatCheker.Image = global::TJAStudio.Properties.Resources.FindResults_16x;
             this.Menu_Window_FormatCheker.Name = "Menu_Window_FormatCheker";
             this.Menu_Window_FormatCheker.Click += new System.EventHandler(this.Menu_Window_FormatCheker_Click);
+            // 
+            // commandToolStripMenuItem
+            // 
+            resources.ApplyResources(this.commandToolStripMenuItem, "commandToolStripMenuItem");
+            this.commandToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.sTARTENDToolStripMenuItem,
+            this.goGoTimeToolStripMenuItem,
+            this.scrollChangeToolStripMenuItem,
+            this.bPMChangeToolStripMenuItem,
+            this.measureChangeToolStripMenuItem});
+            this.commandToolStripMenuItem.Image = global::TJAStudio.Properties.Resources.GoGoTime;
+            this.commandToolStripMenuItem.Name = "commandToolStripMenuItem";
+            // 
+            // sTARTENDToolStripMenuItem
+            // 
+            resources.ApplyResources(this.sTARTENDToolStripMenuItem, "sTARTENDToolStripMenuItem");
+            this.sTARTENDToolStripMenuItem.Name = "sTARTENDToolStripMenuItem";
+            // 
+            // goGoTimeToolStripMenuItem
+            // 
+            resources.ApplyResources(this.goGoTimeToolStripMenuItem, "goGoTimeToolStripMenuItem");
+            this.goGoTimeToolStripMenuItem.Name = "goGoTimeToolStripMenuItem";
+            // 
+            // scrollChangeToolStripMenuItem
+            // 
+            resources.ApplyResources(this.scrollChangeToolStripMenuItem, "scrollChangeToolStripMenuItem");
+            this.scrollChangeToolStripMenuItem.Name = "scrollChangeToolStripMenuItem";
+            // 
+            // bPMChangeToolStripMenuItem
+            // 
+            resources.ApplyResources(this.bPMChangeToolStripMenuItem, "bPMChangeToolStripMenuItem");
+            this.bPMChangeToolStripMenuItem.Name = "bPMChangeToolStripMenuItem";
+            // 
+            // measureChangeToolStripMenuItem
+            // 
+            resources.ApplyResources(this.measureChangeToolStripMenuItem, "measureChangeToolStripMenuItem");
+            this.measureChangeToolStripMenuItem.Name = "measureChangeToolStripMenuItem";
             // 
             // Menu_Execution
             // 
@@ -715,7 +759,13 @@
         private System.Windows.Forms.ToolStripMenuItem Menu_Tool_Settings;
         private System.Windows.Forms.ToolStripMenuItem Menu_Tool_DanBuilder;
         private System.Windows.Forms.ToolStripSeparator toolStripMenuItem9;
-        private System.Windows.Forms.ToolStripMenuItem removeCommandToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem Menu_Edit_NotesOperation_Command;
+        private System.Windows.Forms.ToolStripMenuItem commandToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem sTARTENDToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem goGoTimeToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem scrollChangeToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem bPMChangeToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem measureChangeToolStripMenuItem;
     }
 }
 

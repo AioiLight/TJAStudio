@@ -693,7 +693,7 @@ namespace TJAStudio
             dialog.ShowDialog(this);
             dialog.Dispose();
         }
-        private void RemoveCommandToolStripMenuItem_Click(object sender, EventArgs e)
+        private void Menu_Edit_NotesOperation_Command_Click(object sender, EventArgs e)
         {
             var selectedText = Program.WindowManager.Editors[CurrentCourseID].TextEditor.GetSelectedText();
             var result = "";

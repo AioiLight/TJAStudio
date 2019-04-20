@@ -127,11 +127,17 @@
   <data name="&gt;&gt;Menu_Edit_SelectAll.Name" xml:space="preserve">
     <value>Menu_Edit_SelectAll</value>
   </data>
+  <data name="sTARTENDToolStripMenuItem.Text" xml:space="preserve">
+    <value>#START - #END</value>
+  </data>
   <data name="Menu_Edit_Copy.Size" type="System.Drawing.Size, System.Drawing">
     <value>182, 24</value>
   </data>
   <data name="&gt;&gt;Menu_File_New.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Status_Measures.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripStatusLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;Menu_Edit_NotesOperation_ToDon.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -145,6 +151,9 @@
   <data name="Menu_Tool_DanBuilder.Text" xml:space="preserve">
     <value>Dan Builder...</value>
   </data>
+  <data name="&gt;&gt;sTARTENDToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;toolStripMenuItem6.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -157,20 +166,20 @@
   <data name="&gt;&gt;Dock.Type" xml:space="preserve">
     <value>WeifenLuo.WinFormsUI.Docking.DockPanel, WeifenLuo.WinFormsUI.Docking, Version=3.0.6.0, Culture=neutral, PublicKeyToken=5cded1a1a0a7b481</value>
   </data>
-  <data name="Dock.Location" type="System.Drawing.Point, System.Drawing">
-    <value>13, 64</value>
+  <data name="&gt;&gt;Menu_Edit_NotesOperation_Command.Name" xml:space="preserve">
+    <value>Menu_Edit_NotesOperation_Command</value>
   </data>
-  <data name="&gt;&gt;Status_Measures.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripStatusLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="Menu_Version.Size" type="System.Drawing.Size, System.Drawing">
+    <value>84, 24</value>
   </data>
-  <data name="&gt;&gt;toolStripSeparator3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="Status_Caret.Size" type="System.Drawing.Size, System.Drawing">
+    <value>312, 20</value>
+  </data>
+  <data name="bPMChangeToolStripMenuItem.Text" xml:space="preserve">
+    <value>BPM Change...</value>
   </data>
   <data name="toolStripMenuItem8.Size" type="System.Drawing.Size, System.Drawing">
     <value>189, 6</value>
-  </data>
-  <data name="&gt;&gt;Menu_Window_FormatCheker.Name" xml:space="preserve">
-    <value>Menu_Window_FormatCheker</value>
   </data>
   <data name="&gt;&gt;Menu_File_Exit.Name" xml:space="preserve">
     <value>Menu_File_Exit</value>
@@ -191,9 +200,6 @@
   <data name="Menu_Execution.Text" xml:space="preserve">
     <value>&amp;Execution</value>
   </data>
-  <data name="&gt;&gt;Tool_SaveAs.Name" xml:space="preserve">
-    <value>Tool_SaveAs</value>
-  </data>
   <data name="&gt;&gt;Menu_Edit_Undo.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -206,8 +212,8 @@
   <data name="Tool_Cut.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
     <value>Magenta</value>
   </data>
-  <data name="&gt;&gt;Tool.Name" xml:space="preserve">
-    <value>Tool</value>
+  <data name="&gt;&gt;toolStripMenuItem4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="Menu_Edit_NotesOperation_ToDon.Size" type="System.Drawing.Size, System.Drawing">
     <value>248, 24</value>
@@ -218,8 +224,14 @@
   <data name="Status_Measures.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleRight</value>
   </data>
+  <data name="Menu_Window_Projects.Text" xml:space="preserve">
+    <value>Projects</value>
+  </data>
   <data name="&gt;&gt;Status_Caret.Name" xml:space="preserve">
     <value>Status_Caret</value>
+  </data>
+  <data name="&gt;&gt;toolStripSeparator1.Name" xml:space="preserve">
+    <value>toolStripSeparator1</value>
   </data>
   <data name="Tool.Font" type="System.Drawing.Font, System.Drawing">
     <value>メイリオ, 9.75pt</value>
@@ -251,8 +263,8 @@
   <data name="$this.Text" xml:space="preserve">
     <value>TJAStudio</value>
   </data>
-  <data name="&gt;&gt;toolStripSeparator1.Name" xml:space="preserve">
-    <value>toolStripSeparator1</value>
+  <data name="&gt;&gt;scrollChangeToolStripMenuItem.Name" xml:space="preserve">
+    <value>scrollChangeToolStripMenuItem</value>
   </data>
   <data name="Menu_Edit_SelectAll.Size" type="System.Drawing.Size, System.Drawing">
     <value>182, 24</value>
@@ -263,6 +275,9 @@
   <data name="Tool_Paste.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
     <value>Magenta</value>
   </data>
+  <data name="&gt;&gt;commandToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;Menu_Window_Courses.Name" xml:space="preserve">
     <value>Menu_Window_Courses</value>
   </data>
@@ -272,11 +287,11 @@
   <data name="Menu_File_New.Size" type="System.Drawing.Size, System.Drawing">
     <value>230, 24</value>
   </data>
-  <data name="Menu_Version.Size" type="System.Drawing.Size, System.Drawing">
-    <value>84, 24</value>
+  <data name="&gt;&gt;toolStripMenuItem6.Name" xml:space="preserve">
+    <value>toolStripMenuItem6</value>
   </data>
-  <data name="Menu_Edit_Paste.Size" type="System.Drawing.Size, System.Drawing">
-    <value>182, 24</value>
+  <data name="Menu_Edit_NotesOperation_Command.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
+    <value>Ctrl+E</value>
   </data>
   <data name="Dock.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 5, 4, 5</value>
@@ -284,8 +299,8 @@
   <data name="Tool_Copy.Text" xml:space="preserve">
     <value>Copy</value>
   </data>
-  <data name="Tool_FormatCheker.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
-    <value>Magenta</value>
+  <data name="goGoTimeToolStripMenuItem.Text" xml:space="preserve">
+    <value>GoGoTime...</value>
   </data>
   <data name="&gt;&gt;Menu_Tool_Settings.Name" xml:space="preserve">
     <value>Menu_Tool_Settings</value>
@@ -296,6 +311,9 @@
   <data name="Menu_Edit_NotesOperation_ToDon.Text" xml:space="preserve">
     <value>To Don</value>
   </data>
+  <data name="measureChangeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>247, 24</value>
+  </data>
   <data name="Menu_File_New.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
     <value>Ctrl+N</value>
   </data>
@@ -305,14 +323,20 @@
   <data name="&gt;&gt;Menu_Version_TJAS.Name" xml:space="preserve">
     <value>Menu_Version_TJAS</value>
   </data>
+  <data name="goGoTimeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>247, 24</value>
+  </data>
   <data name="Menu_File_Open.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
     <value>Ctrl+O</value>
+  </data>
+  <data name="scrollChangeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>247, 24</value>
   </data>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>10, 24</value>
   </data>
-  <data name="&gt;&gt;toolStripMenuItem6.Name" xml:space="preserve">
-    <value>toolStripMenuItem6</value>
+  <data name="&gt;&gt;Menu_Window_FormatCheker.Name" xml:space="preserve">
+    <value>Menu_Window_FormatCheker</value>
   </data>
   <data name="&gt;&gt;Menu_Execution_LiveUpdate.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -326,6 +350,9 @@
   </data>
   <data name="Status.Font" type="System.Drawing.Font, System.Drawing">
     <value>メイリオ, 9.75pt</value>
+  </data>
+  <data name="commandToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Command</value>
   </data>
   <data name="&gt;&gt;Menu_File.Name" xml:space="preserve">
     <value>Menu_File</value>
@@ -363,11 +390,8 @@
   <data name="Dock.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left, Right</value>
   </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Status_Measures.Name" xml:space="preserve">
-    <value>Status_Measures</value>
+  <data name="&gt;&gt;Menu_Edit_NotesOperation.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="Tool_Cut.Size" type="System.Drawing.Size, System.Drawing">
     <value>51, 24</value>
@@ -390,8 +414,8 @@
   <data name="Menu_Edit_SelectAll.Text" xml:space="preserve">
     <value>Select All</value>
   </data>
-  <data name="&gt;&gt;Tool_Execute.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="Menu_File_Export.Size" type="System.Drawing.Size, System.Drawing">
+    <value>230, 24</value>
   </data>
   <data name="Status.Size" type="System.Drawing.Size, System.Drawing">
     <value>1264, 25</value>
@@ -414,14 +438,20 @@
   <data name="Menu_Tool_Settings.Text" xml:space="preserve">
     <value>Settings...</value>
   </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;Tool_Copy.Name" xml:space="preserve">
     <value>Tool_Copy</value>
   </data>
-  <data name="Menu_Tool.Size" type="System.Drawing.Size, System.Drawing">
-    <value>63, 24</value>
+  <data name="Menu_Edit_Redo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>182, 24</value>
   </data>
   <data name="toolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
     <value>227, 6</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItem2.Name" xml:space="preserve">
+    <value>toolStripMenuItem2</value>
   </data>
   <data name="Tool_Copy.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
     <value>Magenta</value>
@@ -432,20 +462,20 @@
   <data name="Menu_Edit_Undo.Size" type="System.Drawing.Size, System.Drawing">
     <value>182, 24</value>
   </data>
-  <data name="Menu_Edit_NotesOperation_ToKa.Size" type="System.Drawing.Size, System.Drawing">
-    <value>248, 24</value>
+  <data name="&gt;&gt;toolStripMenuItem8.Name" xml:space="preserve">
+    <value>toolStripMenuItem8</value>
   </data>
   <data name="toolStripSeparator3.Size" type="System.Drawing.Size, System.Drawing">
     <value>6, 27</value>
   </data>
-  <data name="&gt;&gt;Menu_Window_CourseHeader.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="scrollChangeToolStripMenuItem.Text" xml:space="preserve">
+    <value>Scroll Change...</value>
   </data>
-  <data name="Menu_Edit_Redo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>182, 24</value>
+  <data name="goGoTimeToolStripMenuItem.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
+    <value>Alt+G</value>
   </data>
-  <data name="Menu_Edit.Size" type="System.Drawing.Size, System.Drawing">
-    <value>61, 24</value>
+  <data name="Dock.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 64</value>
   </data>
   <data name="Status.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -459,14 +489,17 @@
   <data name="Menu_Edit_Copy.Text" xml:space="preserve">
     <value>Copy</value>
   </data>
+  <data name="&gt;&gt;toolStripSeparator3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;Menu_Edit.Name" xml:space="preserve">
     <value>Menu_Edit</value>
   </data>
   <data name="&gt;&gt;Menu_Edit_NotesOperation.Name" xml:space="preserve">
     <value>Menu_Edit_NotesOperation</value>
   </data>
-  <data name="Menu_Window_Projects.Text" xml:space="preserve">
-    <value>Projects</value>
+  <data name="Status_Measures.Text" xml:space="preserve">
+    <value>Measure: </value>
   </data>
   <data name="Tool_Save.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
     <value>Magenta</value>
@@ -474,17 +507,14 @@
   <data name="Menu_File_Open.Size" type="System.Drawing.Size, System.Drawing">
     <value>230, 24</value>
   </data>
-  <data name="&gt;&gt;Menu_Window_Projects.Name" xml:space="preserve">
-    <value>Menu_Window_Projects</value>
+  <data name="Menu_Edit_Paste.Size" type="System.Drawing.Size, System.Drawing">
+    <value>182, 24</value>
   </data>
   <data name="&gt;&gt;Menu_Edit_Repert.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="removeCommandToolStripMenuItem.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
-    <value>Ctrl+E</value>
-  </data>
-  <data name="Menu_File_Export.Size" type="System.Drawing.Size, System.Drawing">
-    <value>230, 24</value>
+  <data name="&gt;&gt;Status_Measures.Name" xml:space="preserve">
+    <value>Status_Measures</value>
   </data>
   <data name="Menu_File_Save.Size" type="System.Drawing.Size, System.Drawing">
     <value>230, 24</value>
@@ -492,14 +522,14 @@
   <data name="&gt;&gt;Status_Mode.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripStatusLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="&gt;&gt;Tool_Execute.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;Menu.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
   <data name="Menu_File_Save.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
     <value>Ctrl+S</value>
-  </data>
-  <data name="Status_Measures.Text" xml:space="preserve">
-    <value>Measure: </value>
   </data>
   <data name="Status_Caret.Text" xml:space="preserve">
     <value>Row: Col:</value>
@@ -509,9 +539,6 @@
   </data>
   <data name="Menu_Edit_GoTo.Size" type="System.Drawing.Size, System.Drawing">
     <value>182, 24</value>
-  </data>
-  <data name="&gt;&gt;removeCommandToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="Tool_Open.Size" type="System.Drawing.Size, System.Drawing">
     <value>63, 24</value>
@@ -528,8 +555,11 @@
   <data name="&gt;&gt;Menu.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="&gt;&gt;Tool_Cut.Name" xml:space="preserve">
-    <value>Tool_Cut</value>
+  <data name="&gt;&gt;commandToolStripMenuItem.Name" xml:space="preserve">
+    <value>commandToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;goGoTimeToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;toolStripMenuItem5.Name" xml:space="preserve">
     <value>toolStripMenuItem5</value>
@@ -546,6 +576,9 @@
   <data name="&gt;&gt;Menu.Type" xml:space="preserve">
     <value>System.Windows.Forms.MenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="measureChangeToolStripMenuItem.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
+    <value>Alt+M</value>
+  </data>
   <data name="&gt;&gt;Menu_Edit_NotesOperation_ToKa.Name" xml:space="preserve">
     <value>Menu_Edit_NotesOperation_ToKa</value>
   </data>
@@ -561,6 +594,9 @@
   <data name="Menu_Edit_Cut.Size" type="System.Drawing.Size, System.Drawing">
     <value>182, 24</value>
   </data>
+  <data name="&gt;&gt;measureChangeToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="Menu_Tool_DanBuilder.Size" type="System.Drawing.Size, System.Drawing">
     <value>198, 24</value>
   </data>
@@ -575,9 +611,6 @@
   </data>
   <data name="&gt;&gt;toolStripMenuItem1.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="Status_Caret.Size" type="System.Drawing.Size, System.Drawing">
-    <value>312, 20</value>
   </data>
   <data name="Menu_Tool_About.Size" type="System.Drawing.Size, System.Drawing">
     <value>198, 24</value>
@@ -6769,8 +6802,8 @@
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
 </value>
   </data>
-  <data name="&gt;&gt;Menu_Edit_NotesOperation.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="Menu_Edit_NotesOperation_Command.Size" type="System.Drawing.Size, System.Drawing">
+    <value>248, 24</value>
   </data>
   <data name="Tool_Redo.Text" xml:space="preserve">
     <value>Redo</value>
@@ -6787,17 +6820,20 @@
   <data name="Tool_Execute.Text" xml:space="preserve">
     <value>Execute</value>
   </data>
+  <data name="bPMChangeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>247, 24</value>
+  </data>
   <data name="Menu.Size" type="System.Drawing.Size, System.Drawing">
     <value>1264, 32</value>
   </data>
-  <data name="toolStripMenuItem5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>179, 6</value>
+  <data name="Menu_Edit_NotesOperation_ToKa.Size" type="System.Drawing.Size, System.Drawing">
+    <value>248, 24</value>
   </data>
   <data name="&gt;&gt;Menu_Edit_Time.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Menu_File_New.Text" xml:space="preserve">
-    <value>New Project...</value>
+  <data name="&gt;&gt;Menu_Window_CourseHeader.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="Menu_Edit_Time.Size" type="System.Drawing.Size, System.Drawing">
     <value>182, 24</value>
@@ -6807,6 +6843,9 @@
   </data>
   <data name="&gt;&gt;Tool.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;measureChangeToolStripMenuItem.Name" xml:space="preserve">
+    <value>measureChangeToolStripMenuItem</value>
   </data>
   <data name="&gt;&gt;Status.Type" xml:space="preserve">
     <value>System.Windows.Forms.StatusStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -6849,9 +6888,6 @@
   </data>
   <data name="&gt;&gt;toolStripSeparator2.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="removeCommandToolStripMenuItem.Text" xml:space="preserve">
-    <value>Remove Command</value>
   </data>
   <data name="&gt;&gt;Tool_Copy.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -6916,8 +6952,14 @@
   <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
     <value>メイリオ, 12pt</value>
   </data>
+  <data name="&gt;&gt;Tool_Cut.Name" xml:space="preserve">
+    <value>Tool_Cut</value>
+  </data>
   <data name="Menu_Window.Size" type="System.Drawing.Size, System.Drawing">
     <value>88, 24</value>
+  </data>
+  <data name="&gt;&gt;scrollChangeToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;Status_Mode.Name" xml:space="preserve">
     <value>Status_Mode</value>
@@ -6931,23 +6973,23 @@
   <data name="Status.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 656</value>
   </data>
-  <data name="&gt;&gt;toolStripMenuItem4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="&gt;&gt;Menu_Tool_About.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;toolStripMenuItem8.Name" xml:space="preserve">
-    <value>toolStripMenuItem8</value>
+  <data name="Menu_File_New.Text" xml:space="preserve">
+    <value>New Project...</value>
   </data>
   <data name="toolStripStatusLabel1.Size" type="System.Drawing.Size, System.Drawing">
     <value>312, 20</value>
   </data>
+  <data name="&gt;&gt;Menu_Edit_NotesOperation_Detarame.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;Menu_File_Save.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;toolStripMenuItem5.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;Tool_SaveAs.Name" xml:space="preserve">
+    <value>Tool_SaveAs</value>
   </data>
   <data name="Status_Mode.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleRight</value>
@@ -6967,11 +7009,14 @@
   <data name="&gt;&gt;Menu_Edit_NotesOperation_Abekobe.Name" xml:space="preserve">
     <value>Menu_Edit_NotesOperation_Abekobe</value>
   </data>
-  <data name="Menu_Tool.Text" xml:space="preserve">
-    <value>&amp;Tool</value>
+  <data name="&gt;&gt;Menu_Edit_Cut.Name" xml:space="preserve">
+    <value>Menu_Edit_Cut</value>
   </data>
-  <data name="Menu_Edit_Cut.Text" xml:space="preserve">
-    <value>Cut</value>
+  <data name="&gt;&gt;toolStripMenuItem5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Menu_Tool.Size" type="System.Drawing.Size, System.Drawing">
+    <value>63, 24</value>
   </data>
   <data name="&gt;&gt;Tool_Paste.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -6991,14 +7036,20 @@
   <data name="Menu_File_OpenTmpl.Size" type="System.Drawing.Size, System.Drawing">
     <value>230, 24</value>
   </data>
+  <data name="commandToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>102, 24</value>
+  </data>
   <data name="&gt;&gt;Menu_Edit_Paste.Name" xml:space="preserve">
     <value>Menu_Edit_Paste</value>
   </data>
-  <data name="removeCommandToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>248, 24</value>
+  <data name="&gt;&gt;Tool_Save.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSplitButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>Studio</value>
+  <data name="&gt;&gt;bPMChangeToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Menu_Window_Projects.Name" xml:space="preserve">
+    <value>Menu_Window_Projects</value>
   </data>
   <data name="toolStripMenuItem2.Size" type="System.Drawing.Size, System.Drawing">
     <value>227, 6</value>
@@ -7012,14 +7063,17 @@
   <data name="Tool_Cut.Text" xml:space="preserve">
     <value>Cut</value>
   </data>
-  <data name="&gt;&gt;Menu_Edit_Time.Name" xml:space="preserve">
-    <value>Menu_Edit_Time</value>
+  <data name="scrollChangeToolStripMenuItem.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
+    <value>Alt+S</value>
   </data>
   <data name="&gt;&gt;Tool.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <data name="&gt;&gt;toolStripMenuItem3.Name" xml:space="preserve">
     <value>toolStripMenuItem3</value>
+  </data>
+  <data name="Menu_Tool.Text" xml:space="preserve">
+    <value>&amp;Tool</value>
   </data>
   <data name="Tool_Paste.Size" type="System.Drawing.Size, System.Drawing">
     <value>64, 24</value>
@@ -7033,11 +7087,14 @@
   <data name="Tool_Open.Text" xml:space="preserve">
     <value>Open</value>
   </data>
+  <data name="Menu_Edit_NotesOperation_Command.Text" xml:space="preserve">
+    <value>Remove Command</value>
+  </data>
   <data name="Menu_Version_TJAS.Text" xml:space="preserve">
     <value>https://aioilight.space/taiko/tjas/</value>
   </data>
-  <data name="&gt;&gt;toolStripMenuItem2.Name" xml:space="preserve">
-    <value>toolStripMenuItem2</value>
+  <data name="&gt;&gt;sTARTENDToolStripMenuItem.Name" xml:space="preserve">
+    <value>sTARTENDToolStripMenuItem</value>
   </data>
   <data name="&gt;&gt;Menu_Edit_GoTo.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -7069,26 +7126,41 @@
   <data name="Menu_Edit_NotesOperation.Text" xml:space="preserve">
     <value>Notes Operation</value>
   </data>
+  <data name="&gt;&gt;Menu_Tool_DanBuilder.Name" xml:space="preserve">
+    <value>Menu_Tool_DanBuilder</value>
+  </data>
   <data name="toolStripMenuItem4.Size" type="System.Drawing.Size, System.Drawing">
     <value>179, 6</value>
   </data>
   <data name="&gt;&gt;Menu_Edit_GoTo.Name" xml:space="preserve">
     <value>Menu_Edit_GoTo</value>
   </data>
+  <data name="sTARTENDToolStripMenuItem.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
+    <value>Alt+T</value>
+  </data>
   <data name="Menu_Edit_NotesOperation_Abekobe.Text" xml:space="preserve">
     <value>Abekobe</value>
   </data>
-  <data name="&gt;&gt;Menu_Edit_NotesOperation_Detarame.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="measureChangeToolStripMenuItem.Text" xml:space="preserve">
+    <value>Measure Change...</value>
   </data>
   <data name="Menu_Tool_About.Text" xml:space="preserve">
     <value>About TJAStudio...</value>
+  </data>
+  <data name="Menu_Edit_Cut.Text" xml:space="preserve">
+    <value>Cut</value>
   </data>
   <data name="&gt;&gt;Tool_FormatCheker.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;Menu_Edit_NotesOperation_Detarame.Name" xml:space="preserve">
     <value>Menu_Edit_NotesOperation_Detarame</value>
+  </data>
+  <data name="sTARTENDToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>247, 24</value>
+  </data>
+  <data name="Tool_FormatCheker.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
   </data>
   <data name="&gt;&gt;toolStripMenuItem2.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -7099,14 +7171,14 @@
   <data name="&gt;&gt;Menu_Edit_NotesOperation_Abekobe.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;removeCommandToolStripMenuItem.Name" xml:space="preserve">
-    <value>removeCommandToolStripMenuItem</value>
-  </data>
   <data name="Tool_Undo.Size" type="System.Drawing.Size, System.Drawing">
     <value>62, 24</value>
   </data>
   <data name="Menu_Edit.Text" xml:space="preserve">
     <value>&amp;Edit</value>
+  </data>
+  <data name="toolStripMenuItem5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>179, 6</value>
   </data>
   <data name="Menu_Execution_LiveUpdate.Size" type="System.Drawing.Size, System.Drawing">
     <value>197, 24</value>
@@ -7114,8 +7186,8 @@
   <data name="&gt;&gt;Dock.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="&gt;&gt;Menu_Tool_DanBuilder.Name" xml:space="preserve">
-    <value>Menu_Tool_DanBuilder</value>
+  <data name="&gt;&gt;Menu_Edit_NotesOperation_Command.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;Menu_Window_Courses.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -7138,6 +7210,9 @@
   <data name="&gt;&gt;Tool_Open.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="&gt;&gt;bPMChangeToolStripMenuItem.Name" xml:space="preserve">
+    <value>bPMChangeToolStripMenuItem</value>
+  </data>
   <data name="Tool.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 32</value>
   </data>
@@ -7146,6 +7221,12 @@
   </data>
   <data name="&gt;&gt;Menu_Tool.Name" xml:space="preserve">
     <value>Menu_Tool</value>
+  </data>
+  <data name="&gt;&gt;Tool.Name" xml:space="preserve">
+    <value>Tool</value>
+  </data>
+  <data name="bPMChangeToolStripMenuItem.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
+    <value>Alt+B</value>
   </data>
   <data name="&gt;&gt;Tool_Paste.Name" xml:space="preserve">
     <value>Tool_Paste</value>
@@ -7159,8 +7240,8 @@
   <data name="&gt;&gt;Menu_Tool_About.Name" xml:space="preserve">
     <value>Menu_Tool_About</value>
   </data>
-  <data name="&gt;&gt;Menu_Edit_Cut.Name" xml:space="preserve">
-    <value>Menu_Edit_Cut</value>
+  <data name="Menu_Edit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>61, 24</value>
   </data>
   <data name="&gt;&gt;Menu_Version_Site.Name" xml:space="preserve">
     <value>Menu_Version_Site</value>
@@ -7171,6 +7252,9 @@
   <data name="Menu_Edit_Redo.Text" xml:space="preserve">
     <value>Redo</value>
   </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>Studio</value>
+  </data>
   <data name="&gt;&gt;Status.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
@@ -7179,6 +7263,9 @@
   </data>
   <data name="Tool.Text" xml:space="preserve">
     <value>toolStrip1</value>
+  </data>
+  <data name="&gt;&gt;Menu_Edit_Time.Name" xml:space="preserve">
+    <value>Menu_Edit_Time</value>
   </data>
   <data name="&gt;&gt;toolStripMenuItem1.Name" xml:space="preserve">
     <value>toolStripMenuItem1</value>
@@ -7213,8 +7300,8 @@
   <data name="Menu_File_Save.Text" xml:space="preserve">
     <value>Save</value>
   </data>
-  <data name="&gt;&gt;Tool_Save.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripSplitButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;goGoTimeToolStripMenuItem.Name" xml:space="preserve">
+    <value>goGoTimeToolStripMenuItem</value>
   </data>
   <data name="&gt;&gt;Menu_Edit_NotesOperation_ToKa.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
