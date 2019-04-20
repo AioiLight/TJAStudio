@@ -693,6 +693,24 @@ namespace TJAStudio
             dialog.ShowDialog(this);
             dialog.Dispose();
         }
+        private void RemoveCommandToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var selectedText = Program.WindowManager.Editors[CurrentCourseID].TextEditor.GetSelectedText();
+            var result = "";
+            // 改行で分割
+            foreach (var item in selectedText.Split(new string[] { Environment.NewLine }, StringSplitOptions.None))
+            {
+                if (!item.Trim().StartsWith("#"))
+                {
+                    // 命令行ではない場合のみ処理する。
+                    // カンマで終わる場合改行し、カンマでない場合は改行せずに続ける。
+                    result += item.Trim().EndsWith(",") ? item + Environment.NewLine : item;
+                }
+            }
+            TextInsert(result);
+        }
+
+
         private Courses Courses = new Courses();
         private Project Project = new Project();
         public  HeadersWindow HeaderWindow = new HeadersWindow(false);
@@ -702,6 +720,5 @@ namespace TJAStudio
         public static int CurrentCourseID { get; set; }
         public bool IsEdited { get; set; }
         public string FileName { get; set; }
-
     }
 }
