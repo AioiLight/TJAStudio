@@ -77,12 +77,12 @@
             this.Menu_Window_Projects = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem8 = new System.Windows.Forms.ToolStripSeparator();
             this.Menu_Window_FormatCheker = new System.Windows.Forms.ToolStripMenuItem();
-            this.commandToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.sTARTENDToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.goGoTimeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.scrollChangeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.bPMChangeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.measureChangeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.Menu_Command = new System.Windows.Forms.ToolStripMenuItem();
+            this.Menu_Command_StartEnd = new System.Windows.Forms.ToolStripMenuItem();
+            this.Menu_Command_GoGoTime = new System.Windows.Forms.ToolStripMenuItem();
+            this.Menu_Command_Scroll = new System.Windows.Forms.ToolStripMenuItem();
+            this.Menu_Command_BPM = new System.Windows.Forms.ToolStripMenuItem();
+            this.Menu_Command_Measure = new System.Windows.Forms.ToolStripMenuItem();
             this.Menu_Execution = new System.Windows.Forms.ToolStripMenuItem();
             this.Menu_Execution_Start = new System.Windows.Forms.ToolStripMenuItem();
             this.Menu_Execution_LiveUpdate = new System.Windows.Forms.ToolStripMenuItem();
@@ -126,7 +126,7 @@
             this.Menu_Version,
             this.Menu_Tool,
             this.Menu_Window,
-            this.commandToolStripMenuItem,
+            this.Menu_Command,
             this.Menu_Execution});
             this.Menu.Name = "Menu";
             // 
@@ -458,42 +458,42 @@
             this.Menu_Window_FormatCheker.Name = "Menu_Window_FormatCheker";
             this.Menu_Window_FormatCheker.Click += new System.EventHandler(this.Menu_Window_FormatCheker_Click);
             // 
-            // commandToolStripMenuItem
+            // Menu_Command
             // 
-            resources.ApplyResources(this.commandToolStripMenuItem, "commandToolStripMenuItem");
-            this.commandToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.sTARTENDToolStripMenuItem,
-            this.goGoTimeToolStripMenuItem,
-            this.scrollChangeToolStripMenuItem,
-            this.bPMChangeToolStripMenuItem,
-            this.measureChangeToolStripMenuItem});
-            this.commandToolStripMenuItem.Image = global::TJAStudio.Properties.Resources.GoGoTime;
-            this.commandToolStripMenuItem.Name = "commandToolStripMenuItem";
+            resources.ApplyResources(this.Menu_Command, "Menu_Command");
+            this.Menu_Command.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.Menu_Command_StartEnd,
+            this.Menu_Command_GoGoTime,
+            this.Menu_Command_Scroll,
+            this.Menu_Command_BPM,
+            this.Menu_Command_Measure});
+            this.Menu_Command.Image = global::TJAStudio.Properties.Resources.GoGoTime;
+            this.Menu_Command.Name = "Menu_Command";
             // 
-            // sTARTENDToolStripMenuItem
+            // Menu_Command_StartEnd
             // 
-            resources.ApplyResources(this.sTARTENDToolStripMenuItem, "sTARTENDToolStripMenuItem");
-            this.sTARTENDToolStripMenuItem.Name = "sTARTENDToolStripMenuItem";
+            resources.ApplyResources(this.Menu_Command_StartEnd, "Menu_Command_StartEnd");
+            this.Menu_Command_StartEnd.Name = "Menu_Command_StartEnd";
             // 
-            // goGoTimeToolStripMenuItem
+            // Menu_Command_GoGoTime
             // 
-            resources.ApplyResources(this.goGoTimeToolStripMenuItem, "goGoTimeToolStripMenuItem");
-            this.goGoTimeToolStripMenuItem.Name = "goGoTimeToolStripMenuItem";
+            resources.ApplyResources(this.Menu_Command_GoGoTime, "Menu_Command_GoGoTime");
+            this.Menu_Command_GoGoTime.Name = "Menu_Command_GoGoTime";
             // 
-            // scrollChangeToolStripMenuItem
+            // Menu_Command_Scroll
             // 
-            resources.ApplyResources(this.scrollChangeToolStripMenuItem, "scrollChangeToolStripMenuItem");
-            this.scrollChangeToolStripMenuItem.Name = "scrollChangeToolStripMenuItem";
+            resources.ApplyResources(this.Menu_Command_Scroll, "Menu_Command_Scroll");
+            this.Menu_Command_Scroll.Name = "Menu_Command_Scroll";
             // 
-            // bPMChangeToolStripMenuItem
+            // Menu_Command_BPM
             // 
-            resources.ApplyResources(this.bPMChangeToolStripMenuItem, "bPMChangeToolStripMenuItem");
-            this.bPMChangeToolStripMenuItem.Name = "bPMChangeToolStripMenuItem";
+            resources.ApplyResources(this.Menu_Command_BPM, "Menu_Command_BPM");
+            this.Menu_Command_BPM.Name = "Menu_Command_BPM";
             // 
-            // measureChangeToolStripMenuItem
+            // Menu_Command_Measure
             // 
-            resources.ApplyResources(this.measureChangeToolStripMenuItem, "measureChangeToolStripMenuItem");
-            this.measureChangeToolStripMenuItem.Name = "measureChangeToolStripMenuItem";
+            resources.ApplyResources(this.Menu_Command_Measure, "Menu_Command_Measure");
+            this.Menu_Command_Measure.Name = "Menu_Command_Measure";
             // 
             // Menu_Execution
             // 
@@ -760,12 +760,12 @@
         private System.Windows.Forms.ToolStripMenuItem Menu_Tool_DanBuilder;
         private System.Windows.Forms.ToolStripSeparator toolStripMenuItem9;
         private System.Windows.Forms.ToolStripMenuItem Menu_Edit_NotesOperation_Command;
-        private System.Windows.Forms.ToolStripMenuItem commandToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem sTARTENDToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem goGoTimeToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem scrollChangeToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem bPMChangeToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem measureChangeToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem Menu_Command;
+        private System.Windows.Forms.ToolStripMenuItem Menu_Command_StartEnd;
+        private System.Windows.Forms.ToolStripMenuItem Menu_Command_GoGoTime;
+        private System.Windows.Forms.ToolStripMenuItem Menu_Command_Scroll;
+        private System.Windows.Forms.ToolStripMenuItem Menu_Command_BPM;
+        private System.Windows.Forms.ToolStripMenuItem Menu_Command_Measure;
     }
 }
 

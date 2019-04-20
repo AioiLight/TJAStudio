@@ -277,6 +277,9 @@
   <data name="Menu_Tool_Settings.Size" type="System.Drawing.Size, System.Drawing">
     <value>208, 24</value>
   </data>
+  <data name="Menu_Tool_Settings.Text" xml:space="preserve">
+    <value>設定...</value>
+  </data>
   <data name="Menu_Tool_About.Size" type="System.Drawing.Size, System.Drawing">
     <value>208, 24</value>
   </data>
@@ -327,42 +330,6 @@
   </data>
   <data name="Menu_Window.Text" xml:space="preserve">
     <value>ウィンドウ(&amp;W)</value>
-  </data>
-  <data name="sTARTENDToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>232, 24</value>
-  </data>
-  <data name="sTARTENDToolStripMenuItem.Text" xml:space="preserve">
-    <value>#START ～ #END</value>
-  </data>
-  <data name="goGoTimeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>232, 24</value>
-  </data>
-  <data name="goGoTimeToolStripMenuItem.Text" xml:space="preserve">
-    <value>ゴーゴータイム...</value>
-  </data>
-  <data name="scrollChangeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>232, 24</value>
-  </data>
-  <data name="scrollChangeToolStripMenuItem.Text" xml:space="preserve">
-    <value>スクロール変化...</value>
-  </data>
-  <data name="bPMChangeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>232, 24</value>
-  </data>
-  <data name="bPMChangeToolStripMenuItem.Text" xml:space="preserve">
-    <value>BPM 変化...</value>
-  </data>
-  <data name="measureChangeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>232, 24</value>
-  </data>
-  <data name="measureChangeToolStripMenuItem.Text" xml:space="preserve">
-    <value>拍子変化...</value>
-  </data>
-  <data name="commandToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>84, 24</value>
-  </data>
-  <data name="commandToolStripMenuItem.Text" xml:space="preserve">
-    <value>命令(&amp;C)</value>
   </data>
   <data name="Menu_Execution_Start.Size" type="System.Drawing.Size, System.Drawing">
     <value>232, 24</value>
