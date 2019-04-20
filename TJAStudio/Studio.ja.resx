@@ -118,6 +118,69 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="Menu_File.Size" type="System.Drawing.Size, System.Drawing">
+    <value>112, 24</value>
+  </data>
+  <data name="Menu_File.Text" xml:space="preserve">
+    <value>ファイル (&amp;F)</value>
+  </data>
+  <data name="Menu_Edit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>87, 24</value>
+  </data>
+  <data name="Menu_Edit.Text" xml:space="preserve">
+    <value>編集 (&amp;E)</value>
+  </data>
+  <data name="Menu_Tool.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 24</value>
+  </data>
+  <data name="Menu_Tool.Text" xml:space="preserve">
+    <value>ツール (&amp;T)</value>
+  </data>
+  <data name="Menu_Window.Size" type="System.Drawing.Size, System.Drawing">
+    <value>127, 24</value>
+  </data>
+  <data name="Menu_Window.Text" xml:space="preserve">
+    <value>ウィンドウ(&amp;W)</value>
+  </data>
+  <data name="Menu_Command_StartEnd.Text" xml:space="preserve">
+    <value>#START ～ #END</value>
+  </data>
+  <data name="Menu_Command_GoGoTime.Size" type="System.Drawing.Size, System.Drawing">
+    <value>232, 24</value>
+  </data>
+  <data name="Menu_Command_GoGoTime.Text" xml:space="preserve">
+    <value>ゴーゴータイム...</value>
+  </data>
+  <data name="Menu_Command_Scroll.Size" type="System.Drawing.Size, System.Drawing">
+    <value>232, 24</value>
+  </data>
+  <data name="Menu_Command_Scroll.Text" xml:space="preserve">
+    <value>スクロール変化...</value>
+  </data>
+  <data name="Menu_Command_BPM.Size" type="System.Drawing.Size, System.Drawing">
+    <value>232, 24</value>
+  </data>
+  <data name="Menu_Command_BPM.Text" xml:space="preserve">
+    <value>BPM変化...</value>
+  </data>
+  <data name="Menu_Command_Measure.Size" type="System.Drawing.Size, System.Drawing">
+    <value>232, 24</value>
+  </data>
+  <data name="Menu_Command_Measure.Text" xml:space="preserve">
+    <value>拍子変化...</value>
+  </data>
+  <data name="Menu_Command.Size" type="System.Drawing.Size, System.Drawing">
+    <value>84, 24</value>
+  </data>
+  <data name="Menu_Command.Text" xml:space="preserve">
+    <value>命令(&amp;C)</value>
+  </data>
+  <data name="Menu_Execution.Size" type="System.Drawing.Size, System.Drawing">
+    <value>87, 24</value>
+  </data>
+  <data name="Menu_Execution.Text" xml:space="preserve">
+    <value>実行 (&amp;E)</value>
+  </data>
   <data name="Menu_File_New.Size" type="System.Drawing.Size, System.Drawing">
     <value>375, 24</value>
   </data>
@@ -168,12 +231,6 @@
   </data>
   <data name="Menu_File_Exit.Text" xml:space="preserve">
     <value>終了</value>
-  </data>
-  <data name="Menu_File.Size" type="System.Drawing.Size, System.Drawing">
-    <value>112, 24</value>
-  </data>
-  <data name="Menu_File.Text" xml:space="preserve">
-    <value>ファイル (&amp;F)</value>
   </data>
   <data name="Menu_Edit_Undo.Size" type="System.Drawing.Size, System.Drawing">
     <value>195, 24</value>
@@ -241,6 +298,12 @@
   <data name="Menu_Edit_Repert.Text" xml:space="preserve">
     <value>リピート</value>
   </data>
+  <data name="Menu_Edit_NotesOperation.Size" type="System.Drawing.Size, System.Drawing">
+    <value>195, 24</value>
+  </data>
+  <data name="Menu_Edit_NotesOperation.Text" xml:space="preserve">
+    <value>ノーツ操作</value>
+  </data>
   <data name="Menu_Edit_NotesOperation_ToDon.Text" xml:space="preserve">
     <value>全てをドンに</value>
   </data>
@@ -252,18 +315,6 @@
   </data>
   <data name="Menu_Edit_NotesOperation_Detarame.Text" xml:space="preserve">
     <value>でたらめ</value>
-  </data>
-  <data name="Menu_Edit_NotesOperation.Size" type="System.Drawing.Size, System.Drawing">
-    <value>195, 24</value>
-  </data>
-  <data name="Menu_Edit_NotesOperation.Text" xml:space="preserve">
-    <value>ノーツ操作</value>
-  </data>
-  <data name="Menu_Edit.Size" type="System.Drawing.Size, System.Drawing">
-    <value>87, 24</value>
-  </data>
-  <data name="Menu_Edit.Text" xml:space="preserve">
-    <value>編集 (&amp;E)</value>
   </data>
   <data name="Menu_Tool_DanBuilder.Size" type="System.Drawing.Size, System.Drawing">
     <value>208, 24</value>
@@ -285,12 +336,6 @@
   </data>
   <data name="Menu_Tool_About.Text" xml:space="preserve">
     <value>TJAStudioについて...</value>
-  </data>
-  <data name="Menu_Tool.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 24</value>
-  </data>
-  <data name="Menu_Tool.Text" xml:space="preserve">
-    <value>ツール (&amp;T)</value>
   </data>
   <data name="Menu_Window_Courses.Size" type="System.Drawing.Size, System.Drawing">
     <value>221, 24</value>
@@ -325,12 +370,6 @@
   <data name="Menu_Window_FormatCheker.Text" xml:space="preserve">
     <value>フォーマットチェッカー</value>
   </data>
-  <data name="Menu_Window.Size" type="System.Drawing.Size, System.Drawing">
-    <value>127, 24</value>
-  </data>
-  <data name="Menu_Window.Text" xml:space="preserve">
-    <value>ウィンドウ(&amp;W)</value>
-  </data>
   <data name="Menu_Execution_Start.Size" type="System.Drawing.Size, System.Drawing">
     <value>232, 24</value>
   </data>
@@ -343,29 +382,23 @@
   <data name="Menu_Execution_LiveUpdate.Text" xml:space="preserve">
     <value>ライブ アップデート</value>
   </data>
-  <data name="Menu_Execution.Size" type="System.Drawing.Size, System.Drawing">
-    <value>87, 24</value>
-  </data>
-  <data name="Menu_Execution.Text" xml:space="preserve">
-    <value>実行 (&amp;E)</value>
-  </data>
   <data name="Tool_Open.Size" type="System.Drawing.Size, System.Drawing">
     <value>146, 24</value>
   </data>
   <data name="Tool_Open.Text" xml:space="preserve">
     <value>プロジェクトを開く</value>
   </data>
-  <data name="Tool_SaveAs.Size" type="System.Drawing.Size, System.Drawing">
-    <value>273, 24</value>
-  </data>
-  <data name="Tool_SaveAs.Text" xml:space="preserve">
-    <value>プロジェクトを名前をつけて保存</value>
-  </data>
   <data name="Tool_Save.Size" type="System.Drawing.Size, System.Drawing">
     <value>158, 24</value>
   </data>
   <data name="Tool_Save.Text" xml:space="preserve">
     <value>プロジェクトを保存</value>
+  </data>
+  <data name="Tool_SaveAs.Size" type="System.Drawing.Size, System.Drawing">
+    <value>273, 24</value>
+  </data>
+  <data name="Tool_SaveAs.Text" xml:space="preserve">
+    <value>プロジェクトを名前をつけて保存</value>
   </data>
   <data name="Tool_Undo.Size" type="System.Drawing.Size, System.Drawing">
     <value>81, 24</value>

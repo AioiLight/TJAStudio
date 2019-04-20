@@ -469,6 +469,7 @@
             this.Menu_Command_Measure});
             this.Menu_Command.Image = global::TJAStudio.Properties.Resources.GoGoTime;
             this.Menu_Command.Name = "Menu_Command";
+            this.Menu_Command.Click += new System.EventHandler(this.Menu_Command_Click);
             // 
             // Menu_Command_StartEnd
             // 

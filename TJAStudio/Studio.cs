@@ -720,5 +720,10 @@ namespace TJAStudio
         public static int CurrentCourseID { get; set; }
         public bool IsEdited { get; set; }
         public string FileName { get; set; }
+
+        private void Menu_Command_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
