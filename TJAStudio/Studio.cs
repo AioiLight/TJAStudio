@@ -774,7 +774,7 @@ namespace TJAStudio
 
             if (dialog.ShowDialog() == DialogResult.OK)
             {
-                // すくろーるちぇんじ!!!
+                // ちぇんじ!!!
                 if (Program.WindowManager.Editors[CurrentCourseID].TextEditor.GetSelectedText().Length > 0)
                 {
                     // 選択状態
@@ -785,7 +785,7 @@ namespace TJAStudio
                     }
                     text += "#SCROLL " + dialog.Num_Amount.Value + Environment.NewLine
                         + Program.WindowManager.Editors[CurrentCourseID].TextEditor.GetSelectedText()
-                        + Environment.NewLine + "#SCROLL " + beforeScroll.ToString("F3");
+                        + Environment.NewLine + "#SCROLL " + beforeScroll.ToString();
                     if(isExistAfter)
                     {
                         text += Environment.NewLine;
@@ -811,11 +811,113 @@ namespace TJAStudio
 
         private void Menu_Command_BPM_Click(object sender, EventArgs e)
         {
+            var nearstHeader = GetHeaderFromHeader("BPM:");
+            var beforeBPM = 120.0;
+            var beforeBPMFound = false;
+            if (nearstHeader != null)
+            {
+                double.TryParse(nearstHeader.Substring("BPM:".Length), out beforeBPM);
+                beforeBPMFound = true;
+            }
 
+            var nearstBPM = GetCommandFromEditor("#BPMCHANGE");
+            var isExistBefore = IsExistCharBeforeCaret();
+            var isExistAfter = IsExistCharAfterCaret();
+            if (nearstBPM != null)
+            {
+                double.TryParse(nearstBPM.Substring("#BPMCHANGE".Length), out beforeBPM);
+                beforeBPMFound = true;
+            }
+            var dialog = beforeBPMFound ? new Windows.BPMChanger(beforeBPM) : new Windows.BPMChanger();
+
+            if (dialog.ShowDialog() == DialogResult.OK)
+            {
+                // ちぇんじ!!!
+                if (Program.WindowManager.Editors[CurrentCourseID].TextEditor.GetSelectedText().Length > 0)
+                {
+                    // 選択状態
+                    var text = "";
+                    if (isExistBefore)
+                    {
+                        text += Environment.NewLine;
+                    }
+                    text += "#BPMCHANGE " + dialog.Num_Amount.Value + Environment.NewLine
+                        + Program.WindowManager.Editors[CurrentCourseID].TextEditor.GetSelectedText()
+                        + Environment.NewLine + "#BPMCHANGE " + beforeBPM.ToString();
+                    if (isExistAfter)
+                    {
+                        text += Environment.NewLine;
+                    }
+                    TextInsert(text);
+                }
+                else
+                {
+                    var text = "";
+                    if (isExistBefore)
+                    {
+                        text += Environment.NewLine;
+                    }
+                    text += "#BPMCHANGE " + dialog.Num_Amount.Value;
+                    if (isExistAfter)
+                    {
+                        text += Environment.NewLine;
+                    }
+                    TextInsert(text);
+                }
+            }
         }
 
         private void Menu_Command_Measure_Click(object sender, EventArgs e)
         {
+            var nearstMeasure = GetCommandFromEditor("#MEASURE");
+            var beforeMeasureFound = false;
+            var beforeMeasureChild = 4.0;
+            var beforeMeasureMother = 4.0;
+            var isExistBefore = IsExistCharBeforeCaret();
+            var isExistAfter = IsExistCharAfterCaret();
+            if (nearstMeasure != null)
+            {
+                double.TryParse(nearstMeasure.Substring("#MEASURE".Length).Split('/')[0], out beforeMeasureChild);
+                double.TryParse(nearstMeasure.Substring("#MEASURE".Length).Split('/')[1], out beforeMeasureMother);
+                beforeMeasureFound = true;
+            }
+            var dialog = beforeMeasureFound ? new Windows.MeasureChanger(beforeMeasureChild, beforeMeasureMother) : new Windows.MeasureChanger();
+
+            if (dialog.ShowDialog() == DialogResult.OK)
+            {
+                // ちぇんじ!!!
+                if (Program.WindowManager.Editors[CurrentCourseID].TextEditor.GetSelectedText().Length > 0)
+                {
+                    // 選択状態
+                    var text = "";
+                    if (isExistBefore)
+                    {
+                        text += Environment.NewLine;
+                    }
+                    text += "#MEASURE " + dialog.Num_Child.Value + "/" + dialog.Num_Mother.Value + Environment.NewLine
+                        + Program.WindowManager.Editors[CurrentCourseID].TextEditor.GetSelectedText()
+                        + Environment.NewLine + "#MEASURE " + beforeMeasureChild + "/" + beforeMeasureMother;
+                    if (isExistAfter)
+                    {
+                        text += Environment.NewLine;
+                    }
+                    TextInsert(text);
+                }
+                else
+                {
+                    var text = "";
+                    if (isExistBefore)
+                    {
+                        text += Environment.NewLine;
+                    }
+                    text += "#MEASURE " + dialog.Num_Child.Value + "/" + dialog.Num_Mother.Value;
+                    if (isExistAfter)
+                    {
+                        text += Environment.NewLine;
+                    }
+                    TextInsert(text);
+                }
+            }
 
         }
 

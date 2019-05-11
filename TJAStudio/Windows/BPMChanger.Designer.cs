@@ -1,6 +1,6 @@
 ﻿namespace TJAStudio.Windows
 {
-    partial class ScrollChanger
+    partial class BPMChanger
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ScrollChanger));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BPMChanger));
             this.Label_Amount = new System.Windows.Forms.Label();
             this.Num_Amount = new System.Windows.Forms.NumericUpDown();
             this.Button_Cancel = new System.Windows.Forms.Button();
@@ -52,7 +52,7 @@
             0});
             this.Num_Amount.Name = "Num_Amount";
             this.Num_Amount.Value = new decimal(new int[] {
-            1,
+            120,
             0,
             0,
             0});
@@ -73,7 +73,7 @@
             this.Button_Insert.UseVisualStyleBackColor = true;
             this.Button_Insert.Click += new System.EventHandler(this.Button_Insert_Click);
             // 
-            // ScrollChanger
+            // BPMChanger
             // 
             this.AcceptButton = this.Button_Insert;
             resources.ApplyResources(this, "$this");
@@ -86,7 +86,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "ScrollChanger";
+            this.Name = "BPMChanger";
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
             ((System.ComponentModel.ISupportInitialize)(this.Num_Amount)).EndInit();

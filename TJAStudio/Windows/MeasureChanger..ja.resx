@@ -117,133 +117,20 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Label_Amount.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="Label_Amount.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 14</value>
-  </data>
   <data name="Label_Amount.Size" type="System.Drawing.Size, System.Drawing">
-    <value>127, 24</value>
-  </data>
-  <data name="Label_Amount.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
+    <value>59, 24</value>
   </data>
   <data name="Label_Amount.Text" xml:space="preserve">
-    <value>Scroll Amount:</value>
-  </data>
-  <data name="&gt;&gt;Label_Amount.Name" xml:space="preserve">
-    <value>Label_Amount</value>
-  </data>
-  <data name="&gt;&gt;Label_Amount.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Label_Amount.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;Label_Amount.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="Num_Amount.Location" type="System.Drawing.Point, System.Drawing">
-    <value>145, 12</value>
-  </data>
-  <data name="Num_Amount.Size" type="System.Drawing.Size, System.Drawing">
-    <value>147, 31</value>
-  </data>
-  <data name="Num_Amount.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Num_Amount.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
-    <value>Right</value>
-  </data>
-  <data name="&gt;&gt;Num_Amount.Name" xml:space="preserve">
-    <value>Num_Amount</value>
-  </data>
-  <data name="&gt;&gt;Num_Amount.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Num_Amount.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;Num_Amount.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="Button_Cancel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>172, 99</value>
-  </data>
-  <data name="Button_Cancel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>120, 30</value>
-  </data>
-  <data name="Button_Cancel.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
+    <value>n拍子:</value>
   </data>
   <data name="Button_Cancel.Text" xml:space="preserve">
-    <value>Cancel</value>
-  </data>
-  <data name="&gt;&gt;Button_Cancel.Name" xml:space="preserve">
-    <value>Button_Cancel</value>
-  </data>
-  <data name="&gt;&gt;Button_Cancel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Button_Cancel.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;Button_Cancel.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="Button_Insert.Location" type="System.Drawing.Point, System.Drawing">
-    <value>46, 99</value>
-  </data>
-  <data name="Button_Insert.Size" type="System.Drawing.Size, System.Drawing">
-    <value>120, 30</value>
-  </data>
-  <data name="Button_Insert.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
+    <value>キャンセル</value>
   </data>
   <data name="Button_Insert.Text" xml:space="preserve">
-    <value>Insert</value>
-  </data>
-  <data name="&gt;&gt;Button_Insert.Name" xml:space="preserve">
-    <value>Button_Insert</value>
-  </data>
-  <data name="&gt;&gt;Button_Insert.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Button_Insert.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;Button_Insert.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>10, 24</value>
-  </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>304, 141</value>
-  </data>
-  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
-    <value>メイリオ, 12pt</value>
-  </data>
-  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 6, 4, 6</value>
-  </data>
-  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
-    <value>CenterParent</value>
+    <value>挿入</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>Change Scroll</value>
-  </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>ScrollChanger</value>
-  </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>拍子変化</value>
   </data>
 </root>

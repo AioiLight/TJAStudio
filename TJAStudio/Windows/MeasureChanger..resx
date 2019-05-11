@@ -126,13 +126,13 @@
     <value>12, 14</value>
   </data>
   <data name="Label_Amount.Size" type="System.Drawing.Size, System.Drawing">
-    <value>127, 24</value>
+    <value>82, 24</value>
   </data>
   <data name="Label_Amount.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
   <data name="Label_Amount.Text" xml:space="preserve">
-    <value>Scroll Amount:</value>
+    <value>Measure:</value>
   </data>
   <data name="&gt;&gt;Label_Amount.Name" xml:space="preserve">
     <value>Label_Amount</value>
@@ -144,35 +144,35 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;Label_Amount.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>5</value>
   </data>
-  <data name="Num_Amount.Location" type="System.Drawing.Point, System.Drawing">
-    <value>145, 12</value>
+  <data name="Num_Child.Location" type="System.Drawing.Point, System.Drawing">
+    <value>100, 12</value>
   </data>
-  <data name="Num_Amount.Size" type="System.Drawing.Size, System.Drawing">
-    <value>147, 31</value>
+  <data name="Num_Child.Size" type="System.Drawing.Size, System.Drawing">
+    <value>99, 31</value>
   </data>
-  <data name="Num_Amount.TabIndex" type="System.Int32, mscorlib">
+  <data name="Num_Child.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Num_Amount.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
-    <value>Right</value>
+  <data name="Num_Child.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Center</value>
   </data>
-  <data name="&gt;&gt;Num_Amount.Name" xml:space="preserve">
-    <value>Num_Amount</value>
+  <data name="&gt;&gt;Num_Child.Name" xml:space="preserve">
+    <value>Num_Child</value>
   </data>
-  <data name="&gt;&gt;Num_Amount.Type" xml:space="preserve">
+  <data name="&gt;&gt;Num_Child.Type" xml:space="preserve">
     <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;Num_Amount.Parent" xml:space="preserve">
+  <data name="&gt;&gt;Num_Child.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;Num_Amount.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="&gt;&gt;Num_Child.ZOrder" xml:space="preserve">
+    <value>4</value>
   </data>
   <data name="Button_Cancel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>172, 99</value>
+    <value>212, 99</value>
   </data>
   <data name="Button_Cancel.Size" type="System.Drawing.Size, System.Drawing">
     <value>120, 30</value>
@@ -193,10 +193,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;Button_Cancel.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>3</value>
   </data>
   <data name="Button_Insert.Location" type="System.Drawing.Point, System.Drawing">
-    <value>46, 99</value>
+    <value>86, 99</value>
   </data>
   <data name="Button_Insert.Size" type="System.Drawing.Size, System.Drawing">
     <value>120, 30</value>
@@ -217,6 +217,60 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;Button_Insert.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="Num_Mother.Location" type="System.Drawing.Point, System.Drawing">
+    <value>228, 12</value>
+  </data>
+  <data name="Num_Mother.Size" type="System.Drawing.Size, System.Drawing">
+    <value>99, 31</value>
+  </data>
+  <data name="Num_Mother.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="Num_Mother.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="&gt;&gt;Num_Mother.Name" xml:space="preserve">
+    <value>Num_Mother</value>
+  </data>
+  <data name="&gt;&gt;Num_Mother.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Num_Mother.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Num_Mother.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>205, 14</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>17, 24</value>
+  </data>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>/</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
@@ -226,7 +280,7 @@
     <value>10, 24</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>304, 141</value>
+    <value>344, 141</value>
   </data>
   <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
     <value>メイリオ, 12pt</value>
@@ -238,10 +292,10 @@
     <value>CenterParent</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>Change Scroll</value>
+    <value>Change Measure</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>ScrollChanger</value>
+    <value>MeasureChanger</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
     <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
