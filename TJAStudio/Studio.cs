@@ -1,13 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using WeifenLuo.WinFormsUI.Docking;
 
@@ -716,28 +711,48 @@ namespace TJAStudio
 
         private void Menu_Command_StartEnd_Click(object sender, EventArgs e)
         {
-            TextInsert(Program.WindowManager.Editors[CurrentCourseID].TextEditor.GetSelectedText());
-            TextInsert("#START" + Environment.NewLine + "#END");
+            var isExistBefore = IsExistCharBeforeCaret();
+            var isExistAfter = IsExistCharAfterCaret();
+            if (Program.WindowManager.Editors[CurrentCourseID].TextEditor.GetSelectedText().Length > 0)
+            {
+                // 選択状態
+                var text = "";
+                if (isExistBefore)
+                {
+                    text += Environment.NewLine;
+                }
+                text += "#START" + Environment.NewLine
+                    + Program.WindowManager.Editors[CurrentCourseID].TextEditor.GetSelectedText()
+                    + Environment.NewLine + "#END";
+                if (isExistAfter)
+                {
+                    text += Environment.NewLine;
+                }
+                TextInsert(text);
+            }
+            else
+            {
+                var text = "";
+                if (isExistBefore)
+                {
+                    text += Environment.NewLine;
+                }
+                text += "#START" + Environment.NewLine + "#END";
+                if (isExistAfter)
+                {
+                    text += Environment.NewLine;
+                }
+                TextInsert(text);
+            }
         }
-
-
-        private Courses Courses = new Courses();
-        private Project Project = new Project();
-        public  HeadersWindow HeaderWindow = new HeadersWindow(false);
-        private HeadersWindow CommonHeaderWindow = new HeadersWindow(true, Properties.Common.CommonHeader);
-        private FormatChecker FormatChecker { get; set; }
-        public static Studio TJAStudio { get; set; }
-        public static int CurrentCourseID { get; set; }
-        public bool IsEdited { get; set; }
-        public string FileName { get; set; }
 
         private void Menu_Command_GoGoTime_Click(object sender, EventArgs e)
         {
+            var isExistBefore = IsExistCharBeforeCaret();
+            var isExistAfter = IsExistCharAfterCaret();
             if (Program.WindowManager.Editors[CurrentCourseID].TextEditor.GetSelectedText().Length > 0 )
             {
                 // 選択状態
-                var isExistBefore = IsExistCharBeforeCaret();
-                var isExistAfter = IsExistCharAfterCaret();
                 var text = "";
                 if (isExistBefore)
                 {
@@ -754,7 +769,17 @@ namespace TJAStudio
             }
             else
             {
-                TextInsert("#GOGOSTART" + Environment.NewLine + "#GOGOEND");
+                var text = "";
+                if (isExistBefore)
+                {
+                    text += Environment.NewLine;
+                }
+                text += "#GOGOSTART" + Environment.NewLine + "#GOGOEND";
+                if (isExistAfter)
+                {
+                    text += Environment.NewLine;
+                }
+                TextInsert(text);
             }
         }
 
@@ -970,11 +995,6 @@ namespace TJAStudio
             {
                 return false;
             }
-            if (caret == Program.WindowManager.Editors[CurrentCourseID].TextEditor.TextLength)
-            {
-                return false;
-            }
-
             var beforChar = Program.WindowManager.Editors[CurrentCourseID].TextEditor.GetTextInRange(caret - 1, caret);
             if (beforChar != Environment.NewLine)
             {
@@ -986,21 +1006,27 @@ namespace TJAStudio
         private bool IsExistCharAfterCaret()
         {
             var caret = Program.WindowManager.Editors[CurrentCourseID].TextEditor.CaretIndex;
-            if (caret == 0)
-            {
-                return false;
-            }
             if (caret == Program.WindowManager.Editors[CurrentCourseID].TextEditor.TextLength)
             {
                 return false;
             }
 
-            var beforChar = Program.WindowManager.Editors[CurrentCourseID].TextEditor.GetTextInRange(caret, caret + 1);
-            if (beforChar != Environment.NewLine)
+            var afterChar = Program.WindowManager.Editors[CurrentCourseID].TextEditor.GetTextInRange(caret, caret + 1);
+            if (afterChar != Environment.NewLine)
             {
                 return true;
             }
             return false;
         }
+
+        private Courses Courses = new Courses();
+        private Project Project = new Project();
+        public  HeadersWindow HeaderWindow = new HeadersWindow(false);
+        private HeadersWindow CommonHeaderWindow = new HeadersWindow(true, Properties.Common.CommonHeader);
+        private FormatChecker FormatChecker { get; set; }
+        public static Studio TJAStudio { get; set; }
+        public static int CurrentCourseID { get; set; }
+        public bool IsEdited { get; set; }
+        public string FileName { get; set; }
     }
 }
