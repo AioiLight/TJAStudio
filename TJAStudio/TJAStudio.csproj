@@ -311,6 +311,9 @@
     <EmbeddedResource Include="Windows\Project.resx">
       <DependentUpon>Project.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Windows\ScrollChanger.ja.resx">
+      <DependentUpon>ScrollChanger.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Windows\ScrollChanger.resx">
       <DependentUpon>ScrollChanger.cs</DependentUpon>
     </EmbeddedResource>
