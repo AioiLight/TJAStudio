@@ -202,6 +202,12 @@
     <Compile Include="Windows\Project.Designer.cs">
       <DependentUpon>Project.cs</DependentUpon>
     </Compile>
+    <Compile Include="Windows\ScrollChanger.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\ScrollChanger.Designer.cs">
+      <DependentUpon>ScrollChanger.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="DanMarge\CourseSelect.ja.resx">
       <DependentUpon>CourseSelect.cs</DependentUpon>
     </EmbeddedResource>
@@ -304,6 +310,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Windows\Project.resx">
       <DependentUpon>Project.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\ScrollChanger.resx">
+      <DependentUpon>ScrollChanger.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

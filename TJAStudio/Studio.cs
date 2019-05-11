@@ -709,6 +709,16 @@ namespace TJAStudio
             }
             TextInsert(result);
         }
+        private void Menu_Command_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void Menu_Command_StartEnd_Click(object sender, EventArgs e)
+        {
+            TextInsert(Program.WindowManager.Editors[CurrentCourseID].TextEditor.GetSelectedText());
+            TextInsert("#START" + Environment.NewLine + "#END");
+        }
 
 
         private Courses Courses = new Courses();
@@ -721,9 +731,174 @@ namespace TJAStudio
         public bool IsEdited { get; set; }
         public string FileName { get; set; }
 
-        private void Menu_Command_Click(object sender, EventArgs e)
+        private void Menu_Command_GoGoTime_Click(object sender, EventArgs e)
+        {
+            if (Program.WindowManager.Editors[CurrentCourseID].TextEditor.GetSelectedText().Length > 0 )
+            {
+                // 選択状態
+                var isExistBefore = IsExistCharBeforeCaret();
+                var isExistAfter = IsExistCharAfterCaret();
+                var text = "";
+                if (isExistBefore)
+                {
+                    text += Environment.NewLine;
+                }
+                text += "#GOGOSTART" + Environment.NewLine
+                    + Program.WindowManager.Editors[CurrentCourseID].TextEditor.GetSelectedText()
+                    + Environment.NewLine + "#GOGOEND";
+                if (isExistAfter)
+                {
+                    text += Environment.NewLine;
+                }
+                TextInsert(text);
+            }
+            else
+            {
+                TextInsert("#GOGOSTART" + Environment.NewLine + "#GOGOEND");
+            }
+        }
+
+        private void Menu_Command_Scroll_Click(object sender, EventArgs e)
+        {
+            var nearstScroll = GetCommandFromEditor("#SCROLL");
+            var beforeScrollFound = false;
+            var beforeScroll = 1.0;
+            var isExistBefore = IsExistCharBeforeCaret();
+            var isExistAfter = IsExistCharAfterCaret();
+            if (nearstScroll != null)
+            {
+                double.TryParse(nearstScroll.Substring("#SCROLL".Length), out beforeScroll);
+                beforeScrollFound = true;
+            }
+            var dialog = beforeScrollFound ? new Windows.ScrollChanger(beforeScroll) : new Windows.ScrollChanger();
+
+            if (dialog.ShowDialog() == DialogResult.OK)
+            {
+                // すくろーるちぇんじ!!!
+                if (Program.WindowManager.Editors[CurrentCourseID].TextEditor.GetSelectedText().Length > 0)
+                {
+                    // 選択状態
+                    var text = "";
+                    if (isExistBefore)
+                    {
+                        text += Environment.NewLine;
+                    }
+                    text += "#SCROLL " + dialog.Num_Amount.Value + Environment.NewLine
+                        + Program.WindowManager.Editors[CurrentCourseID].TextEditor.GetSelectedText()
+                        + Environment.NewLine + "#SCROLL " + beforeScroll.ToString("F3");
+                    if(isExistAfter)
+                    {
+                        text += Environment.NewLine;
+                    }
+                    TextInsert(text);
+                }
+                else
+                {
+                    var text = "";
+                    if (isExistBefore)
+                    {
+                        text += Environment.NewLine;
+                    }
+                    text += "#SCROLL " + dialog.Num_Amount.Value;
+                    if (isExistAfter)
+                    {
+                        text += Environment.NewLine;
+                    }
+                    TextInsert(text);
+                }
+            }
+        }
+
+        private void Menu_Command_BPM_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void Menu_Command_Measure_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        /// <summary>
+        /// 現在位置より前にある、かつ一番近い#命令を返します。
+        /// </summary>
+        /// <param name="command">#命令名。</param>
+        /// <returns>結果。ヒットしなかった場合、nullが返される。</returns>
+        private string GetCommandFromEditor(string command)
+        {
+            var nowCaret = Program.WindowManager.Editors[CurrentCourseID].TextEditor.CaretIndex;
+            var beforText = Program.WindowManager.Editors[CurrentCourseID].TextEditor.GetTextInRange(0, nowCaret);
+            var result = "";
+            foreach (var item in beforText.Split(new string[] { Environment.NewLine }, StringSplitOptions.None))
+            {
+                if (item.StartsWith(command))
+                {
+                    result = item;
+                }
+            }
+            return string.IsNullOrWhiteSpace(result) ? null : result ;
+        }
+
+        /// <summary>
+        /// 共通ヘッダとコースヘッダから、最後に追加されたヘッダーを返します。
+        /// </summary>
+        /// <param name="command">ヘッダー名。</param>
+        /// <returns>結果。ヒットしなかった場合、nullが返される。</returns>
+        private string GetHeaderFromHeader(string command)
+        {
+            var commonHeader = Program.Project.CommonHeader;
+            var courseHeader = Program.Project.Courses[CurrentCourseID].Header;
+            var headers = commonHeader.Concat(courseHeader);
+            var result = "";
+            foreach (var item in headers)
+            {
+                if (item.ToString().StartsWith(command))
+                {
+                    // HEADER:hogehoge
+                    result = item.ToString();
+                }
+            }
+            return string.IsNullOrWhiteSpace(result) ? null : result;
+        }
+
+        private bool IsExistCharBeforeCaret()
+        {
+            var caret = Program.WindowManager.Editors[CurrentCourseID].TextEditor.CaretIndex;
+            if (caret == 0)
+            {
+                return false;
+            }
+            if (caret == Program.WindowManager.Editors[CurrentCourseID].TextEditor.TextLength)
+            {
+                return false;
+            }
+
+            var beforChar = Program.WindowManager.Editors[CurrentCourseID].TextEditor.GetTextInRange(caret - 1, caret);
+            if (beforChar != Environment.NewLine)
+            {
+                return true;
+            }
+            return false;
+        }
+
+        private bool IsExistCharAfterCaret()
+        {
+            var caret = Program.WindowManager.Editors[CurrentCourseID].TextEditor.CaretIndex;
+            if (caret == 0)
+            {
+                return false;
+            }
+            if (caret == Program.WindowManager.Editors[CurrentCourseID].TextEditor.TextLength)
+            {
+                return false;
+            }
+
+            var beforChar = Program.WindowManager.Editors[CurrentCourseID].TextEditor.GetTextInRange(caret, caret + 1);
+            if (beforChar != Environment.NewLine)
+            {
+                return true;
+            }
+            return false;
         }
     }
 }
