@@ -50,15 +50,14 @@ namespace TJAStudio
             HeaderWindow.SetHeaderFromList(Program.Project.Courses[CurrentCourseID].Header);
             CommonHeaderWindow.SetHeaderFromList(Program.Project.CommonHeader);
             Program.Project.Courses[CurrentCourseID].Document.GetCaretIndex(out var line, out var col);
-            Studio.UpdateCaret(line, col);
-            Studio.UpdateMeasures();
-            Studio.UpdateHistory();
+            UpdateCaret(line, col);
+            UpdateMeasures();
+            UpdateHistory();
         }
-
 
         private void Menu_Tool_About_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(String.Format(Properties.SystemMessage.VersionDialog, Properties.Common.Name, Program.Version, Properties.Common.Developer, Properties.Common.Website), Properties.Common.Name, MessageBoxButtons.OK, MessageBoxIcon.Asterisk, MessageBoxDefaultButton.Button1);
+            MessageBox.Show(string.Format(Properties.SystemMessage.VersionDialog, Properties.Common.Name, Program.Version, Properties.Common.Developer, Properties.Common.Website), Properties.Common.Name, MessageBoxButtons.OK, MessageBoxIcon.Asterisk, MessageBoxDefaultButton.Button1);
         }
 
         public void EditorChanged()
@@ -72,11 +71,6 @@ namespace TJAStudio
             Text = Properties.Common.Name;
             Text += " - " + Program.Project.ProjectName;
             if (IsEdited) Text += " *";
-        }
-
-        private void Studio_Load(object sender, EventArgs e)
-        {
-
         }
 
         public void Save()
@@ -116,7 +110,6 @@ namespace TJAStudio
         {
             SaveAs();
         }
-
 
         private void AddCourse(string name)
         {
@@ -367,8 +360,8 @@ namespace TJAStudio
         private void Menu_Edit_NotesOperation_Detarame_Click(object sender, EventArgs e)
         {
             var splitedText = Program.WindowManager.Editors[CurrentCourseID].TextEditor.GetSelectedText().Split('\n');
-            string resultText = "";
-            Random random = new Random();
+            var resultText = "";
+            var random = new Random();
             for (int i = 0; i < splitedText.Length; i++)
             {
                 var index = "";
@@ -409,7 +402,7 @@ namespace TJAStudio
         private void Menu_Edit_Repert_Click(object sender, EventArgs e)
         {
             if (!Program.WindowManager.Editors[CurrentCourseID].TextEditor.Focused) return;
-            string selectedText = Program.WindowManager.Editors[CurrentCourseID].TextEditor.GetSelectedText();
+            var selectedText = Program.WindowManager.Editors[CurrentCourseID].TextEditor.GetSelectedText();
             TextInsert(selectedText + "\n" + selectedText);
         }
 
@@ -524,7 +517,7 @@ namespace TJAStudio
             var dialog = new SaveFileDialog();
             dialog.Title = Properties.SystemMessage.SaveTJA;
             dialog.FileName = Program.Project.ProjectName + Properties.Common.TJAExtensionName;
-            dialog.Filter = String.Format("{0}|*{1}", Properties.Common.TJAExtensionDescription, Properties.Common.TJAExtensionName);
+            dialog.Filter = string.Format("{0}|*{1}", Properties.Common.TJAExtensionDescription, Properties.Common.TJAExtensionName);
             if (dialog.ShowDialog(this) == DialogResult.OK)
             {
                 TJAManager.Build(dialog.FileName, Program.Project, Program.Setting.UTF8Mode ? Encoding.UTF8 : Encoding.GetEncoding("Shift_JIS"));
@@ -545,13 +538,13 @@ namespace TJAStudio
 
         public static void UpdateCaret(int line, int col)
         {
-            TJAStudio.Status_Caret.Text = String.Format(Properties.SystemMessage.NowCaret, ++line, ++col);
+            TJAStudio.Status_Caret.Text = string.Format(Properties.SystemMessage.NowCaret, ++line, ++col);
         }
 
         public static void UpdateMeasures()
         {
-            var measure = Measure.GetMeasure(Program.Project.Courses[Studio.CurrentCourseID].Document);
-            TJAStudio.Status_Measures.Text = String.Format(Properties.SystemMessage.Status_Measure, measure[1] + 1, measure[0] + 1);
+            var measure = Measure.GetMeasure(Program.Project.Courses[CurrentCourseID].Document);
+            TJAStudio.Status_Measures.Text = string.Format(Properties.SystemMessage.Status_Measure, measure[1] + 1, measure[0] + 1);
         }
         private void Studio_Leave(object sender, EventArgs e)
         {
@@ -560,8 +553,8 @@ namespace TJAStudio
 
         public static void UpdateHistory()
         {
-            var checkUndo = Program.Project.Courses[Studio.CurrentCourseID].Document.CanUndo;
-            var checkRedo = Program.Project.Courses[Studio.CurrentCourseID].Document.CanRedo;
+            var checkUndo = Program.Project.Courses[CurrentCourseID].Document.CanUndo;
+            var checkRedo = Program.Project.Courses[CurrentCourseID].Document.CanRedo;
             TJAStudio.Menu_Edit_Undo.Enabled = checkUndo;
             TJAStudio.Tool_Undo.Enabled = checkUndo;
             TJAStudio.Menu_Edit_Redo.Enabled = checkRedo;
@@ -583,7 +576,7 @@ namespace TJAStudio
         {
             if (Menu_Execution_LiveUpdate.Checked && Program.Project != null)
             {
-                Studio.TJAStudio.MakePreview(Program.Project.Courses[Studio.CurrentCourseID]);
+                TJAStudio.MakePreview(Program.Project.Courses[CurrentCourseID]);
             }
         }
 
@@ -591,7 +584,7 @@ namespace TJAStudio
         {
             if (IsEdited)
             {
-                var dialogResult = MessageBox.Show(String.Format(Properties.SystemMessage.ApplicationExit, Program.Project.ProjectName), Properties.Common.Name, MessageBoxButtons.YesNoCancel, MessageBoxIcon.Asterisk, MessageBoxDefaultButton.Button3);
+                var dialogResult = MessageBox.Show(string.Format(Properties.SystemMessage.ApplicationExit, Program.Project.ProjectName), Properties.Common.Name, MessageBoxButtons.YesNoCancel, MessageBoxIcon.Asterisk, MessageBoxDefaultButton.Button3);
                 if (dialogResult == DialogResult.Yes)
                 {
                     Save();
@@ -645,9 +638,9 @@ namespace TJAStudio
         {
             // 入力モードの決定
             var mode = Properties.SystemMessage.Status_Mode;
-            mode = !Control.IsKeyLocked(Keys.Insert)
-                ? String.Format(mode, Properties.SystemMessage.Status_Mode_Insert)
-                : String.Format(mode, Properties.SystemMessage.Status_Mode_Overwrite);
+            mode = !IsKeyLocked(Keys.Insert)
+                ? string.Format(mode, Properties.SystemMessage.Status_Mode_Insert)
+                : string.Format(mode, Properties.SystemMessage.Status_Mode_Overwrite);
             Status_Mode.Text = mode;
         }
 

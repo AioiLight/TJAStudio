@@ -677,7 +677,6 @@
             this.Name = "Studio";
             this.Deactivate += new System.EventHandler(this.Studio_Deactivate);
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Studio_FormClosing);
-            this.Load += new System.EventHandler(this.Studio_Load);
             this.Leave += new System.EventHandler(this.Studio_Leave);
             this.Menu.ResumeLayout(false);
             this.Menu.PerformLayout();
