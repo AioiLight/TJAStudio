@@ -1,6 +1,15 @@
 # TJAStudio
-A .tja file format maker. You'll melt more!
+某バチを跳ねさせて反応させる譜面制作エディタ
 
-TJAStudio 作り直しの作り直しの作り直し版
+作り直しの作り直しの作り直し版
 
-なんかすごそう
+完成品はこちらからダウンロードしてください。 → https://aioilight.space/taiko/tjas/
+
+ソースコードが汚いのでリファクタリングとか機能追加とか新規機能提案をしてくれるコントリビューターを募集しています。
+
+コントリビューターさんは随時ここに載せていきます
+
+# コントリビューター
+
+- AioiLight ([@aioilight](https://twitter.com/aioilight)) - リポジトリ作成者
+- いつも利用してくださっている方
