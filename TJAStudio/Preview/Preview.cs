@@ -145,22 +145,6 @@ namespace TJAStudio.Preview
             }
         }
 
-        private string Chart { get; set; }
-        private Natori.Natori Natori { get; set; }
-        private Counter Counter { get; set; }
-        private bool IsPlaying { get; set; }
-
-        private int Dong { get; set; }
-        private int Ka { get; set; }
-        private int Balloon { get; set; }
-        private int Notes { get; set; }
-        private int Background { get; set; }
-
-
-        private int Wave { get; set; }
-
-        private Timer Timer;
-
         private void Preview_FormClosing(object sender, FormClosingEventArgs e)
         {
             DX.DxLib_End();
@@ -219,6 +203,22 @@ namespace TJAStudio.Preview
             }
 
         }
+        private string Chart { get; set; }
+        private Natori.Natori Natori { get; set; }
+        private Counter Counter { get; set; }
+        private bool IsPlaying { get; set; }
+
+        private int Dong { get; set; }
+        private int Ka { get; set; }
+        private int Balloon { get; set; }
+        private int Notes { get; set; }
+        private int Background { get; set; }
+
+
+        private int Wave { get; set; }
+
+        private Timer Timer;
+
     }
 
     public class Counter

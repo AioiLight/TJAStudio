@@ -1013,17 +1013,6 @@ namespace TJAStudio
             return false;
         }
 
-        private Courses Courses = new Courses();
-        private Project Project = new Project();
-        public  HeadersWindow HeaderWindow = new HeadersWindow(false);
-        public Preview.Preview Preview;
-        private HeadersWindow CommonHeaderWindow = new HeadersWindow(true, Properties.Common.CommonHeader);
-        private FormatChecker FormatChecker { get; set; }
-        public static Studio TJAStudio { get; set; }
-        public static int CurrentCourseID { get; set; }
-        public bool IsEdited { get; set; }
-        public string FileName { get; set; }
-
         private void Menu_Window_Preview_Click(object sender, EventArgs e)
         {
             if (Preview == null || Preview.IsDisposed)
@@ -1047,5 +1036,17 @@ namespace TJAStudio
             var str = TJAManager.Build(null, Program.Project.CommonHeader, course, Encoding.UTF8, false);
             TJAStudio.Preview?.UpdateChart(str);
         }
+
+
+        private Courses Courses = new Courses();
+        private Project Project = new Project();
+        public  HeadersWindow HeaderWindow = new HeadersWindow(false);
+        public Preview.Preview Preview;
+        private HeadersWindow CommonHeaderWindow = new HeadersWindow(true, Properties.Common.CommonHeader);
+        private FormatChecker FormatChecker { get; set; }
+        public static Studio TJAStudio { get; set; }
+        public static int CurrentCourseID { get; set; }
+        public bool IsEdited { get; set; }
+        public string FileName { get; set; }
     }
 }
