@@ -43,6 +43,7 @@ namespace TJAStudio
             Program.Project.Courses[Studio.CurrentCourseID].Text = TextEditor.Document.Text;
             Studio.TJAStudio.EditorChanged();
             Studio.UpdateHistory();
+            Studio.UpdatePreview();
         }
 
         private void TextEditor_CaretMoved(object sender, EventArgs e)

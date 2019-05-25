@@ -24,11 +24,11 @@ namespace TJAStudio.DanMarge
 
         private void SetNotesRemain()
         {
-            var natori = new Natori[SongList.Count];
+            var natori = new ChartAnalyzer[SongList.Count];
             var notesRemain = 0;
             for (int i = 0; i < natori.Length; i++)
             {
-                natori[i] = new Natori(SongList[i].Chart);
+                natori[i] = new ChartAnalyzer(SongList[i].Chart);
                 foreach (var item in natori[i].Result)
                 {
                     if (item.Type == LineType.Text) notesRemain += Convert.ToInt32(item.NotesAmount);
