@@ -153,117 +153,6 @@
   <data name="Menu.Font" type="System.Drawing.Font, System.Drawing">
     <value>メイリオ, 9.75pt</value>
   </data>
-  <data name="Menu_File.Size" type="System.Drawing.Size, System.Drawing">
-    <value>58, 24</value>
-  </data>
-  <data name="Menu_File.Text" xml:space="preserve">
-    <value>&amp;File</value>
-  </data>
-  <data name="Menu_Edit.Size" type="System.Drawing.Size, System.Drawing">
-    <value>61, 24</value>
-  </data>
-  <data name="Menu_Edit.Text" xml:space="preserve">
-    <value>&amp;Edit</value>
-  </data>
-  <data name="Menu_Version.Size" type="System.Drawing.Size, System.Drawing">
-    <value>84, 24</value>
-  </data>
-  <data name="Menu_Version.Text" xml:space="preserve">
-    <value>TJAStudio</value>
-  </data>
-  <data name="Menu_Tool.Size" type="System.Drawing.Size, System.Drawing">
-    <value>63, 24</value>
-  </data>
-  <data name="Menu_Tool.Text" xml:space="preserve">
-    <value>&amp;Tool</value>
-  </data>
-  <data name="Menu_Window.Size" type="System.Drawing.Size, System.Drawing">
-    <value>88, 24</value>
-  </data>
-  <data name="Menu_Window.Text" xml:space="preserve">
-    <value>&amp;Window</value>
-  </data>
-  <data name="Menu_Command_StartEnd.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
-    <value>Alt+T</value>
-  </data>
-  <data name="Menu_Command_StartEnd.Size" type="System.Drawing.Size, System.Drawing">
-    <value>247, 24</value>
-  </data>
-  <data name="Menu_Command_StartEnd.Text" xml:space="preserve">
-    <value>#START - #END</value>
-  </data>
-  <data name="Menu_Command_GoGoTime.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
-    <value>Alt+G</value>
-  </data>
-  <data name="Menu_Command_GoGoTime.Size" type="System.Drawing.Size, System.Drawing">
-    <value>247, 24</value>
-  </data>
-  <data name="Menu_Command_GoGoTime.Text" xml:space="preserve">
-    <value>GoGoTime...</value>
-  </data>
-  <data name="Menu_Command_Scroll.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
-    <value>Alt+S</value>
-  </data>
-  <data name="Menu_Command_Scroll.Size" type="System.Drawing.Size, System.Drawing">
-    <value>247, 24</value>
-  </data>
-  <data name="Menu_Command_Scroll.Text" xml:space="preserve">
-    <value>Scroll Change...</value>
-  </data>
-  <data name="Menu_Command_BPM.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
-    <value>Alt+B</value>
-  </data>
-  <data name="Menu_Command_BPM.Size" type="System.Drawing.Size, System.Drawing">
-    <value>247, 24</value>
-  </data>
-  <data name="Menu_Command_BPM.Text" xml:space="preserve">
-    <value>BPM Change...</value>
-  </data>
-  <data name="Menu_Command_Measure.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
-    <value>Alt+M</value>
-  </data>
-  <data name="Menu_Command_Measure.Size" type="System.Drawing.Size, System.Drawing">
-    <value>247, 24</value>
-  </data>
-  <data name="Menu_Command_Measure.Text" xml:space="preserve">
-    <value>Measure Change...</value>
-  </data>
-  <data name="Menu_Command.Size" type="System.Drawing.Size, System.Drawing">
-    <value>102, 24</value>
-  </data>
-  <data name="Menu_Command.Text" xml:space="preserve">
-    <value>&amp;Command</value>
-  </data>
-  <data name="Menu_Execution.Size" type="System.Drawing.Size, System.Drawing">
-    <value>99, 24</value>
-  </data>
-  <data name="Menu_Execution.Text" xml:space="preserve">
-    <value>&amp;Execution</value>
-  </data>
-  <data name="Menu.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="Menu.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>10, 4, 0, 4</value>
-  </data>
-  <data name="Menu.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1264, 32</value>
-  </data>
-  <data name="Menu.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;Menu.Name" xml:space="preserve">
-    <value>Menu</value>
-  </data>
-  <data name="&gt;&gt;Menu.Type" xml:space="preserve">
-    <value>System.Windows.Forms.MenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Menu.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;Menu.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
   <data name="Menu_File_New.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
     <value>Ctrl+N</value>
   </data>
@@ -329,6 +218,12 @@
   </data>
   <data name="Menu_File_Exit.Text" xml:space="preserve">
     <value>Exit</value>
+  </data>
+  <data name="Menu_File.Size" type="System.Drawing.Size, System.Drawing">
+    <value>58, 24</value>
+  </data>
+  <data name="Menu_File.Text" xml:space="preserve">
+    <value>&amp;File</value>
   </data>
   <data name="Menu_Edit_Undo.Size" type="System.Drawing.Size, System.Drawing">
     <value>182, 24</value>
@@ -402,12 +297,6 @@
   <data name="Menu_Edit_Repert.Text" xml:space="preserve">
     <value>Repeat</value>
   </data>
-  <data name="Menu_Edit_NotesOperation.Size" type="System.Drawing.Size, System.Drawing">
-    <value>182, 24</value>
-  </data>
-  <data name="Menu_Edit_NotesOperation.Text" xml:space="preserve">
-    <value>Notes Operation</value>
-  </data>
   <data name="Menu_Edit_NotesOperation_ToDon.Size" type="System.Drawing.Size, System.Drawing">
     <value>248, 24</value>
   </data>
@@ -441,6 +330,18 @@
   <data name="Menu_Edit_NotesOperation_Command.Text" xml:space="preserve">
     <value>Remove Command</value>
   </data>
+  <data name="Menu_Edit_NotesOperation.Size" type="System.Drawing.Size, System.Drawing">
+    <value>182, 24</value>
+  </data>
+  <data name="Menu_Edit_NotesOperation.Text" xml:space="preserve">
+    <value>Notes Operation</value>
+  </data>
+  <data name="Menu_Edit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>61, 24</value>
+  </data>
+  <data name="Menu_Edit.Text" xml:space="preserve">
+    <value>&amp;Edit</value>
+  </data>
   <data name="Menu_Version_Site.Size" type="System.Drawing.Size, System.Drawing">
     <value>294, 24</value>
   </data>
@@ -452,6 +353,12 @@
   </data>
   <data name="Menu_Version_TJAS.Text" xml:space="preserve">
     <value>https://aioilight.space/taiko/tjas/</value>
+  </data>
+  <data name="Menu_Version.Size" type="System.Drawing.Size, System.Drawing">
+    <value>84, 24</value>
+  </data>
+  <data name="Menu_Version.Text" xml:space="preserve">
+    <value>TJAStudio</value>
   </data>
   <data name="Menu_Tool_DanBuilder.Size" type="System.Drawing.Size, System.Drawing">
     <value>198, 24</value>
@@ -473,6 +380,12 @@
   </data>
   <data name="Menu_Tool_About.Text" xml:space="preserve">
     <value>About TJAStudio...</value>
+  </data>
+  <data name="Menu_Tool.Size" type="System.Drawing.Size, System.Drawing">
+    <value>63, 24</value>
+  </data>
+  <data name="Menu_Tool.Text" xml:space="preserve">
+    <value>&amp;Tool</value>
   </data>
   <data name="Menu_Window_Courses.Size" type="System.Drawing.Size, System.Drawing">
     <value>192, 24</value>
@@ -507,6 +420,69 @@
   <data name="Menu_Window_FormatCheker.Text" xml:space="preserve">
     <value>Format Cheker</value>
   </data>
+  <data name="Menu_Window_Preview.Size" type="System.Drawing.Size, System.Drawing">
+    <value>192, 24</value>
+  </data>
+  <data name="Menu_Window_Preview.Text" xml:space="preserve">
+    <value>Preview</value>
+  </data>
+  <data name="Menu_Window.Size" type="System.Drawing.Size, System.Drawing">
+    <value>88, 24</value>
+  </data>
+  <data name="Menu_Window.Text" xml:space="preserve">
+    <value>&amp;Window</value>
+  </data>
+  <data name="Menu_Command_StartEnd.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
+    <value>Alt+T</value>
+  </data>
+  <data name="Menu_Command_StartEnd.Size" type="System.Drawing.Size, System.Drawing">
+    <value>247, 24</value>
+  </data>
+  <data name="Menu_Command_StartEnd.Text" xml:space="preserve">
+    <value>#START - #END</value>
+  </data>
+  <data name="Menu_Command_GoGoTime.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
+    <value>Alt+G</value>
+  </data>
+  <data name="Menu_Command_GoGoTime.Size" type="System.Drawing.Size, System.Drawing">
+    <value>247, 24</value>
+  </data>
+  <data name="Menu_Command_GoGoTime.Text" xml:space="preserve">
+    <value>GoGoTime...</value>
+  </data>
+  <data name="Menu_Command_Scroll.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
+    <value>Alt+S</value>
+  </data>
+  <data name="Menu_Command_Scroll.Size" type="System.Drawing.Size, System.Drawing">
+    <value>247, 24</value>
+  </data>
+  <data name="Menu_Command_Scroll.Text" xml:space="preserve">
+    <value>Scroll Change...</value>
+  </data>
+  <data name="Menu_Command_BPM.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
+    <value>Alt+B</value>
+  </data>
+  <data name="Menu_Command_BPM.Size" type="System.Drawing.Size, System.Drawing">
+    <value>247, 24</value>
+  </data>
+  <data name="Menu_Command_BPM.Text" xml:space="preserve">
+    <value>BPM Change...</value>
+  </data>
+  <data name="Menu_Command_Measure.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
+    <value>Alt+M</value>
+  </data>
+  <data name="Menu_Command_Measure.Size" type="System.Drawing.Size, System.Drawing">
+    <value>247, 24</value>
+  </data>
+  <data name="Menu_Command_Measure.Text" xml:space="preserve">
+    <value>Measure Change...</value>
+  </data>
+  <data name="Menu_Command.Size" type="System.Drawing.Size, System.Drawing">
+    <value>102, 24</value>
+  </data>
+  <data name="Menu_Command.Text" xml:space="preserve">
+    <value>&amp;Command</value>
+  </data>
   <data name="Menu_Execution_Start.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
     <value>F5</value>
   </data>
@@ -522,32 +498,41 @@
   <data name="Menu_Execution_LiveUpdate.Text" xml:space="preserve">
     <value>Live Update</value>
   </data>
+  <data name="Menu_Execution.Size" type="System.Drawing.Size, System.Drawing">
+    <value>99, 24</value>
+  </data>
+  <data name="Menu_Execution.Text" xml:space="preserve">
+    <value>&amp;Execution</value>
+  </data>
+  <data name="Menu.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="Menu.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>10, 4, 0, 4</value>
+  </data>
+  <data name="Menu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1264, 32</value>
+  </data>
+  <data name="Menu.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;Menu.Name" xml:space="preserve">
+    <value>Menu</value>
+  </data>
+  <data name="&gt;&gt;Menu.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Menu.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Menu.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
   <metadata name="Status.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>139, 17</value>
   </metadata>
   <data name="Status.Font" type="System.Drawing.Font, System.Drawing">
     <value>メイリオ, 9.75pt</value>
-  </data>
-  <data name="Status.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 656</value>
-  </data>
-  <data name="Status.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1264, 25</value>
-  </data>
-  <data name="Status.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;Status.Name" xml:space="preserve">
-    <value>Status</value>
-  </data>
-  <data name="&gt;&gt;Status.Type" xml:space="preserve">
-    <value>System.Windows.Forms.StatusStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Status.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;Status.ZOrder" xml:space="preserve">
-    <value>1</value>
   </data>
   <data name="toolStripStatusLabel1.Size" type="System.Drawing.Size, System.Drawing">
     <value>312, 20</value>
@@ -579,35 +564,32 @@
   <data name="Status_Caret.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleRight</value>
   </data>
+  <data name="Status.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 656</value>
+  </data>
+  <data name="Status.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1264, 25</value>
+  </data>
+  <data name="Status.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;Status.Name" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="&gt;&gt;Status.Type" xml:space="preserve">
+    <value>System.Windows.Forms.StatusStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Status.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Status.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
   <metadata name="Tool.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>263, 17</value>
   </metadata>
   <data name="Tool.Font" type="System.Drawing.Font, System.Drawing">
     <value>メイリオ, 9.75pt</value>
-  </data>
-  <data name="Tool.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 32</value>
-  </data>
-  <data name="Tool.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1264, 27</value>
-  </data>
-  <data name="Tool.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="Tool.Text" xml:space="preserve">
-    <value>toolStrip1</value>
-  </data>
-  <data name="&gt;&gt;Tool.Name" xml:space="preserve">
-    <value>Tool</value>
-  </data>
-  <data name="&gt;&gt;Tool.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Tool.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;Tool.ZOrder" xml:space="preserve">
-    <value>0</value>
   </data>
   <data name="Tool_Open.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
     <value>Magenta</value>
@@ -618,6 +600,12 @@
   <data name="Tool_Open.Text" xml:space="preserve">
     <value>Open</value>
   </data>
+  <data name="Tool_SaveAs.Size" type="System.Drawing.Size, System.Drawing">
+    <value>143, 24</value>
+  </data>
+  <data name="Tool_SaveAs.Text" xml:space="preserve">
+    <value>Save As...</value>
+  </data>
   <data name="Tool_Save.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
     <value>Magenta</value>
   </data>
@@ -626,12 +614,6 @@
   </data>
   <data name="Tool_Save.Text" xml:space="preserve">
     <value>Save</value>
-  </data>
-  <data name="Tool_SaveAs.Size" type="System.Drawing.Size, System.Drawing">
-    <value>143, 24</value>
-  </data>
-  <data name="Tool_SaveAs.Text" xml:space="preserve">
-    <value>Save As...</value>
   </data>
   <data name="toolStripSeparator3.Size" type="System.Drawing.Size, System.Drawing">
     <value>6, 27</value>
@@ -707,6 +689,30 @@
   </data>
   <data name="Tool_FormatCheker.Text" xml:space="preserve">
     <value>Format Chekcer</value>
+  </data>
+  <data name="Tool.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 32</value>
+  </data>
+  <data name="Tool.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1264, 27</value>
+  </data>
+  <data name="Tool.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="Tool.Text" xml:space="preserve">
+    <value>toolStrip1</value>
+  </data>
+  <data name="&gt;&gt;Tool.Name" xml:space="preserve">
+    <value>Tool</value>
+  </data>
+  <data name="&gt;&gt;Tool.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Tool.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Tool.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -7172,6 +7178,12 @@
     <value>Menu_Window_FormatCheker</value>
   </data>
   <data name="&gt;&gt;Menu_Window_FormatCheker.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Menu_Window_Preview.Name" xml:space="preserve">
+    <value>Menu_Window_Preview</value>
+  </data>
+  <data name="&gt;&gt;Menu_Window_Preview.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;Menu_Command.Name" xml:space="preserve">

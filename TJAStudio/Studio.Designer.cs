@@ -77,6 +77,7 @@
             this.Menu_Window_Projects = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem8 = new System.Windows.Forms.ToolStripSeparator();
             this.Menu_Window_FormatCheker = new System.Windows.Forms.ToolStripMenuItem();
+            this.Menu_Window_Preview = new System.Windows.Forms.ToolStripMenuItem();
             this.Menu_Command = new System.Windows.Forms.ToolStripMenuItem();
             this.Menu_Command_StartEnd = new System.Windows.Forms.ToolStripMenuItem();
             this.Menu_Command_GoGoTime = new System.Windows.Forms.ToolStripMenuItem();
@@ -417,7 +418,8 @@
             this.Menu_Window_CourseHeader,
             this.Menu_Window_Projects,
             this.toolStripMenuItem8,
-            this.Menu_Window_FormatCheker});
+            this.Menu_Window_FormatCheker,
+            this.Menu_Window_Preview});
             this.Menu_Window.Image = global::TJAStudio.Properties.Resources.WindowsForm_16x;
             this.Menu_Window.Name = "Menu_Window";
             resources.ApplyResources(this.Menu_Window, "Menu_Window");
@@ -457,6 +459,12 @@
             this.Menu_Window_FormatCheker.Name = "Menu_Window_FormatCheker";
             resources.ApplyResources(this.Menu_Window_FormatCheker, "Menu_Window_FormatCheker");
             this.Menu_Window_FormatCheker.Click += new System.EventHandler(this.Menu_Window_FormatCheker_Click);
+            // 
+            // Menu_Window_Preview
+            // 
+            this.Menu_Window_Preview.Name = "Menu_Window_Preview";
+            resources.ApplyResources(this.Menu_Window_Preview, "Menu_Window_Preview");
+            this.Menu_Window_Preview.Click += new System.EventHandler(this.Menu_Window_Preview_Click);
             // 
             // Menu_Command
             // 
@@ -771,6 +779,7 @@
         private System.Windows.Forms.ToolStripMenuItem Menu_Command_Scroll;
         private System.Windows.Forms.ToolStripMenuItem Menu_Command_BPM;
         private System.Windows.Forms.ToolStripMenuItem Menu_Command_Measure;
+        private System.Windows.Forms.ToolStripMenuItem Menu_Window_Preview;
     }
 }
 

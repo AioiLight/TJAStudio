@@ -8,10 +8,11 @@
     <OutputType>WinExe</OutputType>
     <RootNamespace>TJAStudio</RootNamespace>
     <AssemblyName>TJAStudio</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -23,6 +24,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <LangVersion>8.0</LangVersion>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -33,6 +35,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <LangVersion>7.2</LangVersion>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup>
     <StartupObject>TJAStudio.Program</StartupObject>
@@ -43,6 +46,12 @@
   <ItemGroup>
     <Reference Include="Azuki">
       <HintPath>..\Azuki.dll</HintPath>
+    </Reference>
+    <Reference Include="DxLibWDotNet">
+      <HintPath>..\DxLibWDotNet.dll</HintPath>
+    </Reference>
+    <Reference Include="Natori">
+      <HintPath>..\..\Koioto\Natori\bin\x64\Debug\net472\Natori.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -102,6 +111,12 @@
     <Compile Include="Editors\Highlighter.cs" />
     <Compile Include="Editors\WindowManager.cs" />
     <Compile Include="GlobalSuppressions.cs" />
+    <Compile Include="Preview\Preview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Preview\Preview.Designer.cs">
+      <DependentUpon>Preview.cs</DependentUpon>
+    </Compile>
     <Compile Include="Projects\Course.cs" />
     <Compile Include="Projects\FileManager.cs" />
     <Compile Include="Projects\Header.cs" />
@@ -243,6 +258,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormatChecker.resx">
       <DependentUpon>FormatChecker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\Preview.resx">
+      <DependentUpon>Preview.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Common.ja.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -507,13 +525,21 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Readme.txt" />
+    <Content Include="res\background.png" />
+    <Content Include="res\balloon.ogg" />
+    <Content Include="res\dong.ogg" />
+    <Content Include="res\ka.ogg" />
+    <Content Include="res\notes.png" />
     <Content Include="tjas.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>xcopy "$(TargetDir)*" "$(SolutionDir)Build" /s/e/i/y
+    <PostBuildEvent>xcopy "$(SolutionDir)res" "$(TargetDir)res"  /s/e/i/y
+copy "$(TargetDir)*" "$(SolutionDir)Build" /s/e/i/y
 xcopy "$(SolutionDir)License" "$(SolutionDir)Build\License"  /s/e/i/y
 copy "$(ProjectDir)Readme.txt" "$(SolutionDir)Build\Readme.txt"
+copy "$(SolutionDir)DxLibW_x64.dll" "$(SolutionDir)Build\DxLibW_x64.dll"
+copy "$(SolutionDir)DxLibW.dll" "$(SolutionDir)Build\DxLibW.dll"
 del "$(SolutionDir)Build\Windows.xml" /q
 del "$(SolutionDir)Build\Settings.xml" /q
 del "$(SolutionDir)Build\temp\*" /q</PostBuildEvent>

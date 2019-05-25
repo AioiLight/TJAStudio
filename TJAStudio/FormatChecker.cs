@@ -22,7 +22,7 @@ namespace TJAStudio
         {
             List.Items.Clear();
             #region 共通ヘッダ
-            var result = new Natori(Program.Project.CommonHeader).ToList();
+            var result = new ChartAnalyzer(Program.Project.CommonHeader).ToList();
             foreach (var item in result)
             {
                 foreach (var checker in Charts.Headers.GetHeaders())
@@ -49,7 +49,7 @@ namespace TJAStudio
             #region 各コース
             foreach (var courses in Program.Project.Courses)
             {
-                foreach (var item in new Natori(courses.Header).SelectByType(LineType.Header).ToList())
+                foreach (var item in new ChartAnalyzer(courses.Header).SelectByType(LineType.Header).ToList())
                 {
                     foreach (var checker in Charts.Headers.GetHeaders())
                     {
@@ -71,7 +71,7 @@ namespace TJAStudio
                         }
                     }
                 }
-                var courseText = new Natori(courses.Text).ToList(); // 行数を出したいため、SelectByTypeが使えない...!
+                var courseText = new ChartAnalyzer(courses.Text).ToList(); // 行数を出したいため、SelectByTypeが使えない...!
                 for (var i = 0; i < courseText.Count; i++) // 行数をどうしても出したいため、foreachが使えない...!
                 {
                     if (courseText[i].Type == LineType.Command)
