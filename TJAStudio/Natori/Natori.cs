@@ -11,9 +11,9 @@ namespace TJAStudio
     /// NatoriSanaChaaaaaaaaaaan!!!!!!!!
     /// Ahhhhhh!! SanaChaaaaaaaan!!!!!!!
     /// </summary>
-    public class Natori
+    public class ChartAnalyzer
     {
-        public Natori(string input)
+        public ChartAnalyzer(string input)
         {
             if (!string.IsNullOrEmpty(input)) Init(input);
         }
@@ -57,7 +57,7 @@ namespace TJAStudio
             }
         }
 
-        public Natori(List<Header> input)
+        public ChartAnalyzer(List<Header> input)
         {
             var constructor = "";
             foreach (var item in input)
@@ -67,7 +67,7 @@ namespace TJAStudio
             Init(constructor);
         }
 
-        public Natori SelectByType(LineType lineType)
+        public ChartAnalyzer SelectByType(LineType lineType)
         {
             var result = new List<NatoriInfo>();
             foreach (var item in Result)
@@ -78,7 +78,7 @@ namespace TJAStudio
             return this;
         }
 
-        public Natori GetHeaderByName(string name)
+        public ChartAnalyzer GetHeaderByName(string name)
         {
             var result = SelectByType(LineType.Header).Result;
             foreach (var item in result)
@@ -89,7 +89,7 @@ namespace TJAStudio
             return this;
         }
 
-        public Natori GetCommandByName(string name)
+        public ChartAnalyzer GetCommandByName(string name)
         {
             var result = SelectByType(LineType.Command).Result;
             foreach (var item in result)
