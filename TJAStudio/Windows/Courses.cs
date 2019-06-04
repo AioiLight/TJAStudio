@@ -61,9 +61,18 @@ namespace TJAStudio
         {
             if (Program.Project.Courses.Count <= 1 || List.SelectedItems.Count < 1 || List.SelectedItems[0].Index + 1 > List.Items.Count - 1) return;
             var index = List.SelectedItems[0].Index;
-            var work = Program.Project.Courses[index];
-            Program.Project.Courses.RemoveAt(index);
-            Program.Project.Courses.Insert(index + 1, work);
+            {
+                // List<Course>の移動
+                var work = Program.Project.Courses[index];
+                Program.Project.Courses.RemoveAt(index);
+                Program.Project.Courses.Insert(index + 1, work);
+            }
+            {
+                // List<Editor>の移動
+                var work = Program.WindowManager.Editors[index];
+                Program.WindowManager.Editors.RemoveAt(index);
+                Program.WindowManager.Editors.Insert(index + 1, work);
+            }
             SetCoursesFromList();
             Studio.TJAStudio.EditorChanged();
         }
@@ -72,9 +81,18 @@ namespace TJAStudio
         {
             if (Program.Project.Courses.Count <= 1 || List.SelectedItems.Count < 1 || List.SelectedItems[0].Index <= 0) return;
             var index = List.SelectedItems[0].Index;
-            var work = Program.Project.Courses[index];
-            Program.Project.Courses.RemoveAt(index);
-            Program.Project.Courses.Insert(index - 1, work);
+            {
+                // List<Course>の移動
+                var work = Program.Project.Courses[index];
+                Program.Project.Courses.RemoveAt(index);
+                Program.Project.Courses.Insert(index - 1, work);
+            }
+            {
+                // List<Editor>の移動
+                var work = Program.WindowManager.Editors[index];
+                Program.WindowManager.Editors.RemoveAt(index);
+                Program.WindowManager.Editors.Insert(index - 1, work);
+            }
             SetCoursesFromList();
             Studio.TJAStudio.EditorChanged();
         }
