@@ -47,7 +47,7 @@ namespace TJAStudio
                     var notesCount = 0;
                     foreach (var measure in Regex.Replace(item.Text, " *//.*", "").Trim())
                     {
-                        if (Regex.IsMatch(measure.ToString(), "[123456789]"))
+                        if (Regex.IsMatch(measure.ToString(), "[1234]"))
                         {
                             notesCount++;
                         }
