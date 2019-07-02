@@ -177,7 +177,7 @@ namespace TJAStudio
             {
                 Program.WindowManager.Editors.Add(new Editor(new Sgry.Azuki.Document(), item));
                 Program.WindowManager.Editors[Program.WindowManager.Editors.Count - 1].Show(Dock);
-                Program.WindowManager.Editors[Program.WindowManager.Editors.Count - 1].TextEditor.Document.Text = item.Text.Replace("\n", Environment.NewLine);
+                Program.WindowManager.Editors[Program.WindowManager.Editors.Count - 1].TextEditor.Document.Text = item.Text?.Replace("\n", Environment.NewLine);
             }
             Courses.SetCoursesFromList();
             Project.SetCoursesFromList();
