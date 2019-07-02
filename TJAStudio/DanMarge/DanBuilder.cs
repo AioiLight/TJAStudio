@@ -181,11 +181,12 @@ namespace TJAStudio.DanMarge
                 else if (nowLine.StartsWith("SCOREINIT:"))
                 {
                     var scoreInit = nowLine.Substring("SCOREINIT:".Length).Split(',');
-                    result.ScoreInit = Convert.ToInt32(scoreInit[0]);
+                    result.ScoreInit = string.IsNullOrWhiteSpace(scoreInit[0]) ? -1 : Convert.ToInt32(scoreInit[0]);
                 }
                 else if (nowLine.StartsWith("SCOREDIFF:"))
                 {
-                    result.ScoreDiff = Convert.ToInt32(nowLine.Substring("SCOREDIFF:".Length));
+                    var scoreDiff = nowLine.Substring("SCOREDIFF:".Length);
+                    result.ScoreDiff = string.IsNullOrWhiteSpace(scoreDiff) ? -1 : Convert.ToInt32(scoreDiff);
                 }
                 else if (nowLine.StartsWith("WAVE:"))
                 {
