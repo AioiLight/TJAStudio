@@ -1,5 +1,5 @@
 ﻿# TJAStudio
-制作者: AioiLight (@aioilight_2nd)
+制作者: AioiLight (@aioilight)
 ウェブサイト: https://aioilight.space/
 
 ## TJAStudio とは
