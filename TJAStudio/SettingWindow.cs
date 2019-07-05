@@ -112,6 +112,7 @@ namespace TJAStudio
         {
             Setting.Show_Space_Mark = Tab_Editor_Sample.DrawsSpace = Tab_Editor_SpaceMark.Checked;
             Tab_Editor_Sample.DrawsFullWidthSpace = Tab_Editor_SpaceMark.Checked;
+            Tab_Editor_Sample.DrawsSpace = Tab_Editor_SpaceMark.Checked;
         }
 
         private void Tab_Editor_TabMark_CheckedChanged(object sender, EventArgs e)
@@ -318,8 +319,15 @@ namespace TJAStudio
             Tab_Editor_Sample.BackColor = Setting.Editor_BackColor;
             Tab_Editor_Sample.Font = new Font(Setting.FontName, Setting.FontSize);
             Tab_Editor_Font.Font = new Font(Setting.FontName, Setting.FontSize);
+            Tab_Editor_Sample.ShowsLineNumber = Setting.Show_Line_Number;
+            Tab_Editor_Sample.ShowsHRuler = Setting.Show_Horizontal_Ruler;
+            Tab_Editor_Sample.HRulerStartsFromZero = Setting.Show_Horizontal_Ruler_Zero;
+            Tab_Editor_Sample.DrawsEofMark = Setting.Show_EoF_Mark;
+            Tab_Editor_Sample.DrawsEolCode = Setting.Show_EoL_Mark;
+            Tab_Editor_Sample.DrawsFullWidthSpace = Setting.Show_Space_Mark;
+            Tab_Editor_Sample.DrawsSpace = Setting.Show_Space_Mark;
+            Tab_Editor_Sample.DrawsTab = Setting.Show_Tab_Mark;
             Tab_General_Language_ComboBox.SelectedIndex = (int)GetLocaleFromText(Setting.Locale);
-
             Tab_General_SimulatorPath_TextBox.Text = Setting.SimulatorPath;
             Tab_General_Workspace_TextBox.Text = Setting.WorkspacePath;
 

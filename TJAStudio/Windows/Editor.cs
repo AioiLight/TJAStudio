@@ -24,6 +24,14 @@ namespace TJAStudio
             TextEditor.BackColor = Program.Setting.Editor_BackColor;
             TextEditor.Font = new Font(Program.Setting.FontName, Program.Setting.FontSize);
             TextEditor.SetKeyBind(Keys.Back | Keys.Shift, Sgry.Azuki.Actions.BackSpace);
+            TextEditor.ShowsLineNumber = Program.Setting.Show_Line_Number;
+            TextEditor.ShowsHRuler = Program.Setting.Show_Horizontal_Ruler;
+            TextEditor.HRulerStartsFromZero = Program.Setting.Show_Horizontal_Ruler_Zero;
+            TextEditor.DrawsEofMark = Program.Setting.Show_EoF_Mark;
+            TextEditor.DrawsEolCode = Program.Setting.Show_EoL_Mark;
+            TextEditor.DrawsFullWidthSpace = Program.Setting.Show_Space_Mark;
+            TextEditor.DrawsSpace = Program.Setting.Show_Space_Mark;
+            TextEditor.DrawsTab = Program.Setting.Show_Tab_Mark;
         }
 
         private void Editor_FormClosing(object sender, FormClosingEventArgs e)
