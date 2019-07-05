@@ -18,7 +18,7 @@ namespace TJAStudio
         {
             #region 起動前処理
             EXEPath = System.IO.Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location);
-            SettingFileName = EXEPath + @"/Settings.xml";
+            SettingFileName = EXEPath + @"\Settings.xml";
             Version = Assembly.GetExecutingAssembly().GetName().Version.ToString().Substring(0, Assembly.GetExecutingAssembly().GetName().Version.ToString().Length - 4);
             #region 設定ファイルの読み込み
             if (System.IO.File.Exists(SettingFileName))

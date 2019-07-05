@@ -118,6 +118,12 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="Tab_General_Open_Extract_Folder.Size" type="System.Drawing.Size, System.Drawing">
+    <value>340, 24</value>
+  </data>
+  <data name="Tab_General_Open_Extract_Folder.Text" xml:space="preserve">
+    <value>.tja ファイルのエクスポート後にそのフォルダを開く</value>
+  </data>
   <data name="Tab_General_Workspace_Label.Size" type="System.Drawing.Size, System.Drawing">
     <value>106, 20</value>
   </data>

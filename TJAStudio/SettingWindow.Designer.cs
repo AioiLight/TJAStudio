@@ -32,6 +32,7 @@
             Sgry.Azuki.FontInfo fontInfo1 = new Sgry.Azuki.FontInfo();
             this.Tab = new System.Windows.Forms.TabControl();
             this.Tab_General = new System.Windows.Forms.TabPage();
+            this.Tab_General_Open_Extract_Folder = new System.Windows.Forms.CheckBox();
             this.Tab_General_Workspace_Button = new System.Windows.Forms.Button();
             this.Tab_General_Workspace_TextBox = new System.Windows.Forms.TextBox();
             this.Tab_General_Workspace_Label = new System.Windows.Forms.Label();
@@ -82,7 +83,7 @@
             // 
             // Tab_General
             // 
-            resources.ApplyResources(this.Tab_General, "Tab_General");
+            this.Tab_General.Controls.Add(this.Tab_General_Open_Extract_Folder);
             this.Tab_General.Controls.Add(this.Tab_General_Workspace_Button);
             this.Tab_General.Controls.Add(this.Tab_General_Workspace_TextBox);
             this.Tab_General.Controls.Add(this.Tab_General_Workspace_Label);
@@ -92,8 +93,16 @@
             this.Tab_General.Controls.Add(this.Tab_General_SimulatorPath_Label);
             this.Tab_General.Controls.Add(this.Tab_General_Language_Label);
             this.Tab_General.Controls.Add(this.Tab_General_Language_ComboBox);
+            resources.ApplyResources(this.Tab_General, "Tab_General");
             this.Tab_General.Name = "Tab_General";
             this.Tab_General.UseVisualStyleBackColor = true;
+            // 
+            // Tab_General_Open_Extract_Folder
+            // 
+            resources.ApplyResources(this.Tab_General_Open_Extract_Folder, "Tab_General_Open_Extract_Folder");
+            this.Tab_General_Open_Extract_Folder.Name = "Tab_General_Open_Extract_Folder";
+            this.Tab_General_Open_Extract_Folder.UseVisualStyleBackColor = true;
+            this.Tab_General_Open_Extract_Folder.CheckedChanged += new System.EventHandler(this.Tab_General_Open_Extract_Folder_CheckedChanged);
             // 
             // Tab_General_Workspace_Button
             // 
@@ -145,19 +154,18 @@
             // 
             // Tab_General_Language_ComboBox
             // 
-            resources.ApplyResources(this.Tab_General_Language_ComboBox, "Tab_General_Language_ComboBox");
             this.Tab_General_Language_ComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.Tab_General_Language_ComboBox.DropDownWidth = 180;
             this.Tab_General_Language_ComboBox.FormattingEnabled = true;
             this.Tab_General_Language_ComboBox.Items.AddRange(new object[] {
             resources.GetString("Tab_General_Language_ComboBox.Items"),
             resources.GetString("Tab_General_Language_ComboBox.Items1")});
+            resources.ApplyResources(this.Tab_General_Language_ComboBox, "Tab_General_Language_ComboBox");
             this.Tab_General_Language_ComboBox.Name = "Tab_General_Language_ComboBox";
             this.Tab_General_Language_ComboBox.SelectedIndexChanged += new System.EventHandler(this.Tab_General_Language_ComboBox_SelectedIndexChanged);
             // 
             // Tab_Editor
             // 
-            resources.ApplyResources(this.Tab_Editor, "Tab_Editor");
             this.Tab_Editor.Controls.Add(this.Tab_Editor_Font);
             this.Tab_Editor.Controls.Add(this.Tab_Editor_HR_From_Zero);
             this.Tab_Editor.Controls.Add(this.Tab_Editor_Command);
@@ -178,6 +186,7 @@
             this.Tab_Editor.Controls.Add(this.Tab_Editor_Normal);
             this.Tab_Editor.Controls.Add(this.Tab_Editor_Sample);
             this.Tab_Editor.Controls.Add(this.Tab_Editor_Label);
+            resources.ApplyResources(this.Tab_Editor, "Tab_Editor");
             this.Tab_Editor.Name = "Tab_Editor";
             this.Tab_Editor.UseVisualStyleBackColor = true;
             // 
@@ -330,7 +339,6 @@
             // 
             // Tab_Editor_Sample
             // 
-            resources.ApplyResources(this.Tab_Editor_Sample, "Tab_Editor_Sample");
             this.Tab_Editor_Sample.BackColor = System.Drawing.Color.White;
             this.Tab_Editor_Sample.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.Tab_Editor_Sample.DrawingOption = ((Sgry.Azuki.DrawingOption)(((((((Sgry.Azuki.DrawingOption.DrawsFullWidthSpace | Sgry.Azuki.DrawingOption.DrawsTab) 
@@ -340,6 +348,7 @@
             | Sgry.Azuki.DrawingOption.ShowsHRuler) 
             | Sgry.Azuki.DrawingOption.HighlightsMatchedBracket)));
             this.Tab_Editor_Sample.FirstVisibleLine = 0;
+            resources.ApplyResources(this.Tab_Editor_Sample, "Tab_Editor_Sample");
             fontInfo1.Name = "MS UI Gothic";
             fontInfo1.Size = 9;
             fontInfo1.Style = System.Drawing.FontStyle.Regular;
@@ -362,16 +371,16 @@
             // 
             // Button_Apply
             // 
-            resources.ApplyResources(this.Button_Apply, "Button_Apply");
             this.Button_Apply.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            resources.ApplyResources(this.Button_Apply, "Button_Apply");
             this.Button_Apply.Name = "Button_Apply";
             this.Button_Apply.UseVisualStyleBackColor = true;
             this.Button_Apply.Click += new System.EventHandler(this.Button_Apply_Click);
             // 
             // Button_Cancel
             // 
-            resources.ApplyResources(this.Button_Cancel, "Button_Cancel");
             this.Button_Cancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            resources.ApplyResources(this.Button_Cancel, "Button_Cancel");
             this.Button_Cancel.Name = "Button_Cancel";
             this.Button_Cancel.UseVisualStyleBackColor = true;
             this.Button_Cancel.Click += new System.EventHandler(this.Button_Cancel_Click);
@@ -435,5 +444,6 @@
         private System.Windows.Forms.Button Tab_Editor_Header;
         private System.Windows.Forms.Label Tab_Editor_Label;
         private System.Windows.Forms.Button Tab_Editor_Font;
+        private System.Windows.Forms.CheckBox Tab_General_Open_Extract_Folder;
     }
 }

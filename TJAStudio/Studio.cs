@@ -533,6 +533,14 @@ namespace TJAStudio
 
                     }
                 }
+
+                // フォルダを開く
+                if (Program.Setting.Open_Extract_Folder)
+                {
+                    var dir = Path.GetDirectoryName(dialog.FileName);
+                    System.Diagnostics.Process.Start(dir);
+                }
+
             }
         }
 

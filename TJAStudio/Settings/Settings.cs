@@ -54,6 +54,8 @@ namespace TJAStudio
 
         public bool Show_EoF_Mark { get; set; } = true;
 
+        public bool Open_Extract_Folder { get; set; } = true;
+
         public EditorColorScheme ColorScheme { get; set; } = new EditorColorScheme();
 
         [XmlIgnore]

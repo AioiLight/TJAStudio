@@ -266,6 +266,10 @@ namespace TJAStudio
         {
             Setting.UTF8Mode = Tab_General_UTF8Mode.Checked;
         }
+        private void Tab_General_Open_Extract_Folder_CheckedChanged(object sender, EventArgs e)
+        {
+            Setting.Open_Extract_Folder = Tab_General_Open_Extract_Folder.Checked;
+        }
         private void Tab_Editor_Font_Click(object sender, EventArgs e)
         {
             var dialog = new FontDialog();
@@ -334,6 +338,7 @@ namespace TJAStudio
 
             // チェックボックス
             GetBooleanFromSettings(Setting.UTF8Mode, ref Tab_General_UTF8Mode);
+            GetBooleanFromSettings(Setting.Open_Extract_Folder, ref Tab_General_Open_Extract_Folder);
             GetBooleanFromSettings(Setting.Show_Horizontal_Ruler, ref Tab_Editor_Show_HR);
             GetBooleanFromSettings(Setting.Show_Line_Number, ref Tab_Editor_Line);
             GetBooleanFromSettings(Setting.Show_Horizontal_Ruler_Zero, ref Tab_Editor_HR_From_Zero);
@@ -453,6 +458,7 @@ namespace TJAStudio
                     return "en-US";
             }
         }
+
     }
 
     public static class Extension
