@@ -11,7 +11,7 @@ namespace TJAStudio
     public static class Dialog
     {
         /// <summary>
-        /// .バージョン情報ダイアログ。
+        /// バージョン情報ダイアログ。
         /// </summary>
         /// <returns></returns>
         public static TaskDialog Version()
