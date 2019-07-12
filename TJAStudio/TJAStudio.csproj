@@ -44,6 +44,12 @@
     <Reference Include="Azuki">
       <HintPath>..\Azuki.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.WindowsAPICodePack, Version=1.1.3.3, Culture=neutral, PublicKeyToken=8985beaab7ea3f04, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft-WindowsAPICodePack-Core.1.1.3.3\lib\net452\Microsoft.WindowsAPICodePack.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAPICodePack.Shell, Version=1.1.3.3, Culture=neutral, PublicKeyToken=8985beaab7ea3f04, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft-WindowsAPICodePack-Shell.1.1.3.3\lib\net452\Microsoft.WindowsAPICodePack.Shell.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -84,6 +90,7 @@
     </Compile>
     <Compile Include="DanMarge\NumBoxSuggestion.cs" />
     <Compile Include="DanMarge\Songs.cs" />
+    <Compile Include="Dialog.cs" />
     <Compile Include="FormatChecker.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -115,6 +122,11 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Common.ja.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Dialog.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Dialog.resx</DependentUpon>
     </Compile>
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -251,6 +263,11 @@
     <EmbeddedResource Include="Properties\Common.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Common.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Dialog.ja.resx" />
+    <EmbeddedResource Include="Properties\Dialog.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Dialog.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

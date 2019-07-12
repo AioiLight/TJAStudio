@@ -57,7 +57,9 @@ namespace TJAStudio
 
         private void Menu_Tool_About_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(string.Format(Properties.SystemMessage.VersionDialog, Properties.Common.Name, Program.Version, Properties.Common.Developer, Properties.Common.Website), Properties.Common.Name, MessageBoxButtons.OK, MessageBoxIcon.Asterisk, MessageBoxDefaultButton.Button1);
+            var dialog = Dialog.Version();
+            dialog.OwnerWindowHandle = Handle;
+            dialog.Show();
         }
 
         public void EditorChanged()
@@ -123,11 +125,13 @@ namespace TJAStudio
         {
             if (IsEdited)
             {
-                var dialogResult = MessageBox.Show(String.Format(Properties.SystemMessage.ApplicationExit, Program.Project.ProjectName), Properties.Common.Name, MessageBoxButtons.YesNoCancel, MessageBoxIcon.Asterisk, MessageBoxDefaultButton.Button3);
-                if (dialogResult == DialogResult.Yes) Save();
-                else if (dialogResult == DialogResult.Cancel) return;
+                var dialog = Dialog.SaveChange();
+                dialog.OwnerWindowHandle = Handle;
+                var dialogResult = dialog.Show();
+                if (dialogResult == Microsoft.WindowsAPICodePack.Dialogs.TaskDialogResult.Yes) Save();
+                else if (dialogResult == Microsoft.WindowsAPICodePack.Dialogs.TaskDialogResult.Cancel) return;
             }
-            this.Close();
+            Close();
             Application.Restart();
         }
 
@@ -146,17 +150,19 @@ namespace TJAStudio
         {
             if (IsEdited)
             {
-                var dialogResult = MessageBox.Show(String.Format(Properties.SystemMessage.ApplicationExit, Program.Project.ProjectName), Properties.Common.Name, MessageBoxButtons.YesNoCancel, MessageBoxIcon.Asterisk, MessageBoxDefaultButton.Button3);
-                if (dialogResult == DialogResult.Yes) Save();
-                else if (dialogResult == DialogResult.Cancel) return;
+                var dialog = Dialog.SaveChange();
+                dialog.OwnerWindowHandle = Handle;
+                var dialogResult = dialog.Show();
+                if (dialogResult == Microsoft.WindowsAPICodePack.Dialogs.TaskDialogResult.Yes) Save();
+                else if (dialogResult == Microsoft.WindowsAPICodePack.Dialogs.TaskDialogResult.Cancel) return;
             }
-            var dialog = new OpenFileDialog();
-            dialog.Title = isTemplate ? Properties.SystemMessage.OpenTemplate : Properties.SystemMessage.OpenProject;
-            if (defalutDir != null) dialog.InitialDirectory = defalutDir;
-            dialog.Filter = String.Format("{0}|*{1}", Properties.Common.ExtensionDescription, Properties.Common.ExtensionName);
-            if (dialog.ShowDialog() == DialogResult.OK)
+            var fileDialog = new OpenFileDialog();
+            fileDialog.Title = isTemplate ? Properties.SystemMessage.OpenTemplate : Properties.SystemMessage.OpenProject;
+            if (defalutDir != null) fileDialog.InitialDirectory = defalutDir;
+            fileDialog.Filter = String.Format("{0}|*{1}", Properties.Common.ExtensionDescription, Properties.Common.ExtensionName);
+            if (fileDialog.ShowDialog() == DialogResult.OK)
             {
-                FileOpen(isTemplate, dialog.FileName);
+                FileOpen(isTemplate, fileDialog.FileName);
             }
         }
 
@@ -592,13 +598,15 @@ namespace TJAStudio
         {
             if (IsEdited)
             {
-                var dialogResult = MessageBox.Show(string.Format(Properties.SystemMessage.ApplicationExit, Program.Project.ProjectName), Properties.Common.Name, MessageBoxButtons.YesNoCancel, MessageBoxIcon.Asterisk, MessageBoxDefaultButton.Button3);
-                if (dialogResult == DialogResult.Yes)
+                var dialog = Dialog.SaveChange();
+                dialog.OwnerWindowHandle = Handle;
+                var dialogResult = dialog.Show();
+                if (dialogResult == Microsoft.WindowsAPICodePack.Dialogs.TaskDialogResult.Yes)
                 {
                     Save();
                     if (IsEdited) e.Cancel = true; 
                 }
-                else if (dialogResult == DialogResult.Cancel) e.Cancel = true;
+                else if (dialogResult ==  Microsoft.WindowsAPICodePack.Dialogs.TaskDialogResult.Cancel) e.Cancel = true;
             }
 
             // 子ウィンドウの保存とか

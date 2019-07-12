@@ -117,61 +117,22 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="CommonHeader" xml:space="preserve">
-    <value>Common Header</value>
+  <data name="SaveChange_Text" xml:space="preserve">
+    <value>保存しない場合、変更内容は失われます。</value>
   </data>
-  <data name="Developer" xml:space="preserve">
-    <value>AioiLight</value>
+  <data name="SaveChange_Title" xml:space="preserve">
+    <value>{0} への変更内容を保存しますか?</value>
   </data>
-  <data name="Editor" xml:space="preserve">
-    <value>Editor - </value>
+  <data name="Version_Link" xml:space="preserve">
+    <value>Webサイトを開く</value>
   </data>
-  <data name="EXEExtensionDescripion" xml:space="preserve">
-    <value>Executable File</value>
+  <data name="Version_Text" xml:space="preserve">
+    <value>{0} Ver.{1}
+{0} was developed by {2}.
+{3}
+</value>
   </data>
-  <data name="EXEExtensionName" xml:space="preserve">
-    <value>.exe</value>
-  </data>
-  <data name="ExtensionDescription" xml:space="preserve">
-    <value>TJAStudio Project File</value>
-  </data>
-  <data name="ExtensionName" xml:space="preserve">
-    <value>.tsproj</value>
-  </data>
-  <data name="Header" xml:space="preserve">
-    <value>Header - </value>
-  </data>
-  <data name="Name" xml:space="preserve">
-    <value>TJAStudio</value>
-  </data>
-  <data name="SampleText" xml:space="preserve">
-    <value>TITLE:The Sample M@ster
-#START
-0000,
-1000200010102000, // This is comment!
-1010201000304000,
-#GOGOSTART
-5000008060000080,
-7008000000000011,
-1,
-#END</value>
-  </data>
-  <data name="TJAExtensionDescription" xml:space="preserve">
-    <value>.tja File Format</value>
-  </data>
-  <data name="TJAExtensionName" xml:space="preserve">
-    <value>.tja</value>
-  </data>
-  <data name="UntitledProjectName" xml:space="preserve">
-    <value>New Project</value>
-  </data>
-  <data name="Website" xml:space="preserve">
-    <value>https://aioilight.space/</value>
-  </data>
-  <data name="DanBuilder" xml:space="preserve">
-    <value>Dan Builder</value>
-  </data>
-  <data name="AllFiles" xml:space="preserve">
-    <value>All Files</value>
+  <data name="Version_Title" xml:space="preserve">
+    <value>{0} について</value>
   </data>
 </root>
