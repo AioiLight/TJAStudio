@@ -79,6 +79,54 @@ namespace TJAStudio.Properties {
         }
         
         /// <summary>
+        ///   Cancel operation に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string HeaderDuplicated_Cancel {
+            get {
+                return ResourceManager.GetString("HeaderDuplicated_Cancel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Leave old header, and add new header に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string HeaderDuplicated_Leave {
+            get {
+                return ResourceManager.GetString("HeaderDuplicated_Leave", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Remove old header, and add new header に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string HeaderDuplicated_Remove {
+            get {
+                return ResourceManager.GetString("HeaderDuplicated_Remove", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Old header: {0}
+        ///New header: {1}
+        ///
+        ///Choose an action for duplicate header. に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string HeaderDuplicated_Text {
+            get {
+                return ResourceManager.GetString("HeaderDuplicated_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Header is duplicated に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string HeaderDuplicated_Title {
+            get {
+                return ResourceManager.GetString("HeaderDuplicated_Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   This project {0} is not saved.
         ///Your changes will be lost when you don&apos;t save. に類似しているローカライズされた文字列を検索します。
         /// </summary>

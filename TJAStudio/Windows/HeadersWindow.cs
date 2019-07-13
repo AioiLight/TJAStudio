@@ -77,6 +77,48 @@ namespace TJAStudio
                 header.Name = dialog.TextBox_Name.Text;
                 header.Value = dialog.TextBox_Parameter.Text;
                 if (header.Name.EndsWith(":")) header.Name = header.Name.Remove(header.Name.Length - 1);
+
+                var to = IsCommon ? Program.Project.CommonHeader : Program.Project.Courses[Studio.CurrentCourseID].Header;
+                // 重複してるやつのインデックスを記録。
+                var duplicated = new List<int>();
+                for (var i = 0; i < to.Count; i++)
+                {
+                    var item = to[i];
+                    if (item.Name == header.Name)
+                    {
+                        duplicated.Add(i);
+                    }
+                }
+
+                if (duplicated.Count > 0)
+                {
+                    // 重複がある
+                    var list = new List<Header>();
+                    foreach (var item in duplicated)
+                    {
+                        list.Add(to[item]);
+                    }
+                    // 表示用として連結
+                    var oldHeaders = string.Join(", ", list.Select(x => x.ToString()).ToArray());
+
+                    var taskDialog = Dialog.HeaderDuplicated(oldHeaders, header.ToString());
+                    taskDialog.OwnerWindowHandle = Handle;
+                    var taskDialogResult = taskDialog.Show();
+                    if (taskDialogResult == Microsoft.WindowsAPICodePack.Dialogs.TaskDialogResult.Yes)
+                    {
+                        // 重複分を消す。削除すると1つインデックスがズレるのでiを減算することで辻褄が合うようにする。
+                        for (int i = 0; i < duplicated.Count; i++)
+                        {
+                            to.RemoveAt(duplicated[i] - i);
+                        }
+                    }
+                    else if (taskDialogResult == Microsoft.WindowsAPICodePack.Dialogs.TaskDialogResult.Cancel)
+                    {
+                        // キャンセルなのでreturn
+                        return;
+                    }
+                }
+
                 if(IsCommon)
                 {
                     Program.Project.CommonHeader.Add(header);

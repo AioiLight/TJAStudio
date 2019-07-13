@@ -123,6 +123,24 @@
   <data name="DanMargeExit_Title" xml:space="preserve">
     <value>本当に終了しますか?</value>
   </data>
+  <data name="HeaderDuplicated_Cancel" xml:space="preserve">
+    <value>操作をキャンセル</value>
+  </data>
+  <data name="HeaderDuplicated_Leave" xml:space="preserve">
+    <value>古いヘッダーを保持して、新しいヘッダーを追加する</value>
+  </data>
+  <data name="HeaderDuplicated_Remove" xml:space="preserve">
+    <value>古いヘッダーを削除して、新しいヘッダーを追加する</value>
+  </data>
+  <data name="HeaderDuplicated_Text" xml:space="preserve">
+    <value>重複したヘッダー: {0}
+新しく追加するヘッダー: {1}
+
+重複したヘッダーに対する操作を選択してください。</value>
+  </data>
+  <data name="HeaderDuplicated_Title" xml:space="preserve">
+    <value>ヘッダーが重複しています</value>
+  </data>
   <data name="SaveChange_Text" xml:space="preserve">
     <value>プロジェクト "{0}" は保存されていません。
 保存しない場合、変更内容は失われます。</value>

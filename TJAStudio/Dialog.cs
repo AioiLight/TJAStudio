@@ -62,5 +62,44 @@ namespace TJAStudio
             return dialog;
         }
 
+        public static TaskDialog HeaderDuplicated(string oldHeader, string newHeader)
+        {
+            var dialog = new TaskDialog();
+            dialog.Icon = TaskDialogStandardIcon.Information;
+            dialog.Caption = Properties.Common.Name;
+            dialog.InstructionText = Properties.Dialog.HeaderDuplicated_Title;
+            dialog.Text = string.Format(Properties.Dialog.HeaderDuplicated_Text, oldHeader, newHeader);
+            var remove = new TaskDialogCommandLink();
+            remove.Text = Properties.Dialog.HeaderDuplicated_Remove;
+            remove.Default = true;
+            remove.Click += Remove_Click;
+            dialog.Controls.Add(remove);
+            var leave = new TaskDialogCommandLink();
+            leave.Text = Properties.Dialog.HeaderDuplicated_Leave;
+            leave.Click += Leave_Click;
+            dialog.Controls.Add(leave);
+            var cancel = new TaskDialogCommandLink();
+            cancel.Text = Properties.Dialog.HeaderDuplicated_Cancel;
+            cancel.Click += Leave_Cancel;
+            dialog.Controls.Add(cancel);
+
+            return dialog;
+
+            void Remove_Click(object sender, EventArgs e)
+            {
+                dialog.Close(TaskDialogResult.Yes);
+            }
+
+            void Leave_Click(object sender, EventArgs e)
+            {
+                dialog.Close(TaskDialogResult.No);
+            }
+
+            void Leave_Cancel(object sender, EventArgs e)
+            {
+                dialog.Close(TaskDialogResult.Cancel);
+            }
+        }
+
     }
 }

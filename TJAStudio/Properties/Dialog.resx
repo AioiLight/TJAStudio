@@ -123,6 +123,24 @@
   <data name="DanMargeExit_Title" xml:space="preserve">
     <value>Are you sure to exit?</value>
   </data>
+  <data name="HeaderDuplicated_Cancel" xml:space="preserve">
+    <value>Cancel operation</value>
+  </data>
+  <data name="HeaderDuplicated_Leave" xml:space="preserve">
+    <value>Leave old header, and add new header</value>
+  </data>
+  <data name="HeaderDuplicated_Remove" xml:space="preserve">
+    <value>Remove old header, and add new header</value>
+  </data>
+  <data name="HeaderDuplicated_Text" xml:space="preserve">
+    <value>Old header: {0}
+New header: {1}
+
+Choose an action for duplicate header.</value>
+  </data>
+  <data name="HeaderDuplicated_Title" xml:space="preserve">
+    <value>Header is duplicated</value>
+  </data>
   <data name="SaveChange_Text" xml:space="preserve">
     <value>This project {0} is not saved.
 Your changes will be lost when you don't save.</value>
