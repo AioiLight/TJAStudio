@@ -40,6 +40,9 @@
   <PropertyGroup>
     <ApplicationIcon>tjas.ico</ApplicationIcon>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="Azuki">
       <HintPath>..\Azuki.dll</HintPath>
@@ -366,6 +369,7 @@
     <EmbeddedResource Include="Windows\ScrollChanger.resx">
       <DependentUpon>ScrollChanger.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="app.manifest" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
