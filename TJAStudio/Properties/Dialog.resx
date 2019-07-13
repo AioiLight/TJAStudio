@@ -118,7 +118,8 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="SaveChange_Text" xml:space="preserve">
-    <value>Your changes will be lost when you don't save.</value>
+    <value>This project {0} is not saved.
+Your changes will be lost when you don't save.</value>
   </data>
   <data name="SaveChange_Title" xml:space="preserve">
     <value>Do you want to save changes to {0}?</value>

@@ -118,7 +118,8 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="SaveChange_Text" xml:space="preserve">
-    <value>保存しない場合、変更内容は失われます。</value>
+    <value>プロジェクト "{0}" は保存されていません。
+保存しない場合、変更内容は失われます。</value>
   </data>
   <data name="SaveChange_Title" xml:space="preserve">
     <value>{0} への変更内容を保存しますか?</value>

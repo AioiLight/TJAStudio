@@ -120,9 +120,6 @@
   <data name="AllClear" xml:space="preserve">
     <value>問題はありません。</value>
   </data>
-  <data name="ApplicationExit" xml:space="preserve">
-    <value>{0} への変更内容を保存しますか?</value>
-  </data>
   <data name="AreYouSure" xml:space="preserve">
     <value>本当によろしいですか?</value>
   </data>
@@ -184,9 +181,6 @@
   <data name="DuplicateHeader" xml:space="preserve">
     <value>ヘッダ名が重複しています。
 前のヘッダを削除しますか?</value>
-  </data>
-  <data name="EditedWarning" xml:space="preserve">
-    <value>プロジェクト "{0}" は保存されていません。</value>
   </data>
   <data name="FileNotFound" xml:space="preserve">
     <value>ファイル "{0}" が見つかりませんでした。
@@ -255,10 +249,5 @@
   </data>
   <data name="Status_Mode_Overwrite" xml:space="preserve">
     <value>置換</value>
-  </data>
-  <data name="VersionDialog" xml:space="preserve">
-    <value>{0} Ver.{1}
-{0} was developed by {2}.
-{3}</value>
   </data>
 </root>

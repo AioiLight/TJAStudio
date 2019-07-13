@@ -19,7 +19,7 @@ namespace TJAStudio.Properties {
     // または Visual Studio のようなツールを使用して自動生成されました。
     // メンバーを追加または削除するには、.ResX ファイルを編集して、/str オプションと共に
     // ResGen を実行し直すか、または VS プロジェクトをビルドし直します。
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "15.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class SystemMessage {
@@ -66,15 +66,6 @@ namespace TJAStudio.Properties {
         internal static string AllClear {
             get {
                 return ResourceManager.GetString("AllClear", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Do you want to save changes to {0}? に類似しているローカライズされた文字列を検索します。
-        /// </summary>
-        internal static string ApplicationExit {
-            get {
-                return ResourceManager.GetString("ApplicationExit", resourceCulture);
             }
         }
         
@@ -236,15 +227,6 @@ namespace TJAStudio.Properties {
         internal static string DuplicateHeader {
             get {
                 return ResourceManager.GetString("DuplicateHeader", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   This project {0} is not saved. に類似しているローカライズされた文字列を検索します。
-        /// </summary>
-        internal static string EditedWarning {
-            get {
-                return ResourceManager.GetString("EditedWarning", resourceCulture);
             }
         }
         
@@ -445,17 +427,6 @@ namespace TJAStudio.Properties {
         internal static string Status_Mode_Overwrite {
             get {
                 return ResourceManager.GetString("Status_Mode_Overwrite", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   {0} Ver.{1}
-        ///{0} was developed by {2}.
-        ///{3} に類似しているローカライズされた文字列を検索します。
-        /// </summary>
-        internal static string VersionDialog {
-            get {
-                return ResourceManager.GetString("VersionDialog", resourceCulture);
             }
         }
     }

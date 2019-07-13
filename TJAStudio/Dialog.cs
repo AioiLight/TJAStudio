@@ -42,13 +42,13 @@ namespace TJAStudio
             dialog.Icon = TaskDialogStandardIcon.Information;
             dialog.Caption = Properties.Common.Name;
             dialog.InstructionText = string.Format(Properties.Dialog.SaveChange_Title, Program.Project.ProjectName);
-            dialog.Text = Properties.Dialog.SaveChange_Text;
+            dialog.Text = string.Format(Properties.Dialog.SaveChange_Text, Program.Project.ProjectName);
             dialog.StandardButtons = TaskDialogStandardButtons.Yes | TaskDialogStandardButtons.No | TaskDialogStandardButtons.Cancel;
             dialog.DefaultButton = TaskDialogDefaultButton.Cancel;
 
             return dialog;
         }
 
-
+        
     }
 }

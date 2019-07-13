@@ -61,7 +61,8 @@ namespace TJAStudio.Properties {
         }
         
         /// <summary>
-        ///   Your changes will be lost when you don&apos;t save. に類似しているローカライズされた文字列を検索します。
+        ///   This project {0} is not saved.
+        ///Your changes will be lost when you don&apos;t save. に類似しているローカライズされた文字列を検索します。
         /// </summary>
         internal static string SaveChange_Text {
             get {

@@ -120,9 +120,6 @@
   <data name="AllClear" xml:space="preserve">
     <value>No problem.</value>
   </data>
-  <data name="ApplicationExit" xml:space="preserve">
-    <value>Do you want to save changes to {0}?</value>
-  </data>
   <data name="AreYouSure" xml:space="preserve">
     <value>Are you sure?</value>
   </data>
@@ -194,9 +191,6 @@ Notes: {2}</value>
     <value>Duplicate header name.
 Delete previous header?</value>
   </data>
-  <data name="EditedWarning" xml:space="preserve">
-    <value>This project {0} is not saved.</value>
-  </data>
   <data name="FileNotFound" xml:space="preserve">
     <value>The file "{0}" could not be found.
 There is not enough file to run the program.
@@ -264,10 +258,5 @@ Please download the program again.</value>
   </data>
   <data name="Status_Mode_Overwrite" xml:space="preserve">
     <value>Overwrite</value>
-  </data>
-  <data name="VersionDialog" xml:space="preserve">
-    <value>{0} Ver.{1}
-{0} was developed by {2}.
-{3}</value>
   </data>
 </root>
