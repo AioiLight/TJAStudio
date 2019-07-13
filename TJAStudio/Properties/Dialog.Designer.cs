@@ -61,6 +61,24 @@ namespace TJAStudio.Properties {
         }
         
         /// <summary>
+        ///   Your course will be lost if you don&apos;t save. に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string DanMargeExit_Text {
+            get {
+                return ResourceManager.GetString("DanMargeExit_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Are you sure to exit? に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string DanMargeExit_Title {
+            get {
+                return ResourceManager.GetString("DanMargeExit_Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   This project {0} is not saved.
         ///Your changes will be lost when you don&apos;t save. に類似しているローカライズされた文字列を検索します。
         /// </summary>

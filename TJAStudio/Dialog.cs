@@ -49,6 +49,18 @@ namespace TJAStudio
             return dialog;
         }
 
-        
+        public static TaskDialog DanMargeExit()
+        {
+            var dialog = new TaskDialog();
+            dialog.Icon = TaskDialogStandardIcon.Information;
+            dialog.Caption = Properties.Common.Name;
+            dialog.InstructionText = Properties.Dialog.DanMargeExit_Title;
+            dialog.Text = Properties.Dialog.DanMargeExit_Text;
+            dialog.StandardButtons = TaskDialogStandardButtons.Yes | TaskDialogStandardButtons.No;
+            dialog.DefaultButton = TaskDialogDefaultButton.Yes;
+
+            return dialog;
+        }
+
     }
 }

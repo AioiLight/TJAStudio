@@ -327,19 +327,27 @@ namespace TJAStudio.DanMarge
 
         private void Button_Close_Click(object sender, EventArgs e)
         {
-            if(SongList.Count > 0)
-            {
-                var dialog = MessageBox.Show(Properties.SystemMessage.AreYouSure,
-                    string.Format("{0} - {1}", Properties.Common.Name, Properties.Common.DanBuilder),
-                    MessageBoxButtons.YesNo,
-                    MessageBoxIcon.Asterisk);
-                if(dialog == DialogResult.No)
-                {
-                    DialogResult = DialogResult.None;
-                    return;
-                }
-            }
             Close();
+        }
+
+        private void DanBuilder_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (SongList.Count == 0)
+            {
+                return;
+            }
+
+
+            var dialog = Dialog.DanMargeExit();
+            dialog.OwnerWindowHandle = Handle;
+            if (dialog.Show() == Microsoft.WindowsAPICodePack.Dialogs.TaskDialogResult.Yes)
+            {
+                return;
+            }
+            else
+            {
+                e.Cancel = true;
+            }
         }
     }
 }

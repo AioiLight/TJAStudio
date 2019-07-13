@@ -120,9 +120,6 @@
   <data name="AllClear" xml:space="preserve">
     <value>No problem.</value>
   </data>
-  <data name="AreYouSure" xml:space="preserve">
-    <value>Are you sure?</value>
-  </data>
   <data name="CheckingDirectory" xml:space="preserve">
     <value>Cheking Directroy... {0}</value>
   </data>

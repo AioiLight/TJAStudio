@@ -120,9 +120,6 @@
   <data name="AllClear" xml:space="preserve">
     <value>問題はありません。</value>
   </data>
-  <data name="AreYouSure" xml:space="preserve">
-    <value>本当によろしいですか?</value>
-  </data>
   <data name="CommonHeader" xml:space="preserve">
     <value>共通ヘッダー</value>
   </data>

@@ -31,8 +31,11 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DanBuilder));
             this.GroupBox_Conditions = new System.Windows.Forms.GroupBox();
             this.Label_Exam3 = new System.Windows.Forms.Label();
+            this.ExamHeader_Exam3 = new TJAStudio.DanMarge.ExamHeader();
             this.Label_Exam2 = new System.Windows.Forms.Label();
+            this.ExamHeader_Exam2 = new TJAStudio.DanMarge.ExamHeader();
             this.Label_Exam1 = new System.Windows.Forms.Label();
+            this.ExamHeader_Exam1 = new TJAStudio.DanMarge.ExamHeader();
             this.GroupBox_Songs = new System.Windows.Forms.GroupBox();
             this.Button_DownSong = new System.Windows.Forms.Button();
             this.Button_UpSong = new System.Windows.Forms.Button();
@@ -42,12 +45,9 @@
             this.FilePath = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Status = new System.Windows.Forms.StatusStrip();
             this.Status_Songs = new System.Windows.Forms.ToolStripStatusLabel();
+            this.Status_NotesRemain = new System.Windows.Forms.ToolStripStatusLabel();
             this.Button_Build = new System.Windows.Forms.Button();
             this.Button_Close = new System.Windows.Forms.Button();
-            this.Status_NotesRemain = new System.Windows.Forms.ToolStripStatusLabel();
-            this.ExamHeader_Exam3 = new TJAStudio.DanMarge.ExamHeader();
-            this.ExamHeader_Exam2 = new TJAStudio.DanMarge.ExamHeader();
-            this.ExamHeader_Exam1 = new TJAStudio.DanMarge.ExamHeader();
             this.GroupBox_Conditions.SuspendLayout();
             this.GroupBox_Songs.SuspendLayout();
             this.Status.SuspendLayout();
@@ -70,15 +70,30 @@
             resources.ApplyResources(this.Label_Exam3, "Label_Exam3");
             this.Label_Exam3.Name = "Label_Exam3";
             // 
+            // ExamHeader_Exam3
+            // 
+            resources.ApplyResources(this.ExamHeader_Exam3, "ExamHeader_Exam3");
+            this.ExamHeader_Exam3.Name = "ExamHeader_Exam3";
+            // 
             // Label_Exam2
             // 
             resources.ApplyResources(this.Label_Exam2, "Label_Exam2");
             this.Label_Exam2.Name = "Label_Exam2";
             // 
+            // ExamHeader_Exam2
+            // 
+            resources.ApplyResources(this.ExamHeader_Exam2, "ExamHeader_Exam2");
+            this.ExamHeader_Exam2.Name = "ExamHeader_Exam2";
+            // 
             // Label_Exam1
             // 
             resources.ApplyResources(this.Label_Exam1, "Label_Exam1");
             this.Label_Exam1.Name = "Label_Exam1";
+            // 
+            // ExamHeader_Exam1
+            // 
+            resources.ApplyResources(this.ExamHeader_Exam1, "ExamHeader_Exam1");
+            this.ExamHeader_Exam1.Name = "ExamHeader_Exam1";
             // 
             // GroupBox_Songs
             // 
@@ -128,6 +143,7 @@
             this.ListView_Songs.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.FilePath});
             this.ListView_Songs.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
+            this.ListView_Songs.HideSelection = false;
             resources.ApplyResources(this.ListView_Songs, "ListView_Songs");
             this.ListView_Songs.MultiSelect = false;
             this.ListView_Songs.Name = "ListView_Songs";
@@ -152,6 +168,11 @@
             this.Status_Songs.Name = "Status_Songs";
             resources.ApplyResources(this.Status_Songs, "Status_Songs");
             // 
+            // Status_NotesRemain
+            // 
+            this.Status_NotesRemain.Name = "Status_NotesRemain";
+            resources.ApplyResources(this.Status_NotesRemain, "Status_NotesRemain");
+            // 
             // Button_Build
             // 
             this.Button_Build.DialogResult = System.Windows.Forms.DialogResult.Cancel;
@@ -167,26 +188,6 @@
             this.Button_Close.Name = "Button_Close";
             this.Button_Close.UseVisualStyleBackColor = true;
             this.Button_Close.Click += new System.EventHandler(this.Button_Close_Click);
-            // 
-            // Status_NotesRemain
-            // 
-            this.Status_NotesRemain.Name = "Status_NotesRemain";
-            resources.ApplyResources(this.Status_NotesRemain, "Status_NotesRemain");
-            // 
-            // ExamHeader_Exam3
-            // 
-            resources.ApplyResources(this.ExamHeader_Exam3, "ExamHeader_Exam3");
-            this.ExamHeader_Exam3.Name = "ExamHeader_Exam3";
-            // 
-            // ExamHeader_Exam2
-            // 
-            resources.ApplyResources(this.ExamHeader_Exam2, "ExamHeader_Exam2");
-            this.ExamHeader_Exam2.Name = "ExamHeader_Exam2";
-            // 
-            // ExamHeader_Exam1
-            // 
-            resources.ApplyResources(this.ExamHeader_Exam1, "ExamHeader_Exam1");
-            this.ExamHeader_Exam1.Name = "ExamHeader_Exam1";
             // 
             // DanBuilder
             // 
@@ -204,6 +205,7 @@
             this.MinimizeBox = false;
             this.Name = "DanBuilder";
             this.ShowInTaskbar = false;
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.DanBuilder_FormClosing);
             this.GroupBox_Conditions.ResumeLayout(false);
             this.GroupBox_Conditions.PerformLayout();
             this.GroupBox_Songs.ResumeLayout(false);

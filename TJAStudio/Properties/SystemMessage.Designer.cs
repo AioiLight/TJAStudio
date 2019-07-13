@@ -70,15 +70,6 @@ namespace TJAStudio.Properties {
         }
         
         /// <summary>
-        ///   Are you sure? に類似しているローカライズされた文字列を検索します。
-        /// </summary>
-        internal static string AreYouSure {
-            get {
-                return ResourceManager.GetString("AreYouSure", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Cheking Directroy... {0} に類似しているローカライズされた文字列を検索します。
         /// </summary>
         internal static string CheckingDirectory {
