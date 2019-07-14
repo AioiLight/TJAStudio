@@ -148,14 +148,20 @@
   <data name="SaveChange_Title" xml:space="preserve">
     <value>{0} への変更内容を保存しますか?</value>
   </data>
+  <data name="SimulatorNotFound_Text" xml:space="preserve">
+    <value>シミュレータ "{0}" が見つかりません。
+設定を確認してください。</value>
+  </data>
+  <data name="SimulatorNotFound_Title" xml:space="preserve">
+    <value>シミュレータが見つかりません</value>
+  </data>
   <data name="Version_Link" xml:space="preserve">
     <value>Webサイトを開く</value>
   </data>
   <data name="Version_Text" xml:space="preserve">
     <value>{0} Ver.{1}
 {0} was developed by {2}.
-{3}
-</value>
+{3}</value>
   </data>
   <data name="Version_Title" xml:space="preserve">
     <value>{0} について</value>

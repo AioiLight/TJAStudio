@@ -101,5 +101,17 @@ namespace TJAStudio
             }
         }
 
+        public static TaskDialog SimulatorNotFound()
+        {
+            var dialog = new TaskDialog();
+            dialog.Icon = TaskDialogStandardIcon.Information;
+            dialog.Caption = Properties.Common.Name;
+            dialog.InstructionText = Properties.Dialog.SimulatorNotFound_Title;
+            dialog.Text = string.Format(Properties.Dialog.SimulatorNotFound_Text, Program.Setting.SimulatorPath);
+            dialog.StandardButtons = TaskDialogStandardButtons.Ok;
+            dialog.DefaultButton = TaskDialogDefaultButton.Ok;
+
+            return dialog;
+        }
     }
 }

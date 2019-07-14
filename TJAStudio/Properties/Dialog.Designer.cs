@@ -146,6 +146,25 @@ namespace TJAStudio.Properties {
         }
         
         /// <summary>
+        ///   The simulator &quot;{0}&quot; is not found.
+        ///Please check your settings. に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string SimulatorNotFound_Text {
+            get {
+                return ResourceManager.GetString("SimulatorNotFound_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   The simulator is not found に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string SimulatorNotFound_Title {
+            get {
+                return ResourceManager.GetString("SimulatorNotFound_Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Visit Website に類似しているローカライズされた文字列を検索します。
         /// </summary>
         internal static string Version_Link {
@@ -157,8 +176,7 @@ namespace TJAStudio.Properties {
         /// <summary>
         ///   {0} Ver.{1}
         ///{0} was developed by {2}.
-        ///{3}
-        /// に類似しているローカライズされた文字列を検索します。
+        ///{3} に類似しているローカライズされた文字列を検索します。
         /// </summary>
         internal static string Version_Text {
             get {

@@ -466,7 +466,7 @@ namespace TJAStudio
             Execute();
         }
 
-        private static void Execute()
+        private void Execute()
         {
             try
             {
@@ -475,7 +475,9 @@ namespace TJAStudio
             }
             catch (Exception)
             {
-
+                var dialog = Dialog.SimulatorNotFound();
+                dialog.OwnerWindowHandle = Handle;
+                dialog.Show();
             }
         }
 
