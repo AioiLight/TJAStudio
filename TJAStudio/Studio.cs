@@ -493,20 +493,9 @@ namespace TJAStudio
             foreach (var item in Program.Project.ProjectFile)
             {
                 var fileName = tempDir + Path.GetFileName(item);
-                if (File.Exists(fileName))
-                {
-                    try
-                    {
-                        File.Delete(fileName);
-                    }
-                    catch (Exception)
-                    {
-
-                    }
-                }
                 try
                 {
-                    File.Copy(item, fileName);
+                    File.Copy(item, fileName, true);
                 }
                 catch (Exception)
                 {
