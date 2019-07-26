@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Projects xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ProjectName>Template</ProjectName>
+  <CommonHeader>
+    <Header>
+      <Name>TITLE</Name>
+      <Value>ここにタイトルを入力</Value>
+    </Header>
+    <Header>
+      <Name>SUBTITLE</Name>
+      <Value>--ここにサブタイトル</Value>
+    </Header>
+    <Header>
+      <Name>BPM</Name>
+      <Value>120</Value>
+    </Header>
+    <Header>
+      <Name>WAVE</Name>
+      <Value>music.ogg</Value>
+    </Header>
+    <Header>
+      <Name>OFFSET</Name>
+      <Value>0.0</Value>
+    </Header>
+    <Header>
+      <Name>SCOREMODE</Name>
+      <Value>2</Value>
+    </Header>
+  </CommonHeader>
+  <Courses>
+    <Course>
+      <Name>Edit</Name>
+      <Header>
+        <Header>
+          <Name>COURSE</Name>
+          <Value>Edit</Value>
+        </Header>
+        <Header>
+          <Name>LEVEL</Name>
+          <Value>10</Value>
+        </Header>
+        <Header>
+          <Name>SCOREINIT</Name>
+          <Value />
+        </Header>
+        <Header>
+          <Name>SCOREDIFF</Name>
+          <Value />
+        </Header>
+        <Header>
+          <Name>BALLOON</Name>
+          <Value />
+        </Header>
+      </Header>
+      <Text>#START
+#END</Text>
+    </Course>
+    <Course>
+      <Name>Oni</Name>
+      <Header>
+        <Header>
+          <Name>COURSE</Name>
+          <Value>Oni</Value>
+        </Header>
+        <Header>
+          <Name>LEVEL</Name>
+          <Value>10</Value>
+        </Header>
+        <Header>
+          <Name>SCOREINIT</Name>
+          <Value />
+        </Header>
+        <Header>
+          <Name>SCOREDIFF</Name>
+          <Value />
+        </Header>
+        <Header>
+          <Name>BALLOON</Name>
+          <Value />
+        </Header>
+      </Header>
+      <Text>#START
+#END</Text>
+    </Course>
+    <Course>
+      <Name>Hard</Name>
+      <Header>
+        <Header>
+          <Name>COURSE</Name>
+          <Value>Hard</Value>
+        </Header>
+        <Header>
+          <Name>LEVEL</Name>
+          <Value>8</Value>
+        </Header>
+        <Header>
+          <Name>SCOREINIT</Name>
+          <Value />
+        </Header>
+        <Header>
+          <Name>SCOREDIFF</Name>
+          <Value />
+        </Header>
+        <Header>
+          <Name>BALLOON</Name>
+          <Value />
+        </Header>
+      </Header>
+      <Text>#START
+#END</Text>
+    </Course>
+    <Course>
+      <Name>Normal</Name>
+      <Header>
+        <Header>
+          <Name>COURSE</Name>
+          <Value>Normal</Value>
+        </Header>
+        <Header>
+          <Name>LEVEL</Name>
+          <Value>6</Value>
+        </Header>
+        <Header>
+          <Name>SCOREINIT</Name>
+          <Value />
+        </Header>
+        <Header>
+          <Name>SCOREDIFF</Name>
+          <Value />
+        </Header>
+        <Header>
+          <Name>BALLOON</Name>
+          <Value />
+        </Header>
+      </Header>
+      <Text>#START
+#END</Text>
+    </Course>
+    <Course>
+      <Name>Easy</Name>
+      <Header>
+        <Header>
+          <Name>COURSE</Name>
+          <Value>Easy</Value>
+        </Header>
+        <Header>
+          <Name>LEVEL</Name>
+          <Value>5</Value>
+        </Header>
+        <Header>
+          <Name>SCOREINIT</Name>
+          <Value />
+        </Header>
+        <Header>
+          <Name>SCOREDIFF</Name>
+          <Value />
+        </Header>
+        <Header>
+          <Name>BALLOON</Name>
+          <Value />
+        </Header>
+      </Header>
+      <Text>#START
+#END</Text>
+    </Course>
+  </Courses>
+  <ProjectFile />
+</Projects>
