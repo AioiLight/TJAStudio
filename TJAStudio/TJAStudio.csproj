@@ -537,9 +537,25 @@
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>xcopy "$(TargetDir)*" "$(SolutionDir)Build" /s/e/i/y
+    <PostBuildEvent>:ターゲットからBuildフォルダへ
+xcopy "$(TargetDir)*" "$(SolutionDir)Build" /s/e/i/y
+:ライセンスフォルダをコピー
 xcopy "$(SolutionDir)License" "$(SolutionDir)Build\License"  /s/e/i/y
+:テンプレートフォルダをコピー
 xcopy "$(SolutionDir)Template" "$(SolutionDir)Build\Template"  /s/e/i/y
-copy "$(ProjectDir)Readme.txt" "$(SolutionDir)Build\Readme.txt"</PostBuildEvent>
+:ライブラリフォルダをコピー
+mkdir "$(SolutionDir)Build\Lib"
+move /y "$(SolutionDir)Build\*.dll" "$(SolutionDir)Build\Lib"
+move /y "$(SolutionDir)Build\*.xml" "$(SolutionDir)Build\Lib"
+:Readmeをコピー
+copy "$(ProjectDir)Readme.txt" "$(SolutionDir)Build\Readme.txt"
+
+if "$(ConfigurationName)" == "Release" (
+:リリースビルド時の処理
+del "$(SolutionDir)Build\Windows.xml" /q
+del "$(SolutionDir)Build\Settings.xml" /q
+del "$(SolutionDir)Build\temp\*.*"  /q
+rd  "$(SolutionDir)Build\temp\"
+)</PostBuildEvent>
   </PropertyGroup>
 </Project>
