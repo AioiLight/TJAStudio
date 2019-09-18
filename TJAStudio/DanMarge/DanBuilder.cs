@@ -172,7 +172,10 @@ namespace TJAStudio.DanMarge
                 }
                 else if (item.StartsWith("OFFSET:"))
                 {
-                    result.Offset = (Convert.ToDouble(nowLine.Substring("OFFSET:".Length)) * -1).ToString();
+                    if (double.TryParse(nowLine.Substring("OFFSET:".Length), out var parse))
+                    {
+                        result.Offset = (parse * -1).ToString();
+                    }
                 }
                 else if (nowLine.StartsWith("GENRE:"))
                 {
@@ -181,12 +184,19 @@ namespace TJAStudio.DanMarge
                 else if (nowLine.StartsWith("SCOREINIT:"))
                 {
                     var scoreInit = nowLine.Substring("SCOREINIT:".Length).Split(',');
-                    result.ScoreInit = string.IsNullOrWhiteSpace(scoreInit[0]) ? -1 : Convert.ToInt32(scoreInit[0]);
+                    if (int.TryParse(scoreInit[0], out var parse))
+                    {
+                        result.ScoreInit = parse;
+                    }
                 }
                 else if (nowLine.StartsWith("SCOREDIFF:"))
                 {
                     var scoreDiff = nowLine.Substring("SCOREDIFF:".Length);
-                    result.ScoreDiff = string.IsNullOrWhiteSpace(scoreDiff) ? -1 : Convert.ToInt32(scoreDiff);
+                    if (int.TryParse(scoreDiff, out var parse))
+                    {
+                        result.ScoreDiff = parse;
+
+                    }
                 }
                 else if (nowLine.StartsWith("WAVE:"))
                 {
