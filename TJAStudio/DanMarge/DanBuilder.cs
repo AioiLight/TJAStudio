@@ -230,7 +230,7 @@ namespace TJAStudio.DanMarge
             var songs = new Songs();
             var dialog = new OpenFileDialog();
             dialog.Title = Properties.SystemMessage.OpenSongs;
-            dialog.Filter = String.Format("{0}|*{1}|{2}|*{3}", Properties.Common.TJAExtensionDescription, Properties.Common.TJAExtensionName, Properties.Common.ExtensionDescription, Properties.Common.ExtensionName);
+            dialog.Filter = string.Format("{0}, {1}|*{2};*{3}", Properties.Common.TJAExtensionDescription, Properties.Common.ExtensionDescription, Properties.Common.TJAExtensionName, Properties.Common.ExtensionName);
             if (dialog.ShowDialog() == DialogResult.OK)
             {
                 var extension = Path.GetExtension(dialog.FileName);
