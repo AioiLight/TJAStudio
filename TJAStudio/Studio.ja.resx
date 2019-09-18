@@ -253,17 +253,35 @@
   <data name="Menu_Edit_NotesOperation.Text" xml:space="preserve">
     <value>ノーツ操作</value>
   </data>
+  <data name="Menu_Edit_NotesOperation_ToDon.Size" type="System.Drawing.Size, System.Drawing">
+    <value>192, 24</value>
+  </data>
   <data name="Menu_Edit_NotesOperation_ToDon.Text" xml:space="preserve">
     <value>全てをドンに</value>
+  </data>
+  <data name="Menu_Edit_NotesOperation_ToKa.Size" type="System.Drawing.Size, System.Drawing">
+    <value>192, 24</value>
   </data>
   <data name="Menu_Edit_NotesOperation_ToKa.Text" xml:space="preserve">
     <value>全てをカツに</value>
   </data>
+  <data name="Menu_Edit_NotesOperation_Abekobe.Size" type="System.Drawing.Size, System.Drawing">
+    <value>192, 24</value>
+  </data>
   <data name="Menu_Edit_NotesOperation_Abekobe.Text" xml:space="preserve">
     <value>あべこべ</value>
   </data>
+  <data name="Menu_Edit_NotesOperation_Detarame.Size" type="System.Drawing.Size, System.Drawing">
+    <value>192, 24</value>
+  </data>
   <data name="Menu_Edit_NotesOperation_Detarame.Text" xml:space="preserve">
     <value>でたらめ</value>
+  </data>
+  <data name="Menu_Edit_NotesOperation_Command.Size" type="System.Drawing.Size, System.Drawing">
+    <value>192, 24</value>
+  </data>
+  <data name="Menu_Edit_NotesOperation_Command.Text" xml:space="preserve">
+    <value>命令を削除</value>
   </data>
   <data name="Menu_Tool.Size" type="System.Drawing.Size, System.Drawing">
     <value>100, 24</value>
@@ -336,6 +354,9 @@
   </data>
   <data name="Menu_Command.Text" xml:space="preserve">
     <value>命令(&amp;C)</value>
+  </data>
+  <data name="Menu_Command_StartEnd.Size" type="System.Drawing.Size, System.Drawing">
+    <value>232, 24</value>
   </data>
   <data name="Menu_Command_StartEnd.Text" xml:space="preserve">
     <value>#START ～ #END</value>
