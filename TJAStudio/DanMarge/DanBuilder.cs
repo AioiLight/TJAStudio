@@ -202,7 +202,15 @@ namespace TJAStudio.DanMarge
                 }
                 else if (nowLine.StartsWith("BALLOON:"))
                 {
-                    result.Balloon = nowLine.Trim().EndsWith(",") ? nowLine.Substring("BALLOON:".Length, nowLine.Length - 1) : nowLine.Substring("BALLOON:".Length);
+                    var balloon = nowLine.Trim().Substring("BALLOON:".Length);
+                    if (nowLine.Trim().EndsWith(","))
+                    {
+                        result.Balloon = balloon.Substring(0, balloon.Length - 1);
+                    }
+                    else
+                    {
+                        result.Balloon = balloon;
+                    }
                 }
                 else if (nowLine.StartsWith("DEMOSTART:"))
                 {
