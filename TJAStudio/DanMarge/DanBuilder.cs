@@ -5,6 +5,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace TJAStudio.DanMarge
@@ -69,6 +70,12 @@ namespace TJAStudio.DanMarge
             {
                 // 分割して、そのあとまたくっつける
                 splitedcourses[i] = "COURSE:" + splitedcourses[i];
+            }
+
+            if (splitedcourses.Length < 1)
+            {
+                // コースがない
+                return null;
             }
 
             if (splitedcourses.Length > 1)
@@ -246,6 +253,13 @@ namespace TJAStudio.DanMarge
                 {
                     songs.FilePath = dialog.FileName;
                     SongList.Add(songs);
+                }
+                else
+                {
+                    var taskDialog = Dialog.ItsNotTJAFile(Path.GetFileName(dialog.FileName));
+                    taskDialog.OwnerWindowHandle = Handle;
+                    taskDialog.Show();
+                    taskDialog.Dispose();
                 }
             }
             dialog.Dispose();

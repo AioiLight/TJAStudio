@@ -141,6 +141,13 @@
   <data name="HeaderDuplicated_Title" xml:space="preserve">
     <value>ヘッダーが重複しています</value>
   </data>
+  <data name="ItsNotTJAFile_Text" xml:space="preserve">
+    <value>{0} は.tjaファイルフォーマットではないようです。
+段位認定生成器で.tjaファイルを使用するには、COURSE:ヘッダーが少なくとも1つ以上含まれている必要があります。</value>
+  </data>
+  <data name="ItsNotTJAFile_Title" xml:space="preserve">
+    <value>このファイルは.tjaファイルフォーマットではないようです。</value>
+  </data>
   <data name="SaveChange_Text" xml:space="preserve">
     <value>プロジェクト "{0}" は保存されていません。
 保存しない場合、変更内容は失われます。</value>

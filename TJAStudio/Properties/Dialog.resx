@@ -141,6 +141,13 @@ Choose an action for duplicate header.</value>
   <data name="HeaderDuplicated_Title" xml:space="preserve">
     <value>Header is duplicated</value>
   </data>
+  <data name="ItsNotTJAFile_Text" xml:space="preserve">
+    <value>{0} doesn't seem to be in .tja file format.
+The .tja file used for the Dan Builder must contain COURSE: header.</value>
+  </data>
+  <data name="ItsNotTJAFile_Title" xml:space="preserve">
+    <value>This file doesn't seem to be a .tja file format.</value>
+  </data>
   <data name="SaveChange_Text" xml:space="preserve">
     <value>This project {0} is not saved.
 Your changes will be lost when you don't save.</value>

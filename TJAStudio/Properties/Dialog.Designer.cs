@@ -127,6 +127,25 @@ namespace TJAStudio.Properties {
         }
         
         /// <summary>
+        ///   {0} doesn&apos;t seem to be in .tja file format.
+        ///The .tja file used for the Dan Builder must contain COURSE: header. に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string ItsNotTJAFile_Text {
+            get {
+                return ResourceManager.GetString("ItsNotTJAFile_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   This file doesn&apos;t seem to be a .tja file format. に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string ItsNotTJAFile_Title {
+            get {
+                return ResourceManager.GetString("ItsNotTJAFile_Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   This project {0} is not saved.
         ///Your changes will be lost when you don&apos;t save. に類似しているローカライズされた文字列を検索します。
         /// </summary>

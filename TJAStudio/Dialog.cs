@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using Microsoft.WindowsAPICodePack.Dialogs;
 
 namespace TJAStudio
@@ -103,6 +104,19 @@ namespace TJAStudio
             dialog.Caption = Properties.Common.Name;
             dialog.InstructionText = Properties.Dialog.SimulatorNotFound_Title;
             dialog.Text = string.Format(Properties.Dialog.SimulatorNotFound_Text, Program.Setting.SimulatorPath);
+            dialog.StandardButtons = TaskDialogStandardButtons.Ok;
+            dialog.DefaultButton = TaskDialogDefaultButton.Ok;
+
+            return dialog;
+        }
+
+        public static TaskDialog ItsNotTJAFile(string fileName)
+        {
+            var dialog = new TaskDialog();
+            dialog.Icon = TaskDialogStandardIcon.Information;
+            dialog.Caption = Properties.Common.Name;
+            dialog.InstructionText = Properties.Dialog.ItsNotTJAFile_Title;
+            dialog.Text = string.Format(Properties.Dialog.ItsNotTJAFile_Text, fileName);
             dialog.StandardButtons = TaskDialogStandardButtons.Ok;
             dialog.DefaultButton = TaskDialogDefaultButton.Ok;
 
