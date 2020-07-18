@@ -117,4 +117,215 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>640, 320</value>
+  </data>
+  <data name="LinkLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>273, 252</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Label_Link.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="Label_Link.Location" type="System.Drawing.Point, System.Drawing">
+    <value>227, 252</value>
+  </data>
+  <data name="LinkLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>339, 20</value>
+  </data>
+  <data name="Label_Help.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="Label_Link.Text" xml:space="preserve">
+    <value>Ref.:</value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="&gt;&gt;Label_Link.Name" xml:space="preserve">
+    <value>Label_Link</value>
+  </data>
+  <data name="&gt;&gt;LinkLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Label_Help.Name" xml:space="preserve">
+    <value>Label_Help</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Chart.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="LinkLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="Label_Help.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopRight</value>
+  </data>
+  <data name="Label_BPM.Location" type="System.Drawing.Point, System.Drawing">
+    <value>575, 94</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>8, 20</value>
+  </data>
+  <data name="Label_Help.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="Label_BPM.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="Label_BPM.Text" xml:space="preserve">
+    <value>BPM</value>
+  </data>
+  <data name="TextBox_BPM.Text" xml:space="preserve">
+    <value>120.0</value>
+  </data>
+  <data name="Label_BPM.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;Label_BPM.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="TextBox_BPM.Location" type="System.Drawing.Point, System.Drawing">
+    <value>464, 52</value>
+  </data>
+  <data name="&gt;&gt;Label_Link.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;Chart.Name" xml:space="preserve">
+    <value>Chart</value>
+  </data>
+  <data name="&gt;&gt;Label_BPM.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="Chart.Size" type="System.Drawing.Size, System.Drawing">
+    <value>454, 249</value>
+  </data>
+  <data name="Label_BPM.Size" type="System.Drawing.Size, System.Drawing">
+    <value>37, 20</value>
+  </data>
+  <data name="Chart.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="&gt;&gt;Label_BPM.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="TextBox_BPM.Size" type="System.Drawing.Size, System.Drawing">
+    <value>148, 39</value>
+  </data>
+  <data name="Chart.Text" xml:space="preserve">
+    <value>Chart</value>
+  </data>
+  <data name="&gt;&gt;Label_Help.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="TextBox_BPM.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="Chart.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="&gt;&gt;LinkLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
+    <value>メイリオ, 9.75pt</value>
+  </data>
+  <data name="&gt;&gt;Label_Help.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="Label_Link.Size" type="System.Drawing.Size, System.Drawing">
+    <value>40, 20</value>
+  </data>
+  <data name="&gt;&gt;Label_Link.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="Label_Help.Location" type="System.Drawing.Point, System.Drawing">
+    <value>460, 9</value>
+  </data>
+  <data name="LinkLabel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="TextBox_BPM.Font" type="System.Drawing.Font, System.Drawing">
+    <value>メイリオ, 15.75pt</value>
+  </data>
+  <data name="LinkLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="Label_Link.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="LinkLabel.Text" xml:space="preserve">
+    <value>http://yuinore.net/2017/12/bayes-bpm-counter-2/</value>
+  </data>
+  <data name="Label_Link.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;Chart.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataVisualization.Charting.Chart, System.Windows.Forms.DataVisualization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35</value>
+  </data>
+  <data name="&gt;&gt;TextBox_BPM.Name" xml:space="preserve">
+    <value>TextBox_BPM</value>
+  </data>
+  <data name="&gt;&gt;TextBox_BPM.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Label_Help.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Label_BPM.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>BPMMeasure</value>
+  </data>
+  <data name="&gt;&gt;Label_Help.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Label_Link.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LinkLabel.Name" xml:space="preserve">
+    <value>LinkLabel</value>
+  </data>
+  <data name="&gt;&gt;Label_BPM.Name" xml:space="preserve">
+    <value>Label_BPM</value>
+  </data>
+  <data name="&gt;&gt;TextBox_BPM.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="Label_Help.Text" xml:space="preserve">
+    <value>Enter: Measure tempo
+Delete: Clear tempo</value>
+  </data>
+  <data name="&gt;&gt;LinkLabel.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;Chart.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="TextBox_BPM.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>624, 281</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>BPMMeasure</value>
+  </data>
+  <data name="Label_Help.Size" type="System.Drawing.Size, System.Drawing">
+    <value>152, 40</value>
+  </data>
+  <data name="&gt;&gt;TextBox_BPM.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;Chart.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
 </root>

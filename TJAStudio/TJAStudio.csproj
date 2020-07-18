@@ -245,6 +245,9 @@
     <Compile Include="Windows\ScrollChanger.Designer.cs">
       <DependentUpon>ScrollChanger.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="BPMMeasure\BPMMeasure.ja.resx">
+      <DependentUpon>BPMMeasure.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="BPMMeasure\BPMMeasure.resx">
       <DependentUpon>BPMMeasure.cs</DependentUpon>
     </EmbeddedResource>
