@@ -308,7 +308,7 @@
     <value>208, 24</value>
   </data>
   <data name="Menu_Tool_About.Text" xml:space="preserve">
-    <value>TJAStudioについて...</value>
+    <value>TJAStudio について...</value>
   </data>
   <data name="Menu_Tool.Size" type="System.Drawing.Size, System.Drawing">
     <value>100, 24</value>
@@ -377,7 +377,7 @@
     <value>232, 24</value>
   </data>
   <data name="Menu_Command_BPM.Text" xml:space="preserve">
-    <value>BPM変化...</value>
+    <value>BPM 変化...</value>
   </data>
   <data name="Menu_Command_Measure.Size" type="System.Drawing.Size, System.Drawing">
     <value>232, 24</value>
