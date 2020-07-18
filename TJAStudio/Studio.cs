@@ -574,7 +574,7 @@ namespace TJAStudio
 
         private void Menu_Version_TJAS_Click(object sender, EventArgs e)
         {
-            System.Diagnostics.Process.Start(@"https://aioilight.space/taiko/tjas/");
+            System.Diagnostics.Process.Start(@"https://aioilight.space/tjastudio/");
         }
 
         private void Studio_Deactivate(object sender, EventArgs e)
