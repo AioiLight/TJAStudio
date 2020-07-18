@@ -79,6 +79,7 @@
             // List
             // 
             resources.ApplyResources(this.List, "List");
+            this.List.HideSelection = false;
             this.List.MultiSelect = false;
             this.List.Name = "List";
             this.List.UseCompatibleStateImageBehavior = false;

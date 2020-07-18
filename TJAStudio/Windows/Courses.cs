@@ -67,6 +67,11 @@ namespace TJAStudio
                 Program.WindowManager.Editors.Insert(index + 1, work);
             }
             SetCoursesFromList();
+
+            // 選択状態を維持させる
+            Studio.TJAStudio.Courses.Activate();
+            List.Items[index + 1].Selected = true;
+
             Studio.TJAStudio.EditorChanged();
         }
 
@@ -87,6 +92,11 @@ namespace TJAStudio
                 Program.WindowManager.Editors.Insert(index - 1, work);
             }
             SetCoursesFromList();
+
+            // 選択状態を維持させる
+            Studio.TJAStudio.Courses.Activate();
+            List.Items[index - 1].Selected = true;
+
             Studio.TJAStudio.EditorChanged();
         }
 

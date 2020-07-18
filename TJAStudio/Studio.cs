@@ -1019,7 +1019,7 @@ namespace TJAStudio
             return false;
         }
 
-        private Courses Courses = new Courses();
+        internal Courses Courses = new Courses();
         private Project Project = new Project();
         public  HeadersWindow HeaderWindow = new HeadersWindow(false);
         private HeadersWindow CommonHeaderWindow = new HeadersWindow(true, Properties.Common.CommonHeader);
