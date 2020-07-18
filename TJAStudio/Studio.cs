@@ -1028,5 +1028,11 @@ namespace TJAStudio
         public static int CurrentCourseID { get; set; }
         public bool IsEdited { get; set; }
         public string FileName { get; set; }
+
+        private void BPMMeasureToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var w = new BPMMeasure.BPMMeasure();
+            w.Show();
+        }
     }
 }

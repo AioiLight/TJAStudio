@@ -105,6 +105,7 @@
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.Tool_Execute = new System.Windows.Forms.ToolStripButton();
             this.Tool_FormatCheker = new System.Windows.Forms.ToolStripButton();
+            this.bPMMeasureToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.Menu.SuspendLayout();
             this.Status.SuspendLayout();
             this.Tool.SuspendLayout();
@@ -377,6 +378,7 @@
             this.Menu_Tool.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
             this.Menu_Tool.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.Menu_Tool_DanBuilder,
+            this.bPMMeasureToolStripMenuItem,
             this.toolStripMenuItem9,
             this.Menu_Tool_Settings,
             this.Menu_Tool_About});
@@ -665,6 +667,12 @@
             this.Tool_FormatCheker.Name = "Tool_FormatCheker";
             this.Tool_FormatCheker.Click += new System.EventHandler(this.Tool_FormatCheker_Click);
             // 
+            // bPMMeasureToolStripMenuItem
+            // 
+            this.bPMMeasureToolStripMenuItem.Name = "bPMMeasureToolStripMenuItem";
+            resources.ApplyResources(this.bPMMeasureToolStripMenuItem, "bPMMeasureToolStripMenuItem");
+            this.bPMMeasureToolStripMenuItem.Click += new System.EventHandler(this.BPMMeasureToolStripMenuItem_Click);
+            // 
             // Studio
             // 
             resources.ApplyResources(this, "$this");
@@ -771,6 +779,7 @@
         private System.Windows.Forms.ToolStripMenuItem Menu_Command_Scroll;
         private System.Windows.Forms.ToolStripMenuItem Menu_Command_BPM;
         private System.Windows.Forms.ToolStripMenuItem Menu_Command_Measure;
+        private System.Windows.Forms.ToolStripMenuItem bPMMeasureToolStripMenuItem;
     }
 }
 

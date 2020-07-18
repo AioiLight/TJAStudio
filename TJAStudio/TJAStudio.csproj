@@ -53,6 +53,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -70,6 +71,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BPMMeasure\BPMMeasure.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BPMMeasure\BPMMeasure.Designer.cs">
+      <DependentUpon>BPMMeasure.cs</DependentUpon>
+    </Compile>
     <Compile Include="DanMarge\CourseSelect.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -238,6 +245,9 @@
     <Compile Include="Windows\ScrollChanger.Designer.cs">
       <DependentUpon>ScrollChanger.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="BPMMeasure\BPMMeasure.resx">
+      <DependentUpon>BPMMeasure.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DanMarge\CourseSelect.ja.resx">
       <DependentUpon>CourseSelect.cs</DependentUpon>
     </EmbeddedResource>
@@ -535,6 +545,7 @@
     <Content Include="Readme.txt" />
     <Content Include="tjas.ico" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PostBuildEvent>:ターゲットからBuildフォルダへ

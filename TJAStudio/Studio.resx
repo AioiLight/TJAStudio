@@ -366,6 +366,12 @@
   <data name="Menu_Tool_DanBuilder.Text" xml:space="preserve">
     <value>Dan Builder...</value>
   </data>
+  <data name="bPMMeasureToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>198, 24</value>
+  </data>
+  <data name="bPMMeasureToolStripMenuItem.Text" xml:space="preserve">
+    <value>BPM Measure...</value>
+  </data>
   <data name="toolStripMenuItem9.Size" type="System.Drawing.Size, System.Drawing">
     <value>195, 6</value>
   </data>
@@ -7329,6 +7335,12 @@
   </data>
   <data name="&gt;&gt;Tool_FormatCheker.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;bPMMeasureToolStripMenuItem.Name" xml:space="preserve">
+    <value>bPMMeasureToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;bPMMeasureToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>Studio</value>
