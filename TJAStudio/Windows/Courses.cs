@@ -35,6 +35,7 @@ namespace TJAStudio
                 Studio.TJAStudio.EditorChanged();
             }
         }
+
         private void Tool_Delete_Click(object sender, EventArgs e)
         {
             if (Program.Project.Courses.Count <= 1 || List.SelectedItems.Count < 1) return;
@@ -47,7 +48,6 @@ namespace TJAStudio
         {
             if (List.SelectedItems.Count < 1) return;
             Program.WindowManager.Editors[List.SelectedItems[0].Index].Show(Studio.TJAStudio.Dock);
-
         }
 
         private void Tool_MoveDown_Click(object sender, EventArgs e)

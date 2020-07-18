@@ -1,11 +1,6 @@
-﻿using Sgry.Azuki;
+﻿using System.Collections.Generic;
+using Sgry.Azuki;
 using Sgry.Azuki.Highlighter;
-using System;
-using System.Collections.Generic;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace TJAStudio
 {

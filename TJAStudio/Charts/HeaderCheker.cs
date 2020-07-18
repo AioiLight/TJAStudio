@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Text.RegularExpressions;
 
 namespace TJAStudio.Charts
@@ -24,6 +20,7 @@ namespace TJAStudio.Charts
             Format = format;
             Simulator = availableSimulator;
         }
+
         /// <summary>
         /// ヘッダーのフォーマットをチェックし、有効であるかどうか調べます。
         /// </summary>
@@ -35,7 +32,7 @@ namespace TJAStudio.Charts
             var parameterText = text.Substring((Name + ":").Length);
             foreach (var item in Format)
             {
-                if(Regex.IsMatch(parameterText, item, RegexOptions.IgnoreCase)) isValid = true;
+                if (Regex.IsMatch(parameterText, item, RegexOptions.IgnoreCase)) isValid = true;
             }
             if (!isValid) throw new InvalidTJAFormatException(String.Format(Properties.SystemMessage.InvaildHeader, text));
         }

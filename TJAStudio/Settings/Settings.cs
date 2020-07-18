@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Drawing;
-using System.Globalization;
-using System.IO;
-using System.Runtime.Serialization.Formatters.Binary;
 using System.Xml.Serialization;
 
 namespace TJAStudio
@@ -60,6 +57,7 @@ namespace TJAStudio
 
         [XmlIgnore]
         public Color Editor_ForeColor { get; set; } = Color.Black;
+
         [XmlIgnore]
         public Color Editor_BackColor { get; set; } = Color.White;
 
@@ -70,6 +68,7 @@ namespace TJAStudio
             get { return ColorTranslator.ToHtml(Editor_ForeColor); }
             set { Editor_ForeColor = ColorTranslator.FromHtml(value); }
         }
+
         [XmlElement("Editor_BackColor")]
         public string _Editor_BackColor
         {
@@ -77,9 +76,8 @@ namespace TJAStudio
             get { return ColorTranslator.ToHtml(Editor_BackColor); }
             set { Editor_BackColor = ColorTranslator.FromHtml(value); }
         }
-
-
     }
+
     [Serializable]
     public class EditorColorScheme
     {
@@ -119,11 +117,13 @@ namespace TJAStudio
         public ColorFormat Command { get; set; } = new ColorFormat();
         public ColorFormat Parameter { get; set; } = new ColorFormat();
     }
+
     [Serializable]
     public class ColorFormat
     {
         [XmlIgnore]
         public Color ForeColor { get; set; }
+
         [XmlIgnore]
         public Color BackColor { get; set; }
 
@@ -133,6 +133,7 @@ namespace TJAStudio
             get { return ColorTranslator.ToHtml(ForeColor); }
             set { ForeColor = ColorTranslator.FromHtml(value); }
         }
+
         public string _BackColor
         {
             // 文字列との相互変換はお好みで

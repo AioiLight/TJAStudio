@@ -44,7 +44,6 @@ namespace TJAStudio.BPMMeasure
                 return;
             }
 
-
             var now = GetNow();
 
             var delta = now - BeforeTime;
@@ -52,7 +51,6 @@ namespace TJAStudio.BPMMeasure
 
             DeltaCt += PressCount * delta;
             Sum += DeltaCt;
-
 
             var e = PressCount * (PressCount + 1) * (PressCount + 2) / 6;
 

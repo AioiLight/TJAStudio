@@ -1,10 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 using System.Text;
-using System.Text.RegularExpressions;
-using System.Threading.Tasks;
 
 namespace TJAStudio
 {
@@ -47,7 +44,7 @@ namespace TJAStudio
         /// <param name="commonheader">共通ヘッダ。</param>
         /// <param name="course">コース。</param>
         /// <param name="encoding">エンコーディング。</param>
-        public static string Build(string fileName,  List<Header> commonHeader, Course[] course, Encoding encoding, bool writeToFile = true)
+        public static string Build(string fileName, List<Header> commonHeader, Course[] course, Encoding encoding, bool writeToFile = true)
         {
             var result = "";
             // 共通ヘッダ。
@@ -69,7 +66,6 @@ namespace TJAStudio
             if (writeToFile) WriteToFile(result, fileName, encoding);
             return result;
         }
-
 
         /// <summary>
         /// string型から.tjaファイルを生成します。

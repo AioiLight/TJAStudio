@@ -40,13 +40,13 @@ namespace TJAStudio
         public Studio(string fileName) : this()
         {
             FileOpen(false, fileName);
-        } 
+        }
 
         private void Dock_ActiveDocumentChanged(object sender, EventArgs e)
         {
             if (Dock.DocumentsCount < 1) return;
             var index = Courses.List.FindItemWithText(Dock.ActiveDocument.DockHandler.TabText.Substring(Properties.Common.Editor.Length));
-            if(index != null)CurrentCourseID = index.Index;
+            if (index != null) CurrentCourseID = index.Index;
             HeaderWindow.SetHeaderFromList(Program.Project.Courses[CurrentCourseID].Header);
             CommonHeaderWindow.SetHeaderFromList(Program.Project.CommonHeader);
             Program.Project.Courses[CurrentCourseID].Document.GetCaretIndex(out var line, out var col);
@@ -118,7 +118,6 @@ namespace TJAStudio
             var index = Program.WindowManager.AddCourse(name);
             Courses.SetCoursesFromList();
             Program.WindowManager.Editors[index].Show(Dock);
-
         }
 
         private void Menu_File_New_Click(object sender, EventArgs e)
@@ -172,7 +171,6 @@ namespace TJAStudio
             Program.Project = FileManager.OpenFile(fileName);
             Courses.SetCoursesFromList();
             Project.SetCoursesFromList();
-
 
             foreach (var item in Dock.Documents)
             {
@@ -402,7 +400,6 @@ namespace TJAStudio
                 if (i != splitedText.Length - 1) resultText += "\n";
             }
             TextInsert(resultText);
-
         }
 
         private void Menu_Edit_Repert_Click(object sender, EventArgs e)
@@ -461,6 +458,7 @@ namespace TJAStudio
         {
             Execute();
         }
+
         private void Tool_Execute_Click(object sender, EventArgs e)
         {
             Execute();
@@ -499,7 +497,6 @@ namespace TJAStudio
                 }
                 catch (Exception)
                 {
-
                 }
             }
         }
@@ -527,7 +524,6 @@ namespace TJAStudio
                     }
                     catch (Exception)
                     {
-
                     }
                 }
 
@@ -537,7 +533,6 @@ namespace TJAStudio
                     var dir = Path.GetDirectoryName(dialog.FileName);
                     System.Diagnostics.Process.Start(dir);
                 }
-
             }
         }
 
@@ -551,6 +546,7 @@ namespace TJAStudio
             var measure = Measure.GetMeasure(Program.Project.Courses[CurrentCourseID].Document);
             TJAStudio.Status_Measures.Text = string.Format(Properties.SystemMessage.Status_Measure, measure[1] + 1, measure[0] + 1);
         }
+
         private void Studio_Leave(object sender, EventArgs e)
         {
             //Studio.TJAStudio.MakePreview(Program.Project.Courses[Studio.CurrentCourseID], true);
@@ -565,7 +561,6 @@ namespace TJAStudio
             TJAStudio.Menu_Edit_Redo.Enabled = checkRedo;
             TJAStudio.Tool_Redo.Enabled = checkRedo;
         }
-
 
         private void Menu_Version_Site_Click(object sender, EventArgs e)
         {
@@ -595,9 +590,9 @@ namespace TJAStudio
                 if (dialogResult == Microsoft.WindowsAPICodePack.Dialogs.TaskDialogResult.Yes)
                 {
                     Save();
-                    if (IsEdited) e.Cancel = true; 
+                    if (IsEdited) e.Cancel = true;
                 }
-                else if (dialogResult ==  Microsoft.WindowsAPICodePack.Dialogs.TaskDialogResult.Cancel) e.Cancel = true;
+                else if (dialogResult == Microsoft.WindowsAPICodePack.Dialogs.TaskDialogResult.Cancel) e.Cancel = true;
             }
 
             // 子ウィンドウの保存とか
@@ -611,12 +606,15 @@ namespace TJAStudio
             {
                 case nameof(Courses):
                     return Courses;
+
                 case "CommonHeader":
                     return CommonHeaderWindow;
+
                 case "CourseHeader":
                     return HeaderWindow;
+
                 case "Project":
-                    return Project;                
+                    return Project;
             }
             return null;
         }
@@ -628,7 +626,6 @@ namespace TJAStudio
 
         private void Tool_Save_Click(object sender, EventArgs e)
         {
-            
         }
 
         private void Tool_Open_Click(object sender, EventArgs e)
@@ -675,7 +672,7 @@ namespace TJAStudio
             var dialog = new SettingWindow();
             var dialogResult = dialog.ShowDialog(this);
             dialog.Dispose();
-            if(dialogResult == DialogResult.OK)
+            if (dialogResult == DialogResult.OK)
             {
                 Close();
                 Application.Restart();
@@ -688,6 +685,7 @@ namespace TJAStudio
             dialog.ShowDialog(this);
             dialog.Dispose();
         }
+
         private void Menu_Edit_NotesOperation_Command_Click(object sender, EventArgs e)
         {
             var selectedText = Program.WindowManager.Editors[CurrentCourseID].TextEditor.GetSelectedText();
@@ -704,9 +702,9 @@ namespace TJAStudio
             }
             TextInsert(result);
         }
+
         private void Menu_Command_Click(object sender, EventArgs e)
         {
-            
         }
 
         private void Menu_Command_StartEnd_Click(object sender, EventArgs e)
@@ -750,7 +748,7 @@ namespace TJAStudio
         {
             var isExistBefore = IsExistCharBeforeCaret();
             var isExistAfter = IsExistCharAfterCaret();
-            if (Program.WindowManager.Editors[CurrentCourseID].TextEditor.GetSelectedText().Length > 0 )
+            if (Program.WindowManager.Editors[CurrentCourseID].TextEditor.GetSelectedText().Length > 0)
             {
                 // 選択状態
                 var text = "";
@@ -811,7 +809,7 @@ namespace TJAStudio
                     text += "#SCROLL " + dialog.Num_Amount.Value + Environment.NewLine
                         + Program.WindowManager.Editors[CurrentCourseID].TextEditor.GetSelectedText()
                         + Environment.NewLine + "#SCROLL " + beforeScroll.ToString();
-                    if(isExistAfter)
+                    if (isExistAfter)
                     {
                         text += Environment.NewLine;
                     }
@@ -943,7 +941,6 @@ namespace TJAStudio
                     TextInsert(text);
                 }
             }
-
         }
 
         /// <summary>
@@ -963,7 +960,7 @@ namespace TJAStudio
                     result = item;
                 }
             }
-            return string.IsNullOrWhiteSpace(result) ? null : result ;
+            return string.IsNullOrWhiteSpace(result) ? null : result;
         }
 
         /// <summary>
@@ -1021,7 +1018,7 @@ namespace TJAStudio
 
         internal Courses Courses = new Courses();
         private Project Project = new Project();
-        public  HeadersWindow HeaderWindow = new HeadersWindow(false);
+        public HeadersWindow HeaderWindow = new HeadersWindow(false);
         private HeadersWindow CommonHeaderWindow = new HeadersWindow(true, Properties.Common.CommonHeader);
         private FormatChecker FormatChecker { get; set; }
         public static Studio TJAStudio { get; set; }

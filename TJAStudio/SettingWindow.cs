@@ -8,7 +8,6 @@ namespace TJAStudio
 {
     public partial class SettingWindow : Form
     {
-
         private Setting Setting { get; set; } = new Setting();
 
         public SettingWindow()
@@ -90,18 +89,19 @@ namespace TJAStudio
 
         private void Tab_Editor_Show_HR_CheckedChanged(object sender, EventArgs e)
         {
-           Setting.Show_Horizontal_Ruler = Tab_Editor_Sample.ShowsHRuler = Tab_Editor_Show_HR.Checked;
+            Setting.Show_Horizontal_Ruler = Tab_Editor_Sample.ShowsHRuler = Tab_Editor_Show_HR.Checked;
         }
 
         private void Tab_Editor_Line_CheckedChanged(object sender, EventArgs e)
         {
-           Setting.Show_Line_Number = Tab_Editor_Sample.ShowsLineNumber = Tab_Editor_Line.Checked;
+            Setting.Show_Line_Number = Tab_Editor_Sample.ShowsLineNumber = Tab_Editor_Line.Checked;
         }
 
         private void Tab_Editor_HR_From_Zero_CheckedChanged(object sender, EventArgs e)
         {
             Setting.Show_Horizontal_Ruler_Zero = Tab_Editor_Sample.HRulerStartsFromZero = Tab_Editor_HR_From_Zero.Checked;
         }
+
         private void Tab_Editor_SpaceMark_CheckedChanged(object sender, EventArgs e)
         {
             Setting.Show_Space_Mark = Tab_Editor_Sample.DrawsSpace = Tab_Editor_SpaceMark.Checked;
@@ -233,38 +233,45 @@ namespace TJAStudio
             ColorScheme.SetColorScheme(Tab_Editor_Sample.ColorScheme, Setting);
             Tab_Editor_Sample.Invalidate();
         }
+
         private void Tab_Editor_Balloon_ForeColorChanged(object sender, EventArgs e)
         {
             Setting.ColorScheme.Balloon.ForeColor = Tab_Editor_Balloon.ForeColor;
             ColorScheme.SetColorScheme(Tab_Editor_Sample.ColorScheme, Setting);
             Tab_Editor_Sample.Invalidate();
         }
+
         private void Tab_Editor_Balloon_BackColorChanged(object sender, EventArgs e)
         {
             Setting.ColorScheme.Balloon.BackColor = Tab_Editor_Balloon.BackColor;
             ColorScheme.SetColorScheme(Tab_Editor_Sample.ColorScheme, Setting);
             Tab_Editor_Sample.Invalidate();
         }
+
         private void Tab_Editor_Other_ForeColorChanged(object sender, EventArgs e)
         {
             Setting.ColorScheme.Other.ForeColor = Tab_Editor_Other.ForeColor;
             ColorScheme.SetColorScheme(Tab_Editor_Sample.ColorScheme, Setting);
             Tab_Editor_Sample.Invalidate();
         }
+
         private void Tab_Editor_Other_BackColorChanged(object sender, EventArgs e)
         {
             Setting.ColorScheme.Other.BackColor = Tab_Editor_Other.BackColor;
             ColorScheme.SetColorScheme(Tab_Editor_Sample.ColorScheme, Setting);
             Tab_Editor_Sample.Invalidate();
         }
+
         private void Tab_General_UTF8Mode_CheckedChanged(object sender, EventArgs e)
         {
             Setting.UTF8Mode = Tab_General_UTF8Mode.Checked;
         }
+
         private void Tab_General_Open_Extract_Folder_CheckedChanged(object sender, EventArgs e)
         {
             Setting.Open_Extract_Folder = Tab_General_Open_Extract_Folder.Checked;
         }
+
         private void Tab_Editor_Font_Click(object sender, EventArgs e)
         {
             var dialog = new FontDialog();
@@ -281,25 +288,31 @@ namespace TJAStudio
                 Tab_Editor_Font.Font = Tab_Editor_Sample.Font = new Font(Setting.FontName, Setting.FontSize);
             }
         }
+
         private void Tab_Editor_Font_FontChanged(object sender, EventArgs e)
         {
         }
+
         private void Tab_General_Workspace_Button_Click(object sender, EventArgs e)
         {
             SetDirectoryToTextBox(Tab_General_Workspace_TextBox);
         }
+
         private void Tab_General_SimulatorPath_Button_Click(object sender, EventArgs e)
         {
             SetPathToTextBox(Tab_General_SimulatorPath_TextBox);
         }
+
         private void Tab_General_Workspace_TextBox_TextChanged(object sender, EventArgs e)
         {
             Setting.WorkspacePath = Tab_General_Workspace_TextBox.Text;
         }
+
         private void Tab_General_SimulatorPath_TextBox_TextChanged(object sender, EventArgs e)
         {
             Setting.SimulatorPath = Tab_General_SimulatorPath_TextBox.Text;
         }
+
         private void Tab_General_Language_ComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
             Setting.Locale = GetLocaleFromLocale((Locale)Tab_General_Language_ComboBox.SelectedIndex);
@@ -348,7 +361,6 @@ namespace TJAStudio
             GetBooleanFromSettings(Setting.Show_Tab_Mark, ref Tab_Editor_TabMark);
             GetBooleanFromSettings(Setting.Show_EoL_Mark, ref Tab_Editor_EoL);
             GetBooleanFromSettings(Setting.Show_EoF_Mark, ref Tab_Editor_EoF);
-
         }
 
         private void SetSettings()
@@ -361,10 +373,12 @@ namespace TJAStudio
             checkbox.Checked = boolean;
             Update();
         }
+
         private void GetColorsFromSettings(ColorFormat colorFormat, ref Button button)
         {
             GetColorsFromSettings(colorFormat.ForeColor, colorFormat.BackColor, ref button);
         }
+
         private void GetColorsFromSettings(Color foreColor, Color backColor, ref Button button)
         {
             button.ForeColor = foreColor;
@@ -375,16 +389,17 @@ namespace TJAStudio
         {
             boolean = checkbox.Checked;
         }
+
         private static void SetColorsFromSettings(ColorFormat colorFormat, ref Button button)
         {
             SetColorsFromSettings(colorFormat.ForeColor, colorFormat.BackColor, ref button);
         }
+
         private static void SetColorsFromSettings(Color foreColor, Color backColor, ref Button button)
         {
             foreColor = button.ForeColor;
             backColor = button.BackColor;
         }
-
 
         private static void SetColor(ref Button button)
         {
@@ -394,12 +409,12 @@ namespace TJAStudio
             dialog.Color = color;
             dialog.FullOpen = true;
             dialog.SolidColorOnly = false;
-            if(dialog.ShowDialog() == DialogResult.OK)
+            if (dialog.ShowDialog() == DialogResult.OK)
             {
                 color = dialog.Color;
             }
             dialog.Dispose();
-            if(isBackground)
+            if (isBackground)
             {
                 button.BackColor = color;
             }
@@ -408,15 +423,17 @@ namespace TJAStudio
                 button.ForeColor = color;
             }
         }
+
         private static void SetDirectoryToTextBox(TextBox textBox)
         {
             var dialog = new FolderBrowserDialog();
             dialog.SelectedPath = textBox.Text;
-            if(dialog.ShowDialog() == DialogResult.OK)
+            if (dialog.ShowDialog() == DialogResult.OK)
             {
                 textBox.Text = dialog.SelectedPath;
             }
         }
+
         private static void SetPathToTextBox(TextBox textBox)
         {
             var dialog = new OpenFileDialog();
@@ -442,25 +459,29 @@ namespace TJAStudio
             {
                 case "en-US":
                     return Locale.English;
+
                 case "ja-JP":
                     return Locale.Japanese;
+
                 default:
                     return Locale.English;
             }
         }
+
         private static string GetLocaleFromLocale(Locale locale)
         {
             switch (locale)
             {
                 case Locale.English:
                     return "en-US";
+
                 case Locale.Japanese:
                     return "ja-JP";
+
                 default:
                     return "en-US";
             }
         }
-
     }
 
     public static class Extension

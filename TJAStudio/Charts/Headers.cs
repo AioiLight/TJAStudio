@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 namespace TJAStudio.Charts
 {
@@ -10,9 +6,10 @@ namespace TJAStudio.Charts
     {
         public static List<HeaderCheker> GetHeaders()
         {
-            var headers = new List<HeaderCheker> ();
+            var headers = new List<HeaderCheker>();
 
             #region 次郎のReadmeにあるやつ
+
             headers.Add(new HeaderCheker("TITLE", new string[] { @".+$" }, Simulator.Taikojiro | Simulator.Taikojiro2 | Simulator.TJAPlayer2fPC | Simulator.TJAPlayer3 | Simulator.TaikoDaijiro2 | Simulator.TaikoWeb_Bui));
             headers.Add(new HeaderCheker("SUBTITLE", new string[] { @".+$" }, Simulator.Taikojiro | Simulator.Taikojiro2 | Simulator.TJAPlayer2fPC | Simulator.TJAPlayer3 | Simulator.TaikoDaijiro2 | Simulator.TaikoWeb_Bui));
             headers.Add(new HeaderCheker("LEVEL", new string[] { @"[0-9]*$" }, Simulator.Taikojiro | Simulator.Taikojiro2 | Simulator.TJAPlayer2fPC | Simulator.TJAPlayer3 | Simulator.TaikoDaijiro2 | Simulator.TaikoWeb_Bui));
@@ -21,7 +18,7 @@ namespace TJAStudio.Charts
             headers.Add(new HeaderCheker("OFFSET", new string[] { @"\d+(.\d+)?$" }, Simulator.Taikojiro | Simulator.Taikojiro2 | Simulator.TJAPlayer2fPC | Simulator.TJAPlayer3 | Simulator.TaikoDaijiro2 | Simulator.TaikoWeb_Bui));
             headers.Add(new HeaderCheker("BALLOON", new string[] { @"\d+$" }, Simulator.Taikojiro | Simulator.Taikojiro2 | Simulator.TJAPlayer2fPC | Simulator.TJAPlayer3 | Simulator.TaikoDaijiro2 | Simulator.TaikoWeb_Bui));
 
-            headers.Add(new HeaderCheker("SONGVOL", new string[] { @"\d+$" }, Simulator.Taikojiro | Simulator.Taikojiro2 |  Simulator.TJAPlayer3));
+            headers.Add(new HeaderCheker("SONGVOL", new string[] { @"\d+$" }, Simulator.Taikojiro | Simulator.Taikojiro2 | Simulator.TJAPlayer3));
             headers.Add(new HeaderCheker("SEVOL", new string[] { @"\d+$" }, Simulator.Taikojiro | Simulator.Taikojiro2));
 
             headers.Add(new HeaderCheker("SCOREINIT", new string[] { @"\d+$" }, Simulator.Taikojiro | Simulator.Taikojiro2 | Simulator.TJAPlayer2fPC | Simulator.TJAPlayer3 | Simulator.TaikoDaijiro2 | Simulator.TaikoWeb_Bui));
@@ -44,9 +41,11 @@ namespace TJAStudio.Charts
             headers.Add(new HeaderCheker("SCOREMODE", new string[] { @"[0-2]+$" }, Simulator.Taikojiro | Simulator.Taikojiro2 | Simulator.TJAPlayer2fPC | Simulator.TJAPlayer3 | Simulator.TaikoDaijiro2 | Simulator.TaikoWeb_Bui));
 
             headers.Add(new HeaderCheker("TOTAL", new string[] { @"\d+$" }, Simulator.Taikojiro | Simulator.Taikojiro2));
-            #endregion
+
+            #endregion 次郎のReadmeにあるやつ
 
             #region TJAP2fPC、TJAP3専用ヘッダ
+
             for (int i = 1; i <= 3; i++)
             {
                 headers.Add(new HeaderCheker("EXAM" + i, new string[] { @"(g|jp|jg|jb|s|r|h|c),\d+,\d+,(m|l)$" }, Simulator.TJAPlayer3));
@@ -61,8 +60,8 @@ namespace TJAStudio.Charts
             headers.Add(new HeaderCheker("BGIMAGE", new string[] { @".+$" }, Simulator.TJAPlayer2fPC | Simulator.TJAPlayer3));
             headers.Add(new HeaderCheker("BGMOVIE", new string[] { @".+$" }, Simulator.TJAPlayer2fPC | Simulator.TJAPlayer3));
             headers.Add(new HeaderCheker("HIDDENBRANCH", new string[] { @".+$" }, Simulator.TJAPlayer2fPC | Simulator.TJAPlayer3));
-            #endregion
 
+            #endregion TJAP2fPC、TJAP3専用ヘッダ
 
             return headers;
         }

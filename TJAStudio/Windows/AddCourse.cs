@@ -17,7 +17,6 @@ namespace TJAStudio
             TextBox_Name.ReadOnly = true;
         }
 
-
         private void Add_Click(object sender, EventArgs e)
         {
             DialogResult = DialogResult.OK;

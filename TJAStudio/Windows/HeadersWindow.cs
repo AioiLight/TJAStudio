@@ -9,6 +9,7 @@ namespace TJAStudio
     public partial class HeadersWindow : WeifenLuo.WinFormsUI.Docking.DockContent
     {
         private bool IsCommon { get; }
+
         public HeadersWindow(bool isCommon)
         {
             InitializeComponent();
@@ -56,7 +57,7 @@ namespace TJAStudio
             {
                 List.Rows.Add(item.Name, item.Value);
             }
-            if(!IsCommon)
+            if (!IsCommon)
             {
                 this.Text = Properties.Common.Header + Program.Project.Courses[Studio.CurrentCourseID].Name;
             }
@@ -115,7 +116,7 @@ namespace TJAStudio
                     }
                 }
 
-                if(IsCommon)
+                if (IsCommon)
                 {
                     Program.Project.CommonHeader.Add(header);
                 }
@@ -124,7 +125,7 @@ namespace TJAStudio
                     Program.Project.Courses[Studio.CurrentCourseID].Header.Add(header);
                 }
             }
-            if(IsCommon)
+            if (IsCommon)
             {
                 SetHeaderFromList(Program.Project.CommonHeader);
             }
@@ -133,7 +134,6 @@ namespace TJAStudio
                 SetHeaderFromList(Program.Project.Courses[Studio.CurrentCourseID].Header);
             }
         }
-
 
         private void List_CellEndEdit(object sender, DataGridViewCellEventArgs e)
         {
@@ -186,7 +186,6 @@ namespace TJAStudio
 
         private void List_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-
         }
 
         private void HeadersWindow_FormClosing(object sender, FormClosingEventArgs e)

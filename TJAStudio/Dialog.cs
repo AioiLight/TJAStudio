@@ -1,5 +1,4 @@
 ﻿using System;
-using System.IO;
 using Microsoft.WindowsAPICodePack.Dialogs;
 
 namespace TJAStudio
@@ -22,7 +21,7 @@ namespace TJAStudio
             dialog.Caption = Properties.Common.Name;
             dialog.InstructionText = string.Format(Properties.Dialog.Version_Title, Properties.Common.Name);
             dialog.Text = string.Format(Properties.Dialog.Version_Text, Properties.Common.Name, Program.Version, Properties.Common.Developer, Properties.Common.Website);
-            var link = new TaskDialogCommandLink();            
+            var link = new TaskDialogCommandLink();
             link.Text = Properties.Dialog.Version_Link;
             link.Click += Link_Click;
             dialog.Controls.Add(link);

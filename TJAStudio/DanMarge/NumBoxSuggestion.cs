@@ -16,6 +16,7 @@ namespace TJAStudio.DanMarge
                 case ExamCondition.ExamConditions.Gauge:
                     Set(1, 100);
                     break;
+
                 case ExamCondition.ExamConditions.Perfect:
                 case ExamCondition.ExamConditions.Good:
                 case ExamCondition.ExamConditions.Bad:
@@ -25,29 +26,32 @@ namespace TJAStudio.DanMarge
                 case ExamCondition.ExamConditions.Combo:
                     Set(1, int.MaxValue);
                     break;
+
                 default:
                     Set(1, 100);
                     break;
             }
         }
-        
+
         public static void SuggestConsiderRedRequirement(NumericUpDown red, NumericUpDown gold, ExamScope.ExamScopes examScopes)
         {
             switch (examScopes)
             {
                 case ExamScope.ExamScopes.More:
-                    if(red.Value > gold.Value)
+                    if (red.Value > gold.Value)
                     {
                         // ターゲットの数値が考慮するやつより大きかったら
                         red.Value = gold.Value;
                     }
                     break;
+
                 case ExamScope.ExamScopes.Less:
-                    if(red.Value < gold.Value)
+                    if (red.Value < gold.Value)
                     {
                         gold.Value = red.Value;
                     }
                     break;
+
                 default:
                     break;
             }
@@ -64,12 +68,14 @@ namespace TJAStudio.DanMarge
                         gold.Value = red.Value;
                     }
                     break;
+
                 case ExamScope.ExamScopes.Less:
                     if (gold.Value > red.Value)
                     {
                         red.Value = gold.Value;
                     }
                     break;
+
                 default:
                     break;
             }

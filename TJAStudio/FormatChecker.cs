@@ -14,7 +14,9 @@ namespace TJAStudio
         private void Check(Simulator? sim)
         {
             List.Items.Clear();
+
             #region 共通ヘッダ
+
             var result = new Natori(Program.Project.CommonHeader).ToList();
             foreach (var item in result)
             {
@@ -38,8 +40,11 @@ namespace TJAStudio
                     }
                 }
             }
-            #endregion
+
+            #endregion 共通ヘッダ
+
             #region 各コース
+
             foreach (var courses in Program.Project.Courses)
             {
                 foreach (var item in new Natori(courses.Header).SelectByType(LineType.Header).ToList())
@@ -95,7 +100,8 @@ namespace TJAStudio
                     List.Items.Add(new ListViewItem(new string[] { "-", Properties.SystemMessage.AllClear }));
                 }
             }
-            #endregion
+
+            #endregion 各コース
         }
 
         private void FormatChecker_Resize(object sender, EventArgs e)
@@ -116,24 +122,31 @@ namespace TJAStudio
                 case 0:
                     sim = null;
                     break;
+
                 case 1:
                     sim = Simulator.Taikojiro;
                     break;
+
                 case 2:
                     sim = Simulator.Taikojiro2;
                     break;
+
                 case 3:
                     sim = Simulator.TJAPlayer2fPC;
                     break;
+
                 case 4:
                     sim = Simulator.TJAPlayer3;
                     break;
+
                 case 5:
                     sim = Simulator.TaikoDaijiro2;
                     break;
+
                 case 6:
                     sim = Simulator.TaikoWeb_Bui;
                     break;
+
                 default:
                     sim = null;
                     break;
@@ -147,36 +160,49 @@ namespace TJAStudio
             {
                 case Simulator.Taikojiro:
                     return Simulator.Taikojiro;
+
                 case Simulator.Taikojiro2:
                     return Simulator.Taikojiro2;
+
                 case Simulator.TJAPlayer2fPC:
                     return Simulator.TJAPlayer2fPC;
+
                 case Simulator.TJAPlayer3:
                     return Simulator.TJAPlayer3;
+
                 case Simulator.TaikoDaijiro2:
                     return Simulator.TaikoDaijiro2;
+
                 case Simulator.TaikoWeb_Bui:
                     return Simulator.TaikoWeb_Bui;
+
                 default:
                     return Simulator.Taikojiro;
             }
         }
+
         private string ToStringSimulator(Simulator sim)
         {
             switch (sim)
             {
                 case Simulator.Taikojiro:
                     return Properties.Simulator.Taikojiro;
+
                 case Simulator.Taikojiro2:
                     return Properties.Simulator.Taikojiro2;
+
                 case Simulator.TJAPlayer2fPC:
                     return Properties.Simulator.TJAPlayer2fPC;
+
                 case Simulator.TJAPlayer3:
                     return Properties.Simulator.TJAPlayer3;
+
                 case Simulator.TaikoDaijiro2:
                     return Properties.Simulator.TaikoDaijiro2;
+
                 case Simulator.TaikoWeb_Bui:
                     return Properties.Simulator.TaikoWeb_Bui;
+
                 default:
                     return Properties.Simulator.Taikojiro;
             }

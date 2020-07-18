@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
+﻿using System.IO;
 using System.Text;
-using System.Threading.Tasks;
 using System.Xml.Serialization;
 
 namespace TJAStudio
@@ -26,7 +22,7 @@ namespace TJAStudio
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         /// <param name="fileName">ファイル名。</param>
         /// <returns>プロジェクト。</returns>

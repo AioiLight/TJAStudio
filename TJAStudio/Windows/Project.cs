@@ -42,7 +42,6 @@ namespace TJAStudio
             }
         }
 
-
         private void Tool_Delete_Click(object sender, EventArgs e)
         {
             if (Program.Project.ProjectFile.Count < 1 || List.SelectedItems.Count < 1) return;

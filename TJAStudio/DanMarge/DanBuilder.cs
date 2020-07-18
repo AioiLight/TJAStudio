@@ -5,7 +5,6 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace TJAStudio.DanMarge
@@ -102,12 +101,12 @@ namespace TJAStudio.DanMarge
                 var inChart = false;
                 foreach (var item in splitedcourses[selectedIndex].Split(new string[] { Environment.NewLine }, StringSplitOptions.None))
                 {
-                    if(item.Trim().StartsWith("#START"))
+                    if (item.Trim().StartsWith("#START"))
                     {
                         inChart = true;
                         continue;
                     }
-                    if(item.Trim().StartsWith("#END"))
+                    if (item.Trim().StartsWith("#END"))
                     {
                         inChart = false;
                     }
@@ -198,7 +197,6 @@ namespace TJAStudio.DanMarge
                     if (int.TryParse(scoreDiff, out var parse))
                     {
                         result.ScoreDiff = parse;
-
                     }
                 }
                 else if (nowLine.StartsWith("WAVE:"))
@@ -249,7 +247,7 @@ namespace TJAStudio.DanMarge
                 {
                     songs = FromTJAFile(dialog.FileName);
                 }
-                if(songs != null)
+                if (songs != null)
                 {
                     songs.FilePath = dialog.FileName;
                     SongList.Add(songs);
@@ -339,7 +337,7 @@ namespace TJAStudio.DanMarge
                     TJAManager.Build(dialog.FileName, result, Program.Setting.UTF8Mode ? new UTF8Encoding() : Encoding.GetEncoding("Shift-JIS"));
                     foreach (var item in SongList)
                     {
-                        if(File.Exists(Path.GetDirectoryName(item.FilePath) + @"\" + item.Wave))
+                        if (File.Exists(Path.GetDirectoryName(item.FilePath) + @"\" + item.Wave))
                         {
                             // ファイルが存在するならコピーしてあげる
                             File.Copy(Path.GetDirectoryName(item.FilePath) + @"\" + item.Wave, Path.GetDirectoryName(dialog.FileName) + @"\" + item.Wave, true);
@@ -364,7 +362,6 @@ namespace TJAStudio.DanMarge
             {
                 return;
             }
-
 
             var dialog = Dialog.DanMargeExit();
             dialog.OwnerWindowHandle = Handle;

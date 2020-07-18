@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Text.RegularExpressions;
 
 namespace TJAStudio.Charts
@@ -24,6 +20,7 @@ namespace TJAStudio.Charts
             Format = format;
             Simulator = availableSimulator;
         }
+
         /// <summary>
         /// 命令のフォーマットをチェックし、有効であるかどうか調べます。
         /// </summary>
@@ -40,7 +37,7 @@ namespace TJAStudio.Charts
                     isValid = true;
                     continue;
                 }
-                if(Regex.IsMatch(parameterText, item)) isValid = true;
+                if (Regex.IsMatch(parameterText, item)) isValid = true;
                 // 命令名の後に空白がなかったら例外を出す。
                 if (Regex.IsMatch("#" + Name + " ", text, RegexOptions.IgnoreCase)) throw new CommandWithoutSpaceException();
             }

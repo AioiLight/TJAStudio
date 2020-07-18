@@ -36,7 +36,6 @@ namespace TJAStudio
 
         private void TextEditor_Click(object sender, EventArgs e)
         {
-
         }
 
         private void TextEditor_TextChanged(object sender, EventArgs e)
