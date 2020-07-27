@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BPMMeasure));
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.Label_Link = new System.Windows.Forms.Label();
             this.LinkLabel = new System.Windows.Forms.LinkLabel();
             this.Label_Help = new System.Windows.Forms.Label();
@@ -62,26 +62,27 @@
             // 
             resources.ApplyResources(this.Chart, "Chart");
             this.Chart.BackColor = System.Drawing.Color.Transparent;
-            chartArea2.AxisX.Minimum = 0D;
-            chartArea2.AxisY.IsStartedFromZero = false;
-            chartArea2.Name = "ChartArea1";
-            this.Chart.ChartAreas.Add(chartArea2);
-            legend2.Name = "Legend1";
-            this.Chart.Legends.Add(legend2);
+            chartArea1.AxisX.Minimum = 0D;
+            chartArea1.AxisY.IsStartedFromZero = false;
+            chartArea1.Name = "ChartArea1";
+            this.Chart.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.Chart.Legends.Add(legend1);
             this.Chart.Name = "Chart";
             this.Chart.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.EarthTones;
-            series2.ChartArea = "ChartArea1";
-            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series2.LabelBorderWidth = 4;
-            series2.Legend = "Legend1";
-            series2.MarkerSize = 1;
-            series2.Name = "BPM";
-            this.Chart.Series.Add(series2);
+            series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series1.LabelBorderWidth = 4;
+            series1.Legend = "Legend1";
+            series1.MarkerSize = 1;
+            series1.Name = "BPM";
+            this.Chart.Series.Add(series1);
             // 
             // TextBox_BPM
             // 
             resources.ApplyResources(this.TextBox_BPM, "TextBox_BPM");
             this.TextBox_BPM.Name = "TextBox_BPM";
+            this.TextBox_BPM.ReadOnly = true;
             // 
             // Label_BPM
             // 
